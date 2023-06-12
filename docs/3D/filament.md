@@ -52,5 +52,5 @@ print the plug and funnel, you'll thank me. 100mm
 
 ### Filament Heater
 
-https://www.sunlu.com/products/new-version-sunlu-filadryer-s2
-https://www.amazon.com/gp/product/B071WP8HGP/
+[SunLu filament dryer v2](https://www.sunlu.com/products/new-version-sunlu-filadryer-s2)
+[wheel weights](https://www.amazon.com/gp/product/B071WP8HGP/)
