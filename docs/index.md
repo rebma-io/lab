@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# The Lab
 
 NOTE: This site is very early and there's very little here yet. Most of this
 needs to be moved from other recording systems first.
