@@ -20,8 +20,6 @@ plugins:
       type: iso_date
   - search:
       lang: en
-  - tags:
-      tags_file: tags.md
   - mermaid2:
       arguments:
         securityLevel: loose
