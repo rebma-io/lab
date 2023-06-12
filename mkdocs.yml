@@ -7,10 +7,62 @@ theme:
   font:
     text: Open Sans
     code: Fira Mono
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+  icon:
+    repo: fontawesome/brands/git
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: iso_date
+  - search:
+      lang: en
+  - tags:
+      tags_file: tags.md
+  - mermaid2:
+      arguments:
+        securityLevel: loose
+repo_url: https://github.com/rebma-io/lab
+repo_name: rebma-io/lab
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - callouts
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+        - includes/glossary.md
+  - tables
+  - footnotes
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - abbr
 extra_javascript:
   - js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js  
+  - https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://hachyderm.io/@petrillic
