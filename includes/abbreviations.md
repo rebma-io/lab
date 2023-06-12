@@ -3,3 +3,5 @@
 *[HTML]: HyperText Markup Language
 *[FEM]: Finite Element Analysis
 *[ESD]: ElectroStatic Discharge
+*[LPI]: Liquid Photo Imaging
+*[DLT]: Direct Legend prinTing
