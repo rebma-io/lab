@@ -8,7 +8,7 @@ finding it difficult to identify which parameter you're looking for. Parameters
 in Fusion360 can have alphanumeric characters and the following special
 characters:
 
-Parameter names can contain these symbols:
+Parameter names can contain these symbols in Fusion360:
 
 * `_` Underscore
 * `"` Double Quote
