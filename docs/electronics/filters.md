@@ -1,7 +1,38 @@
 # Filters
 
+## RC Filters
+
+RC filters, so named because they use a resistor (R) and capacitor (C) are a
+super easy way to construct a filter. They don't necessarily have the best
+performance under all circumstances, but they're often a great starting point
+when working through an idea.
+
+### Low-Pass
+
+For a low-pass filter, where we only allow frequencies _below_ the design point,
+we can construct it like this:
+
+![Low-pass RC filter](/img/schematic-rc-filter-low-pass.png)
+
+We can then calculate the cutoff frequency ($f_c$), which is a -3 dB or 70.7% reduction for the filter:
+
+$$f_c = {1\over{2\pi RC}}$$
+
+But if you know the frequency ($f_c$) you want to achieve, then you can use
+either of these two to figure out the capacitor ($C$) or resistor ($R$) you
+need:
+
+$$C = {1\over{2\pi R f_c}} \\
+R = {1\over{2\pi C f_c}}$$
 
 
+### High-Pass
+
+For a high-pass version of the RC filter, we simply flip the arrangement of the
+resistor and capacitor, and can use the same equations to calculate the $f_c$
+cutoff frequency.
+
+![High-pass RC filter](/img/schematic-rc-filter-high-pass.png)
 ## Pi Filters
 
 A Pi filter is a type of filter constructed with 3 elements rather than the
