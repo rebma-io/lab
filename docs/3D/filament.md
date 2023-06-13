@@ -44,13 +44,24 @@ pronged strategy:
 
 ### Dry Box Design
 
-[60qt storage box](https://www.irisusainc.com/collections/weathertight/products/60-quart-weathertight-multi-purpose-storage-box-clear-with-blue-buckles-3-pack)
-nice size, easy to maneuver, foam gasket to help reduce air infiltration
-[color-changing silica desiccant](https://www.amazon.com/dp/B013L31PQ0)
-[3D-printed container for desiccant](https://www.printables.com/model/1367-malolos-silica-gel-desiccant-containers)
-print the plug and funnel, you'll thank me. 100mm
+For storage, I use some [60qt storage
+box](https://www.irisusainc.com/collections/weathertight/products/60-quart-weathertight-multi-purpose-storage-box-clear-with-blue-buckles-3-pack).
+They are a nice size, easy to maneuver, and have foam gasket to help reduce air
+infiltration. Inside of that I've 3d printed a pair of [75mm container for
+desiccant](https://www.printables.com/model/1367-malolos-silica-gel-desiccant-containers)
+(print the funnel and plug trust me), and filled it with [color-changing silica
+desiccant](https://www.amazon.com/dp/B013L31PQ0). So far, this has managed to
+keep the RH somewhere between 20-30%. I monitor the boxes with an inexpensive
+[ThermoPro TP49](https://buythermopro.com/product/tp49/) temperature and
+humidity monitor.
+
 
 ### Filament Heater
 
-[SunLu filament dryer v2](https://www.sunlu.com/products/new-version-sunlu-filadryer-s2)
-[wheel weights](https://www.amazon.com/gp/product/B071WP8HGP/)
+When printing, I move the filament into a [SunLu filament dryer
+v2](https://www.sunlu.com/products/new-version-sunlu-filadryer-s2). I've had
+some issues with it getting pulled towards the printer, and even tipping over,
+but I've mostly resolved that by 1) feeding the filament from the bottom, not
+the top (think toilet paper roll); 2) adding some [wheel
+weights](https://www.amazon.com/gp/product/B071WP8HGP/) to give it some more
+heft. 
