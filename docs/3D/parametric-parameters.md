@@ -17,7 +17,8 @@ Parameter names can contain these symbols in Fusion360:
 * `µ` Micro symbol
 
 It cannot have a space, so I typically use
-[PascalCase](https://en.wikipedia.org/wiki/Camel_case). This is the one I use:
+[PascalCase](https://en.wikipedia.org/wiki/Camel_case). This is the scheme I
+use:
 
 | Name         | Use                                                                                               |
 | ------------ | ------------------------------------------------------------------------------------------------- |
@@ -37,6 +38,7 @@ modeling of various [types of fit](../mechanical/fit.md)
 | TransitionFit   | Allowance for a transition fit.    |
 | InterferenceFit | Allowance for an interference fit. |
 
+
 ## Calculations
 
 Starting with the May 2023 release of Fusion360, you can now use conditional
@@ -51,3 +53,8 @@ This would set the `HoleCount` to `7` if the `HubOD` (hub outer diameter) is
 greater than or equal to 100mm. You can also chain them together:
 
 HoleCount = `if(HubOD >= 100mm; if(HubOD >= 200mm; 9; 7); 5)`
+
+TIP: **Future Enhancement** In the future, I'll probably combine the parameters
+for various types of fit with the new `if` function, and add a `PrintQuality`
+that will allow setting the `PrintQuality` variable to then calculate the actual
+fits.
