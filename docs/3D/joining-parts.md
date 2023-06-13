@@ -11,10 +11,10 @@ are a couple ways to join parts together, each with their own trade-offs:
 
 ## Press Fit
 
-If you can get the [/mechanical/fit.md] setup correct, then you may be able to
-use an interference fit and stick things together without any other mechanism.
-Unfortunately, you also run the risk of breaking the parts doing this, so I
-strongly advise against it.
+If you can get the [mechanical fit](/mechanical/fit.md) setup correct, then you
+may be able to use an interference fit and stick things together without any
+other mechanism. Unfortunately, you also run the risk of breaking the parts
+doing this, so I strongly advise against it.
 
 ## Snap Fit
 
