@@ -1,9 +1,10 @@
-# Prusa MINI+
+# Prusa Printer
 
 Currently, I have a [Prusa
-MINI+](https://www.prusa3d.com/category/original-prusa-mini/). 
+MINI+](https://www.prusa3d.com/category/original-prusa-mini/). I also have a two
+head Prusa XL on pre-order.
 
-## Maker's Muse high-speed settings
+## Maker's Muse Slicer Settings
 
 I use the following settings taken from [Maker's
 Muse](https://www.makersmuse.com)'s recommendations. These are all for
@@ -28,6 +29,9 @@ mm/s.
 | Speed/Top Solid Infill     | 40     | 100            |
 | Infill/Fill Density        | 20%    | 10%            |
 | Infill/Fill Pattern        | Grid   | Adaptive Cubic |
+
+You can download the exported configuration from here:
+[prusa-mini-fast-profile.ini :material-download-circle-outline:](/files/prusa-mini-fast-profile.ini).
 
 ## Engineering Fit
 

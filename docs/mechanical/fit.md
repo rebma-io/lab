@@ -91,4 +91,4 @@ Handbook_](../media.md)'s "Dimensioning, Gaging, and Measuring".
 NOTE: When working with FFF 3D printing, however, you will find that the
 tolerances of the machine are so sloppy that you will need to develop your own
 understanding for your printer and printer settings (see [Prusa
-MINI+](../3D/prusa-mini.md)).
+MINI+](../3D/prusa.md)).

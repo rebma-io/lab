@@ -1,6 +1,6 @@
 # Octoprint
 
-To manage and allow for web access to my [3D printer](prusa-mini.md) I am
+To manage and allow for web access to my [3D printer](prusa.md) I am
 running [Octoprint](https://octoprint.org/) on a cheap Intel Celeron N5105-based
 micro machine that picked up on
 [AliExpress](https://www.aliexpress.us/item/3256802565230576.html) for less than
