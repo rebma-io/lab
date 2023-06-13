@@ -2,7 +2,16 @@
 
 ## Why Part Numbers Matter
 
+Parts are the thing that you want to keep track of. Inventory is your stock of
+those parts. This matters when you get past just puttering around because
+otherwise the entire process of knowing how much something costs to make, and
+therefore what you need to charge, as well as whether you even have it, is
+nearly impossible.
+
 ## Part Numbers are Not Inventory
+
+TODO
+
 ## My Numbering Scheme
 
 I've landed on using the following part numbering scheme:
