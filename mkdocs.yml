@@ -12,8 +12,10 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.footer
+    - navigation.indexes
   icon:
     repo: fontawesome/brands/git
+  logo: assets/rebma-io-logo-white.png
   custom_dir: overrides
 plugins:
   - git-revision-date-localized:
