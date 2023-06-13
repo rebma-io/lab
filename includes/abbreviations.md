@@ -9,3 +9,6 @@
 *[FDM]: Fusion Deposition Manufacturing (see FFF)
 *[UHMW]: Ultra-High Molecular Weight polyethylene
 *[PTFE]: Polytetrafluoroethylene (Teflon)
+*[PBS]: Product Breakdown Structure
+*[THT]: Through Hole Technology
+*[SMD]: Surface Mount Device
