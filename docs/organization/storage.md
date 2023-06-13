@@ -36,14 +36,16 @@ various purposes:
   14" x 9.13" x 2.8"
 
 For each box, I put 2 large labels (see [Labeling](labeling.md)) on it with a
-top-level description of what is in the box (e.g., "SS M3/M4/M5/M6 Screws" for
+top-level description of what is in the box (e.g., "M3/M4/M5/M6 SS Hex Screws" for
 stainless-steel M3-M6 screws). One goes on the long edge (with the latches), and
 the other on the short edge for better discovery when shelved.
 
 In addition, I use 3x5 index cards to describe the organization within the box's
 many compartments. These are just handwritten and then places in a small holder
 on the front ([Amazon](https://www.amazon.com/gp/product/B0BJQ7TM4F/)), which
-lets me read it and update it as necessary.
+lets me read it and update it as necessary. You can see an example here:
+
+![Box with 3x5 card label attached on the front](/img/parts-box-front-card.jpg)
 
 ### AideTek
 
