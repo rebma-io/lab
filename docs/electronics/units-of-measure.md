@@ -2,10 +2,15 @@
 
 ## Decibels
 
-While nobody uses the original unit of measure, the bel, the decibel (deci-
+While nobody uses the original unit of measure, the bel, the decibel (deci
 meaning tenth) is everywhere in electronics where signals are being processed in
-non-digital circuits. There are a couple specialized ones that you will see,
-generally in audio or RF circuits:
+non-digital circuits. While the decibel (dB) on its own is specifically a
+_ratio_ between two signal levels and therefore expresses only relative
+relationships. 
+
+If you want to use an absolute value, you can add on a modifier to the dB
+notation.There are a couple specialized ones that you will see, generally in
+audio or RF circuits:
 
 | dB Units | Meaning                               |
 | -------- | ------------------------------------- |
@@ -42,7 +47,8 @@ voltage ($V$), a 10X increase in voltage results in a $10^2 = 100$X increase in
 power, or 20dB. This converts the equation above into:
 
 $$A=10log{{P_{out}}\over{{P}_{in}}}$$
+
 These all end up being derived from (for $A$ dB):
 
-$${V_{out}\over{V_{in}}} = {10^{(A/20)}}$$
-$${P_{out}\over{P_{in}}} = {10^{(A/10)}}$$
+$${V_{out}\over{V_{in}}} = {10^{(A/20)}} \\[10pt]
+{P_{out}\over{P_{in}}} = {10^{(A/10)}}$$
