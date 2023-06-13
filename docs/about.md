@@ -26,3 +26,12 @@ I do use some basic analytics (powered by [Fathom
 Analytics](https://usefathom.com)), which is [much more privacy
 focused](https://usefathom.com/privacy-focused-web-analytics), and only collects
 the barest minimum of information. I don't even see IP addresses.
+
+## Built With
+
+The site is built using [MkDocs](https://www.mkdocs.org) and the [Material for
+MkDocs](https://squidfunk.github.io/mkdocs-material/) theme (although it's much
+bigger than that). It is edited (primarily) in [Visual Studio
+Code](https://code.visualstudio.com), written in
+[Markdown](https://www.markdownguide.org) and also using [Jupyter
+notebooks](https://jupyter.org). Finally, it is hosted on Github Pages.
