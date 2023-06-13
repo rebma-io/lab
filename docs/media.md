@@ -22,12 +22,24 @@
   circuits. It's not "baby's first book", but it's a heck of a useful reference
   to have. There are, I believe, 7 volumes (I have 4 of them).
 * [Machinery's
-  Handbook](https://bookshop.org/p/books/machinery-s-handbook-toolbox-erik-oberg/14131340?ean=9780831137311)
-* [Big Book of Maker Skills](https://bookshop.org/p/books/the-big-book-of-maker-skills-tools-techniques-for-building-great-tech-projects-chris-hackett/11504243?ean=9781681884325)
-* [Practical Doomsday: A User's Guide to the End of the
-  World](https://bookshop.org/p/books/practical-doomsday-a-user-s-guide-to-the-end-of-the-world-michal-zalewski/17374960?ean=9781718502123)
+  Handbook](https://bookshop.org/p/books/machinery-s-handbook-toolbox-erik-oberg/14131340?ean=9780831137311).
+  In print for about 110 years, and now on its 31st edition, this is the bible
+  of machining and machinery. If you want to understand materials and mechanical
+  construction, though, it is indispensible. Clocking in at 3,000+ pages, it is
+  an absolute beast of a book. Get the "large print" version, as it's more
+  normal sized. The other is designed to be kept in a machinist's tool chest and
+  is in tiny print.
+* [Big Book of Maker
+  Skills](https://bookshop.org/p/books/the-big-book-of-maker-skills-tools-techniques-for-building-great-tech-projects-chris-hackett/11504243?ean=9781681884325).
+  A breezy collection of a very diverse sets of skills that, as a maker, you'll
+  likely need to know. It's the opposite of things like _Machinery's Handbook_
+  in that it is enormously simplified and a cursory surface discussion of things
+  like sanding, drilling, casting, refining, chiseling, and many dozens of other
+  tools and skills.
 * [Open Circuits: The Inner Beauty of Electronic
-  Components](https://www.opencircuitsbook.com/). 
+  Components](https://www.opencircuitsbook.com/). This is the equivalent of a
+  centerfold or coffee-table book for electronic components. Through diligent
+  work and stunning photography, they explore the beauty within the components.
 
 
 ## YouTube Channels
@@ -80,7 +92,12 @@ that. Here's a few that I find super helpful:
 * [lcamtuf](https://lcamtuf.substack.com). Primarily electronics, but with
   excellent explanations and discussion that is very approachable.
 * [Altium Resources](https://resources.altium.com/).
-* [Sierra Circuits](https://www.protoexpress.com/blog/).
+* [Fusion360](https://www.autodesk.com/products/fusion-360/blog). Like Altium,
+  this s for a specific product, but much of the information is useful for a
+  wide range of applications.
+* [Sierra Circuits](https://www.protoexpress.com/blog/). Guidance and wisdom
+  from one of the top PCB manufacturers in the world. They also have a huge
+  number of resources that I'll discuss elsewhere.
 * [Dangerous Prototypes](http://dangerousprototypes.com/blog/).
 * [Hackaday](https://hackaday.com/)
 * [bunnie's blog](https://www.bunniestudios.com/)

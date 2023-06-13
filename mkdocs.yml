@@ -25,6 +25,7 @@ plugins:
         securityLevel: loose
 repo_url: https://github.com/rebma-io/lab
 repo_name: rebma-io/lab
+copyright: Copyright 2023 Christopher Petrilli (CC BY-SA 4.0)
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true

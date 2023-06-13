@@ -1,8 +1,16 @@
 # About
 
+rebma.io is a label for Maker projects.
 ## Why
 
+Being a maker means learning a dizzying number of skills, and as part of the
+spirit of the community I wanted to share things that I've learned, found, and
+otherwise hope others might find some use.
+
 ## Who
+
+The content in this collection is written by Chris Petrilli. An engineer of 30
+years in the tech business working in software, security, and embedded systems.
 
 ## Amazon, Affiliate Links and Such
 
