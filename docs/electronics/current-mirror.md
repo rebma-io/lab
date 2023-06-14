@@ -17,7 +17,7 @@ NPN transistors) via R1. That causes a Vbe (voltage between base and emitter)
 for Q. The linkage between Q1 and Q2 causes a "mirrored" current (I) to be materialized.
 
 To calculate R1, though, we need to take into account the voltage drop on the
-base of Q1. Typically this is the same as a diode (0.6V), so with a 14.4K
+base of Q1. Typically this is close to the same as a diode (0.6V), so with a 14.4K
 resistor, we will get:
 
 $$\begin{aligned}
