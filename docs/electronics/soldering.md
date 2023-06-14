@@ -1,5 +1,9 @@
 # Soldering
 
+See [this page](../tools/hand-tools.md#soldering-ironstation) for information
+about soldering irons and equipment. This is primarily concerned with the
+consumables.
+
 ## Solder and Flux
 
 Solder is a metal alloy used to create strong permanent bonds such as attaching
