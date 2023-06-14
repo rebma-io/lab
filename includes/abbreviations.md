@@ -14,3 +14,4 @@
 *[SMD]: Surface Mount Device
 *[EMI]: ElectroMagnetic Interference
 *[CRT]: Cathode Ray Tube
+*[FFT]: Fast Fourier Transform
