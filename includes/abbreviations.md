@@ -15,3 +15,4 @@
 *[EMI]: ElectroMagnetic Interference
 *[CRT]: Cathode Ray Tube
 *[FFT]: Fast Fourier Transform
+*[TVS]: Transient Voltage Suppressors

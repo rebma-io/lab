@@ -58,3 +58,10 @@ TODO: Discuss Sierra Circuit's [DFM
 tool](https://www.protoexpress.com/tools/pcb-dfm-tool/).
 
 
+## 3rd Party Resources
+
+* [Top 10 manufacturing mistakes](https://www.autodesk.com/products/fusion-360/blog/top-10-manufacturing-mistakes/)
+* [PCB routing requirements for USB 2.0](https://www.autodesk.com/products/fusion-360/blog/pcb-routing-requirements-usb-ultimate-guide/)
+* [Routing requirements for a USB 2.0 impedance interface on a 2-layer PCB](https://resources.altium.com/p/routing-requirements-usb-20-2-layer-pcb)
+* [PCB design review and layout cleanup](https://www.protoexpress.com/blog/how-to-perform-pcb-design-review-and-layout-clean-up/)
+* [11 best high-speed PCB routing practices](https://www.protoexpress.com/blog/best-high-speed-pcb-routing-practices/)

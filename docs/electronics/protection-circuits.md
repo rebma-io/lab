@@ -55,3 +55,7 @@ Unlike a diode snubber, there's some calculations you'll need to do to choose R
 and C correctly. This is [quite
 complicated](https://www.eetimes.com/calculating-an-r-c-snubber/), and so I
 generally just use a diode snubber unless the timing is critical.
+
+## 3rd Party Resources
+
+* [Introduction to Transient Voltage Suppressors (TVS)](https://www.allaboutcircuits.com/technical-articles/transient-voltage-suppressors-tvs-an-introduction/)

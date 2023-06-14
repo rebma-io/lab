@@ -38,3 +38,8 @@ current mirror by slightly modifying it, adding an additional transistor, and
 forming a [Wilson
 mirror](https://wiki.analog.com/university/courses/electronics/text/chapter-11#the_wilson_current_mirror).
 If you need more than a tiny handful of milliamps (mA), then you should consider this.
+
+## 3rd Party Resources
+
+* [Need a current regulator? Use a voltage regulator!](https://www.allaboutcircuits.com/technical-articles/need-a-current-regulator-use-a-voltage-regulator/)
+* [The magic of DC-DC voltage conversion](https://lcamtuf.substack.com/p/the-magic-of-dc-dc-voltage-conversion)

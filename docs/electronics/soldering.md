@@ -117,3 +117,8 @@ cheap (it's also not super efficient, but it's tiny so it doesn't matter):
 
 ![Exterior of small fridge](/img/solder-fridge-exterior.jpg){width="400"} ![Interior of small
 fridge](/img/solder-fridge-interior.jpg){width="400"}
+
+## 3rd Party Resources
+
+* [Soldering flux: acids, solids, and solvents]( https://www.protoexpress.com/blog/soldering-flux-acids-solids-and-solvents/)
+* [60/40 vs 63/37 solder - what are their similarities and differences](https://www.raypcb.com/60_40-vs-63_37-solder/)
