@@ -26,6 +26,8 @@ I &= {V\over R} \\[10pt]
 &=0.7916667 \mathrm{mA}
 \end{aligned}$$
 
+See, there's that pesky [Ohm's law](../fundamentals/#ohms-law).
+
 Current mirrors are insanely useful in transistor circuits. For example, there
 are many op-amps which use an external resistor to set the operating current for
 the whole amplifier using multiple current mirrors internally.
