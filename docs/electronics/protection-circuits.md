@@ -5,11 +5,12 @@
 A snubber is a device/circuit that is used to limit (snub) voltage transients in
 circuits. Often there can be a sudden interruption of current flow, which drives
 a significant rise in voltage across a device. This can lead to both EMI, but
-also potential damage to the device. There are three major types of snubbers you can
-use. The simplest is a snubber diode. The more complicated is an RC snubber, and
-while it's marginally more complicated, it is also better behaved. Finally, you
-can build one out of solid-state (semiconductor) components, typically using a
-pair of Zener diodes.
+also potential damage to the device due to [back
+EMF](https://en.wikipedia.org/wiki/Counter-electromotive_force). There are three
+major types of snubbers you can use. The simplest is a snubber diode. The more
+complicated is an RC snubber, and while it's marginally more complicated, it is
+also better behaved. Finally, you can build one out of solid-state
+(semiconductor) components, typically using a pair of Zener diodes.
 
 
 ### Snubber Diode
@@ -29,11 +30,9 @@ normal use.
 ![Diode snubber with relay](/img/schematic-diode-snubber.png)
 
 When current is interrupted, the magnetic field of the inductor (the coil in a
-relay) collapses, causing [back
-EMF](https://en.wikipedia.org/wiki/Counter-electromotive_force). This can drive
-a big spike in voltage. With the snubber diode, the inductor's current flows
-through the diode instead, and the energy is slowly released via the diode's
-inherent voltage drop.
+relay) collapses, causing back EMF. This can drive a big spike in voltage. With
+the snubber diode, the inductor's current flows through the diode instead, and
+the energy is slowly released via the diode's inherent voltage drop.
 
 WARNING: **Possible Problems** One reason that snubber diodes aren't that
 popular is that they are _slow_. Because of this, the inductor can stay active
