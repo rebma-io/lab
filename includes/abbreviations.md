@@ -12,3 +12,5 @@
 *[PBS]: Product Breakdown Structure
 *[THT]: Through Hole Technology
 *[SMD]: Surface Mount Device
+*[EMI]: ElectroMagnetic Interference
+*[CRT]: Cathode Ray Tube
