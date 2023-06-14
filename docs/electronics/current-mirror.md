@@ -12,8 +12,9 @@ to control. Take the following circuit, for example:
 ![Programmed current mirror](/img/schematic-current-mirror.png)
 
 On the left side, you have the programmed side of the circuit. You program Q1 by
-sinking a current from Q1's collector (note these are PNP, not the more typical
-NPN transistors) via R1. That causes a Vbe (voltage between base and emitter) for Q.
+sinking a current (Ip) from Q1's collector (note these are PNP, not the more typical
+NPN transistors) via R1. That causes a Vbe (voltage between base and emitter)
+for Q. The linkage between Q1 and Q2 causes a "mirrored" current (I) to be materialized.
 
 To calculate R1, though, we need to take into account the voltage drop on the
 base of Q1. Typically this is the same as a diode (0.6V), so with a 14.4K
