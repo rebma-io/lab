@@ -17,12 +17,16 @@ electricity, the general concept of electricity was that it was some kind of
 from positive to negative. This idea was accepted, and it became the
 conventional view.
 
+![Conventional current flow](/img/schematic-conventional-current-flow.png)
+
 Today we call this the _conventional current flow_ model, and in it, current
 flows from a more positive voltage to a less positive voltage. This all predates
 the modern (Rutherford, 1911) model of electrons, neutrons, and protons. Now we
 know that an electron is the charge carrier and that electrons travel in the
 reverse direction. Franklin was wrong. Electrons move from a lower potential to
 a higher potential. This is termed the _model electron flow_.
+
+![Model electron flow](/img/schematic-model-electron-flow.png)
 
 For most work, you can simply use the conventional flow and everything will be
 fine. It's probably easier to understand for most people. There are times,
