@@ -122,3 +122,4 @@ fridge](/img/solder-fridge-interior.jpg){width="400"}
 
 * [Soldering flux: acids, solids, and solvents]( https://www.protoexpress.com/blog/soldering-flux-acids-solids-and-solvents/)
 * [60/40 vs 63/37 solder - what are their similarities and differences](https://www.raypcb.com/60_40-vs-63_37-solder/)
+* [What is a cold solder joint?](https://electronicshacks.com/what-is-a-cold-solder-joint/)
