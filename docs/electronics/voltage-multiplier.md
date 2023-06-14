@@ -42,4 +42,4 @@ V_{out} &= 2NV_p \\[10pt]
 The output voltage ($V_{out}$) is twice the peak input voltage ($V_p$)
 multiplied by the number of stages ($N$). If we add in the typical diode drop
 (0.7V), then we're not quite getting 2x gain, we're getting $2\times(5 - 0.7) =
-8.3$, giving us a total of 33.2V approximately.
+8.3$, giving us a total of 33.2V 
