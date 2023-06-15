@@ -1,4 +1,4 @@
-# Books and Media
+# Resources
 
 ## Books
 

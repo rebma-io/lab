@@ -18,7 +18,7 @@
 * [Roto Metals](https://www.rotometals.com). A great source for weird eutectic
   alloys. 
 
-## 3D Manufacturing
+## 3D Manufacturing Services
 
 I've included a bunch of companies that do something _more_ than just FFF/FDM
 manufacturing. These are techniques that are typically not available to anyone
