@@ -240,7 +240,7 @@ small cutter which is designed to cut _flush_ against a surface. Think trimming
 leads after soldering. But you can use it for just about any cutting needs, even
 [hogging out](https://www.merriam-webster.com/dictionary/hog%20out) material
 from a 3D print. It's not a bad idea to have a couple sets. This the main ones I
-use, [Xuron 170-II](https://xuron.com/index.php/main/industrial_products/11/10]
+use, [Xuron 170-II](https://xuron.com/index.php/main/industrial_products/11/10)
 are super sharp.
 
 You can see how flat and sharp the blade is, even after several years of use:
