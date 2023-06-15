@@ -102,4 +102,9 @@ In it you can see the artifacts of the direct digital synthesis production of a
 square wave.
 
 Even when you think you're not dealing with a high-frequency circuit, there
-actually is one underneath, just waiting to trip you up when you least expect it.
+actually is one underneath, just waiting to trip you up when you least expect
+it.
+
+## 3rd Party Resources
+
+* [Square waves, or non-elephant biology](https://lcamtuf.substack.com/p/square-waves-or-non-elephant-biology)
