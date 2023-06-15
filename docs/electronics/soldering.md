@@ -4,6 +4,18 @@ See [this page](../tools/hand-tools.md#soldering-ironstation) for information
 about soldering irons and equipment. This is primarily concerned with the
 consumables.
 
+> WARNING: **High Temperature and Fire Hazard** A normal soldering iron
+> can quite easily reach nearly 500C (932F), and while typical soldering
+> happens closer to 350C (662F), that temperature is high enough to
+> cause instant ignition for many flammable materials. In addition, that
+> temperature will cause immediate burns if touched.
+>
+> **DO NOT ever leave a soldering iron or hot air station unattended**,
+> even for a few minutes. If you are not currently using the soldering
+> iron, make sure it is turned off, and you should consider investing in
+> a [timer
+> switch](https://www.mcmaster.com/products/timer-switches/timer-switches-8/)
+> to ensure it is turned off no matter what.
 ## Solder and Flux
 
 Solder is a metal alloy used to create strong permanent bonds such as attaching
