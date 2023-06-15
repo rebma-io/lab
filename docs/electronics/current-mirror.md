@@ -1,4 +1,5 @@
 # Current Mirror
+<!-- TODO: Write about regular NPN current mirrors, and MOSFET current mirrors. -->
 
 NOTE: One thing that is glossed over here is that for this to be accurate,
 you'll need well matched transistors. Without that, the currents will not be
@@ -43,3 +44,4 @@ If you need more than a tiny handful of milliamps (mA), then you should consider
 
 * [Need a current regulator? Use a voltage regulator!](https://www.allaboutcircuits.com/technical-articles/need-a-current-regulator-use-a-voltage-regulator/)
 * [The magic of DC-DC voltage conversion](https://lcamtuf.substack.com/p/the-magic-of-dc-dc-voltage-conversion)
+* [The current mirror](https://wiki.analog.com/university/courses/electronics/text/chapter-11)
