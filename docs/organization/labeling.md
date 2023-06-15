@@ -63,6 +63,7 @@ two barcodes below store the exact same information (the part number above).
 
 ## Barcode Scanner
 
+<!-- TODO: Add picture of scanner. -->
 I am in the process of developing a better workflow for dealing with bar codes.
 Obviously, if you just print them, they serve no purpose. I'm working to try and
 integrate them into my [inventory](inventory.md) system so that things are more

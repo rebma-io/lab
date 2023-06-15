@@ -1,5 +1,9 @@
 # Current Mirror
-<!-- TODO: Write about regular NPN current mirrors, and MOSFET current mirrors. -->
+<!-- TODO: 
+* Regular NPN current mirrors
+* MOSFET current mirrors
+* Multiple mirrors strung together.
+-->
 
 NOTE: One thing that is glossed over here is that for this to be accurate,
 you'll need well matched transistors. Without that, the currents will not be

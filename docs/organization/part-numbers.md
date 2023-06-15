@@ -10,7 +10,7 @@ nearly impossible.
 
 ## Part Numbers are Not Inventory
 
-TODO
+TODO:
 
 ## My Numbering Scheme
 

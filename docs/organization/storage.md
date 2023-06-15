@@ -1,5 +1,11 @@
 # Storage
 
+<!--
+* Take some more pictures
+* Consider renaming this "workspace organization"
+* Discoverability as an idea as it applies to storage.
+-->
+
 ## Large Storage Organization
 
 ### IKEA ALEX
@@ -14,7 +20,7 @@ together pretty quickly, and are mildly durable.
 
 ### Government Surplus Bookcases
 
-TODO
+TODO:
 
 ## Small Parts Storage
 

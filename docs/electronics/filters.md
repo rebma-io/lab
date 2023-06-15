@@ -83,3 +83,7 @@ It's -3dB point can be calculated exactly the same.
 
 $$f_c = {1\over{2\pi\sqrt{LC}}}$$
 
+## 3rd Party Material
+
+* [Application Note 779 A Basic Introduction to Filters - Active, Passive,and
+Switched Capacitor](https://www.ti.com/lit/an/snoa224a/snoa224a.pdf) (PDF)
