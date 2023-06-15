@@ -74,7 +74,10 @@ metal](https://blog.boydmetals.com/everything-you-need-to-know-about-red-metals)
 (copper alloy), with bronze being one of the most common.  Sometimes the
 metal is [oil
 impregnated](https://www.onlinemetals.com/en/product-guide/alloy/SAE%20841),
-which makes them self-lubricating (the physics is super cool). 
+which makes them self-lubricating (the physics is super cool).
+Sometimes it's uses another material as a surface layer, such as
+[Babbitt](https://en.wikipedia.org/wiki/Babbitt_(alloy)). This is what
+you'll see in many automotive bearings.
 
 The bearing is basically a sleeve mounted on the shaft and it fits into
 the bore. Plain bearings are inexpensive, compact and lightweight. They
