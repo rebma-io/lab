@@ -16,3 +16,5 @@
 *[CRT]: Cathode Ray Tube
 *[FFT]: Fast Fourier Transform
 *[TVS]: Transient Voltage Suppressors
+*[IDC]: Insulation-Displacement Contact
+*[AWG]: American Wire Gauge
