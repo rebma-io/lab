@@ -219,12 +219,12 @@ assembly. The cone assembly consists of inner ring, rollers, and cage.
 This bearing construction accommodates combined (both axial and radial)
 loads.
 
-One of the neat behaviors of a tapered roller bearing is that, if you
+One of the neat behaviors of a tapered roller bearing is that, when you
 have a two row tapered roller bearing assembly, you can adjust one
 single row tapered roller bearing against a second tapered roller
 bearing. When you apply an [appropriate
 preload](https://insights.globalspec.com/article/12036/bearing-preload-what-is-it-and-why-is-it-important),
-a rigid bearing configuration can be achieved.
+a rigid configuration can be achieved.
 
 ## 3rd Party Resources
 
