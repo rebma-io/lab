@@ -1,5 +1,16 @@
-# Protection Circuits
+# Protecting Circuits
 
+<!-- TODO:
+* Types of damage we worry about
+* Overvoltage protection
+  * Zener diode/voltage clamp
+* Overcurrent protection
+  * Choke inductor
+* Reverse polarity protection
+* Thermal protection
+* Decoupling capacitors
+* Fuses (resettable and not)
+-->
 ## Snubber Networks
 
 A snubber is a device/circuit that is used to limit (snub) voltage transients in
@@ -59,3 +70,4 @@ generally just use a diode snubber unless the timing is critical.
 ## 3rd Party Resources
 
 * [Introduction to Transient Voltage Suppressors (TVS)](https://www.allaboutcircuits.com/technical-articles/transient-voltage-suppressors-tvs-an-introduction/)
+* [Methods of circuit protection](https://resources.altium.com/p/methods-protect-your-circuit)
