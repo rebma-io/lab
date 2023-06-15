@@ -224,7 +224,10 @@ them, and close them, you get something like this:
 
 So what good is this, you might ask? It's good for creating stand-offs between a
 component and a board, for example. Or ensuring a wire can't go through a hole
-easily. As I said, you don't need them until you need them.
+easily. As I said, you don't need them until you need them. When you do this,
+for example, to a axial electrolytic capacitor, you can get something like this:
+
+![An axial electrolytic capacitor with bent leads standing off from the PCB](/img/handtool-xuron-573l-board.jpg)
 
 ## Cutters
 
@@ -395,20 +398,98 @@ over $400. I'll take the cheap version, thanks.  I am also absolutely sure that
 if I were a business doing production work, I would pay for the "real deal" just
 to control quality better.
 
-<!--
 ## Other Tools
+
+There's a limitless array of tools out in the world, and many of them
+are valuable _if you have a use for them_. Outside of the major ones
+above, I wanted to explore a few that I've found very useful, and which
+aren't expensive.
+
+### Utility Knife (Box Cutter)
+
+![Kobalt utility knife](/img/handtool-cobolt-box-cutter.jpg){: width=400 align=right }
+
+Sure, it has a lot of uses, but nothing can beat a box cutter for ...
+opening boxes. It's also great for cutting tape, and a myriad of other
+uses. You could get a super cheap one, but I feel like a tiny splurge
+(and I do mean tiny, as this one was about [$6
+USD](https://www.lowes.com/pd/Kobalt-Retractable-Utility-Knife/5001727609))
+is worthwhile to get a meatier grip and storage of extra blades inside
+the handle. 
+
+### Lead Bender
+
+![Lead bending jig by Timot](/img/handtool-lead-bending-jig.jpg){: width=150 align=right }
+
+When dealing with THT components, and especially resistors and diodes, you
+typically need to bend the leads of the component 90 degrees to insert
+into a PCB. One fo way to do it is to use a pair of needle nose pliers
+to bend them. A better way to do it is to use a little jig that can
+build them properly. I really like [this 3d printed
+version](https://www.printables.com/model/275510-resistor-lead-forming-tool-component-bender-plieur),
+as it's flexible, stiff, and cheap to print.
+
+Just put your resistor, or whatever, on it, and push the leads down. It
+will ensure you keep some clearance between the body of the component
+and the bend.
 
 ### Burr Remover
 
-![Burr remover](/img/handtool-burr-remover.jpg){: width=400 align=right }
+![Closeup of a metal burr on a hole](/img/metal-hole-burr-closeup.jpg){: width=250 align=right}
+
+Whenever you're 3D printing or even just cutting something, you often
+get some rough edges that need to be cleaned up. One option you could
+use is to just use a utility knife and remove them. The better choice is
+to take a page from the machinist's world, and use a dedicated burr
+removal tool. I got [this one from
+AFA](https://afatooling.com/collections/deburring-tools/products/afa-tooling-deburring-tool-with-a-blade-10-high-speed-steel-rotary-burr-removal-blades),
+which came with 10 extra blades (I did buy it from Amazon though). 
+
+![Burr remover](/img/handtool-burr-remover.jpg){: width=300 align=left }
+
+From my experience, the blades themselves are a widely standardized
+design, and come in a _lot_ of shapes. If you want to splurge, you can
+buy one from [Noga](https://www.noga.com/), but you'll find a good
+description of various designs and their uses.  
+
+They also come in a wide range of materials depending on what you're
+deburring. Regardless, it's a worthwhile investment.
+
+WARNING: **Sharp Blades are Sharp** It should go without saying that the
+blades on things like the utility knife, burr remover, and scalpels are
+_very sharp_. That's their purpose. Be careful when you're using them,
+and if you're having to cut close to your fingers, I would strongly
+recommend a [cut-resistant
+glove](https://www.safeopedia.com/cut-resistant-gloves-a-guide-to-cut-resistance-levels/2/6950)
+to keep the flesh where it belongs.
+
 ### Scalpels
 
 ![Scalpel](/img/handtool-scalpel.jpg){: width=400 align=left }
+
+While people think of scalpels in the context of medical use, they're
+actually just precision cutting instruments that are widely useful
+everywhere. When a utility knife is too large, you want something
+precise and small. I picked these up from
+[Digikey](https://www.digikey.com/en/products/filter/knives-cutting-tools/242?s=N4IgjCBcpgnAHLKoDGUBmBDANgZwKYA0IA9lANogAMIAugL7EC0E0IakWeRpFIATFTAAWOoxBMkbDgBcATgFceZSJQgN69IA)
+for around $1 USD each. They're very sharp, and come in a ton of
+different blade designs. I've picked up a few, but haven't settled on
+which ones I like for which purpose. At the price, it's not a big
+investment to try them out.
+
 ### Brass Brush
 
 ![Brass brush](/img/handtool-brass-brush.jpg){: width=400 align=right }
--->
+
+Brass brushes are quite soft compared to any other metal brush, and
+because of that they're really good for removing little bits of rust or
+contamination. They'll even remove small burrs in many cases. The brass
+is soft enough not to typically leave any marks behind when you use it.
+
+
 ## 3rd Party Resources
 
 * [DuPont and "DuPont" connectors, and how to crimp them
   properly](https://www.mattmillman.com/info/crimpconnectors/dupont-and-dupont-connectors/)
+* [What is metal
+  burrs?](https://www.machinemfg.com/deburring-remove-metal-burrs/?expand_article=1) 
