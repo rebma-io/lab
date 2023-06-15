@@ -18,3 +18,6 @@
 *[TVS]: Transient Voltage Suppressors
 *[IDC]: Insulation-Displacement Contact
 *[AWG]: American Wire Gauge
+*[LED]: Light Emitting Diode
+*[IC]: Integrated Circuit
+*[COB]: Chip On Board
