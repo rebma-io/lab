@@ -1,5 +1,8 @@
 # Hand Tools
 
+<!-- TODO:
+* Write up larger tools: power drill/driver, glue gun, air, dremel, tap and die sets. 
+ -->
 ## General Guidance
 
 My general guidance is that you should buy an inexpensive/cheap tool to start,
