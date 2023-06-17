@@ -1,5 +1,8 @@
 # Hand Tools
 
+<!-- TODO:
+* Write up larger tools: power drill/driver, glue gun, air, dremel, tap and die sets. 
+ -->
 ## General Guidance
 
 My general guidance is that you should buy an inexpensive/cheap tool to start,
@@ -388,15 +391,28 @@ which is designed for a few different smaller connectors:
 * [JAM](https://www.jam-net.co.jp/eng/product/connector/boardtowireconnector/)
 * [TE Connectivity (was Tyco) D-100](https://www.te.com/usa-en/search.html?q=D-100&n=42722&type=products&samples=N&inStoreWithoutPL=false&instock=N)
 
-I think it can also fo a few others, but those are the ones they talk about.
-Quite honestly, I only use the first 3. It's not a huge endorcement, but I've
-had good luck with the
-[iCrimp](https://www.icrimptools.com/collections/cable-tools) product line, and
-they're quite reasonably priced compared. For example, [the official Molex
-crimper](https://www.digikey.com/en/products/detail/molex/0638192800/3044658) is
-over $400. I'll take the cheap version, thanks.  I am also absolutely sure that
-if I were a business doing production work, I would pay for the "real deal" just
-to control quality better.
+I think it can also work with a few others, but those are the ones they talk about.
+Quite honestly, I only use the first 3. 
+
+![Generic IDC crimper](/img/handtool-idc-crimper.jpg){: width=400 align=right }
+
+Finally, I also have a _super generic_ pair of IDC crimpers. IDC
+connectors are those ribbon cable connectors typically, like what you'd
+use to connect a floppy drive... and I've just dated myself. Anyway, you
+don't _really_ need one, as they're super easy to use connectors, but
+this one came in a kit with a bunch of connectors for some suspiciously
+low cost. The connectors have been fine, and other than being absolutely
+coated in machining oil, the crimper works just fine. It really is just
+about keeping the two pieces parallel while you force them together.
+
+It's not a huge endorcement, but I've had good luck with the
+[iCrimp](https://www.icrimptools.com/collections/cable-tools) product
+line, and they're quite reasonably priced compared. For example, [the
+official Molex
+crimper](https://www.digikey.com/en/products/detail/molex/0638192800/3044658)
+is over $400. I'll take the cheap version, thanks.  I am also absolutely
+sure that if I were a business doing production work, I would pay for
+the "real deal" just to control quality better.
 
 ## Other Tools
 

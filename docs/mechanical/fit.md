@@ -86,7 +86,7 @@ This leads us to (with tolerance in thousandths of an inch):
 Thees guides, whether you want standard or metric, are a very useful thing to
 understand as a starting point when you're working with materials. You can find
 in-depth discussions, equations, and pre-calculated tables in [_Machinery's
-Handbook_](../media.md)'s "Dimensioning, Gaging, and Measuring".
+Handbook_](../resources/books.md)'s "Dimensioning, Gaging, and Measuring".
 
 NOTE: When working with FFF 3D printing, however, you will find that the
 tolerances of the machine are so sloppy that you will need to develop your own

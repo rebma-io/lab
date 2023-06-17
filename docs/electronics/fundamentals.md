@@ -38,7 +38,6 @@ power ($P$) and resistance ($R$), you can use $\sqrt{P/R}$.
 This one simple thing will carry you _very far_ in electronics.
 
 
-
 ### Resistivity in Ohmic Materials
 
 Resistance is a property of the materials being used, as well as their physical
@@ -70,3 +69,44 @@ trillions or more of atomic (and quantum) scale interactions within a material,
 and it turns out that on average, the aggregated behavior looks roughly linear.
 This is a recurring theme, but you can also completely ignore this nearly all
 the time.
+
+## Kirchoff's Laws
+
+Kirchoff, smirshoff, am I right? 
+
+Seriously, though, there are two laws from [Gustav
+Kirchhoff](https://en.wikipedia.org/wiki/Gustav_Kirchhoff) (around 1845), which,
+on the surface, seem 100% totally boring and predictable, but it's worth
+thinking a bit more deeply about them. Before we do that, though, we should
+briefly discuss, in a radically simplified form, the [lumped-element
+model](https://en.wikipedia.org/wiki/Lumped-element_model). 
+
+The model allows us to simplify a circuit into a series of nodes and
+connections (think graph theory) which we can simplify and down to a series of
+nodes that exhibit idealized attributes (resistance, capacitance, inductance,
+etc.). These nodes are joined by perfectly conductive wires.  That's all, at its
+core, the model is. There's a lot of math, and proofs, and such, but you don't
+need to care almost ever.
+
+> NOTE: **When You Might Care** There are a few times where things might not be
+> as simple as explained above. A good example is that a [wire-wound
+> resistor](https://eepower.com/resistor-guide/resistor-materials/wirewound-resistor/)
+> exhibits not just idealized resistance, but also inductance. In the lumped
+> element model, we can represent that as a resistor and inductor in series.
+>
+> Another example is when you're dealing AC circuits, though typically only
+> high-frequency ones. In addition, it can fall apart when you have an
+> electrical field between two distinct parts/nodes. For example, if you have
+> two wires closely placed, they can become capacitively coupled.
+
+### Kirchhoff's Current Law
+
+> The algebraic sum of all currents entering and exiting a node must be equal.
+
+This was the first law that he proposed and describes how a charge enters and
+leaves a junction point or node. Take, for example, this circuit:
+
+![Kirshhoff's current law diagram](/img/schematic-kirchhoff-current.png)
+
+### Kirchhoff's Voltage Law
+
