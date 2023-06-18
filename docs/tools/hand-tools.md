@@ -2,6 +2,10 @@
 
 <!-- TODO:
 * Write up larger tools: power drill/driver, glue gun, air, dremel, tap and die sets. 
+* Roller thingy
+* Xuron 475
+* Xuron 450
+* Xuron 496
  -->
 ## General Guidance
 
