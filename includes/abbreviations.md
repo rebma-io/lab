@@ -23,3 +23,5 @@
 *[COB]: Chip On Board
 *[IPA]: Isopropyl Alcohol
 *[USD]: US Dollar Currency
+*[PSRR]: Power Supply Rejection Ratio
+*[BJT]: Bipolar Junction Transistor
