@@ -1,5 +1,9 @@
 # Filters
 
+<!-- TODO:
+* LC filters (tank circuits)
+-->
+
 ## RC Filters
 
 RC filters, so named because they use a resistor (R) and capacitor (C) are a
@@ -22,8 +26,11 @@ But if you know the frequency ($f_c$) you want to achieve, then you can use
 either of these two to figure out the capacitor ($C$) or resistor ($R$) you
 need:
 
-$$C = {1\over{2\pi R f_c}} \\
-R = {1\over{2\pi C f_c}}$$
+$$\begin{aligned}
+C &= {1\over{2\pi R f_c}} \\[5pt]
+R &= {1\over{2\pi C f_c}}
+\end{aligned}
+$$
 
 
 ### High-Pass
