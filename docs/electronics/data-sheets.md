@@ -172,7 +172,7 @@ Here we can find information on all the variations on the part from a
 specification perspective, along with the critical characteristics for
 those variations. A few notes about this one.
 
-First, you can see it's grouped into 3 groups along the $I_{out}$
+First, you can see it's grouped into 3 groups along the I~out~
 dimensions. This is the maximum current that the device can produce
 safely. For example, the LM317M is only designed for 0.5A. 
 
@@ -330,7 +330,7 @@ we end up turning it into a PCB.
 We are then given the equation to set the output voltage using the two
 resistors:
 
-$$V_O = V_{ref} ({1 + {R_2\over R_1}) + (I_{adj} \times R_2)}$$
+$$V_O = V_{\mathit{ref}} ({1 + {R_2\over R_1}) + (I_{adj} \times R_2)}$$
 
 There's also a little note that $I_{adj}$ is typically only 50uA, and
 therefore almost irrelevant since (assuming R2 is 220 ohm): $0.00005
@@ -357,7 +357,7 @@ need R2 to be 300 ohms when R1 is 100 ohms. If we go back to the
 original equation, and we assume $I_{adj} = 50\mu A$, then we get:
 
 $$\begin{aligned}
-V_O &= V_{ref} {({1 + {R_2\over R_1}}) + (I_{adj} \times R_2)}\\[5pt]
+V_O &= V_{\mathit{ref}} {({1 + {R_2\over R_1}}) + (I_{adj} \times R_2)}\\[5pt]
 &= 1.25 ({1 + {300\over 100}}) + (0.00005 \times 100)\\[5pt]
 &= 1.25 ({1 + 3}) + 0.005\\[5pt]
 &= 1.25\times 4 + 0.005\\[5pt]
@@ -460,6 +460,35 @@ website, you should make sure you select "Active" for all searches,
 unless you have some _very specific and intentional_ reason not to. The
 image to the left shows what it looks like in Digikey's parametric
 search
+
+### Other Sections
+
+NOTE: **Future Enhancement** I will be diving into some sections in
+other types of components at a later time, but I've included a couple
+that are common in more advanced integrated circuits (IC).
+
+What I've walked through is just what you'll find on something like a
+linear regulator.  Depending on the type of component you're dealing
+with, you are likely to find some other sections:
+
+* _Timing diagrams_. These are super common in digital ICs. They show
+  how data should be sent to and received from the part, and at what
+  speed. These are typically laid out inputs and outputs as horizontal
+  lines. These show the logic transitions that happen over time. If the
+  trace dips down, that's a (L)ow input or output. If the line rises
+  higher, that's a (H)igh input our output. Timing specifications are
+  laid out as arrows between transitions (names are referenced back to
+  timing numbers in the electrical specs), and vertical bars or arrows
+  will link related transitions. You can find a deeper dive
+  [here](https://maker.pro/custom/tutorial/how-to-read-timing-diagrams-a-makers-guide). 
+* _Trust tables_. Truth tables show how the inputs to a part will affect
+  its output. Each line shows the part's inputs set to specific states,
+  and the resulting output of the part. "H" means that input is a logic
+  high (usually V~CC~), "L" means logic low (usually GND), "X" means the
+  chip doesn't care what the input is, and an arrow means that that you
+  should change the state of that pin from L to H or H to L depending on
+  the arrow direction. When you do this transition, it's called
+  _clocking_ an input.
 
 ### In Summary
 
