@@ -1,5 +1,8 @@
 # Bearings
 
+<!-- 
+* TODO: Slip ring? Does this belong here, or elsewhere?
+-->
 Bearings are everywhere there is motion. Bearings are a machine element
 that either support, or permits, a specific type of motion in a system
 under load. It always (?) reduces the [degrees of

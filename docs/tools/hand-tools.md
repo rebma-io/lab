@@ -2,10 +2,7 @@
 
 <!-- TODO:
 * Write up larger tools: power drill/driver, glue gun, air, dremel, tap and die sets. 
-* Roller thingy
 * Xuron 475
-* Xuron 450
-* Xuron 496
  -->
 ## General Guidance
 
@@ -210,17 +207,45 @@ tools (ignoring things like [channel
 locks](https://channellock.com/pliers/tongue-groove/#)).
 
 
+### Split Ring Pliers
+
+![Split ring](/img/split-ring.jpg){: width=200 align=right }
+
+Sometimes you find yourself needing to open, repeatedly, one of those
+split-rings, and while you could, like I used to, use your fingernail,
+or a butter knife, or whatever else random thing you have laying around,
+like another key on your key ring, to open them, there's actually a tool
+designed specifically for this. I didn't even know this for 40 years of
+my life! My poor fingernails. 
+
+![Xuron 496 split ring pliers](/img/handtool-xuron-496.jpg){: width=400 align=left}
+
+Behold, the savior of your fingernails! The [Xuron 496 split ring
+pliers](https://xuron.com/index.php/main/consumer_products/5/48). These
+little pliers with a beak fit perfectly into the split ring and open it
+so that you can easily get things on or off of it. It seems so silly to
+have a dedicated pair of pliers for this, but ... your fingernails, or
+butter knife, will thank you.  If you're curious how to use them, you
+can watch this [little two minute video](https://www.youtube.com/watch?v=GSd79jl4fxg).
+
+This is just one of those things that I love finding a relatively
+inexpensive tool that makes my life so much easier. Obviously, if you
+never deal with split rings, then there's no reason to buy one. I mean,
+other than you would then own a set of pliers that looked like a birds
+beak.
+
 ### Lead Forming Tool
 
 ![Xuron 563L lead forming tool](/img/handtool-xuron-573l.jpg){: width=300 align="right" }
+
 These fall into a category that, quite honestly, you don't need until you do
 need them, so you can generally just skip them. I cover them here because 1)
 they're neat; 2) it's good to know they exist. Lead forming pliers is designed
 to create spacing/stand-off crimps in a wire or component lead. The ones I have
 are the [Xuron 573L](https://xuron.com/index.php/main/consumer_products/7/57),
-which look like this. 
+which look like the one's on the right. 
 
-What makes them special is the head on them:
+What makes them special is the head on them. 
 
 ![Xuron 563L close-up](/img/handtool-xuron-573l-closeup.jpg)
 
@@ -506,6 +531,27 @@ because of that they're really good for removing little bits of rust or
 contamination. They'll even remove small burrs in many cases. The brass
 is soft enough not to typically leave any marks behind when you use it.
 
+### Metal Roller
+
+![Metal roller](/img/handtool-roller.jpg){: width=400 align=left}
+
+Let's say you're using one of those [super fun
+materials](../mechanical/materials.md), like UHMW tape. One of the
+things you need to do is ensure that it's applied strongly and smoothly
+to a surface. The best way I've found to do this is to clean the
+surface, using something like IPA, and then after carefully applying the
+tape, use a metal roller to apply uniform and consistent pressure across
+the surface.  I know this seems overly persnickety, but I've had things
+start to peel up when they've not been initially applied correctly.  By
+rolling over the tape a few times, you can ensure a good adhesion. 
+
+They are also very useful when you have anything with a tight seam that
+you want to ensure have a very smooth seam. In fact, they are often sold
+under of a "wallpaper seam roller", which is one of their main uses. 
+
+The ones pictured I acquired from [some random
+bookseller](https://www.amazon.com/dp/B08696ZRKF) for about $12 USD but
+you can find them in a lot of places.
 
 ## 3rd Party Resources
 

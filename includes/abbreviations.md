@@ -21,3 +21,5 @@
 *[LED]: Light Emitting Diode
 *[IC]: Integrated Circuit
 *[COB]: Chip On Board
+*[IPA]: Isopropyl Alcohol
+*[USD]: US Dollar Currency
