@@ -73,6 +73,16 @@ extra:
   social:
     - icon: fontawesome/brands/mastodon
       link: https://hachyderm.io/@petrillic
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCBNhr5JIXOikgY7ix8xdmSg/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/petrillic
+    - icon: fontawesome/brands/github
+      link: https://github.com/petrilli/
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/rebma-io/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/christopher-petrilli-ba391a7/
   analytics:
     provider: fathom
     property: XBUPTVHH
