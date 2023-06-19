@@ -92,7 +92,7 @@ either T18 or 900M tips). You'll definitely want to print the [storage
 case](https://www.printables.com/model/167924-case-for-cnc-kitchen-threaded-inserts-soldering-ti)
 and if you happen to have a [Dremel 220-01
 workstation](https://www.dremel.com/us/en/p/220-01-26150220aa), you can print an
-[adapter](https://www.thingiverse.com/thing:5480597) that will let you use it to
+[adapter](https://www.printables.com/model/405918-heat-set-insert-press-hakko-fx888-dremel-workstati) that will let you use it to
 depress your soldering iron and ensure a clean insert at the correct angle.
 
 Hackaday has [a great
