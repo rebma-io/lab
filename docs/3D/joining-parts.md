@@ -67,6 +67,10 @@ are cut, and the bottoming tap will ensure the last few at the bottom are cut
 properly. If you try to use a bottoming tap by itself, you'll find that it will
 struggle to get the initial bite into the material and to stay straight.
 
+To help explain it, I made a small video:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RjGXpc7K3p0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Threaded Inserts
 
 My favorite is to use brass threaded inserts. These are inserts that are heat
