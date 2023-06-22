@@ -1,7 +1,11 @@
 # The Lab
 
 NOTE: This site is very early and there's very little here yet. Most of this
-needs to be moved from other recording systems first.
+needs to be moved from other recording systems first. If you have a
+request, please open a [Github
+Issue](https://github.com/rebma-io/lab/issues), and I'll see what I can
+do. I try to limit my discussion to things I am somewhat confident
+about. 
 
 The overall goal of this is to provide as much research, thoughts, plans, and
 overall discovered detritus as possible to (hopefully) help someone else
