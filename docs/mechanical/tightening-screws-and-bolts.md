@@ -127,6 +127,20 @@ bolt may be undergoing torsional stress, the material is under sheering
 stress. So, while it will be stronger than one without it, it won't be
 in the same category as Loctite here. 
 
+## Anti-Seize Compounds
+
+Just as you might want to make sure a screwed or bolted joint doesn't
+come loose accidentally, you might need to make sure that it doesn't
+seize up and become impossible to remove. You don't typically need
+something like this in most hobbyist or small projects, but it is
+something to be familiar with if you start to work with much larger
+things.  It is especially important to consider when a joint is going to
+be under some kind of environmental stress (temperature shifting,
+corrosive fluids, etc). In those cases, it can accelerate the
+deterioration of the joint, and you can end up not being able to remove
+it.  You can read more about [anti-seize
+compounds](https://www.henkel-adhesives.com/us/en/products/industrial-lubricants/anti-seize-compounds.html).
+
 ## Common Torque Limits
 
 WARNING: **Check with Manufacturer** The table below is just some rough
