@@ -208,3 +208,7 @@ to measure a few things that can be trick. Connectors,
 ## Using Micrometers
 
 TODO: **More to Come** This will be filled in in the future.
+
+## 3rd Party Resources
+
+* [Video dive into the insides of a digital caliper](https://www.youtube.com/watch?v=u84BDCo22U4)
