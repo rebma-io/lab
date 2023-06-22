@@ -28,7 +28,7 @@ down into basically two patterns. One for circular arrangements and
 another for rectangular arrangements.
 
 For circular arrangements, you want to follow what, to me, looks like a
-pentagram pattern. I think the official designation is "cross-cross",
+pentagram pattern. I think the official designation is "criss-cross",
 but I like seeing it as dark arcana. I've drawn out the ordering in the
 diagram below for a 6-bolt flange joint, but a similar pattern can be
 used with any other number of bolts or screws.
@@ -68,7 +68,7 @@ as a good rule-of-thumb:
 3. A third pass to bring it to the final torque load.
 
 Truthfully, I typically only do it in two passes typically, unless it's
-something like a meta-on-metal joint with bolts where I know the actual
+something like a metal-on-metal joint with bolts where I know the actual
 torque requirements. For hobbyist use, just 2 passes is typically
 enough.
 
