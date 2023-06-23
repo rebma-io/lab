@@ -25,3 +25,4 @@
 *[USD]: US Dollar Currency
 *[PSRR]: Power Supply Rejection Ratio
 *[BJT]: Bipolar Junction Transistor
+*[MSDS]: Material Safety Data Sheet
