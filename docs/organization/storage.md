@@ -1,8 +1,6 @@
 # Storage
 
 <!--
-* Take some more pictures
-* Consider renaming this "workspace organization"
 * Discoverability as an idea as it applies to storage.
 -->
 
@@ -20,7 +18,12 @@ together pretty quickly, and are mildly durable.
 
 ### Government Surplus Bookcases
 
-TODO:
+I have some great military surplus metal bookcases from my partner's old
+place, and they have a glass door that slides up and out of the way.
+Definitely recommend searching auctions and surplus sales to find
+something. These are much deeper than your typical bookcase, which makes
+them even more useful, and the top can hold a [cheap-ass
+fridge](#cheap-fridge). 
 
 ## Small Parts Storage
 
@@ -82,3 +85,23 @@ wetting a sponge, or rinsing something. For everything else, I keep it
 in either 1oz (28ml) or 2oz (56ml) [clear boston round
 bottles](https://www.specialtybottle.com/glass-bottles/clear-boston-rounds)
 with integrated eyedroppers. 
+
+## Cheap Fridge
+
+![Crownful fridge](../img/solder-fridge-exterior.jpg){: width=400 align=right }
+
+Sometimes you need to store things below normal room temperature. Some
+examples include solder paste, flux, and the like. Since these are all
+_quite toxic_, you really shouldn't store them in the same place you
+keep your dinner, so I've "invested" in an inexpensive [Crownful 4L/6
+can
+fridge](https://crownful.com/collections/beverage-cooler/products/crownful-4-liter-6-can-mini-fridge-white)
+pictured here. It uses a [Peltier
+plate](https://en.wikipedia.org/wiki/Thermoelectric_cooling) to cool it,
+so it's not super efficient, but it's also tiny. I just wish I'd seen it
+in other colors before buying the boring white.
+
+FUTURE: **Future Project** What I really should do is design and print some
+better organization for the inside to help organize solder paste,
+syringes, etc. This would make it even more useful, and I suspect
+helpful to others.
