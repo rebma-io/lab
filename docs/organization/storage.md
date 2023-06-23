@@ -24,6 +24,12 @@ TODO:
 
 ## Small Parts Storage
 
+One of the things you'll accumulate a huge number of is small parts.
+Whether it's a screw, an IC, or a bunch of tiny SMD resistors, you need
+to figure out a way to keep them organized. For a lot of people, this
+means drawer systems, but due to the arrangement and design of my work
+area, these are not feasible for me.
+
 ### Plano ProLatch
 
 I'm a pretty big fan of Plano's ProLatch series of storage. They're designed for
@@ -62,5 +68,17 @@ For small surface mount parts, I'm a big fan of the
 [![Aidetek 144 compartment
 box](/img/aidetek-boxall-144.jpg)](https://aidetek.com/mm5/merchant.mvc?Screen=PROD&Store_Code=A&Product_Code=BOXALL)
 
-They also make nice ESD-safe boxes for a little more money that are perfect for
-SMD ICs and other semiconductors that are more sensitive to ESD.
+They also make nice ESD-safe boxes for a little more money that are
+perfect for things that need a little extra protection, such as ICs and
+transistors.
+
+## Liquid Storage
+
+There are two different ways I like to store liquids, depending on how
+they'll be used. The first is to use [wash
+bottles](https://www.amazon.com/gp/aw/d/B07Z8ZN9Z3/) made out of LDPE
+for things that get used in more of a "squirt here and there", like
+wetting a sponge, or rinsing something. For everything else, I keep it
+in either 1oz (28ml) or 2oz (56ml) [clear boston round
+bottles](https://www.specialtybottle.com/glass-bottles/clear-boston-rounds)
+with integrated eyedroppers. 

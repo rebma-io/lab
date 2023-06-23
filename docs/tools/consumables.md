@@ -5,7 +5,36 @@ consumables that we use in a hobby project. While I've talked about
 [solder](../electronics/soldering.md) elsewhere, there's a bunch of
 others that you typically need to keep around. These are the ones I
 continuously keep in stock, and my thoughts about why I chose what I
-chose.
+chose. I would also consider wire a consumable, but don't discuss it
+here.
+
+## Distilled (or deionized) Water (H~2~O)
+
+WARNING: **Safe Handling** While, yes, distilled (or deionized) water is
+water, it is actually somewhat dangerous compared to regular tap water.
+Because distillation removes all minerals from water, and water is one
+of the most ideal solvents, there are some studies showing that drinking
+distilled water can actually pull minerals and electrolytes out of your
+body, which could be unhealthy. Just drink regular tap water if you're
+in most parts of the world.
+
+I'm going to treat these two as interchangeable, even though they are
+produced through vastly different techniques and have slightly different
+properties. For the hobbyist, this doesn't matter. The primary uses for
+distilled water are:
+
+* Cleaning things. Because water is an excellent solvent, it is a good
+  starting point to clean components. 
+* Wetting a solder sponge. Your soldering iron may have a sponge with it
+  for cleaning the tip. Rather than using tap water, it's best to use
+  distilled water as it is much less likely to add additional
+  contaminants to the surface.
+
+WARNING: **Not Everything is Watertight** Not every component is
+watertight. In addition to things like sensors that may be open to
+outside elements intentionally, there may be a small amount of ability
+for water to [find a way](https://www.youtube.com/watch?v=ZScGEeNPTsQ)
+into devices. 
 
 ## Isopropyl Alcohol (IPA)
 
@@ -44,6 +73,43 @@ water-induced corrosion.
 For general use, I will admit to just buying the [Amazon Basics
 99%](https://www.amazon.com/dp/B07NFSFBXQ/), which is "good enough".
 
+## Acetone
+
+> WARNING: **Safe Handling** Like, IPA, acetone is [generally recognized
+> as safe](https://en.wikipedia.org/wiki/Generally_recognized_as_safe)
+> in very low quantities, but that means that, like IPA, you need to
+> take similar steps to handle it. Acetone is a _highly flammable_ and
+> volatile substance that can _ignite at room temperature_, so never use
+> it near fire or anything that can create a spark. Also, ensure that
+> acetone is stored in cool, well-ventilated areas away from direct
+> sunlight and heat sources.
+> 
+> Always wear (latex!) gloves, and never let it get above its boiling
+> point (typ. 56C, 133F) where it can be dangerous. But note, if you're
+> going to have anything more than _very brief_ contact with acetone,
+> you will need to invest in latex or butyl rubber gloves, as nitrile
+> (my preference) will allow permeation after a few minutes.
+
+Acetone is a solvent like IPA (it's also a precursor to producing
+acrylic materials), and as such, it is useful for cleaning things. For
+example, in chemical lab settings, it is often use as part of the
+process of cleaning glassware to ensure it has minimal residue before
+the final wash (note, it is _not_ the final wash).
+
+In hobby use, there's a few places where it can be helpful:
+
+* Acetone vapors can be used as part of a process to [smooth ABS and
+  ASA](https://all3dp.com/2/abs-acetone-smoothing-3d-print-vapor-smoothing/)
+  3D printed parts. This works with some other plastics as well, and you
+  can use a small cotton swap to buff off a scratch by _literally_
+  dissolving a bit of the plastic.
+* Unstick acrylate glues, such as superglue. 
+* 
+
+DANGER: **Acetone and PCB** Never, ever, under any circumstance use
+acetone on a PCB. It will strip the top coatings off; specifically, the
+solder mask and silkscreen.
+
 ## Anti-static Cleaning Spray
 
 One thing to be aware of, though, is when you're cleaning an
@@ -57,7 +123,8 @@ Cleaner](https://www.aclstaticide.com/products/mat-table-top-cleaner).
 
 To use it, you spray the surface with the Staticide, and then _allow it
 to sit 2-3 minutes_, and then wipe off (with a [lint-free
-wipe](#lint-free-wipes) preferably).
+wipe](#lint-free-wipes) preferably). Doing this will ensure you maintain
+the ESD protection of the mat over time.
 
 ## Paper Towels
 
@@ -66,6 +133,13 @@ cloth"](https://www2.v1.vivatowels.com/en-us/products/viva-signature-cloth-paper
 around for general cleaning purposes, wiping down a bench, etc. It's
 worth keeping them close at hand, and so I have them mounted under the
 desk to the drawer module.
+
+TIP: **Possible Reusable Replacement** Adam Savage is a [big
+fan](https://www.youtube.com/watch?v=roXwRxFTfCI) of [these huck
+(surgical)
+towels](https://mimaatex.com/collections/huck-towels/products/huck-towels-blue-commercial-50-piece-pack-16x-24-new-100-cotton-super-absorbent-lint-free-free-shipping)
+in his shop. I've ordered some and will update once I've had a chance to
+use them for a while. 
 
 ## Lint-Free Wipes
 
@@ -100,6 +174,13 @@ simply too cheap to buy them. The ESD-safe ones use a plastic handle and
 a polyurethane foam tip. If you're wanting to splurge, please do.
 
 ## Gloves
+
+WARNING: **Not All Gloves Are the Same** Not all gloves are good for
+every use case. While I discuss primarily nitrile gloves here, they are
+_not appropriate_ for a few use cases. Please review [this guide to the
+chemical resistance of
+gloves](https://amo-csd.lbl.gov/downloads/Chemical%20Resistance%20of%20Gloves.pdf)
+for concrete scientific recommendations.
 
 Gloves are disposable, much to the surprise of many people. They are
 also relatively inexpensive.  While there are a few materials on the
