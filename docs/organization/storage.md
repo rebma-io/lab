@@ -68,9 +68,9 @@ For small surface mount parts, I'm a big fan of the
 [![Aidetek 144 compartment
 box](/img/aidetek-boxall-144.jpg)](https://aidetek.com/mm5/merchant.mvc?Screen=PROD&Store_Code=A&Product_Code=BOXALL)
 
-They also make nice ESD-safe boxes for a little more money that are
-perfect for things that need a little extra protection, such as ICs and
-transistors.
+They make these in a bunch of configurations. They also make nice
+ESD-safe boxes for a little more money that are perfect for things that
+need a little extra protection, such as ICs and transistors.
 
 ## Liquid Storage
 
