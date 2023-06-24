@@ -1,5 +1,11 @@
 # Work Area
 
+NOTE: **My Use Case** All of the information presented here is specific
+to my use case. I primarily work with electronics and various aspects of
+3d printing, including a bunch of mechanical work that goes along with
+it. If your interests are elsewhere, this might not apply to you, but I
+hope you find some usefulness to inspire your own work area.
+
 For my work area, I am primarily working in the attic of my 110yo
 1,000sq' Seattle bungalow. This comes with both charms, but also unique
 challenges. For me, that's:
