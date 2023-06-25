@@ -114,6 +114,9 @@ $ systemctl status mjpg-streamer
 
 ### Plugins
 
+I have found these plugins to Octoprint, among the many hundreds, to be
+especially useful.
+
 * [Bed Visualizer](https://plugins.octoprint.org/plugins/bedlevelvisualizer/)
 * [Cost Estimation](https://plugins.octoprint.org/plugins/costestimation/)
 * [Display Layer Progress](https://plugins.octoprint.org/plugins/DisplayLayerProgress/)

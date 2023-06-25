@@ -20,7 +20,7 @@ I've had 2 Brother P-Touch label makers. For many years, I used a [PT-1290](http
 was a little handheld model (shown below). I'm pretty sure I had it for 10+
 years without a single problem.
 
-![A well-used Brother PT-1290 label maker](/img/brother-pt-1290.jpg){width=500px}
+![A well-used Brother PT-1290 label maker](../img/brother-pt-1290.jpg){width=500px}
 
 Recently, I replaced it with a
 [PT-750W](https://www.brother-usa.com/products/PTP750W) for a couple reasons:
@@ -41,7 +41,7 @@ overall, I'm very happy with it.
 
 This is the layout I use for inventory labels:
 
-![Inventory label for ESP32-WROOM-32U](/img/sample-inventory-label.png)
+![Inventory label for ESP32-WROOM-32U](../img/sample-inventory-label.png)
 
 This is composed of a few things:
 
@@ -59,7 +59,11 @@ code](https://en.wikipedia.org/wiki/QR_code), is that it consumes much less real
 estate on the label and has a much higher information density. For example, the
 two barcodes below store the exact same information (the part number above).
 
-![QR code](/img/sample-qr-code.png) ![Data matrix](/img/sample-data-matrix.png)
+![QR code](../img/sample-qr-code.png) ![Data
+matrix](../img/sample-data-matrix.png)
+
+NOTE: **Experiment with Data Matrix** Elsewhere, you can find an
+[experiment at adding digital signatures to data matrix barcodes](../projects/signed-GS1-data-matrix.ipynb).
 
 ## Barcode Scanner
 

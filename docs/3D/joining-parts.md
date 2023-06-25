@@ -79,7 +79,7 @@ like are from Stefan at [CNC Kitchen](https://cnckitchen.store), and look like
 this: 
 
 [![M3 threaded insert from CNC
-Kitchen](/img/cnc-kitchen-threaded-insert.jpg)](https://cnckitchen.store)
+Kitchen](../img/cnc-kitchen-threaded-insert.jpg)](https://cnckitchen.store)
 
 You can also get quality examples from
 [McMaster-Carr](https://www.mcmaster.com/products/threaded-inserts/for-use-in~plastic/)

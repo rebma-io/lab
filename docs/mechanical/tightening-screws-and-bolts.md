@@ -6,7 +6,7 @@ thing, but there is, weirdly enough, some details that can improve your
 screw (or bolt) tightening game. To start, we can look at the forces in
 a bolted joint:
 
-![Diagram of forces in a bolted joint](/img/load-forces-diagram.png)
+![Diagram of forces in a bolted joint](../img/load-forces-diagram.png)
 
 We have a couple of forces at play here:
 
@@ -34,7 +34,7 @@ diagram below for a 6-bolt flange joint, but a similar pattern can be
 used with any other number of bolts or screws.
 
 ![Diagram of tightening pattern for circular
-arrangement](/img/bolt-tightening-pattern-circular.png)
+arrangement](../img/bolt-tightening-pattern-circular.png)
 
 The goal is to make sure you basically go to the furthest bolt from the
 one you just tightened, alternating "sides" as much as possible.
@@ -45,7 +45,7 @@ the joint. In the diagram below, I show how that would look for an 8
 bolt joint. Again, this generalizes.
 
 ![Diagram of tightening pattern for rectangular
-arrangement](/img/bolt-tightening-pattern-square.png)
+arrangement](../img/bolt-tightening-pattern-square.png)
 
 For hobbyist uses, just do your best to follow something like this. It
 will result in sturdier, more durable, and less likely to loosen joints.

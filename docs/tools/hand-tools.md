@@ -90,7 +90,7 @@ heads out in the world. You can see a list of some of the most popular
 
 ### Normal
 
-![Wera Kraftform screwdrivers](/img/handtool-wera-screwdriver-kraftform.jpg){: width="400" align="right" }
+![Wera Kraftform screwdrivers](../img/handtool-wera-screwdriver-kraftform.jpg){: width="400" align="right" }
 This is your run-of-the-mill everyday screwdriver. It's not unreasonable to just
 buy a random set that has a selection of both Phillips and the accursed slotted
 screwdrivers. These are a pair from the nicest ones I own.
@@ -112,7 +112,7 @@ type (Phillips and slotted), and that'll be fine for a long time.
 
 ### Micro
 
-![Wiha multi-bit precision set](/img/handtool-wiha-micro-screwdriver-set.jpg){: width="400" align="right"}
+![Wiha multi-bit precision set](../img/handtool-wiha-micro-screwdriver-set.jpg){: width="400" align="right"}
 
 Electronics are full of tiny little screws and bolts. To deal with them, you
 have a couple options. You can pick up a set of dozens and dozens of tiny
@@ -129,7 +129,7 @@ For most people, the multi-bit set is the way to go.
 ### Insulated
 
 ![Electrically insulated
-screwdrivers](/img/handtool-syeeth-screwdriver-set.jpg){: width="400" align="left"}
+screwdrivers](../img/handtool-syeeth-screwdriver-set.jpg){: width="400" align="left"}
 Insulated screwdrivers come in two forms: ones for high-voltage, and ones for
 fine adjustment of electronic components. The first, for high-voltage, are
 typically rated to 1,000V, and are heavily insulated for both the handle and the
@@ -138,7 +138,7 @@ come in single items, but also in interchangeable sets. Sets seem to always use
 square mechanisms to join. I picked up a relatively [cheap set on
 AliExpress](https://www.aliexpress.us/item/3256805090334720.html) a while back.
 
-![Ceramic screwdriver](/img/handtool-ceramic-screwdriver.jpg){: width=400 align=right }
+![Ceramic screwdriver](../img/handtool-ceramic-screwdriver.jpg){: width=400 align=right }
 Ceramic-tipped screwdrivers for adjusting sensitive electronic components such
 as capacitors and resistors. They are completely non-conductive and non-magnetic
 so there's zero risk of short-circuiting, creating magnetic interference, or
@@ -154,7 +154,7 @@ Pliers grab things. The pliers you need depends on the work you're doing, but I
 would recommend _at least_ one needle nose and one long nose.
 ### Needle Nose
 
-![Xcelite 378M](/img/handtool-xcelite-378m.jpg){: width=400 align=right}
+![Xcelite 378M](../img/handtool-xcelite-378m.jpg){: width=400 align=right}
 I use needle nose pliers _constantly_. They're by far the workhorse of this
 category. Their small tip makes it possible to get into a lot of spaces where
 might not be able to, or even just to stick in a 3d print and pull out some
@@ -164,7 +164,7 @@ work. First is a [Xcelite (now Weller)
 shown here.
 
 
-![Xuron 450](/img/handtool-xuron-450.jpg){: width=400 align=left }
+![Xuron 450](../img/handtool-xuron-450.jpg){: width=400 align=left }
 And the other is a [Xuron
 450AS](https://xuron.com/index.php/main/consumer_products/5), which are amusingly
 called "TweezerNose", and has a _very fine_ point. If this doesn't fit into the
@@ -181,7 +181,7 @@ on sale.
 
 ### Long Nose
 
-![Wiha 32618 long nose pliers](/img/handtool-wiha-long-nose-32618.jpg){: width=400 align=right }
+![Wiha 32618 long nose pliers](../img/handtool-wiha-long-nose-32618.jpg){: width=400 align=right }
 
 Long nose pliers are the bigger cousin of the needle nose (or vice versa).
 They're designed to grip, bend, and twist wire and other small workpieces. They
@@ -193,7 +193,7 @@ I discuss.
 ### Combination
 
 ![Wiha 32606 combination
-pliers](/img/handtool-wiha-combination-pliers-32606.jpg){: width=400 align=left }
+pliers](../img/handtool-wiha-combination-pliers-32606.jpg){: width=400 align=left }
 
 Like their name suggests, these are for a combination of uses. They're great for
 general gripping of things, and typically have a curved area for round material.
@@ -209,7 +209,7 @@ locks](https://channellock.com/pliers/tongue-groove/#)).
 
 ### Split Ring Pliers
 
-![Split ring](/img/split-ring.jpg){: width=200 align=right }
+![Split ring](../img/split-ring.jpg){: width=200 align=right }
 
 Sometimes you find yourself needing to open, repeatedly, one of those
 split-rings, and while you could, like I used to, use your fingernail,
@@ -218,7 +218,7 @@ like another key on your key ring, to open them, there's actually a tool
 designed specifically for this. I didn't even know this for 40 years of
 my life! My poor fingernails. 
 
-![Xuron 496 split ring pliers](/img/handtool-xuron-496.jpg){: width=400 align=left}
+![Xuron 496 split ring pliers](../img/handtool-xuron-496.jpg){: width=400 align=left}
 
 Behold, the savior of your fingernails! The [Xuron 496 split ring
 pliers](https://xuron.com/index.php/main/consumer_products/5/48). These
@@ -236,7 +236,7 @@ beak.
 
 ### Lead Forming Tool
 
-![Xuron 563L lead forming tool](/img/handtool-xuron-573l.jpg){: width=300 align="right" }
+![Xuron 563L lead forming tool](../img/handtool-xuron-573l.jpg){: width=300 align="right" }
 
 These fall into a category that, quite honestly, you don't need until you do
 need them, so you can generally just skip them. I cover them here because 1)
@@ -247,19 +247,19 @@ which look like the one's on the right.
 
 What makes them special is the head on them. 
 
-![Xuron 563L close-up](/img/handtool-xuron-573l-closeup.jpg)
+![Xuron 563L close-up](../img/handtool-xuron-573l-closeup.jpg)
 
 As you'll see, there's actually a bunch of moving pieces. When you put a wire in
 them, and close them, you get something like this:
 
-![Xuron 563L result](/img/handtool-xuron-573l-result.jpg)
+![Xuron 563L result](../img/handtool-xuron-573l-result.jpg)
 
 So what good is this, you might ask? It's good for creating stand-offs between a
 component and a board, for example. Or ensuring a wire can't go through a hole
 easily. As I said, you don't need them until you need them. When you do this,
 for example, to a axial electrolytic capacitor, you can get something like this:
 
-![An axial electrolytic capacitor with bent leads standing off from the PCB](/img/handtool-xuron-573l-board.jpg)
+![An axial electrolytic capacitor with bent leads standing off from the PCB](../img/handtool-xuron-573l-board.jpg)
 
 ## Cutters
 
@@ -268,7 +268,7 @@ come in. If you can have only one pair, get side flush cutters (shears).
 
 ### Side Flush Cutters (Shears)
 
-![Xuron 170-II](/img/handtool-xuron-170-2.jpg){: width=400 align=right }
+![Xuron 170-II](../img/handtool-xuron-170-2.jpg){: width=400 align=right }
 You _absolutely must own these_. No exceptions. They will become your favorite
 cutters, and they will be with you forever.  What's a side flush cutter? It's a
 small cutter which is designed to cut _flush_ against a surface. Think trimming
@@ -280,14 +280,14 @@ are super sharp.
 
 You can see how flat and sharp the blade is, even after several years of use:
 
-![Xuron 170-II close-up](/img/handtool-xuron-170-2-closeup.jpg)
+![Xuron 170-II close-up](../img/handtool-xuron-170-2-closeup.jpg)
 
 I would pick up at least 2 of them. The big thing you can't do with them is cut
 any really thick or hardened wire. For that, you'll need diagonal cutters.
 
 ### Diagonal Cutters
 
-![Wiha 32642 diagonal cutters](/img/handtool-wiha-diagonal-cutters-32642.jpg){: width=400 align=left }
+![Wiha 32642 diagonal cutters](../img/handtool-wiha-diagonal-cutters-32642.jpg){: width=400 align=left }
 These are a super all-around cutter for just about any material. They tend to be
 hardened by the manufacturer, and can cut a lot of different materials. They
 also have a longer handle, which gives you more leverage when cutting things. I
@@ -306,7 +306,7 @@ your wallet.
 When working with electronics, we work with a lot of small things. Small things
 need tweezers, and these are mine:
 
-![Tweezers, straight, bent, and ceramic](/img/handtool-tweezers.jpg){: align="right" width="400" }
+![Tweezers, straight, bent, and ceramic](../img/handtool-tweezers.jpg){: align="right" width="400" }
 
 From the top, you have some with bent tips for placing things like SMD parts.
 The needle sharp middle pair are great from pulling things out of connectors,
@@ -327,7 +327,7 @@ around it, and you want to keep most of it. That's where wire strippers come in.
 
 ### General Wire Strippers
 
-![Klein 11057 wire stripper](/img/handtool-klein-stripper-11057.jpg){: width=400 align=left }
+![Klein 11057 wire stripper](../img/handtool-klein-stripper-11057.jpg){: width=400 align=left }
 The most useful and versatile form of wire stripper is just a general purpose
 model. I like the kind with curved handles (a few companies make them) because
 it's more comfortable.  I generally would look for something that handles AWG
@@ -340,7 +340,7 @@ lug)](https://en.wikipedia.org/wiki/Crimp_(electrical)), but they'll struggle
 with anything finer or "weirder". 
 
 ![Irwin Vise Grip self-adjusting wire
-stripper](/img/handtool-visegrip-stripper.jpg){: width=400 align=right }
+stripper](../img/handtool-visegrip-stripper.jpg){: width=400 align=right }
 If you find yourself stripping a _lot_ of wire, or need to make sure that it's
 all stripped to a pretty exact length, you can step up to one of the
 self-adjusting models, which has a little pin and plate that you can adjust to
@@ -351,7 +351,7 @@ it off.
 ### Coaxial Wire Strippers
 
 ![HKS coaxial stripper and crimping
-tool](/img/handtool-hks-coax-ratchet-crimper.jpg){: width=400 align=left }
+tool](../img/handtool-hks-coax-ratchet-crimper.jpg){: width=400 align=left }
 Sometimes the wire you're working with is more complicated than some copper in a
 bit of insulation. [Coaxial cable](https://en.wikipedia.org/wiki/Coaxial_cable)
 has both a center conductor and a (typically woven) outer shield layer inside
@@ -386,7 +386,7 @@ pliers.
 
 ### Specialized
 
-![iCrimp SN-28B crimper](/img/handtool-icrimp-sn-28b.jpg){: width=400 align=right}
+![iCrimp SN-28B crimper](../img/handtool-icrimp-sn-28b.jpg){: width=400 align=right}
 
 In addition to the coaxial one I've [mentioned
 earlier](http://127.0.0.1:8000/tools/hand-tools/#coaxial-wire-strippers) along
@@ -408,7 +408,7 @@ the industry, and Dupont connectors are also widespread. At the bottom of the
 page there's a link to a _very deep dive_ into how to crimp Dupont connectors
 properly.
 
-![iCrimp IWS-3220M crimper](/img/handtool-icrimp-iws-3220m.jpg){: width=400 align=left }
+![iCrimp IWS-3220M crimper](../img/handtool-icrimp-iws-3220m.jpg){: width=400 align=left }
 
 Another specialized crimping tool that I keep around is the [iCrimp
 IWS-3220M](https://www.icrimptools.com/products/iwiss-iws-3220m-micro-connector-pin-crimping-tool-0-03-0-52mm-32-20awg-ratcheting-crimper-for-d-sub-open-barrel-suits-molex-jst-jae),
@@ -423,7 +423,7 @@ which is designed for a few different smaller connectors:
 I think it can also work with a few others, but those are the ones they talk about.
 Quite honestly, I only use the first 3. 
 
-![Generic IDC crimper](/img/handtool-idc-crimper.jpg){: width=400 align=right }
+![Generic IDC crimper](../img/handtool-idc-crimper.jpg){: width=400 align=right }
 
 Finally, I also have a _super generic_ pair of IDC crimpers. IDC
 connectors are those ribbon cable connectors typically, like what you'd
@@ -452,7 +452,7 @@ aren't expensive.
 
 ### Utility Knife (Box Cutter)
 
-![Kobalt utility knife](/img/handtool-cobolt-box-cutter.jpg){: width=400 align=right }
+![Kobalt utility knife](../img/handtool-cobolt-box-cutter.jpg){: width=400 align=right }
 
 Sure, it has a lot of uses, but nothing can beat a box cutter for ...
 opening boxes. It's also great for cutting tape, and a myriad of other
@@ -464,7 +464,7 @@ the handle.
 
 ### Lead Bender
 
-![Lead bending jig by Timot](/img/handtool-lead-bending-jig.jpg){: width=150 align=right }
+![Lead bending jig by Timot](../img/handtool-lead-bending-jig.jpg){: width=150 align=right }
 
 When dealing with THT components, and especially resistors and diodes, you
 typically need to bend the leads of the component 90 degrees to insert
@@ -480,7 +480,7 @@ and the bend.
 
 ### Burr Remover
 
-![Closeup of a metal burr on a hole](/img/metal-hole-burr-closeup.jpg){: width=250 align=right}
+![Closeup of a metal burr on a hole](../img/metal-hole-burr-closeup.jpg){: width=250 align=right}
 
 Whenever you're 3D printing or even just cutting something, you often
 get some rough edges that need to be cleaned up. One option you could
@@ -490,7 +490,7 @@ removal tool. I got [this one from
 AFA](https://afatooling.com/collections/deburring-tools/products/afa-tooling-deburring-tool-with-a-blade-10-high-speed-steel-rotary-burr-removal-blades),
 which came with 10 extra blades (I did buy it from Amazon though). 
 
-![Burr remover](/img/handtool-burr-remover.jpg){: width=300 align=left }
+![Burr remover](../img/handtool-burr-remover.jpg){: width=300 align=left }
 
 From my experience, the blades themselves are a widely standardized
 design, and come in a _lot_ of shapes. If you want to splurge, you can
@@ -510,7 +510,7 @@ to keep the flesh where it belongs.
 
 ### Scalpels
 
-![Scalpel](/img/handtool-scalpel.jpg){: width=400 align=left }
+![Scalpel](../img/handtool-scalpel.jpg){: width=400 align=left }
 
 While people think of scalpels in the context of medical use, they're
 actually just precision cutting instruments that are widely useful
@@ -524,7 +524,7 @@ investment to try them out.
 
 ### Brass Brush
 
-![Brass brush](/img/handtool-brass-brush.jpg){: width=400 align=right }
+![Brass brush](../img/handtool-brass-brush.jpg){: width=400 align=right }
 
 Brass brushes are quite soft compared to any other metal brush, and
 because of that they're really good for removing little bits of rust or
@@ -533,7 +533,7 @@ is soft enough not to typically leave any marks behind when you use it.
 
 ### Metal Roller
 
-![Metal roller](/img/handtool-roller.jpg){: width=400 align=left}
+![Metal roller](../img/handtool-roller.jpg){: width=400 align=left}
 
 Let's say you're using one of those [super fun
 materials](../mechanical/materials.md), like UHMW tape. One of the

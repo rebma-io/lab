@@ -91,7 +91,7 @@ Compact](https://3dconnexion.com/uk/product/spacemouse-compact/). It brings you
 though you are holding it. While it takes a day or two to get comfortable with,
 it's now second nature and a wildly more productive way to manipulate things.
 
-![SpaceMouse Compact](/img/spacemouse-compact.jpg)
+![SpaceMouse Compact](../img/spacemouse-compact.jpg)
 
 Note that it doesn't replace your mouse/trackball, but instead augments it.
 
