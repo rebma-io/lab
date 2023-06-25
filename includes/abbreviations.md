@@ -28,3 +28,6 @@
 *[MSDS]: Material Safety Data Sheet
 *[LDPE]: Low Density PolyEthylene 
 *[HDPE]: High Density PolyEthylene
+*[IEC]: International Electrotechnical Commission
+*[ANSI]: American National Standards Institute
+*[NIST]: National Institute of Standards and Technology

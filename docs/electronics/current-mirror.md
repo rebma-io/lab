@@ -14,7 +14,7 @@ A _current mirror_ is a current source circuit that can be "programmed" to
 mirror current between one side that you program and another side that you want
 to control. Take the following circuit, for example:
 
-![Programmed current mirror](/img/schematic-current-mirror.png)
+![Programmed current mirror](../img/schematic-current-mirror.png)
 
 On the left side, you have the programmed side of the circuit. You program Q1 by
 sinking a current (Ip) from Q1's collector (note these are PNP, not the more typical

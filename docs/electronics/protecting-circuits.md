@@ -38,7 +38,7 @@ circuits. It leverages the diode as a
 parallel with the load (say a relay), but set so that it doesn't conduct under
 normal use. 
 
-![Diode snubber with relay](/img/schematic-diode-snubber.png)
+![Diode snubber with relay](../img/schematic-diode-snubber.png)
 
 When current is interrupted, the magnetic field of the inductor (the coil in a
 relay) collapses, causing back EMF. This can drive a big spike in voltage. With
@@ -60,7 +60,7 @@ RC snubbers operate on a similar principle to diode snubbers and are more
 voltage across a capacitor cannot change instantly, any voltage spikes are
 mitigated. An example, using the above basic schematic is:
 
-![RC snubber with relay](/img/schematic-rc-snubber.png)
+![RC snubber with relay](../img/schematic-rc-snubber.png)
 
 Unlike a diode snubber, there's some calculations you'll need to do to choose R
 and C correctly. This is [quite
@@ -71,3 +71,4 @@ generally just use a diode snubber unless the timing is critical.
 
 * [Introduction to Transient Voltage Suppressors (TVS)](https://www.allaboutcircuits.com/technical-articles/transient-voltage-suppressors-tvs-an-introduction/)
 * [Methods of circuit protection](https://resources.altium.com/p/methods-protect-your-circuit)
+* [Transient suppression devices and principles](https://www.littelfuse.com/data/en/application_notes/an9768.pdf)

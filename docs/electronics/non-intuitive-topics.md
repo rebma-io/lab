@@ -17,7 +17,7 @@ electricity, the general concept of electricity was that it was some kind of
 from positive to negative. This idea was accepted, and it became the
 conventional view.
 
-![Conventional current flow](/img/schematic-conventional-current-flow.png)
+![Conventional current flow](../img/schematic-conventional-current-flow.png)
 
 Today we call this the _conventional current flow_ model, and in it, current
 flows from a more positive voltage to a less positive voltage. This all predates
@@ -26,7 +26,7 @@ know that an electron is the charge carrier and that electrons travel in the
 reverse direction. Franklin was wrong. Electrons move from a lower potential to
 a higher potential. This is termed the _model electron flow_.
 
-![Model electron flow](/img/schematic-model-electron-flow.png)
+![Model electron flow](../img/schematic-model-electron-flow.png)
 
 For most work, you can simply use the conventional flow and everything will be
 fine. It's probably easier to understand for most people. There are times,
@@ -76,7 +76,7 @@ Easy peasy, lemon squeezy, right?
 Visually, this is more obvious:
 
 [![Visual representation of a Fourier square
-wave](/img/fourier-square-wave.png)](https://mathworld.wolfram.com/FourierSeriesSquareWave.html)
+wave](../img/fourier-square-wave.png)](https://mathworld.wolfram.com/FourierSeriesSquareWave.html)
 
 Each of the colors represents another sine wave superimposed on the previous.
 As you can see with the fancy $\infty$ in the equation, this is an infinite
@@ -96,7 +96,7 @@ wave frequency. Some of those will have gigahertz frequencies.
 Take, for example, a 1MHz square wave coming out of my signal generator and into
 my oscilloscope:
 
-![1MHz square wave](/img/oscilloscope-1mhz-square-wave.png)
+![1MHz square wave](../img/oscilloscope-1mhz-square-wave.png)
 
 In it you can see the artifacts of the direct digital synthesis production of a
 square wave.

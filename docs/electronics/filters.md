@@ -16,7 +16,7 @@ when working through an idea.
 For a low-pass filter, where we only allow frequencies _below_ the design point,
 we can construct it like this:
 
-![Low-pass RC filter](/img/schematic-rc-filter-low-pass.png)
+![Low-pass RC filter](../img/schematic-rc-filter-low-pass.png)
 
 We can then calculate the cutoff frequency ($f_c$), which is a -3 dB or 70.7% reduction for the filter:
 
@@ -39,7 +39,7 @@ For a high-pass version of the RC filter, we simply flip the arrangement of the
 resistor and capacitor, and can use the same equations to calculate the $f_c$
 cutoff frequency.
 
-![High-pass RC filter](/img/schematic-rc-filter-high-pass.png)
+![High-pass RC filter](../img/schematic-rc-filter-high-pass.png)
 ## Pi Filters
 
 A Pi filter is a type of filter constructed with 3 elements rather than the
@@ -72,7 +72,7 @@ design of a low-pass Pi filter is pretty simple. The circuit consists of two
 capacitors connected in parallel with an inductor in series which forms the Pi
 shape as shown below:
 
-![Low pass Pi filter](/img/schematic-pi-filter-low-pass.png)
+![Low pass Pi filter](../img/schematic-pi-filter-low-pass.png)
 
 We can find the -3dB point of a low-pass filter using this equation:
 
@@ -84,7 +84,7 @@ Reversed from a low-pass filter, a high-pass filter only allows frequencies
 _above_ its design point to pass. A high-pass filter has just a flipped design
 with the the inductors in parallel and the capacitor in series:
 
-![High pass Pi filter](/img/schematic-pi-filter-high-pass.png)
+![High pass Pi filter](../img/schematic-pi-filter-high-pass.png)
 
 It's -3dB point can be calculated exactly the same.
 
