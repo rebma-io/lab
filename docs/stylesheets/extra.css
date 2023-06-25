@@ -1,17 +1,54 @@
+/* ICONS */
 :root {
-    --md-admonition-icon--future: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.081.61v7.566h-7.223v6.661H7.566v6.634H0v1.92h9.471v-6.649h7.306v-6.66H24V.61Z"/></svg>')
-  }
-  .md-typeset .admonition .future,
-  .md-typeset details .future {
-    border-color: 	rgb(193, 214, 202);
-  }
-  .md-typeset .future > .admonition-title,
-  .md-typeset .future > summary {
-    background-color: rgba(193, 214, 202, 0.3);
-  }
-  .md-typeset .future > .admonition-title::before,
-  .md-typeset .future > summary::before {
-    background-color: rgb(192, 214, 202);
-    -webkit-mask-image: var(--md-admonition-icon--future);
-            mask-image: var(--md-admonition-icon--future);
+  --md-admonition-icon--future: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.081.61v7.566h-7.223v6.661H7.566v6.634H0v1.92h9.471v-6.649h7.306v-6.66H24V.61Z"/></svg>');
+  --md-admonition-icon--construction: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m22.7 19-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4Z"/></svg>');
+  --md-admonition-icon--comment: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 22a1 1 0 0 1-1-1v-3H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6.1l-3.7 3.71c-.2.19-.45.29-.7.29H9Z"/></svg>');
+}
+
+/* Something to come in the future */
+.md-typeset .admonition .future,
+.md-typeset details .future {
+  border-color: rgb(193, 214, 202);
+}
+.md-typeset .future > .admonition-title,
+.md-typeset .future > summary {
+  background-color: rgba(193, 214, 202, 0.3);
+}
+.md-typeset .future > .admonition-title::before,
+.md-typeset .future > summary::before {
+  background-color: rgb(192, 214, 202);
+  -webkit-mask-image: var(--md-admonition-icon--future);
+  mask-image: var(--md-admonition-icon--future);
+}
+
+/* Something under construction */
+.md-typeset .admonition .construction,
+.md-typeset details .construction {
+  border-color: rgb(106, 112, 60);
+}
+.md-typeset .construction > .admonition-title,
+.md-typeset .construction > summary {
+  background-color: rgba(106, 112, 60, 0.2);
+}
+.md-typeset .construction > .admonition-title::before,
+.md-typeset .construction > summary::before {
+  background-color: rgb(106, 112, 60);
+  -webkit-mask-image: var(--md-admonition-icon--construction);
+  mask-image: var(--md-admonition-icon--construction);
+}
+
+/* Comments */
+.md-typeset .admonition .comment,
+.md-typeset details .comment {
+  border-color: rgb(74, 121, 217);
+}
+.md-typeset .comment > .admonition-title,
+.md-typeset .comment > summary {
+  background-color: rgba(74, 121, 217, 0.3);
+}
+.md-typeset .comment > .admonition-title::before,
+.md-typeset .comment > summary::before {
+  background-color: rgb(74, 121, 217);
+  -webkit-mask-image: var(--md-admonition-icon--comment);
+  mask-image: var(--md-admonition-icon--comment);
 }
