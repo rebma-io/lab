@@ -46,7 +46,7 @@ shapes, and they are effectively interchangeable from manufacturer to
 manufacturer. 
 
 Surface mount device (chip)
-: ![KOA Speer RK73B1JTTD914J](../img/part-resistor-smd.jpg){: width=100 align=right }
+: ![KOA Speer RK73B1JTTD914J](/img/part-resistor-smd.jpg){: width=100 align=right }
 Like everything these days, resistors come in a diverse set of surface
 mount formats, which are typically called "chip resistors".  They start
 out huge at 2512 format (0.25" x 0.12") but quickly shrink until you get
@@ -128,7 +128,7 @@ bridge](https://en.wikipedia.org/wiki/Wheatstone_bridge)). Strain gauges
 are capable of tolerances down below 0.2%, and are heavily used to
 monitor equipment and aircraft.
 
-### Composition
+## Composition
 
 There are a bunch of ways to make resistors, but for a majority of them,
 they have one of the following compositions. I've linked to much more
