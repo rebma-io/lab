@@ -358,6 +358,9 @@ R &= {{5 - 2.1}\over{0.02}}\\[5pt]
 &= 145
 \end{aligned}$$
 
+![Schematic showing a current limiting
+resistor](../img/schematic-resistor-led.png){: width=250 align=right }
+
 So we need a resistor of 145&ohm;. Now, that's not a common value, but
 [we can get 150](#e-series-of-preferred-values), and so we can just use
 that. We could also slightly overdrive it with a 130&ohm;. Close enough!
@@ -369,6 +372,9 @@ I &= {V\over R}\\[5pt]
 &= {{5 - 2.1}\over{150}}\\[5pt]
 &= 0.19\overline{3}
 \end{aligned}$$
+
+This gets us something like this:
+
 
 <!-- TODO: Write about LEDs in depth -->
 FUTURE: **More to Come** There's a lot more to driving LEDs than this,
