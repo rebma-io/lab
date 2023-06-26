@@ -2,13 +2,27 @@
 
 ## Multimeter
 
+TODO: Discuss the various types (handheld and bench), what to look for
+in shopping, and their purpose. 
 ## Oscilloscope
+
+TODO: Discuss the various types, what to look for in shopping, and their
+purpose.
 
 ## Signal Generator
 
+TODO: Discuss the various types, what to look for in shopping, and their
+purpose.
+
 ## Bench Power Supplies
 
+TODO: Discuss the various types, what to look for in shopping, and their
+purpose.
+
 ## Microscope
+
+TODO: Discuss the various types, what to look for in shopping, and their
+purpose.
 
 ## Physical Measurement
 

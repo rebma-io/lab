@@ -6,7 +6,10 @@ WARNING: **Not a Professional Engineer** While I have been an engineer
 of various forms for the last 30+ years, I am not a [professional
 engineer](https://en.wikipedia.org/wiki/Regulation_and_licensure_in_engineering),
 and much of the information here is self-taught and not formally
-educated. Just keep that in mind as you read.
+educated. Just keep that in mind as you read. My curiosity may be nearly
+limitless, but my understanding always has limits. I'll try to point
+these out wherever I can.
+
 ## Why
 
 Being a maker means learning a dizzying number of skills, and as part of the

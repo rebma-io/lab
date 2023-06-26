@@ -10,8 +10,12 @@ in their context, but are far too heavy for anyone else.
 
 ## Process
 
+TODO: Discuss the multi-phase process that I've developed over the years.
 
 ## Differentiating Between Different Types of Notes
+
+TODO: Not all notes are the same, and not all need to be taken and dealt
+with the same. Discuss.
 
 ## Note Taking Tools
 

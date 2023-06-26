@@ -11,7 +11,7 @@ to be confusing, not least because people seemed obsessed with voltage,
 when current is _the thing_ under it all. So let's start with current.
 
 NOTE: **Non-intuitive Stuff to Think About** Elsewhere, I talk about the
-[non-intuitive idea of electron flow](non-intuitive-tops.md), but for
+[non-intuitive idea of electron flow](non-intuitive-topics.md), but for
 the purposes of this and most use cases, it doesn't matter. Only if you
 want to be [technically
 correct](https://www.youtube.com/watch?v=hou0lU8WMgo). 

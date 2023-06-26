@@ -53,7 +53,8 @@ of various techniques from a strength perspective.
 
 Honestly, you can just screw a lot of screws in, and certainly a [self-tapping
 screws](https://en.wikipedia.org/wiki/Self-tapping_screw) should work.
-Unfortunately, this is not a super repeatable process, and 
+Unfortunately, this is not a super repeatable process, and should really
+only be used if you plan to remove it once or twice at most.
 
 ### Tapping Holes
 
@@ -66,6 +67,8 @@ second time using a bottoming tap. The first will make sure 90% of the threads
 are cut, and the bottoming tap will ensure the last few at the bottom are cut
 properly. If you try to use a bottoming tap by itself, you'll find that it will
 struggle to get the initial bite into the material and to stay straight.
+I'll be honest, though, that I typically just use one tap and call it
+"good enough" since the last few threads can be cut by the screw itself.
 
 To help explain it, I made a small video:
 
@@ -100,3 +103,6 @@ article](https://hackaday.com/2019/02/28/threading-3d-printed-parts-how-to-use-h
 detailing how to design parts for threaded inserts and how to properly install
 them. I find using a temperature about 5C above the filament print temperature
 works well.
+
+TODO: Video showing inserting these by hand and also using the Dremel
+workstation with adapter.

@@ -1,5 +1,9 @@
 # LEDs and Lasers
 
+CONSTRUCTION: **Work in Progress** I've just started this part of the
+site, and there is, as you can well imagine, a lot to talk about with
+LEDs.
+
 LEDs, or [light emitting
 diodes](https://en.wikipedia.org/wiki/Light-emitting_diode), are exactly
 like every other semiconductor diode in the world, except, instead of
@@ -10,11 +14,17 @@ how diodes works is a fascinating topic, but not one for this place.
 
 ## Indicator LEDs
 
-Note about name.
+TODO: Explain the name.
 
 ## Chip on Board (COB)
 
-Side emitting LED.
+TODO: Side emitting LED.
+
+## Other LED Packaging
+
+TODO: LED "filament"
+
+TODO: LED strips
 
 ## Driving LEDs Correctly
 
@@ -79,12 +89,15 @@ If we plug that back into our equation, we'll get 0.0340426 watts, or
 
 ### Constant Current Source
 
-depletion mode MOSFET
-constant current source (see current mirrors)
-diagram of 3x current mirroring.
+TODO: depletion mode MOSFET
+
+TODO: constant current source (see current mirrors)
+
+TODO: diagram of 3x current mirroring.
 
 ### LED Driver IC
 
+TODO: Some example circuits.
 
 ## Laser Diodes
 

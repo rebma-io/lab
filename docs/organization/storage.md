@@ -101,7 +101,7 @@ plate](https://en.wikipedia.org/wiki/Thermoelectric_cooling) to cool it,
 so it's not super efficient, but it's also tiny. I just wish I'd seen it
 in other colors before buying the boring white.
 
-FUTURE: **Future Project** What I really should do is design and print some
-better organization for the inside to help organize solder paste,
-syringes, etc. This would make it even more useful, and I suspect
-helpful to others.
+If you use one of these, I've [designed a replacement
+shelf](https://www.printables.com/model/512793-interior-shelf-for-crownful-4l-mini-fridge)
+that you can 3D print. It will hold a few syringes of flux/paste and
+some tubs of paste as well. 

@@ -8,15 +8,13 @@ finding it difficult to identify which parameter you're looking for. Parameters
 in Fusion360 can have alphanumeric characters and the following special
 characters:
 
-Parameter names can contain these symbols in Fusion360:
-
 * `_` Underscore
 * `"` Double Quote
 * `$` Dollar symbol
 * `°` Degree symbol
 * `µ` Micro symbol
 
-It cannot have a space, so I typically use
+They cannot have a space, so I typically use
 [PascalCase](https://en.wikipedia.org/wiki/Camel_case). This is the scheme I
 use:
 
@@ -30,7 +28,8 @@ use:
 
 
 In addition, I always create the following three parameters to allow for easily
-modeling of various [types of fit](../mechanical/fit.md)
+modeling of various [types of fit](../mechanical/fit.md) if something is
+going to be 3D printed.
 
 | Name            | Use                                |
 | --------------- | ---------------------------------- |

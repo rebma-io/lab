@@ -37,6 +37,13 @@ If I have any complaint, it's that opening the side door to change the print
 cartridge, while easy, does require picking it up as it lifts the bottom. Still,
 overall, I'm very happy with it.
 
+TIP: **Collecting Labels as They Print** One thing I've run into is that
+if you print labels, you either have to catch them by hand or bodge some
+arrangement to catch them in a container. I solved this by [designing a
+catch
+tower](https://www.printables.com/model/512678-label-catcher-for-brother-pt-750w),
+which you can see at the link.
+
 ## Label Layout
 
 This is the layout I use for inventory labels:

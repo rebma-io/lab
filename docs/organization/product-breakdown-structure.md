@@ -1,5 +1,10 @@
 # Product Breakdown Structure
 
+CONSTRUCTION: **Huge Work in Progress** This is just a quick intro to
+what a PBS is, but not _why_ you might want one, or how to implement
+one. I hope to dig into that in the future, but for now, I think it's
+better to at least plant the seed in your head.
+
 A [product breakdown
 structure](https://en.wikipedia.org/wiki/Product_breakdown_structure) (PBS) is
 just a way to decompose a product into all of its constituent parts. For example

@@ -67,7 +67,7 @@ DANGER: Do not leave your 3D printer unattended and leave your house.
 
 One of the great things about Octoprint is being able to integrate a webcam into
 your workflow. This can give you both real-time view of what's going on, but
-also, using [Octolapse]((https://plugins.octoprint.org/plugins/octolapse/),
+also, using [Octolapse](https://plugins.octoprint.org/plugins/octolapse/),
 generate timelapses of the print and save them for review. 
 
 To get it running on the Ubuntu distribution, I unfortunately had to use a Snap
@@ -132,3 +132,8 @@ especially useful.
 * [PrintTimeGenius](https://plugins.octoprint.org/plugins/PrintTimeGenius/)
 * [Simple Emergency Stop](https://plugins.octoprint.org/plugins/simpleemergencystop/)
 * [Spool Manager](https://plugins.octoprint.org/plugins/SpoolManager/)
+
+## Access Anywhere via Tailscale
+
+TODO: Discuss how to use Tailscale to access Octoprint from anywhere.
+Maybe this belongs in a whole new section for "Linuxy things"?
