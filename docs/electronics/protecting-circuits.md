@@ -11,6 +11,10 @@
 * Decoupling capacitors
 * Fuses (resettable and not)
 -->
+
+## What Can Damage a Circuit?
+
+
 ## Snubber Networks
 
 A snubber is a device/circuit that is used to limit (snub) voltage transients in
