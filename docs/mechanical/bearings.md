@@ -38,7 +38,7 @@ Once we know whether a load is static or dynamic, we need to understand
 how that load presents itself. It can be radial, axial (or thrust), or
 centrifugal.
 
-![Drawing of radial versus axial load](/img/radial-v-axial-load.jpg){: width=300 align=right }
+![Drawing of radial versus axial load](../img/radial-v-axial-load.jpg){: width=300 align=right }
 
 Bearing radial loads are forces that are perpendicular to the axis of
 the shaft and parallel to the bearing’s radius. In the drawing, the
@@ -66,7 +66,7 @@ uniformly onto the rolling elements thereby creating a balanced load.
 
 ## Plain Bearings (Bushings)
 
-![A selection of various sized plain bushings](/img/bushing-plain.jpg){: width=300 align=right }
+![A selection of various sized plain bushings](../img/bushing-plain.jpg){: width=300 align=right }
 
 A plain earing, sometimes called a bushing in certain forms, is the
 most fundamental and simple type of bearing. It consists of a bearing
@@ -88,7 +88,7 @@ have high load-carrying capacity. The bearing remains fixed while the
 other surface slides on the bearing’s inner surface. 
 
 ![A cutaway of a radial spherical plain
-bearing](/img/bearing-radial-spherical-plain.jpg){: width=250 align=left }
+bearing](../img/bearing-radial-spherical-plain.jpg){: width=250 align=left }
 
 If you take one bearing with a spherical exterior surface and place it
 inside another bearing with a spherical interior surface, you have
@@ -108,7 +108,7 @@ used in very customized ways): grooved, thrust, and linear.
 
 ### Grooved
 
-![Cutaway of a deep groove ball bearing](/img/bearing-ball-groove.jpg){: width=400 align=right }
+![Cutaway of a deep groove ball bearing](../img/bearing-ball-groove.jpg){: width=400 align=right }
 
 Probably the most common form of ball bearing is the grooved ball
 bearing. In this configuration, the balls are "captured" in a groove
@@ -138,7 +138,7 @@ around for most purposes, and they're good enough to get started.
 
 ### Thrust
 
-![Cutaway of a thrust ball bearing](/img/bearing-ball-thrust.jpg){: width=400 align=right }
+![Cutaway of a thrust ball bearing](../img/bearing-ball-thrust.jpg){: width=400 align=right }
 
 If you take the balls and you arrange them between two plates (rather
 than rings), you create a thrust ball bearing. A thrust bearing is, almost
@@ -157,7 +157,7 @@ Note that thrust bearings come in roller form as well.
 
 ### Linear
 
-![Inner view of a linear ball bearing](/img/bearing-ball-linear.jpg){: width=400 align=left }
+![Inner view of a linear ball bearing](../img/bearing-ball-linear.jpg){: width=400 align=left }
 
 Linear bearings have a bunch of different names: linear motion bearings,
 slide bearings, and at least bearing sliders. All of these refer to a
@@ -180,7 +180,7 @@ higher precision under most circumstances.
 ### Cylindrical
 
 ![Cutaway of a cylindrical roller
-bearing](/img/bearing-roller-cylindrical.jpg){: width=400 align=right }
+bearing](../img/bearing-roller-cylindrical.jpg){: width=400 align=right }
 
 Cylindrical roller bearings are very similar to ball bearings, except
 rather than balls in raceways, you have cylinders  in there. Because of
@@ -198,7 +198,7 @@ Cylindrical roller bearings can also be found in a thrust configuration.
 
 ### Needle
 
-![Cutaway of a needle roller bearing](/img/bearing-roller-needle.jpg){: width=400 align=left }
+![Cutaway of a needle roller bearing](../img/bearing-roller-needle.jpg){: width=400 align=left }
 
 Needle rollers are nearly identical to cylindrical rollers except for
 the ratio of length and diameter of the rollers themselves. While
@@ -217,7 +217,7 @@ long-term.
 ### Tapered
 
 ![Cutaway of a tapered roller
-bearing](/img/bearing-roller-tapered.jpg){: width=400 align=right }
+bearing](../img/bearing-roller-tapered.jpg){: width=400 align=right }
 
 Tapered roller bearings feature two distinct pieces: a cup and cone
 assembly. The cup is comprised of the outer ring which holds the cone

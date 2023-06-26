@@ -3,10 +3,155 @@
 None of this is unique, original, or otherwise only found here, but I thought it
 might be useful to collect things that people should probably know about.
 
+## Current, Voltage, and Power (oh my!)
+
+Before we jump into anything else, we should get some basics out of the
+way. For a long time, I found the difference between voltage and current
+to be confusing, not least because people seemed obsessed with voltage,
+when current is _the thing_ under it all. So let's start with current.
+
+NOTE: **Non-intuitive Stuff to Think About** Elsewhere, I talk about the
+[non-intuitive idea of electron flow](non-intuitive-tops.md), but for
+the purposes of this and most use cases, it doesn't matter. Only if you
+want to be [technically
+correct](https://www.youtube.com/watch?v=hou0lU8WMgo). 
+
+### Current (volume)
+
+_Current_ is, fundamentally, flow. It is the rate at which electrons
+flow past a specific point in a complete electrical circuit. A circuit
+is considered complete if there is a path for all electrons to flow in a
+"loop". Any component that converts electrical energy into some other
+form of energy (rotation, heat, light, even "processing") uses current.
+
+We measure current in ampere, or more often shortened to just amp. It
+expresses the quantity of electrons (aka electrical charge) flowing past
+a point in a circuit over a give time. A current of 1 amp can be
+translated as 1 coulomb of electrons, or 6.24 x 10^18^ electrons moving
+past a single point in _one second_. It is traditional to compare
+electricity to water, and in this case, you'd talk about how many
+liters pass a single point in a hose in 1 minute (liter per minute). We
+use a few measurements regularly:
+
+* _A_. Amperes (amps) for _large_ amounts of current. You will typically
+  only see a small number of these in most applications, but in things
+  like electric cars, you might see hundreds of amps. High currents can
+  be _very dangerous_.
+* _mA_. Milliampere (milliamp) is a typical unit in electronic circuits
+  that you'll work with. This is 0.001 ampere.
+* _&micro;A_. Microampere (microamps), or a millionth of an amp
+  (0.000001).
+
+There are smaller units, like picoamps, but outside of a very few
+specialized applications, you'll never see them, and you likely can't
+afford a device that can reliably even measure them. You can, if needed,
+construct a circuit to sneak up on the value, though.
+
+You will also see current referred to as I in things like Ohm's law
+(below). For the longest time, I had no idea why "I" was used, but it
+refers to the "intensity". For current to flow, two things must be true:
+
+1. A circuit that forms a closed conducting loop. This provides a loop
+   through which electrons can flow, and therefore providing energy
+   (electrons) to components along the loop. You can think of a loop
+   (circuit) as closed when you flip a light switch to the on position.
+2. The circuit must include a source of energy, such as a battery, that
+   produces voltage. Without voltage, electrons move randomly and evenly
+   within a wire, and therefore no current is flowing (think of still
+   pond water). When voltage creates pressure that will drive the
+   electrons in a single direction, like a stream.
+
+Current comes in two forms: direct current (DC) and alternating current
+(AC). DC is what most electronics work with, and AC is what your house
+runs on. DC flows in a single direction, and therefore we can often talk
+about positive and negative connections. AC, as the name implies,
+alternates back and forth (a sine wave, technically) on a regular
+interval (60Hz in the United States, for example), and so we don't talk
+about positive and negative, but typically (at least in the US) "hot",
+"neutral", and "ground". Yes, it is not particularly obvious at first.
+[This article might
+help](https://en.wikipedia.org/wiki/Electrical_wiring_in_North_America),
+but typically, you won't be dealing with a lot of AC outside pre-built
+power supplies.
+
+WARNING: **Wire Gauge and Current** Many things are sized based on the
+current with a much broader voltage range. For example, if we use the
+[AWG wire
+standard](https://www.engineeringtoolbox.com/wire-gauges-d_419.html), we
+can see that while 16 gauge solid core wire can carry a maximum of 15A,
+a 24 gauge 7-strand wire can only handle 1.4A. Typically, wire smaller
+than 24 gauge (i.e., with a larger gauge number) is treated as "signal
+wire", and only designed to carry tiny amounts of signal voltage
+(&micro;A). This is also why on a PCB, we often need to use a [trace
+width calculator](PCB-design.md#trace-width-and-current-capacity).
+
+![BK 2709B multimeter with AC and DC current measurement
+highlighted](../img/tool-multimeter-current-measurement.jpg){: width=400 align=right }
+
+We measure current with a
+[multimeter](../tools/test-and-measurement.md#multimeter) most of the
+time. If we look at my trusty BK 2709B, we can see two different things.
+First, there are two different sections for measuring current, one for
+AC and another for DC. Second, while this multimeter is technically
+auto-ranging, you do have to tell it what magnitude of current to
+expect. This is for internal safety protections, and at least on my BK,
+while &micro;A and mA use the same connector, the 10A measurement uses a
+different connector completely (and has different protection mechanisms
+inside). 
+
+### Voltage (pressure)
+
+If current is the volume of electrons passing a point in a circuit,
+voltage is the pressure. To continue the water analogy, if current is
+the liters per minute, voltage is the pressure behind it where we
+measure water in (typically) either pounds per square inch (psi) or
+Pascals (Pa). We measure the voltage pressure in volts (V), which is
+named after [Alessandro
+Volta](https://en.wikipedia.org/wiki/Alessandro_Volta), who invented the
+early precursor of the battery. You might occasionally hear voltage
+termed as electromotive force (EMF), which is why you'll sometimes see
+voltage expressed as the variable E. Mostly, the term comes up in
+discussions of [back EMF](protecting-circuits.md#snubber-diode).
+
+We often use the term voltage and _potential difference_
+interchangeably. Volts is the unit we use to express the potential
+energy difference between two points in a circuit. Potential energy is
+the potential to move electrons from one point to another, and because
+of that _voltage exists only relatively_. You cannot measure voltage at
+a point. You can only measure voltage _between two points_. This took me
+a long time to grasp because it's not super intuitive. The greater the
+voltage, the greater the ability to "push" more electrons and do more
+work.
+
+Like current, voltage comes in both direct and alternating forms. While
+this actually refers to the nature of the current that the voltage is
+moving, when measuring voltage, we need to deal with DC voltage (VDC)
+and AC voltage (VAC) differently, and if you look at the multimeter dial
+above, you can see there are similar settings for AC and DC voltage
+measurement. 
+
+### Power
+
+In addition to the two fundamental measurements, voltage and current, we
+often talk about _power_ (P). Power is the rate of energy transfer and is
+measured in joules/second. We also call them Watts (W). As you can see
+in Ohm's Law below, $P=V\cdot I$, which means it's just voltage times
+current.
+
+That leads us into the magic that is Ohm's law...
+
 ## Ohm's Law
 
+TIP: **Everything** When I say that _everything_ in electronics comes
+back to Ohm's Law, I mean it. While many things, don't actually follow
+Ohm's Law, it is ever-present in the basic flow of electricity in a
+circuit. Over all the years, it has been the single most important
+equation/law that I've ever learned. Over and over, it gets used in one
+form or another, so please read this a few times to make sure you
+understand the elegant simplicity.
+
 This is where it always begins, right? Ohm's law states that the current ($I$)
-through aconductor between two points is directly proportional to the voltage
+through a conductor between two points is directly proportional to the voltage
 ($V$) across the two points. This is represented in the following equation:
 
 $$I = {V\over R}$$
@@ -40,6 +185,13 @@ This one simple thing will carry you _very far_ in electronics.
 
 ### Resistivity in Ohmic Materials
 
+NOTE: **Ohmic Material** Materials which obey Ohm's Law are called
+_ohmic material_. This includes wires, resistors, and other things. Not
+everything follows Ohm's Law, and in this case the current is not
+proportional to the voltage. These are called non-linear or non-ohmic
+materials/components. Diodes, semiconductors, and even the lowly
+fluorescent lamp, are non-ohmic components.
+
 Resistance is a property of the materials being used, as well as their physical
 dimensions. You can calculate the resistance as:
 
@@ -53,12 +205,12 @@ For example, here's a [few different
 materials](https://www.thoughtco.com/table-of-electrical-resistivity-conductivity-608499)
 and their $\rho$ values:
 
-| Material  | $\rho$ at 20C        |
-| --------- | -------------------- |
-| Copper    | $1.68\times 10^{-8}$ |
-| Aluminum  | $2.82\times 10^{-8}$ |
-| Iron      | $1.0\times 10^{-7}$  |
-| Sea water | $2.0\times 10^{-1}$  |
+| Material  | $\rho$ at 20C                       |
+| --------- | ----------------------------------- |
+| Copper    | $1.68\times 10^{-8}$                |
+| Aluminum  | $2.82\times 10^{-8}$                |
+| Iron      | $1.0\times 10^{-7}$                 |
+| Sea water | $2.0\times 10^{-1}$                 |
 | Air       | $2.3\times 10^{16}$ (approximately) |
 
 ### Limits of Linearity
@@ -269,3 +421,4 @@ sees twice the voltage of the smaller resistor.
 ## 3rd Party Material
 
 * [LibreText University Physics II: Kirchhoff's Rules](https://phys.libretexts.org/Bookshelves/University_Physics/Book%3A_University_Physics_(OpenStax)/Book%3A_University_Physics_II_-_Thermodynamics_Electricity_and_Magnetism_(OpenStax)/10%3A_Direct-Current_Circuits/10.04%3A_Kirchhoff's_Rules)
+* [Khan Academy basic electrical quantities](https://www.khanacademy.org/science/physics/circuits-topic/circuits-resistance/a/ee-voltage-and-current)

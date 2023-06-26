@@ -13,7 +13,7 @@ doubler. Technically, it's a full-wave rectifier (both halves of the input are
 used), but operating wth a ripple frequency twice the AC frequency (120Hz in the
 US).
 
-![Schematic of Delon voltage doubler](/img/schematic-basic-voltage-doubler.png)
+![Schematic of Delon voltage doubler](../img/schematic-basic-voltage-doubler.png)
 
 The voltage (DC) on the right-hand side will be double the input (AC) voltage.
 
@@ -28,7 +28,7 @@ NOTE: I did not draw this because  Fusion360 doesn't let you easily put parts at
 45 degree angles, and I'm too lazy to design new parts pre-rotated. These are
 taken from [this article](https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/voltage-multipliers/).
 
-![Cockroft Walton generator](/img/schematic-cockroft-walton-multiplier.png)
+![Cockroft Walton generator](../img/schematic-cockroft-walton-multiplier.png)
 
 This shows a generator with 4 doublers. If we have 5VAC in and 5 stages we can calculate the output voltage of the
 multiplier using this (and ignoring diode drops):

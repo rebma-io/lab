@@ -131,8 +131,8 @@ has more](https://learn.adafruit.com/smt-manufacturing/solder-paste-storage) on
 this, but I store mine in a cheap little Peltier-cooled fridge that was super
 cheap (it's also not super efficient, but it's tiny so it doesn't matter):
 
-![Exterior of small fridge](/img/solder-fridge-exterior.jpg){width="400"} ![Interior of small
-fridge](/img/solder-fridge-interior.jpg){width="400"}
+![Exterior of small fridge](../img/solder-fridge-exterior.jpg){width="400"} ![Interior of small
+fridge](../img/solder-fridge-interior.jpg){width="400"}
 
 ## 3rd Party Resources
 

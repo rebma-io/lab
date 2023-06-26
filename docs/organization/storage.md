@@ -60,7 +60,7 @@ many compartments. These are just handwritten and then places in a small holder
 on the front ([Amazon](https://www.amazon.com/gp/product/B0BJQ7TM4F/)), which
 lets me read it and update it as necessary. You can see an example here:
 
-![Box with 3x5 card label attached on the front](/img/parts-box-front-card.jpg)
+![Box with 3x5 card label attached on the front](../img/parts-box-front-card.jpg)
 
 ### AideTek
 
@@ -69,7 +69,7 @@ For small surface mount parts, I'm a big fan of the
 144 compartment SMD storage enclosure, shown below:
 
 [![Aidetek 144 compartment
-box](/img/aidetek-boxall-144.jpg)](https://aidetek.com/mm5/merchant.mvc?Screen=PROD&Store_Code=A&Product_Code=BOXALL)
+box](../img/aidetek-boxall-144.jpg)](https://aidetek.com/mm5/merchant.mvc?Screen=PROD&Store_Code=A&Product_Code=BOXALL)
 
 They make these in a bunch of configurations. They also make nice
 ESD-safe boxes for a little more money that are perfect for things that

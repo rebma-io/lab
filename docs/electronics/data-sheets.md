@@ -61,7 +61,7 @@ some aspects of linear regulators to be aware of in this context.
 
 ### Header
 
-![TI LM317 header, upper right](/img/datasheet-lm317-header.png){: width=300 align=right }
+![TI LM317 header, upper right](../img/datasheet-lm317-header.png){: width=300 align=right }
 
 In the header, the manufacturer provides information like the official
 part number and name, as well as (typically) the first release date
@@ -139,7 +139,7 @@ likely to work for your application or not.
 ### Part Number & Device Information
 
 ![LM317 device and part
-information](/img/datasheet-lm317-device-information.png){: width=400 align=left }
+information](../img/datasheet-lm317-device-information.png){: width=400 align=left }
 
 A listing of all the variations of the part that the company produces.
 These may differ in specification, packaging, or both. It may not be
@@ -166,7 +166,7 @@ a revision to the data sheet. _This is evil_.
 
 ### Device (Comparison) Table
 
-![LM317 device comparison table](/img/datasheet-lm317-comparison-table.png)
+![LM317 device comparison table](../img/datasheet-lm317-comparison-table.png)
 
 Here we can find information on all the variations on the part from a
 specification perspective, along with the critical characteristics for
@@ -222,7 +222,7 @@ stay within the operating temperature of the device, and you'll be fine
 ### Pin Configurations and Functions
 
 ![LM317 pin
-configuration](/img/datasheet-lm317-packaging-and-pins.png){: width=400 align=right }
+configuration](../img/datasheet-lm317-packaging-and-pins.png){: width=400 align=right }
 
 For every packaging option, there _should_ be a diagram showing the
 package, and the pin assignment. These often change package to package,
@@ -235,7 +235,7 @@ has the resistor divider network to set the output voltage.
 ### Specifications
 
 ![LM317 load regulation graph at -40, 25, and
-125C](/img/datasheet-lm317-load-regulation.png){: width=400 align=left}
+125C](../img/datasheet-lm317-load-regulation.png){: width=400 align=left}
 
 In this section we can find, typically, very detailed technical
 information about the component. For example, the $T_{J(max)}$ mentioned
@@ -266,7 +266,7 @@ Here we find a lot of useful information. We also find out a few details:
   amplifier to maintain accurate output voltage despite AC fluctuations
   in the power supply.
 
-![LM317 functional block diagram](/img/datasheet-lm317-block-diagram.png){: width=400 align=right }
+![LM317 functional block diagram](../img/datasheet-lm317-block-diagram.png){: width=400 align=right }
 
 We also get a functional block diagram. This isn't how the device is
 actually built, but is often the idealized version of it. What it will
@@ -291,7 +291,7 @@ manufacturers strongly worded recommendation on how to use the
 component. _Ingenium cave._
 
 ![LM317 typical application
-schematic](/img/datasheet-lm317-typical-application.png)
+schematic](../img/datasheet-lm317-typical-application.png)
 
 In this situation, we have both a schematic and a series of
 recommendations: 
@@ -412,7 +412,7 @@ First, TI provides some specific recommendations:
 
 They then provide an example "layout" for best performance:
 
-![LM317 PCB layout recommendations](/img/datasheet-lm317-pcb-layout.png)
+![LM317 PCB layout recommendations](../img/datasheet-lm317-pcb-layout.png)
 
 The large grey blocks are intended to be "wide traces" (see
 [how to calculate](PCB-design.md#trace-width-and-current-capacity)), and
@@ -435,7 +435,7 @@ manufacturer and various other miscellaneous information.
 Finally, we get a list of all the various orderable products:
 
 ![List of LM317 orderable
-products](/img/datasheet-lm317-package-information.png)'
+products](../img/datasheet-lm317-package-information.png)'
 
 There's a few things here to pay attention to. The first, and maybe even
 the most important is "Status". This is the part's status to the
@@ -451,7 +451,7 @@ manufacturer, and for TI they use the following terms:
   may or may not be available. 
 * OBSOLETE. TI has discontinued the production of the device.
 
-![Digikey product status selector](/img/digikey-product-status.png){: width=200 align=left }
+![Digikey product status selector](../img/digikey-product-status.png){: width=200 align=left }
 
 You should, if at all possible, avoid any device which is not shown as
 ACTIVE. You're setting yourself up for a lot of future pain and

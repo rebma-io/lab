@@ -1,6 +1,12 @@
 # About
 
 rebma.io is a label for Maker projects.
+
+WARNING: **Not a Professional Engineer** While I have been an engineer
+of various forms for the last 30+ years, I am not a [professional
+engineer](https://en.wikipedia.org/wiki/Regulation_and_licensure_in_engineering),
+and much of the information here is self-taught and not formally
+educated. Just keep that in mind as you read.
 ## Why
 
 Being a maker means learning a dizzying number of skills, and as part of the
@@ -10,7 +16,8 @@ otherwise hope others might find some use.
 ## Who
 
 The content in this collection is written by Chris Petrilli. An engineer of 30
-years in the tech business working in software, security, and embedded systems.
+years in the tech business working in software, security, and embedded
+systems. 
 
 ## Amazon, Affiliate Links and Such
 

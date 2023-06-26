@@ -1,5 +1,10 @@
 # Units of Measure
 
+There are a lot of units of measure that you end up working with. In
+this section, I want to talk about a few that have always tripped me up,
+and hopefully, by explaining them to others, I can better understand
+them myself.
+
 ## Decibels
 
 While nobody uses the original unit of measure, the bel, the decibel (deci
