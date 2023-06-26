@@ -73,3 +73,12 @@ subscription:
 For getting started, though, it's 100% worth starting with the personal license
 and figuring out if this is something you're serious enough about to drop the
 $495 USD (2023-6) that it will cost.
+
+## Random Bits of Information
+
+* For text, you have to use a TrueType font (ttf), not an OpenType (otf)
+  font, at least in Windows. If you use OTF, you will get errors like
+  "could not retrieve the profiles of the selected text".
+* [How to use global parameters across many different
+  files](https://productdesignonline.com/how-to-create-and-use-global-parameters-in-fusion-360/),
+  although it's a pain in the ass.
