@@ -4,6 +4,9 @@ on:
     branches:
       - master 
       - main
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_USER: petrilli
 permissions:
   contents: write
 jobs:
@@ -21,5 +24,5 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: GITHUB_USER=petrilli GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} pip install -r requirements.txt
+      - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
