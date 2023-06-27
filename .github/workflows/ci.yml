@@ -21,5 +21,5 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install -r requirements.txt
+      - run: GITHUB_USER=petrilli GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
