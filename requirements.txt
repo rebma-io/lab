@@ -35,7 +35,7 @@ mkdocs==1.4.3
 mkdocs-git-revision-date-localized-plugin==1.2.0
 mkdocs-glightbox==0.3.4
 mkdocs-markmap==2.3.0
-mkdocs-material @ git+https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/rebma-io/mkdocs-material-insiders.git
+mkdocs-material
 mkdocs-material-extensions==1.1.1
 mkdocs-mermaid2-plugin==0.6.0
 mkdocs-table-reader-plugin==2.0.1
