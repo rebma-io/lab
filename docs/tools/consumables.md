@@ -8,6 +8,20 @@ continuously keep in stock, and my thoughts about why I chose what I
 chose. I would also consider wire a consumable, but don't discuss it
 here.
 
+
+## Spoil Boards
+
+There are many times when you need to cut, chop, or otherwise mangle
+something and you don't want to be doing that on something expensive
+like an ESD mat.  While there are dedicated cutting mats available, I've
+found the best strategy is one stolen from the machining world: [spoil
+boards](https://www.shopsabre.com/mdf-vs-ldf-which-spoilboard-is-better-for-cnc/).
+These are sacrificial surfaces, so they're inexpensive. In my case,
+I just have some 11x14" 1/4" MDF boards that I picked up in a pack of a
+dozen for cheap. I'm still on my first. Whenever I need to cut
+something, out it comes. It's often the thing under other things... just
+in case.
+
 ## Distilled (or deionized) Water (H~2~O)
 
 WARNING: **Safe Handling** While, yes, distilled (or deionized) water is
