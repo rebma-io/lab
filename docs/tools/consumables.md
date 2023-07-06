@@ -68,10 +68,21 @@ hobbyist and commercial electronics and mechanical works. While
 typically available in a 60-90% concentration, you can easily obtain
 99-99.9% concentration, which is what I recommend for use in this case.
 Reducing the amount of water also reduces the possibility of
-water-induced corrosion. 
+water-induced corrosion. Definitely, I wouldn't use anything below 90%
+for electronics work.
 
 For general use, I will admit to just buying the [Amazon Basics
 99%](https://www.amazon.com/dp/B07NFSFBXQ/), which is "good enough".
+
+So what do you use IPA for? A lot of things, but the main uses are:
+
+* Cleaning solder flux off of PCB.
+* Cleaning contacts.
+* Removing adhesives.
+* Removing Sharpie markings.
+* Removing fingerprints from many surfaces (but not all).
+
+One of the great things is that it evaporates quickly.
 
 ## Acetone
 
