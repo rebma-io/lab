@@ -101,13 +101,15 @@ mitigated. An example, using the above basic schematic is:
 
 ![RC snubber with relay](../img/schematic-rc-snubber.png)
 
-Unlike a diode snubber, there's some calculations you'll need to do to choose R
-and C correctly. This is [quite
-complicated](https://www.eetimes.com/calculating-an-r-c-snubber/), and so I
-generally just use a diode snubber unless the timing is critical.
+Unlike a diode snubber, there's some calculations you'll need to do to
+choose R and C correctly. This is [quite
+complicated](https://e2e.ti.com/blogs_/b/powerhouse/posts/calculate-an-r-c-snubber-in-seven-steps),
+and so I generally just use a diode snubber unless the timing is
+critical.
 
 ## 3rd Party Resources
 
 * [Introduction to Transient Voltage Suppressors (TVS)](https://www.allaboutcircuits.com/technical-articles/transient-voltage-suppressors-tvs-an-introduction/)
 * [Methods of circuit protection](https://resources.altium.com/p/methods-protect-your-circuit)
 * [Transient suppression devices and principles](https://www.littelfuse.com/data/en/application_notes/an9768.pdf)
+* [TI POWERSTAGE-DESIGNER](https://www.ti.com/tool/POWERSTAGE-DESIGNER).
