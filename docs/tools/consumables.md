@@ -212,3 +212,8 @@ which cover just the last joint of your fingers in most cases. They also
 come in nitrile, and are pretty common in the electronics industry.
 Personally, they drive me crazy, and I'd rather go through the time of
 putting on one or two gloves.
+
+## Third-Party Resources
+
+* [More about isopropyl
+  acohol](https://www.ifixit.com/News/36877/ask-ifixit-everything-you-wanted-to-know-about-isopropyl-alcohol) 
