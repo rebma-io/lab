@@ -14,6 +14,35 @@
 
 ## What Can Damage a Circuit?
 
+## Galvanic Isolation
+
+NOTE: **About the Name** Often just called _isolation_, _galvanic
+isolation_ gets its name from [Luigi
+Galvani](https://en.wikipedia.org/wiki/Luigi_Galvani) a cotemporary of
+Alessandro Volta, also of the [galvanic
+cell](https://en.wikipedia.org/wiki/Galvanic_cell).
+
+Galvanic isolation, electrical isolation, or just simply isolation, is a
+technique of separating different parts of a circuit so that there is no
+possibility of current flow (no conduction path). So, why might we want
+or need this. There are two main reasons:
+
+1. Safety. It is a good way to prevent the possibility of electrical
+   shocks in systems that are dealing with high voltage or current. 
+2. Separate grounds. Since ground is basically the universal return
+   path, we have situations where we need to have different grounds
+   which are at different potentials (approx. voltage). 
+
+It doesn't mean there's no way to communicate between the sections, it
+just means that it can't be a galvanic/electrical communication. This
+does leave us with a few major options:
+
+* Capacitive
+* Inductive
+* Optical
+
+The one we use largely depends on whether we are attempting to isolate
+power (current) or isolate a signal (tiny current).
 
 ## Snubber Networks
 
@@ -27,6 +56,12 @@ complicated is an RC snubber, and while it's marginally more complicated, it is
 also better behaved. Finally, you can build one out of solid-state
 (semiconductor) components, typically using a pair of Zener diodes.
 
+<!--
+TODO: Transformers
+TODO: Capacitors
+TODO: Opto-isolators
+TODO: Hall-effect Sensor
+-->
 
 ### Snubber Diode
 
