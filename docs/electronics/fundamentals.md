@@ -3,8 +3,6 @@
 None of this is unique, original, or otherwise only found here, but I thought it
 might be useful to collect things that people should probably know about.
 
-## Current, Voltage, and Power (oh my!)
-
 Before we jump into anything else, we should get some basics out of the
 way. For a long time, I found the difference between voltage and current
 to be confusing, not least because people seemed obsessed with voltage,
@@ -16,7 +14,8 @@ the purposes of this and most use cases, it doesn't matter. Only if you
 want to be [technically
 correct](https://www.youtube.com/watch?v=hou0lU8WMgo). 
 
-### Current (volume)
+
+## Current (volume)
 
 _Current_ is, fundamentally, flow. It is the rate at which electrons
 flow past a specific point in a complete electrical circuit. A circuit
@@ -99,7 +98,7 @@ while &micro;A and mA use the same connector, the 10A measurement uses a
 different connector completely (and has different protection mechanisms
 inside). 
 
-### Voltage (pressure)
+## Voltage (pressure)
 
 If current is the volume of electrons passing a point in a circuit,
 voltage is the pressure. To continue the water analogy, if current is
@@ -130,7 +129,7 @@ and AC voltage (VAC) differently, and if you look at the multimeter dial
 above, you can see there are similar settings for AC and DC voltage
 measurement. 
 
-### Power
+## Power
 
 In addition to the two fundamental measurements, voltage and current, we
 often talk about _power_ (P). Power is the rate of energy transfer and is
@@ -138,7 +137,227 @@ measured in joules/second. We also call them Watts (W). As you can see
 in Ohm's Law below, $P=V\cdot I$, which means it's just voltage times
 current.
 
-That leads us into the magic that is Ohm's law...
+## Resistance
+
+While it may sound negative, resistance is a fundamental property of
+electronics nd is critical to any functioning circuit. Resistance is a
+measure of the opposition to current flow in an electrical circuit. It
+is measured in ohms, which is represented by the Greek letter omega
+(&ohm;). It is often represented in equations as the letter R.
+
+All materials resist current flow to some degree. They fall into one of two broad categories:
+
+Conductors
+:: Materials that offer very little resistance where electrons can move
+easily. Examples: silver, copper, gold and aluminum.
+
+Insulators 
+:: Materials that present high resistance and restrict the
+flow of electrons. Examples: Rubber, paper, glass, wood and plastic.
+
+The higher the resistance, the lower the current flow; resistance is the
+primary reason all conductors give off some degree of heat, so
+overheating is an issue often associated with resistance. The lower the
+resistance, the higher the current flow.
+
+Many components, such as [resistors](passive-resistor.md), have a
+fixed-resistance value. Resistance is a property of the materials being
+used, as well as their physical dimensions. You can calculate the
+resistance as:
+
+$$R = \rho{L\over A}$$
+
+where $A$ is the cross-sectional area (in meters), and $L$ is the length (also
+in meters). $\rho$ is the intrinsic  resistive property of the material,
+although it does change with temperature. 
+
+For example, here's a [few different
+materials](https://www.thoughtco.com/table-of-electrical-resistivity-conductivity-608499)
+and their $\rho$ values:
+
+| Material  | $\rho$ at 20C                       |
+| --------- | ----------------------------------- |
+| Copper    | $1.68\times 10^{-8}$                |
+| Aluminum  | $2.82\times 10^{-8}$                |
+| Iron      | $1.0\times 10^{-7}$                 |
+| Sea water | $2.0\times 10^{-1}$                 |
+| Air       | $2.3\times 10^{16}$ (approximately) |
+
+So, for a 10cm length of 26ga solid core copper wire (don't you love
+mixing weird measurement units), you could calculate this using the
+equation earlier:
+
+$$\begin{aligned}
+R &= 1.68\times 10^{-8} {0.1\over{1.4\times 10^{-7}}}\\[5pt]
+&= 0.0000000168 {0.1\over{0.00000014}}\\[5pt]
+&= 0.012
+\end{aligned}$$
+
+This means that our 10cm length of wire has a resistance of 0.012&ohm;.
+Note that stranded wire would have a slightly different value which is
+the aggregate of the cross-section of each strand multiplied by the
+number of strands. 
+
+> NOTE: **Equivalent Source Resistance (ESR)** Often, you will hear people
+> talk bout the the ESR of a component. For example, when you have a
+> voltage divider (see [here](passive-resistor.md#voltage-divider)), and
+> you attach a load which has some resistance, the voltage will actually
+> drop due to a _finite_ source resistance. ESR refers to the
+> hypothetical Thevenin equivalent resistance of the circuit . Nearly
+> everything has an ESR, and there are tools, such as LCR meters, that
+> can help you determine it if it's not provided on a datasheet. 
+>
+> The undesirable reduction of voltage mentioned above is a result of
+> what is called _circuit loading_, and what designers mean when they
+> refer to the load of a circuit. As a general rule, you want to keep
+> $R_{\mathrm{load}} \gg R_{\mathrm{internal}}$ as a high-resistance
+> load has little effect on the source. This is one reason you will see
+> things like multimeters with resistance measured in the megohms. 
+
+## Capacitance
+
+Capacitance is the ability of a component or circuit to collect and
+store energy in the form of an electrical charge. We measure this charge
+as the ratio of the electric charge on each conductor to the potential
+difference (i.e., voltage) between them. The value is measured in farads
+(F), units named for English physicist [Michael
+Faraday](https://en.wikipedia.org/wiki/Michael_Faraday). A farad is a
+large quantity of capacitance. Most electrical devices include
+capacitors that produce only a fraction of a farad, often a thousandth
+of a farad (or microfarad, &micro;F) or as small as a picofarad (a
+trillionth, pF).
+
+> WARNING: **Safety with Capacitance** Because capacitors, by
+> definition, store electrical charge, and that charge can be
+> substantial, it is _critically important_ to ensure you discharge any
+> capacitor before you might come into contact with it. While this is
+> _probably_ not important for capacitors in the pico or nano Farad
+> range, by the time you hit a micro (&micro;) farad, you're looking for
+> trouble. 
+>
+> The best way to discharge a capacitor, if you don't want to [do the
+> math](https://www.digikey.com/en/blog/how-to-safely-discharge-a-capacitor)
+> is using a little homemade discharge tool (example to come, sorry).
+
+
+## Inductance
+
+NOTE: **Hand Waving Ahead** I find inductance to be one of the most
+complicated subjects in electronics, and I will attest to not being 100%
+comfortable that I understand it completely. So, I'm going to try and
+explain it how I understand it, and how I think about it. This is likely
+not 100% correct, but it is hopefully 84% useful.
+
+While many of the preceding characteristics are true of both
+fixed/constant currents and alternating currents, inductance is,
+effectively, purely about alternating currents. Inductance is the
+characteristic of an electrical component which _opposes changes in
+current_. We measure inductance in Henries (H), and typically use the
+symbol L to represent them. One Henry is a _lot_ of inductance. 
+
+I like to think of inductance as the inertia of a component in the
+circuit. Inertia is the characteristic of mass which opposes a change in
+velocity. Inductance does the same thing in an electrical circuit. This
+means that it requires _more_ energy to start or stop the flow of
+current than it does to maintain it.
+
+Every conductor has some inductance. This is because current in a
+conductor will _always_ produce a magnetic field surrounding the
+conductor (see [Faraday's
+Law](https://www.khanacademy.org/science/physics/magnetic-forces-and-magnetic-fields/magnetic-flux-faradays-law/a/what-is-faradays-law)).
+When the current changes, the magnetic field changes, which will induce
+an electromotive force (EMF). For reasons I don't 100% understand, this
+is always counter to the applied voltage, creating the inductance or
+opposition to change. This is defined by [Lenz'
+Law](https://en.wikipedia.org/wiki/Lenz%27s_law), which states:
+
+> The current induced in a circuit due to a change in a magnetic field
+> is directed to oppose the change in [magnetic] flux and to exert a
+> mechanical force which opposes the motion.
+
+Inductance comes in two forms: self-inductance and mutual-inductance.
+Put simply, self-inductance is when one conductor induces inductance in
+itself. Mutual-inductance is when one conductor _also_ induces
+inductance in another conductor. Examples of mutual inductance include
+motors, transformers, and solenoids. 
+
+There's _a lot_ of math, but I think that if you understand that it is
+about the _opposition to changes in current_ you'll get reasonably far.
+
+## Impedance
+
+WARNING: **Complex Numbers Ahead** I'm going to try and avoid the
+complex numbers as much as possible, but it's not totally avoidable when
+talking about impedance. At some point, I'll likely dive more deeply
+into this topic, but that'll be a topic for another page.
+
+When a circuit has capacitors and inductors in it, it is more
+complicated than a purely resistive circuit. Unlike resistors,
+capacitors and inductors change behavior depending on frequency. This is
+why we consider these to be _reactive_. This results in a much more
+complex model for analyzing them.
+
+Impedance (Z) is "generalized resistance". For something like a
+resistor, we find the voltage and current in phase.
+
+![Two sine waves in phase with each
+other](../img/impedance-sine-wave.png)
+
+However, for reactive components (inductors and capacitors), the voltage
+and current are out-of-phase (90&deg; typically) from each other.
+
+![Two sine waves 90&deg; apart](../img/impedance-sine-wave-90-degrees.png)
+
+We call the out-of-phase behavior reactance (X), and the in-phase
+behavior resistance (R).
+
+Since most circuits combine both types of components, the phase
+relationship of voltage and current will be different in different parts
+of the circuit. This is also where the complex numbers start to rear
+their ugly heads. We can have in-between phase alignments (not 0&deg;
+and not 90&deg;). To represent that combination of resistance and
+reactance, we use the term impedance, which is represented as:
+
+$$Z = R + jX$$
+
+See, there's the imaginary part (_j_). This is also where you'll start
+seeing &omega; pop up all over the place. The omega (&omega;) is the
+angular velocity (change in angle over time). So, if we look at the
+impedance of the fundamental components (resistors, capacitors,
+inductors), we get the following equations based on their behavior:
+
+$$\begin{aligned}
+Z_R &= R\\[5pt]
+Z_C &= {1\over{j\omega C}}\\[5pt]
+Z_L &= j\omega L
+\end{aligned}$$
+
+This reactance is why filters work the way they do. It's why blocking
+capacitors work. It's why decoupling works. For now, I'll send you to
+read &sect;1.7 in _Art of Electronics: Third Edition_. Horowitz and Hill
+do a much better job of explaining the math than I ever will.
+
+One place you can see this bite you is in
+[reflections](https://en.wikipedia.org/wiki/Signal_reflection) where
+some of the power going through the conductor is reflected back at the
+source. This is (almost always) a _bad thing_. Matching impedance is a
+critical part of any high-performance or high-frequency circuit.  The
+general equation is, for conductor 1 and conductor 2:
+
+$$\Gamma = {{Z_1 - Z_2}\over{Z_1 + Z_2}}$$
+
+Here, gamma (&Gamma;) represents the reflection coefficient. You just
+have to do that in complex numbers if it isn't purely resistive. 
+
+While this is all very complicated if you want to be correct, you can be
+quite loose in many cases without facing a lot of repercussions. Where
+it starts to really matter is higher frequency circuits (above what
+you'll typically find with an Arduino).
+
+NOTE: **Terminology** You will often see the term impedance used even
+when it is _purely_ resistance. For example, we might talk about a
+50&ohm; impedance of an input. Yes, this complicates things and so
+context matters more than it should.
 
 ## Ohm's Law
 
@@ -182,38 +401,12 @@ power ($P$) and resistance ($R$), you can use $\sqrt{P/R}$.
 
 This one simple thing will carry you _very far_ in electronics.
 
-
-### Resistivity in Ohmic Materials
-
 NOTE: **Ohmic Material** Materials which obey Ohm's Law are called
 _ohmic material_. This includes wires, resistors, and other things. Not
 everything follows Ohm's Law, and in this case the current is not
 proportional to the voltage. These are called non-linear or non-ohmic
 materials/components. Diodes, semiconductors, and even the lowly
 fluorescent lamp, are non-ohmic components.
-
-Resistance is a property of the materials being used, as well as their physical
-dimensions. You can calculate the resistance as:
-
-$$R = \rho{L\over A}$$
-
-where $A$ is the cross-sectional area (in meters), and $L$ is the length (also
-in meters). $\rho$ is the intrinsic  resistive property of the material,
-although it does change with temperature. 
-
-For example, here's a [few different
-materials](https://www.thoughtco.com/table-of-electrical-resistivity-conductivity-608499)
-and their $\rho$ values:
-
-| Material  | $\rho$ at 20C                       |
-| --------- | ----------------------------------- |
-| Copper    | $1.68\times 10^{-8}$                |
-| Aluminum  | $2.82\times 10^{-8}$                |
-| Iron      | $1.0\times 10^{-7}$                 |
-| Sea water | $2.0\times 10^{-1}$                 |
-| Air       | $2.3\times 10^{16}$ (approximately) |
-
-### Limits of Linearity
 
 While Ohm’s Law states that resistance is a linear function, this rule is not
 universal and is in fact empirical. It is actually a linearized model of

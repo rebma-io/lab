@@ -33,3 +33,4 @@
 *[NIST]: National Institute of Standards and Technology
 *[ESR]: Equivalent Series Resistance
 *[LDO]: Low Drop Out
+*[EMF]: ElectroMotive Force
