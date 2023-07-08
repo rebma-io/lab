@@ -31,3 +31,5 @@
 *[IEC]: International Electrotechnical Commission
 *[ANSI]: American National Standards Institute
 *[NIST]: National Institute of Standards and Technology
+*[ESR]: Equivalent Series Resistance
+*[LDO]: Low Drop Out
