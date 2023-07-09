@@ -34,3 +34,5 @@
 *[ESR]: Equivalent Series Resistance
 *[LDO]: Low Drop Out
 *[EMF]: ElectroMotive Force
+*[DUT]: Device Under Test
+*[PCB]: Printed Circuit Board
