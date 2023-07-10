@@ -52,7 +52,7 @@ inductors (L), and resistors (R) as above.
 | ------ | ------- | ------: | ----------------------: | ------------- | --------- |
 | -      | (none)  |   10^0^ |                       1 | unit          | C, L, R   |
 | milli  | m       |  10^-3^ |                 1/1,000 | thousandth    | C, L, R   |
-| micro  | &micro; |  10^-6^ |             1/1,000,000 | millionth     | C, L      |
+| micro  | &micro; |  10^-6^ |             1/1,000,000 | millionth     | C, L, R   |
 | nano   | n       |  10^-9^ |         1/1,000,000,000 | billionth     | C, L      |
 | pico   | p       | 10^-12^ |     1/1,000,000,000,000 | trillionth    | C         |
 | femto  | f       | 10^-15^ | 1/1,000,000,000,000,000 | quadrillionth |           |
