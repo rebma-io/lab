@@ -41,7 +41,7 @@ for any things, but I find consistency to be a helpful thing.
 - [ ] Pin 1 indicated on all ICs using small dot
 - [ ] Polarity indication for: power and ground, polarized capacitors, and all
   diodes.
-- [ ] Probe points
+- [ ] Probe/test points
 - [ ] Switch settings (if it can fit)
 
 The font size and line width of the silkscreen text depend on the type of
