@@ -2,8 +2,8 @@ site_name: rebma.io Notebook
 theme:
   name: material
   palette: 
-    primary: blue
-    accent: green
+    primary: black
+    accent: blue
   font:
     text: Open Sans
     code: Fira Mono
