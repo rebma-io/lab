@@ -36,3 +36,4 @@
 *[EMF]: ElectroMotive Force
 *[DUT]: Device Under Test
 *[PCB]: Printed Circuit Board
+*[LCR]: Inductance, Capacitance, Resistance

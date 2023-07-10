@@ -8,3 +8,6 @@ those ideas.
   notebook exploring how you might integrate Ed25519 elliptic-curve cryptography
   into a data matrix formatted for the GS1 standard to ensure some kind of
   traceability. 
+* [Adding Kelvin clips to a DE-5000 LCR meter](kelvin-clips-for-lcr.md).
+  Step-by-step walk through of adding more appropriate Kelvin clips to
+  my DE-5000 LCR meter.

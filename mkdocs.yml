@@ -13,6 +13,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.footer
     - navigation.indexes
+    - navigation.prune
   icon:
     repo: fontawesome/brands/git
   logo: assets/rebma-io-logo-white.png

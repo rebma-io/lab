@@ -153,6 +153,8 @@ probability of settling of build-up onto components.
 
 ## Circuit Behavior
 
+FUTURE: **More to Come** Will be talking about things like back
+(reverse) EMP, reverse polarity, et.c
 
 ### Galvanic Isolation
 
