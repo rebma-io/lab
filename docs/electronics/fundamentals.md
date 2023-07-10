@@ -148,11 +148,11 @@ is measured in ohms, which is represented by the Greek letter omega
 All materials resist current flow to some degree. They fall into one of two broad categories:
 
 Conductors
-:: Materials that offer very little resistance where electrons can move
+: Materials that offer very little resistance where electrons can move
 easily. Examples: silver, copper, gold and aluminum.
 
 Insulators 
-:: Materials that present high resistance and restrict the
+: Materials that present high resistance and restrict the
 flow of electrons. Examples: Rubber, paper, glass, wood and plastic.
 
 The higher the resistance, the lower the current flow; resistance is the
