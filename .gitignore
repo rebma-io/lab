@@ -28,3 +28,5 @@ Temporary Items
 
 # IntelliJ
 .idea/
+.vscode/
+__PYCACHE__
