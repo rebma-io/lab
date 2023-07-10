@@ -3,6 +3,27 @@
 I wanted to highlight some interesting materials that people may not know about.
 These can easily solve a lot of problems when building things.
 
+## Butyl-Mastic Sheets
+
+![Butyl-mastic with adhesive backing being rolled onto a
+surface](../img/material-butyl-rubber.jpg){: width=400 align=right }
+
+[Butyl
+rubber](https://www.thomasnet.com/articles/plastics-rubber/all-about-butyl-rubber/),
+or just butyl, is a synthetic rubber. There are a bunch of different
+versions, but there is a version that is is made as a blend with
+[mastic](https://en.wikipedia.org/wiki/Mastic_(plant_resin)) which is
+available in sheets with adhesives and, typically, very thin aluminum
+outer layer. So what good is it? Well, it is very useful for dampening
+vibrations in cars (where you often see it added) and speakers. This is
+the same basic compound, in a different formulation, that can be used in
+some sealants. 
+
+For example, I printed a 3D enclosure for some small speakers for a
+project, and used butyl-mastic sheets to dampen the vibrations that the
+plastic would otherwise exhibit. As a side benefit, it's quite dense, so
+it adds a certain heft to the project.
+
 ## Ultra-High Molecular Weight (UHMW) Polyethylene 
 
 A [very neat
