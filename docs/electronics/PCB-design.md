@@ -1,4 +1,4 @@
-# PCB Design
+# PCB: Design
 
 ## Calculators
 
