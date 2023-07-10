@@ -37,3 +37,4 @@
 *[DUT]: Device Under Test
 *[PCB]: Printed Circuit Board
 *[LCR]: Inductance, Capacitance, Resistance
+*[CSV]: Comma Separated Values
