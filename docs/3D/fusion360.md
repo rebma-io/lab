@@ -88,8 +88,10 @@ contains:
   thread pitch.
 * Sizes for [threaded inserts](joining-parts.md#threaded-inserts).
 
-You can download the CSV from here:
-[f360_default_parameters.csv :material-download-circle-outline:](../files/f360_default_parameters.csv).
+You can download the CSV from here: 
+[f360_default_parameters.csv
+:material-download-circle-outline:](../files/f360_default_parameters.csv)
+[(CC-BY)](https://creativecommons.org/licenses/by/4.0/).
 
 You can import them quickly with the [Parameters
 I/O](https://apps.autodesk.com/FUSION/en/Detail/Index?id=1801418194626000805)
