@@ -28,8 +28,11 @@ for reference from other places as needed.
 | Resistance                              | [Ohm](fundamentals.md#resistance)                     | &ohm;  |
 | Capacitance                             | [Farad](fundamentals.md#capacitance)                  | F      |
 | Inductance                              | [Henry](fundamentals.md#inductance)                   | H      |
-| Frequency                               | [Hertz](https://en.wikipedia.org/wiki/Hertz)          | Hz     |
+| Frequency                               | [Hertz](https://en.wikipedia.org/wiki/Hertz)          | Hz[^1] |
 
+[^1]: Why did we end up with this one that is _two letters_ rather than
+    one like every other sane unit? Did an American sneak in?
+    
 ### Prefixes
 
 While you likely learned some of the basic (milli, kilo, etc.) prefixes
@@ -39,16 +42,20 @@ things". There are others that you will see, [which you can find
 here](https://en.wikipedia.org/wiki/Metric_prefix), but almost never in
 electronics (so far!).
 
+For each of the prefixes, I'll denote what components you might
+typically see these prefixes around. They'll be noted as capacitors (C),
+inductors (L), and resistors (R) as above.
+
 #### Small Things
 
-| Prefix | Symbol  |   Power |                               Scale | Words         |
-| ------ | ------- | ------: | ----------------------------------: | ------------- |
-| -      | (none)  |   10^0^ |                                   1 | unit          |
-| milli  | m       |  10^-3^ |                             1/1,000 | thousandth    |
-| micro  | &micro; |  10^-6^ |                         1/1,000,000 | millionth     |
-| nano   | n       |  10^-9^ |                     1/1,000,000,000 | billionth     |
-| pico   | p       | 10^-12^ |                 1/1,000,000,000,000 | trillionth    |
-| femto  | f       | 10^-15^ |             1/1,000,000,000,000,000 | quadrillionth |
+| Prefix | Symbol  |   Power |                   Scale | Words         | Component |
+| ------ | ------- | ------: | ----------------------: | ------------- | --------- |
+| -      | (none)  |   10^0^ |                       1 | unit          | C, L, R   |
+| milli  | m       |  10^-3^ |                 1/1,000 | thousandth    | C, L, R   |
+| micro  | &micro; |  10^-6^ |             1/1,000,000 | millionth     | C, L      |
+| nano   | n       |  10^-9^ |         1/1,000,000,000 | billionth     | C, L      |
+| pico   | p       | 10^-12^ |     1/1,000,000,000,000 | trillionth    | C         |
+| femto  | f       | 10^-15^ | 1/1,000,000,000,000,000 | quadrillionth |           |
 
 In the electronics world, you will see milli, micro, nano, and pico
 quite frequentl. 1pF capacitors aren't uncommon at all, and while there
@@ -57,15 +64,15 @@ situation you are likely to ever come across.
 
 #### Big Things
 
-| Prefix | Symbol |  Power |                             Scale | Words        |
-| ------ | ------ | -----: | --------------------------------: | ------------ |
-| -      | (none) |  10^0^ |                                 1 | unit         |
-| kilo   | k      |  10^3^ |                             1,000 | thousands    |
-| meta   | M      |  10^6^ |                         1,000,000 | millions     |
-| giga   | G      |  10^9^ |                     1,000,000,000 | billions     |
-| tera   | T      | 10^12^ |                 1,000,000,000,000 | trillions    |
-| peta   | P      | 10^15^ |             1,000,000,000,000,000 | quadrillions |
-| exa    | E      | 10^18^ |         1,000,000,000,000,000,000 | quintillions |
+| Prefix | Symbol |  Power |                     Scale | Words        | Component |
+| ------ | ------ | -----: | ------------------------: | ------------ | --------- |
+| -      | (none) |  10^0^ |                         1 | unit         | C, L, R   |
+| kilo   | k      |  10^3^ |                     1,000 | thousands    | R         |
+| mega   | M      |  10^6^ |                 1,000,000 | millions     | R         |
+| giga   | G      |  10^9^ |             1,000,000,000 | billions     | R         |
+| tera   | T      | 10^12^ |         1,000,000,000,000 | trillions    |           |
+| peta   | P      | 10^15^ |     1,000,000,000,000,000 | quadrillions |           |
+| exa    | E      | 10^18^ | 1,000,000,000,000,000,000 | quintillions |           |
 
 Like small values, we don't use the really huge values (normally). You
 will see resistance measured up to gigaohms quite commonly. Other than
