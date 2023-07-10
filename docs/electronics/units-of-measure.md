@@ -5,6 +5,74 @@ this section, I want to talk about a few that have always tripped me up,
 and hopefully, by explaining them to others, I can better understand
 them myself.
 
+## International System of Units (SI)
+
+Yes, the acronym doesn't play out. Blame the French. But, while this
+information is all over the Internet, I'm just going to include it here
+for reference from other places as needed.
+
+### SI Units
+
+| Quantity                                | Unit                                                  | Symbol |
+| --------------------------------------- | ----------------------------------------------------- | ------ |
+| Length                                  | [meter](https://en.wikipedia.org/wiki/Metre)          | m      |
+| Mass                                    | [gram](https://en.wikipedia.org/wiki/Gram)            | g      |
+| Temperature                             | [Celsius](https://en.wikipedia.org/wiki/Celsius)      | C      |
+| Time                                    | [second](https://en.wikipedia.org/wiki/Second)        | s      |
+| Force                                   | [Newton](https://en.wikipedia.org/wiki/Newton_(unit)) | N      |
+| Electric potential difference (voltage) | [Volt](fundamentals.md#voltage-pressure)              | V      |
+| Electrical current                      | [Ampere](fundamentals.md#current-volume)              | A      |
+| Power                                   | [Watt](fundamentals.md#power)                         | W      |
+| Energy, work, or heat                   | [Joule](https://en.wikipedia.org/wiki/Joule)          | J      |
+| Electrical charge                       | [Coulomb](https://en.wikipedia.org/wiki/Coulomb)      | C      |
+| Resistance                              | [Ohm](fundamentals.md#resistance)                     | &ohm;  |
+| Capacitance                             | [Farad](fundamentals.md#capacitance)                  | F      |
+| Inductance                              | [Henry](fundamentals.md#inductance)                   | H      |
+| Frequency                               | [Hertz](https://en.wikipedia.org/wiki/Hertz)          | Hz     |
+
+### Prefixes
+
+While you likely learned some of the basic (milli, kilo, etc.) prefixes
+of the SI (ney metric) system, in electronics, we often use others that
+you may not have learned. We'll break them into "small things" and "big
+things". There are others that you will see, [which you can find
+here](https://en.wikipedia.org/wiki/Metric_prefix), but almost never in
+electronics (so far!).
+
+#### Small Things
+
+| Prefix | Symbol  |   Power |                               Scale | Words         |
+| ------ | ------- | ------: | ----------------------------------: | ------------- |
+| -      | (none)  |   10^0^ |                                   1 | unit          |
+| milli  | m       |  10^-3^ |                             1/1,000 | thousandth    |
+| micro  | &micro; |  10^-6^ |                         1/1,000,000 | millionth     |
+| nano   | n       |  10^-9^ |                     1/1,000,000,000 | billionth     |
+| pico   | p       | 10^-12^ |                 1/1,000,000,000,000 | trillionth    |
+| femto  | f       | 10^-15^ |             1/1,000,000,000,000,000 | quadrillionth |
+
+In the electronics world, you will see milli, micro, nano, and pico
+quite frequentl. 1pF capacitors aren't uncommon at all, and while there
+are use cases to talk about femtoamps (for example), it's not a
+situation you are likely to ever come across.
+
+#### Big Things
+
+| Prefix | Symbol |  Power |                             Scale | Words        |
+| ------ | ------ | -----: | --------------------------------: | ------------ |
+| -      | (none) |  10^0^ |                                 1 | unit         |
+| kilo   | k      |  10^3^ |                             1,000 | thousands    |
+| meta   | M      |  10^6^ |                         1,000,000 | millions     |
+| giga   | G      |  10^9^ |                     1,000,000,000 | billions     |
+| tera   | T      | 10^12^ |                 1,000,000,000,000 | trillions    |
+| peta   | P      | 10^15^ |             1,000,000,000,000,000 | quadrillions |
+| exa    | E      | 10^18^ |         1,000,000,000,000,000,000 | quintillions |
+
+Like small values, we don't use the really huge values (normally). You
+will see resistance measured up to gigaohms quite commonly. Other than
+that, the only places you're likely to run into the bigger units is in
+storage, bandwidth, and processing performance (TFLOPS, trillions of
+floating port operations per second).
+
 ## Decibels
 
 While nobody uses the original unit of measure, the bel, the decibel (deci
