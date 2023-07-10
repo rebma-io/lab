@@ -1,15 +1,15 @@
 # Protecting Circuits
 
 <!-- TODO:
-* Types of damage we worry about
-* Overvoltage protection
-  * Zener diode/voltage clamp
-* Overcurrent protection
-  * Choke inductor
-* Reverse polarity protection
-* Thermal protection
-* Decoupling capacitors
-* Fuses (resettable and not)
+* TODO: Types of damage we worry about
+* TODO: Overvoltage protection
+* TODO: Zener diode/voltage clamp
+* TODO: Overcurrent protection
+* TODO: Choke inductor
+* TODO: Reverse polarity protection
+* TODO: Thermal protection
+* TODO: Decoupling capacitors
+* TODO: Fuses (resettable and not)
 -->
 
 ## What Can Damage a Circuit?
