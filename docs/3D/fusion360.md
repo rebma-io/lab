@@ -47,7 +47,8 @@ I use a few plugins somewhat regularly:
 * [Parameters
   I/O](https://apps.autodesk.com/FUSION/en/Detail/Index?id=1801418194626000805).
   Allows you to import/export user parameters as a CSV. This is great
-  way to get a bunch of "default" parameters. See below for mine.
+  way to get a bunch of "default" parameters. [See below for
+  mine](#default-user-parameters).
 * [ParametricText](https://apps.autodesk.com/FUSION/en/Detail/Index?id=2114937992453312456).
   Provides parameters for text. Weirdly, this is something you can't do with the
   regular parameters. It also has access to variables that you can use which are
