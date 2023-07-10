@@ -45,3 +45,10 @@ bigger than that). It is edited (primarily) in [Visual Studio
 Code](https://code.visualstudio.com), written in
 [Markdown](https://www.markdownguide.org) and also using [Jupyter
 notebooks](https://jupyter.org). Finally, it is hosted on Github Pages.
+
+In addition, throughout, you'll find interactive circuit simulators.
+These were built on top of Paul Falstad's [brilliant
+circuitjs](http://www.falstad.com/circuit/). I also took a bunch of the
+example circuits and have used them as a starting point for discussion.
+More details can be found on [this
+page](electronics/simulating-circuits.md).
