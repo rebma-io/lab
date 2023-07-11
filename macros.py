@@ -35,12 +35,10 @@ def define_env(env):
             r"""<iframe width="100%" height="480" src="{url}">OH NOES!</iframe>"""
         )
 
-        full_filename = os.path.join(
-            env.project_dir, "circuits", f"{schematic_filename}.circuit"
-        )
+        full_filename = os.path.join(env.project_dir, "circuits", schematic_filename)
         with open(full_filename, "r") as f:
             schematic = f.read()
-
+        print(schematic)
         # These options are derived from circuitjs documentation.
         # https://github.com/pfalstad/circuitjs1#embedding
         EMBED_OPTIONS = {
@@ -49,10 +47,8 @@ def define_env(env):
 
         # This will already be base64 URL-safe encoded
         compressed_schematic = compress_to_url(schematic)
-
-        query_string = url.urlencode(
-            EMBED_OPTIONS | dict(ctz=compressed_schematic), doseq=True
-        )
+        merged_options = dict(ctz=compressed_schematic) | EMBED_OPTIONS
+        query_string = url.urlencode(merged_options, doseq=True)
 
         final_url = BASE_URL_FOR_CIRCUITJS + "?" + query_string
         print(final_url)
