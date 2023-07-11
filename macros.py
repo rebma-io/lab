@@ -25,7 +25,11 @@ def define_env(env):
         IFRAME_TEMPLATE = (
             r"""<iframe width="100%" height="480" src="{url}">OH NOES!</iframe>"""
         )
-        circuit_url = f"{env.conf.site_url}circuits/{schematic_filename}"
+
+        # Account for this not being defined in production because we're
+        # not running a server, but instead doing static site generation.
+        site_url = env.conf.site_url or "https://lab.rebma.io/"
+        circuit_url = f"{site_url}circuits/{schematic_filename}"
 
         # These options are derived from circuitjs documentation.
         # https://github.com/pfalstad/circuitjs1#embedding
