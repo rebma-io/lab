@@ -32,14 +32,20 @@ R &= {1\over{2\pi C f_c}}
 \end{aligned}
 $$
 
+In fact, we can play with the circuit here. You can adjust the
+resistance (R) and capacitance (C) of the low-pass filter while a signal
+sweep runs from 100-1,000Hz.
+
+[[ embed_schematic("filter-low-pass-rc") ]]
 
 ### High-Pass
 
 For a high-pass version of the RC filter, we simply flip the arrangement of the
 resistor and capacitor, and can use the same equations to calculate the $f_c$
-cutoff frequency.
+cutoff frequency. Similar to the simulation above, we can take a look at
+the high-pass version here:
 
-![High-pass RC filter](../img/schematic-rc-filter-high-pass.png)
+[[ embed_schematic("filter-high-pass-rc") ]]
 ## Pi Filters
 
 A Pi filter is a type of filter constructed with 3 elements rather than the
