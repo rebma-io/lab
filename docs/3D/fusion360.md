@@ -39,6 +39,12 @@ I use a few plugins somewhat regularly:
 * [GFGearGenerator](https://apps.autodesk.com/FUSION/en/Detail/Index?id=1236778940008086660).
   Lets you design gears in 3D very simply. Won't go into anything super-exotic,
   but it solves problems quickly.
+* [Install from
+  Github](https://apps.autodesk.com/FUSION/en/Detail/Index?id=789800822168335025).
+  Not everything is on the Autodesk "store". There's a bunch of things
+  you can find on Github. This takes the project URL and installs it all
+  for you automatically. It doesn't, unfortunately, automatically update
+  the plugin, but instead just installs a zip of the current state.
 * [No Component
   Warn](https://apps.autodesk.com/FUSION/en/Detail/Index?id=5188175718375703395).
   Nanny plugin to make sure you always put things in a component (rude #1). It
@@ -47,7 +53,8 @@ I use a few plugins somewhat regularly:
 * [Parameters
   I/O](https://apps.autodesk.com/FUSION/en/Detail/Index?id=1801418194626000805).
   Allows you to import/export user parameters as a CSV. This is great
-  way to get a bunch of "default" parameters. See below for mine.
+  way to get a bunch of "default" parameters. [See below for
+  mine](#default-user-parameters).
 * [ParametricText](https://apps.autodesk.com/FUSION/en/Detail/Index?id=2114937992453312456).
   Provides parameters for text. Weirdly, this is something you can't do with the
   regular parameters. It also has access to variables that you can use which are
@@ -63,6 +70,13 @@ I use a few plugins somewhat regularly:
   particularly great, and it has a tendency to put the generated diagrams in
   entirely the wrong plane, but it's free and generates decent quality results
   that you can move where you need them.
+
+<!-- 
+TODO: Evaluate Dogbone add-on https://apps.autodesk.com/FUSION/en/Detail/Index?id=3534533763590670806
+TODO: Evaluate NetApp add-on
+TODO: Evaluate Any Shortcuts add-on https://apps.autodesk.com/FUSION/en/Detail/Index?id=156700835167123223
+TODO: Evaluate Gridfinity Generator https://apps.autodesk.com/FUSION/en/Detail/Index?id=7197558650811789
+-->
 
 ## Default User Parameters
 
@@ -157,3 +171,6 @@ $495 USD (2023-6) that it will cost.
 * [How to use global parameters across many different
   files](https://productdesignonline.com/how-to-create-and-use-global-parameters-in-fusion-360/),
   although it's a pain in the ass.
+## 3rd Party Resources
+
+* [Autodesk's Fusion 360 API](http://autodeskfusion360.github.io/)

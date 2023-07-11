@@ -30,6 +30,13 @@ plugins:
   - mknotebooks:
       execute: false
   - glightbox
+  - macros:
+      module_name: macros
+      include_dir: includes
+      j2_block_start_string: '[[%'
+      j2_block_end_string: '%]]'
+      j2_variable_start_string: '[['
+      j2_variable_end_string: ']]'
 repo_url: https://github.com/rebma-io/lab
 repo_name: rebma-io/lab
 copyright: Copyright 2023 Christopher Petrilli (CC BY-SA 4.0)

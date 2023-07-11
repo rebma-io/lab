@@ -14,6 +14,7 @@ cssselect2==0.7.0
 defusedxml==0.7.1
 EditorConfig==0.12.3
 fastjsonschema==2.17.1
+future==0.18.3
 ghp-import==2.1.0
 gitdb==4.0.10
 GitPython==3.1.31
@@ -25,6 +26,7 @@ jupyter_client==8.2.0
 jupyter_core==5.3.0
 jupyterlab-pygments==0.2.2
 lxml==4.9.2
+lzstring==1.0.4
 Markdown==3.3.7
 markdown-callouts==0.3.0
 markdown2==2.4.9
@@ -34,8 +36,9 @@ mistune==2.0.5
 mkdocs==1.4.3
 mkdocs-git-revision-date-localized-plugin==1.2.0
 mkdocs-glightbox==0.3.4
+mkdocs-macros-plugin==1.0.1
 mkdocs-markmap==2.3.0
-mkdocs-material
+mkdocs-material==9.1.15
 mkdocs-material-extensions==1.1.1
 mkdocs-mermaid2-plugin==0.6.0
 mkdocs-table-reader-plugin==2.0.1
@@ -68,6 +71,7 @@ six==1.16.0
 smmap==5.0.0
 soupsieve==2.4.1
 tabulate==0.9.0
+termcolor==2.3.0
 tinycss2==1.2.1
 tornado==6.3.2
 traitlets==5.9.0
