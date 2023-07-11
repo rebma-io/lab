@@ -38,3 +38,4 @@
 *[PCB]: Printed Circuit Board
 *[LCR]: Inductance, Capacitance, Resistance
 *[CSV]: Comma Separated Values
+*[BNC]: Bayonet Neill–Concelman
