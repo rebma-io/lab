@@ -3,7 +3,7 @@ from lzstring import LZString
 import os
 
 
-BASE_URL_FOR_CIRCUITJS = """http://www.falstad.com/circuit/circuitjs.html"""
+BASE_URL_FOR_CIRCUITJS = """https://www.falstad.com/circuit/circuitjs.html"""
 
 
 def define_env(env):
