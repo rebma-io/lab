@@ -8,4 +8,5 @@ interesting at sparking an idea.
 * TODO: USBLC6-2SC6
 * TODO: PCM2912APJTR
 * TODO: CYPD3177-24LQXQT
+* TODO: MAX40200/TPS2115ADRBR
 -->
