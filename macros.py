@@ -55,5 +55,4 @@ def define_env(env):
         )
 
         final_url = BASE_URL_FOR_CIRCUITJS + "?" + query_string
-        print(final_url)
         return IFRAME_TEMPLATE.format(url=final_url)
