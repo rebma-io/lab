@@ -46,7 +46,7 @@ shapes, and they are effectively interchangeable from manufacturer to
 manufacturer. 
 
 Surface mount device (chip)
-: ![KOA Speer RK73B1JTTD914J](/img/part-resistor-smd.jpg){: width=100 align=right }
+: ![KOA Speer RK73B1JTTD914J](../img/part-resistor-smd.jpg){: width=100 align=right }
 Like everything these days, resistors come in a diverse set of surface
 mount formats, which are typically called "chip resistors".  They start
 out huge at 2512 format (0.25" x 0.12") but quickly shrink until you get
@@ -373,8 +373,11 @@ I &= {V\over R}\\[5pt]
 &= 0.19\overline{3}
 \end{aligned}$$
 
-This gets us something like this:
+That looks good to me! Below, there's an interactive circuit with a 5V
+voltage source, a resistor, and an LED. You can adjust the resistor and
+see what happens with the LED.
 
+[[ embed_schematic("current-limiter-led") ]]
 
 <!-- TODO: Write about LEDs in depth -->
 FUTURE: **More to Come** There's a lot more to driving LEDs than this,
@@ -405,6 +408,11 @@ V_{out} &= V_S{R_2\over{R_1 + R_2}}\\[5pt]
 &= 5\cdot{0.\overline{54}}\\[5 pt]
 &\approx 2.727 
 \end{aligned}$$
+
+Now, let's play with it. Using the sliders on the right of the circuit
+below, play with the resistance and see how the output changes.
+
+[[ embed_schematic("basic-voltage-divider") ]]
 
 <!-- TODO: Write about voltage dividers -->
 FUTURE: **Fun with Voltage Dividers** There's a lot you can do with a
