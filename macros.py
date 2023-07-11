@@ -1,7 +1,4 @@
 import urllib.parse as url
-from lzstring import LZString
-import os
-
 
 BASE_URL_FOR_CIRCUITJS = """https://www.falstad.com/circuit/circuitjs.html"""
 
@@ -14,12 +11,6 @@ def define_env(env):
     - filter: a function with one of more arguments,
         used to perform a transformation
     """
-
-    def compress_to_url(s: str) -> str:
-        """Convert an input string to URL-encoded compressed string."""
-        output = LZString()
-
-        return output.compressToEncodedURIComponent(s)
 
     @env.macro
     def embed_schematic(schematic_filename: str, height: int = 480) -> str:
@@ -34,21 +25,19 @@ def define_env(env):
         IFRAME_TEMPLATE = (
             r"""<iframe width="100%" height="480" src="{url}">OH NOES!</iframe>"""
         )
+        circuit_url = f"{env.conf.site_url}circuits/{schematic_filename}"
 
-        full_filename = os.path.join(env.project_dir, "circuits", schematic_filename)
-        with open(full_filename, "r") as f:
-            schematic = f.read()
-        print(schematic)
         # These options are derived from circuitjs documentation.
         # https://github.com/pfalstad/circuitjs1#embedding
         EMBED_OPTIONS = {
             "hideMenu": "true",
         }
 
-        # This will already be base64 URL-safe encoded
-        compressed_schematic = compress_to_url(schematic)
-        merged_options = dict(ctz=compressed_schematic) | EMBED_OPTIONS
-        query_string = url.urlencode(merged_options, doseq=True)
+        query_string = url.urlencode(
+            dict(startCircuitLink=circuit_url) | EMBED_OPTIONS, 
+            doseq=True, safe=":/", quote_via=url.quote
+        )
 
         final_url = BASE_URL_FOR_CIRCUITJS + "?" + query_string
+
         return IFRAME_TEMPLATE.format(url=final_url)
