@@ -154,9 +154,12 @@ probability of settling of build-up onto components.
 ## Circuit Behavior
 
 FUTURE: **More to Come** Will be talking about things like back
-(reverse) EMP, reverse polarity, et.c
+(reverse) EMF, reverse polarity, et.c
 
-### Galvanic Isolation
+Circuit problems come in a few major categories: isolation failure,
+over-current, and over-voltage.
+
+### Isolation
 
 NOTE: **About the Name** Often just called _isolation_, _galvanic
 isolation_ gets its name from [Luigi
@@ -248,19 +251,98 @@ opto-isolator to communicate signals across that boundary.
 has a great write-up of how to choose an opto-isolator and how to
 understand the data sheets.
 
-### Snubber Networks
+### Current Transients
 
-A snubber is a device/circuit that is used to limit (snub) voltage transients in
-circuits. Often there can be a sudden interruption of current flow, which drives
-a significant rise in voltage across a device. This can lead to both EMI, but
-also potential damage to the device due to [back
-EMF](https://en.wikipedia.org/wiki/Counter-electromotive_force). There are three
-major types of snubbers you can use. The simplest is a snubber diode. The more
-complicated is an RC snubber, and while it's marginally more complicated, it is
-also better behaved. Finally, you can build one out of solid-state
-(semiconductor) components, typically using a pair of Zener diodes.
+<!--
+TODO: Fuses
+TODO: PPTC Resettable fuses
+TODO: Thermistors
+TODO: Transient Current Suppressor
+TODO: Inrush current limiter
+TODO: Surge stopper (LT4380)
+-->
+#### Short Circuit & Ground Faults
 
-#### Snubber Diode
+Put simply, a short circuit is an unintended path that current can
+traverse, typically with little or no resistance. This typically results
+in substantial (excess) current flowing. This is bad. A _ground fault_
+is a specific kind of short circuit where electricity travels to ground
+outside the design’s intended path.
+
+#### Current Transients
+
+Occur momentarily in response to a change in the equilibrium of a
+circuit and frequently when power is applied to, or removed from, a
+circuit.
+
+#### Circuit Overload
+
+Occurs when an electric circuit is carrying more
+current than it's designed to handle, potentially
+creating a fire hazard due to overheating.
+
+#### Reverse polarity
+
+In all DC circuits, there is a normal direction of current flow, and if
+you accidentally connect something reversed from this normal flow, this
+can cause substantial issues. Take, for example, a common barrel jack
+power has a tip and a sleeve component. In sane connectors, the tip is
+the positive, but not all connectors are sane, and I have seen plenty of
+power supply "wall warts" that have them reversed. Plugging that into
+something will cause you to have a bad day.
+
+
+### Voltage Transients
+
+<!--
+TODO: 
+-->
+#### Electrostatic Discharge
+
+<!--
+TODO: ESD suppressors
+TODO: ESD diode arrays
+TODO: Multilayer varistors
+-->
+
+#### Back EMF 
+
+<!--
+TODO: TVS diodes
+TODO: Varistors
+-->
+
+The voltage across an inductor is caused by a change in current which
+causes a change in the magnetic field within/around the coil. This
+change self-induces a voltage in the inductor. The polarity of the
+induced voltage _always opposes that of the change in applied voltage_.
+This is so that current will stay constant. This means when you remove
+the current from the inductor, it will get very angry, and you will get
+a spike of voltage (hundreds of volts, typically) reversed in polarity
+from the normal flow. This is bad because: 1) it can cause
+electromagnetic interference, which can in turn either cause the device
+itself to act weird or it can have a negative effect on nearby systems,
+and 2) if the spike in voltage is more than the system is designed to
+tolerate, it can cause significant or even catastrophic damage to the
+device itself.
+
+One of the best ways to protect against this back EMF is a snubber
+network. A snubber is a device/circuit that is used to limit (snub)
+voltage transients in circuits. Often there can be a sudden interruption
+of current flow, which drives a significant rise in voltage across a
+device. This can lead to both EMI, but also potential damage to the
+device due to [back
+EMF](https://en.wikipedia.org/wiki/Counter-electromotive_force). There
+are three major types of snubbers you can use. The simplest is a snubber
+diode. The more complicated is an RC snubber, and while it's marginally
+more complicated, it is also better behaved. Finally, you can build one
+out of solid-state (semiconductor) components, typically using a pair of
+Zener diodes.
+
+<!--
+TODO: Thyristors with snubber circuits
+-->
+##### Snubber Diode
 
 > NOTE: **Alternate Naming** Snubbers can also be called _flyback_ protection, for
 > example, a _flyback diode_. They can also just be called a _suppression diode_. 
@@ -289,7 +371,7 @@ increase substantially.
 You can watch [this great video](https://www.youtube.com/watch?v=c6I7Ycbv8B8)
 discussing it in more detail
 
-#### RC Snubber
+##### RC Snubber
 
 RC snubbers operate on a similar principle to diode snubbers and are more
 "popular" in the industry as they work with both AC and DC systems. Since the
@@ -303,6 +385,15 @@ choose R and C correctly. This is [quite
 complicated](https://e2e.ti.com/blogs_/b/powerhouse/posts/calculate-an-r-c-snubber-in-seven-steps),
 and so I generally just use a diode snubber unless the timing is
 critical.
+
+#### Load Dump
+
+Load dump refers to what happens to the supply voltage when a load is
+removed. If a load is removed rapidly (such as when the battery is
+disconnected), the voltage may spike before stabilizing and damage
+electronic components. In a typical 5V circuit, load dump can rise as
+high as 60V and take 400 milliseconds to decay – more than enough to
+cause serious damage.
 
 ## 3rd Party Resources
 
