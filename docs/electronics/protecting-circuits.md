@@ -326,6 +326,12 @@ and 2) if the spike in voltage is more than the system is designed to
 tolerate, it can cause significant or even catastrophic damage to the
 device itself.
 
+Looking at the circuit below, you can click on the button and see what
+happens to the circuit when the magnetic field of the inductor
+collapses.
+
+[[ embed_schematic("back-emf") ]] 
+
 One of the best ways to protect against this back EMF is a snubber
 network. A snubber is a device/circuit that is used to limit (snub)
 voltage transients in circuits. Often there can be a sudden interruption
@@ -369,7 +375,10 @@ longer than you want. For example, it can cause the turn-off time of a relay to
 increase substantially.
 
 You can watch [this great video](https://www.youtube.com/watch?v=c6I7Ycbv8B8)
-discussing it in more detail
+discussing it in more detail, or you can also just play with this little
+circuit here:
+
+[[ embed_schematic("back-emf-diode-snubber") ]]
 
 ##### RC Snubber
 
@@ -384,7 +393,9 @@ Unlike a diode snubber, there's some calculations you'll need to do to
 choose R and C correctly. This is [quite
 complicated](https://e2e.ti.com/blogs_/b/powerhouse/posts/calculate-an-r-c-snubber-in-seven-steps),
 and so I generally just use a diode snubber unless the timing is
-critical.
+critical. Here's a version you can play with:
+
+[[ embed_schematic("back-emf-rc-snubber") ]]
 
 #### Load Dump
 
