@@ -135,6 +135,16 @@ DANGER: **Acetone and PCB** Never, ever, under any circumstance use
 acetone on a PCB. It will strip the top coatings off; specifically, the
 solder mask and silkscreen.
 
+NOTE: **Fingernail Polish Remover** Fingernail polish remover typically
+contains acetone, but also has many other components such as [dimethyl
+glutarate](https://pubchem.ncbi.nlm.nih.gov/compound/Dimethyl-glutarate),
+[dimethyl
+adipate](https://pubchem.ncbi.nlm.nih.gov/compound/Dimethyl-adipate),
+[dimethyl succinate](https://pubchem.ncbi.nlm.nih.gov/compound/7820),
+and [propylene
+carbonate](https://pubchem.ncbi.nlm.nih.gov/compound/7924). This makes
+them not interchangeable with pure acetone. 
+
 ## Anti-static Cleaning Spray
 
 One thing to be aware of, though, is when you're cleaning an
