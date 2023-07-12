@@ -36,7 +36,8 @@ mm/s.
 | Infill/Fill Pattern        | Grid   | Adaptive Cubic |
 
 You can download the exported configuration from here:
-[prusa-mini-fast-profile.ini :material-download-circle-outline:](/files/prusa-mini-fast-profile.ini).
+[[ link_for_download("prusa-mini-fast-profile.ini", license="Public
+Domain") ]].
 
 ## Engineering Fit for MINI+
 
