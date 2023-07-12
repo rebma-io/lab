@@ -23,6 +23,13 @@ found useful and of high quality.
   lot of radio-specific details, it also has a lot of practical information.
   Also, in this day and age of gigahertz microcontrollers, nearly everything can
   be a radio signal if you're squinting just right.
+* [Desk Ref](https://sequoiapublishing.com/product/desk-ref/). A paper
+  Wikipedia, in that it's a compilation of an insane number of topics.
+  In 1,280 pages, they cover everything from the density of gasses, to
+  planetary data, to ply rating of tires, to glue dilution rates, to
+  first aid. Really, it's just a collection of a _ton_ of useful tidbits
+  in a pretty tide, well organized, package.  Originally published in
+  1989, it's a great thing to keep around. They also make a [pocket version](https://sequoiapublishing.com//product/pocket-ref/).
 * [Encyclopedia of Electronic
   Circuits](https://www.bookfinder.com/search/?st=sr&ac=qr&mode=basic&author=&title=encyclopedia+of+electronic+circuits&isbn=&lang=en&destination=us&currency=USD&binding=*&keywords=&publisher=&min_year=&max_year=&minprice=&maxprice=&classic=off).
   First released in 1985, this book is literally an encyclopedia of circuits.
