@@ -150,7 +150,7 @@ One of the things I bought _years ago_, on sale no doubt, was a [Dremel
 220 workstation](). This is kinda like a little "drill press" but for
 your Dremel tool. It's supremely well designed and made (like pretty
 much anything from Dremel), and with [this great little
-addition]((https://www.printables.com/model/405918-heat-set-insert-press-hakko-fx888-dremel-workstati)
+addition](https://www.printables.com/model/405918-heat-set-insert-press-hakko-fx888-dremel-workstati)
 from [APuckNut](https://www.printables.com/@APuckNut), you've got yet
 another great function. This lets you take a Hakko FX-888 soldering iron
 handpiece and securely mount it in the Dremel workstation. You can then
