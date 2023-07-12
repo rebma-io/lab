@@ -1,5 +1,88 @@
-# Fusion360
+# Fusion 360
 
+Currently, I use [Fusion
+360](https://www.autodesk.com/products/fusion-360/overview) for all of
+my 3D and ECAD work. I'm trying to collect together things I've learned,
+and recommendations here.
+
+## Rules for Success
+
+There are two critical rules that the community has developed over the
+years, and I highly recommend following them:
+
+1. Everything goes into a component.
+2. Everything has a name.
+
+Let's take the two separately.
+
+### Rule #1: Components
+
+Components are a container for sketches, geometry, joint origins, bodies, etc.
+This helps organize things. This makes it much easier to think about and
+abstract your project. Think of a component as a part. There's a few other
+advantages to using components extensively:
+
+* The joints in the Assembly menu only work with components.
+* Drawings can only be created from components
+* On activation the timeline is filtered. This means it will only show
+  items in the timeline that pertain to that component. The timeline on
+  a big project can become unwieldy, and this will make the quickly
+  growing timeline much easier to work with.
+* When you export a component with "save as" Fusion 360 will also export
+  the complete parametric design history.
+* Only components show on the BOM.
+* Only components can be added to [selection
+  sets](https://help.autodesk.com/view/fusion360/ENU/?guid=SLD-CREATE-SELECTION-SETS).
+  Selection sets are a way to "name" a specific group of items that you
+  can refer to again and again consistently.
+* Only components can be isolated. This allows you to make everything
+  but one component "disappear" from the design, and ensure you don't
+  accidentally affect them.
+* You can make copies of a component, but keep linked changes (or not if
+  you want). This can be super helpful in larger assemblies. 
+
+There's also a [write
+up](https://www.autodesk.com/products/fusion-360/blog/5-things-you-should-know-about-components-and-bodies/)
+on the difference between components and bodies. This is super important
+to understand. Also, some [strategies for using
+components](https://www.autodesk.com/products/fusion-360/blog/5-time-saving-strategies-assembly-design/).
+
+Note that this is a soft rule, not a hard rule. Following it blindly,
+like so many rules, [can result in
+failure](https://www.autodesk.com/products/fusion-360/blog/quick-tip-rule-1-oversight/). 
+
+
+### Rule #2: Names
+
+Name your things. Most everyting can be named in Fusion 360, but you
+_definitely_ want to name these things:
+
+* Sketches
+* Bodies
+* Construction planes
+* Section analysis
+* Views
+* Components
+
+You can also name extrusions, chamfers, and a lot of other things.
+Whether you name this or not is up to you, but if you do name them, then
+in the design history timeline, you'll see more information, which may
+make it easier to navigate larger timelines.
+
+Finally, name them clearly, and I tend to use somewhat long-winded names, often
+going from coarse to fine granularity. If this is something
+"structured", I might even include [part
+numbers](../organization/part-numbers.md).
+
+## Tips and Tricks
+
+* [Learn to use the S-key
+  functionality](https://www.autodesk.com/products/fusion-360/blog/quick-tip-the-s-key/).
+  This is a quick way to search for commands and execute them, or
+  activate a tool. You can also pin commonly used commands to the menu.
+  One thing to be aware of is that, for _some reason_, Fusion 360 will
+  show you 3D commands when you're in 2D sketches, and so you need to be
+  cognizant of the difference and the different icon.
 
 ## Add-Ons and Extensibility
 
@@ -11,7 +94,7 @@ extensions in either Python or C++ (although the electronics design still uses
 the EAGLE [user language
 programming](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-C1545D80-D804-4CF3-886D-9B5C54B2D7A2)).
 
-I use a few plugins somewhat regularly:
+I use a few plugins regularly:
 
 * [3D Print
   Plus](https://apps.autodesk.com/FUSION/en/Detail/Index?id=2942207745179825936).
@@ -137,12 +220,12 @@ numbers). There's a few things you might need to do:
    Prusa MINI+, and won't necessarily match yours. It's a good start if
    you don't want to fuss about, although many cheap 3D printers have
    much bigger tolerances.
-2. When you want to use `M3HeadOD`, you'll want to allow for tolerance.
-   I typically use `TransitionFit030`, which will get a snug fit that
-   doesn't drag when you put the screw in. To do that, when you create
-   the circle, just set the size to `M3HeadOD + TransitionFit030`. I
-   didn't include the fit in the main size because different people want
-   different fits in different situations.
+2. When you want to use `M3HeadOD` (for example), you'll want to allow
+   for tolerance. I typically use `TransitionFit030`, which will get a
+   snug fit that doesn't drag when you put the screw in. To do that,
+   when you create the circle, just set the size to `M3HeadOD +
+   TransitionFit030`. I didn't include the fit in the main size because
+   different people want different fits in different situations.
 
 ## Personal License v Subscription
 
@@ -171,6 +254,25 @@ $495 USD (2023-6) that it will cost.
 * [How to use global parameters across many different
   files](https://productdesignonline.com/how-to-create-and-use-global-parameters-in-fusion-360/),
   although it's a pain in the ass.
+
+## Learning Resources
+
+Autodesk has a pretty great collection of courses up on Coursera for
+free. The ones I've looked at are:
+
+* [Introduction to Digital Manufacturing with Autodesk Fusion
+  360](https://www.coursera.org/learn/introduction-digital-manufacturing-fusion-360)
+* [Autodesk Fusion 360 Integrated CAD/CAM/CAE](https://www.coursera.org/learn/fusion-360-integrated-cad-cam-cae)
+* [3D Model Creation with Autodesk Fusion 360](https://www.coursera.org/learn/3d-model-creation-fusion-360)
+* [Engineering Design Process with Autodesk Fusion 360](https://www.coursera.org/learn/engineering-design-process-fusion-360)
+* [Manufacturing Process with Autodesk Fusion 360](https://www.coursera.org/learn/manufacturing-process-fusion-360)
+
+They have a huge number of [choices for
+courses](https://www.coursera.org/autodesk) in a lot of topics,
+depending on your interest area.
+
 ## 3rd Party Resources
 
 * [Autodesk's Fusion 360 API](http://autodeskfusion360.github.io/)
+* [Autodesk Community Gallery](https://www.autodesk.com/community/gallery)
+* [Understanding bodies and components](https://productdesignonline.com/tips-and-tricks/understanding-bodies-and-components-fusion-360-rule-1/)
