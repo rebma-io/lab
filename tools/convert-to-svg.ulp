@@ -1,0 +1,19 @@
+#usage "Convert the current drawing to an SVG through Inkscape"
+
+string argv[];
+int argc;
+string inkscape = "C:\Program Files\Inkscape\bin\inkscape.com";
+string destination_directory;
+string export_name;
+int result = 0;
+
+schematic(S) {
+    dlgDirectory("&Destination directory", destination_directory); 
+    result = dlgDialog("Export Name") {
+         dlgLabel("&Name ");
+         dlgStringEdit(export_name);
+         dlgPushButton("+OK") dlgAccept();
+         dlgPushButton("Cancel") dlgReject();
+    };
+    dlgMessageBox("You have chosen to export as: " + export_name);
+};
