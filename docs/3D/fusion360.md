@@ -243,7 +243,7 @@ subscription:
 
 For getting started, though, it's 100% worth starting with the personal license
 and figuring out if this is something you're serious enough about to drop the
-$495 USD (2023-6) that it will cost.
+[[usd("495.00", as_of="2023-06")]] that it will cost.
 
 ## Random Bits of Information
 
