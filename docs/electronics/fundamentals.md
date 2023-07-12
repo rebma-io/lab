@@ -200,7 +200,7 @@ number of strands.
 
 > NOTE: **Equivalent Source Resistance (ESR)** Often, you will hear people
 > talk bout the the ESR of a component. For example, when you have a
-> voltage divider (see [here](passives/resistor.md#voltage-divider)), and
+> voltage divider (see [here](passives/resistors.md#voltage-divider)), and
 > you attach a load which has some resistance, the voltage will actually
 > drop due to a _finite_ source resistance. ESR refers to the
 > hypothetical Thevenin equivalent resistance of the circuit . Nearly
