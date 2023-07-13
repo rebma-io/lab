@@ -193,6 +193,15 @@ choose one with enough safety margin for whatever you're going to throw
 at it. I mostly stock 1/4, 1/2, and 1W regular THT resistors, and 1/4W
 in SMD 1206 and 805.
 
+Once you get about 5W rating on a axial lead THT resistor, for example,
+you're going to move into [chassis
+mount](https://www.digikey.com/en/products/filter/chassis-mount-resistors/54)
+designs. These are _much larger_ because they have integrated metal
+heat-sinks. They come in sizes up to about 5KW (yes, 5,000W). These are
+designed to be bolted to something like a chassis to expand their heat
+dissipation potential. The differences between a high power resistor and
+a space heater are few.
+
 ## Tolerance
 
 The other major specification you'll run into is tolerance. Simplified,
@@ -367,6 +376,22 @@ order.
 Note that Vishay has a _ton_ of sub-companies that make various
 specialized things, including VPG, Vishay Precision Group for stupid
 expensive, insanely precise resistors.
+
+## Recommendations
+
+### Weird Values
+
+First, you probably don't need that super weird value. But if you have a
+situation where you have a _very specific_ resistor value requirement,
+such as 23.4k, you're just not going to find it. You could try and
+assemble a set of resistors in parallel and series to achieve this
+exact, or you can combine a precision 1% resistor with a potentiometer.
+For example, to get the 23.4k, you might combine a 22k 1% resistor with
+a trimming potentiometer in series. Even in small quantities, from one
+of the manufacturers above, that resistor will cost you 10 cents, and
+you can get a 0.5% for 25 cents. The trimmer, even from Bourns (who,
+coincidentally invented the trimmer), will cost you [perhaps a
+dollar](https://www.digikey.com/en/products/detail/bourns-inc/3362M-1-202RLF/2536584). 
 
 ## Uses
 
