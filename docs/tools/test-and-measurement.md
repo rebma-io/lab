@@ -76,17 +76,17 @@ the digital models unless you know you need or want the others.
 
 As for manufacturer, well, there's always Mitutoyo, who is, perhaps, at
 the very top of the [metrology](https://en.wikipedia.org/wiki/Metrology)
-game here. Or [Starrett](https://www.starrett.com/). If you're rolling in
-money, buy one. They're beautifully made and supremely accurate.
-You can go spend [$700+
-USD](https://www.tequipment.net/Mitutoyo/Digimatic-Caliper-I-M/Digital-Calipers/)
+game here. Or [Starrett](https://www.starrett.com/). If you're rolling
+in money, buy one. They're beautifully made and supremely accurate. You
+can go spend [[usd("700.00")]] [on a single pair of
+calipers](https://www.tequipment.net/Mitutoyo/Digimatic-Caliper-I-M/Digital-Calipers/)
 on a single 300mm pair. But what, realistically, should you get? I have
 been using a 150mm (6") model from Clockwise, the
 [DCLR-0605](https://clockwisetools.com/collections/clockwise-tools/products/clockwise-tools-dclr-0605-ip54-rs232-digital-caliper-6-inch?variant=18459596718176).
 It is likely available easily at your favorite mega retailer, and costs
-around $25 USD. There are 200mm and 300mm models as well, but I don't
-feel like I typically need that level of exacting dimension across that
-wide a space.
+around [[usd("25.00", as_of="2023-06")]]. There are 200mm and 300mm
+models as well, but I don't feel like I typically need that level of
+exacting dimension across that wide a space.
 
 See [elsewhere for how to use them](using-calipers.md).
 

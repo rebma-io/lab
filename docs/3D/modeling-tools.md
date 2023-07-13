@@ -5,7 +5,7 @@ I was looking for in a tool:
 
 1. Parametric. The tool absolutely must be built on the idea of parametric
    design, and allow for ongoing evolution by adjusting the parameters and then
-   re-solving the design. 
+   re-solving the design.
 2. Integrated MCAD/ECAD. When building something that combines something like 3D
    printing and electronics, it's supper helpful to be able to round-trip between
    the mechanicals and the PCB layout. This can help ensure your shapes all fit
@@ -31,12 +31,11 @@ and pay for a regular subscription annually. See my discussion
 Note that these are all parametric modelers. Parametric modelers use a 3D
 modelling technique based on computational methodology to manipulate the
 geometry. It happens using parameters which are (adjustable) geometric
-properties of a design model. 
+properties of a design model.
 
 ### 3DEXPERIENCE SOLIDWORKS
 
-[$99 USD for Makers,
-[website](https://www.solidworks.com/solution/3dexperience-solidworks-makers)]
+[[usd("99.00", as_of="2023-6")]] [for Makers](https://www.solidworks.com/solution/3dexperience-solidworks-makers).
 Based on the recommendations of a friend, this is the application I started
 with. It is insanely powerful, and definitely "industrial grade" tooling. The
 Maker edition does have some limits (such as watermarking things), but likely is
@@ -58,7 +57,6 @@ the tool, I've not had the best of luck with it from a stability perspective. I
 also find it more difficult to use than either Fusion360 or SOLIDWORKS (which
 share a huge amount in common).
 
-
 ### OpenSCAD
 
 [Open Source, [website](https://openscad.org/)] Another parametric modeller, but
@@ -70,15 +68,16 @@ people. You can [read the
 tutorial](https://en.wikibooks.org/wiki/OpenSCAD_Tutorial/Chapter_1) to see how
 you feel about it.
 
-
 ### Onshape
 
-[Free - $2,500 USD, [website](https://www.onshape.com/en/)] In spite of being a web-only application, Onshape is an serious tool. Where it
-excels is in collaboration (obviously), even supporting simultaneous multi-user
-editing. The "free" (as in beer) version has a couple of limitations that made
-it potentially uninteresting. First, you can't use it for commercial projects.
-Second, all your work will be public. Lastly, you're missing both the PCB
-functionality and the rendering. 
+Free - [[usd("2500.00", as_of="2023-06")]],
+[website](https://www.onshape.com/en/). In spite of being a web-only
+application, Onshape is an serious tool. Where it excels is in
+collaboration (obviously), even supporting simultaneous multi-user
+editing. The "free" (as in beer) version has a couple of limitations
+that made it potentially uninteresting. First, you can't use it for
+commercial projects. Second, all your work will be public. Lastly,
+you're missing both the PCB functionality and the rendering.
 
 ## Accessories to Make Your Life Better
 
@@ -94,7 +93,6 @@ it's now second nature and a wildly more productive way to manipulate things.
 ![SpaceMouse Compact](../img/spacemouse-compact.jpg)
 
 Note that it doesn't replace your mouse/trackball, but instead augments it.
-
 
 ### El Gato StreamDeck
 

@@ -1,6 +1,17 @@
 # Blogs and Websites
 
 
+## Websites
+
+* [NASA Workmanship Inspection Pictorial
+  Reference](https://workmanship.nasa.gov/insp.html] & [NASA Workmanship
+  Problems Pictorial Reference](https://nepp.nasa.gov/index.cfm/5575).
+  If you've ever wondered what the _correct_ way is to join two wires
+  together, or wondered how to deal with PCB design, this is the thing
+  for you. NASA is, realistically, at the very tippy top of the game
+  when it comes to quality, so this pictorial reference is an enormous
+  resource.
+  
 ## Blogs
 
 Alas, blogs are a dying breed, or at least feel like it. Mine is included in

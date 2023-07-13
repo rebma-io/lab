@@ -113,7 +113,7 @@ use](img/project-kelvin-7.jpg){: width=150 align=right }
 
 **Step 7**.  Once you flip the PCB over, you can go to removing the
 solder. Here, I'm using a [solder
-sucker](../tools/hand-tools.md#desoldering-tool-and-solder-wick) to
+sucker](/tools/hand-tools.md#desoldering-tool-and-solder-wick) to
 remove the solder itself. You may need to clean up a little bit with
 solder wick when you're done. I find that pulling _gently_ on the wires
 as you're heating them helps pull them out more easily. I'm not sure
@@ -134,7 +134,7 @@ be any major damage to anything.
 alcohol](img/project-kelvin-9.jpg){: width=150 align=right }
 
 **Step 9**. After examining things, we want to clean the PCB. I use
-[IPA](../tools/consumables.md#isopropyl-alcohol-ipa) for this job, and
+[IPA](/tools/consumables.md#isopropyl-alcohol-ipa) for this job, and
 give it a good scrub with a cotton swab. I want to make sure I get any
 residue off the board so that we can get a good solder joint when we put
 the new leads on. However much IPA you used, use more. It's inexpensive,
@@ -166,7 +166,7 @@ a pen (in this case a white pen) was the most useful.
 
 **Step 12**. Now you need to strip the cables. I use my somewhat fancy
 [Irwin automatic cable
-stripper](../tools/hand-tools.md#general-wire-strippers), which
+stripper](/tools/hand-tools.md#general-wire-strippers), which
 magically just do the _right thing_. You'll want to strip the outer
 insulation back to the marking. Then, take the _very fine_ wire that
 makes up the outer shielding and pull it all to one side and twist it
@@ -261,7 +261,7 @@ influences, like temperature, can impact the readings.
 FUTURE: **Speed Run** This is just the most absolutely simplified use of
 an LCR meter, and I'll be writing up a more detailed dive on what and
 how to use LCR meters in the future. This is just a taste, and fits with
-some of the [fundamentals](../electronics/fundamentals.md).
+some of the [fundamentals](/electronics/fundamentals.md).
 
 ![Readings from 1kHz](img/project-kelvin-20.jpg){: width=200 align=right }
 
@@ -275,7 +275,7 @@ First, let's take a look at this little aluminum electrolytic capacitor
 at 1kHz. Here we see the capacitor shows a capacitance of 365&micro;F.
 Above that, however, you can see a second display showing &Theta;
 showing that the current leads the voltage by 80.3&deg;. This is part of
-the behavior of [impedance](../electronics/fundamentals.md#impedance).
+the behavior of [impedance](/electronics/fundamentals.md#impedance).
 
 ![Reading from 100Hz](img/project-kelvin-21.jpg){: width=200 align=left }
 

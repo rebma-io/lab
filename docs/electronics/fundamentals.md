@@ -160,7 +160,7 @@ primary reason all conductors give off some degree of heat, so
 overheating is an issue often associated with resistance. The lower the
 resistance, the higher the current flow.
 
-Many components, such as [resistors](passive-resistor.md), have a
+Many components, such as [resistors](passives/resistors.md), have a
 fixed-resistance value. Resistance is a property of the materials being
 used, as well as their physical dimensions. You can calculate the
 resistance as:
@@ -200,7 +200,7 @@ number of strands.
 
 > NOTE: **Equivalent Source Resistance (ESR)** Often, you will hear people
 > talk bout the the ESR of a component. For example, when you have a
-> voltage divider (see [here](passive-resistor.md#voltage-divider)), and
+> voltage divider (see [here](passives/resistors.md#voltage-divider)), and
 > you attach a load which has some resistance, the voltage will actually
 > drop due to a _finite_ source resistance. ESR refers to the
 > hypothetical Thevenin equivalent resistance of the circuit . Nearly

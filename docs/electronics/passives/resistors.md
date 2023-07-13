@@ -1,4 +1,4 @@
-# Passive Components: Resistors
+# Resistors
 
 INFO: **Why We Call Them Passives** All components in electronics are
 grouped into 2 categories (basically): active and passive. Passive
@@ -14,12 +14,16 @@ same current through it, a resistor allows you to limit the flow of that
 current. They create _resistance_ to the flow. Resistance is measured in
 ohms (&ohm;). One ohm is the resistance represented by a current of
 one amp (A) passing across a resistor with a 1V drop across its
-terminals. There's that sneaky [Ohm's law](fundamentals.md#ohms-law)
+terminals. There's that sneaky [Ohm's law](../fundamentals.md#ohms-law)
 again!
+
+Starting with resistors is good because they are, by a wide margin, the
+simplest and least "weird" component you'll run into. Everything else
+has a ton of edge cases to think about. 
 
 ## Schematic Symbols
 ![Resistor schematic
-symbols](../img/schematic-resistor.png){: width=250, align=right }
+symbols](img/schematic-resistor.png){: width=250, align=right }
 
 There's two main symbols you'll see in use, shown to the right. R1 is
 drawn in the standard ANSI symbology of a set of leads with a zig-zag
@@ -29,6 +33,18 @@ which looks more like the component outline.
 
 Personally, I find drawing the ANSI version to be an exercise in
 futility, and anyone who can hand draw them is prima facie a witch.
+
+## Equivalent Circuit
+
+[Equivalent circuits](https://en.wikipedia.org/wiki/Equivalent_circuit)
+are a way to break down a component (or circuit) into easy to reason
+about pieces. This is typically defined using [Thévenin
+equivalence](https://en.wikipedia.org/wiki/Th%C3%A9venin%27s_theorem).
+For resistors outside RF/microwave frequencies, a resistor is just a
+resistor. For RF and microwave, [this are more
+complicated](https://resources.system-analysis.cadence.com/blog/msa2021-understanding-resistor-behavior-at-high-frequencies).
+
+For everything else, you will not be so lucky!
 
 ## Types
 
@@ -40,13 +56,13 @@ I've taken part photographs from [Digikey](https://digikey.com); part
 number in the alt text.
 
 Through-hole axial lead
-: ![Panasonic ERO-S2PHF5112](../img/part-resistor.jpg){: width=100 align=right }
+: ![Panasonic ERO-S2PHF5112](img/part-resistor.jpg){: width=100 align=right }
 This is the "classic" resistor. There are standard package sizes and
 shapes, and they are effectively interchangeable from manufacturer to
 manufacturer. 
 
 Surface mount device (chip)
-: ![KOA Speer RK73B1JTTD914J](../img/part-resistor-smd.jpg){: width=100 align=right }
+: ![KOA Speer RK73B1JTTD914J](img/part-resistor-smd.jpg){: width=100 align=right }
 Like everything these days, resistors come in a diverse set of surface
 mount formats, which are typically called "chip resistors".  They start
 out huge at 2512 format (0.25" x 0.12") but quickly shrink until you get
@@ -58,7 +74,7 @@ that are variable. The first are adjustable:
 
 Potentiometer
 : ![Bourns 3852A-286-104AL
-potentiometer](../img/part-potentiometer.webp){: width=100 align=right }
+potentiometer](img/part-potentiometer.webp){: width=100 align=right }
 A potentiometer is an adjustable resistor with 3 terminals. One
 terminal is connected to an adjustable wiper, and the other two are
 connected to opposite ends of a resistive component. The position of the
@@ -70,7 +86,7 @@ with a large number of resistors switched in and out of the circuit.
 
 Trimming potentiometer (trimpot)
 : ![Bourns 3296W-1-103RLF trimmer
-potentiometer](../img/part-trimpot.webp){: width=100 align=left } 
+potentiometer](img/part-trimpot.webp){: width=100 align=left } 
 A trimpot is _very close_ to a potentiometer, but I wanted to call it
 out specifically. Trimpots are basically potentiometers that are mounted
 _on a PCB_ and are intended exclusively for trimming (tuning or
@@ -85,7 +101,7 @@ environment_.
 
 Photoresistor
 : ![Advanced Photonix PDV-P8104
-photoresistor](../img/part-photoresistor.webp){: width=100 align=right }
+photoresistor](img/part-photoresistor.webp){: width=100 align=right }
 Also called light-dependent resistors, photoresistors are, as you might
 imagine from the name on the tin, reactive to photons (light). They
 typically drop resistance the more light that falls on them. This range
@@ -95,7 +111,7 @@ light falls on them. They can be very useful for detecting the presence
 of things, although typically photodiodes are more useful in this area.
 
 NTC/PTC thermistor
-: ![Murata NXRT15XH103FA1B030](../img/part-thermistor.webp){: width=100 align=left }
+: ![Murata NXRT15XH103FA1B030](img/part-thermistor.webp){: width=100 align=left }
 A thermistor is a resistor whose resistance changes _significantly_ with
 temperature. I say significantly, because all resistors change with
 temperature to some degree or another. They come in two different kinds:
@@ -103,12 +119,12 @@ negative temperature coefficient (NTC) and... you guessed it, positive
 temperature coefficient (PTC). As for applications, they're actually
 quite different (largely due to how they're constructed). NTC
 thermistors are typically used as temperature sensors. ![Littlefuse
-RXEF110-2 PTC resettable fuse](../img/part-thermistor-ptc.webp){: width=100 align=right } 
+RXEF110-2 PTC resettable fuse](img/part-thermistor-ptc.webp){: width=100 align=right } 
 PTC thermistors, however, are used in over-current protection, or some form of
 self-regulator circuit. NTC respond quickly, where as PTC respond much
 slower. In fact, you'll often hear "PTC resettable fuse" used to refer
 to the PTC kind when they're used in [protection
-circuits](protecting-circuits.md).
+circuits](../protecting-circuits.md).
 
 Varistor
 : A varistor, also called a voltage-dependent resistor (VDR) is actually
@@ -119,7 +135,7 @@ ground. When they are set up in this arrangement, they're called
 varistor (MOV). 
 
 Strain Gauge
-: ![Vishay MMF402226](../img/part-strain-gauge.webp){: width=100 align=right } 
+: ![Vishay MMF402226](img/part-strain-gauge.webp){: width=100 align=right } 
 One  of the last environmentally-reactive resistors is a strain gauge. A
 strain gauge measures, shockingly, strain on an object. Strain is the
 deformation of an object. Through that, they can be used to measure
@@ -203,7 +219,13 @@ tolerances. But they will most definitely cost you. For example, a
 1K&ohm; 0.001% resistor with a power rating of 1/5W will cost you $100
 (USD) or more _each_. And they're all made by one company: [Vishay
 Precision Group](https://vpgfoilresistors.com/). Open up any super
-high-precision device, and it'll be chocked full of Vishay resistors
+high-precision device, and it'll be chocked full of Vishay resistors.
+
+Note that lower tolerance are typically [laser
+trimmed](https://en.wikipedia.org/wiki/Laser_trimming) to achieve very
+high precision. There are even
+[machines](https://www.ppisystems.com/systems/rapitrim-laser-resistor-trimming/)
+just to do this.
 
 ## E-Series of Preferred Values
 
@@ -302,7 +324,7 @@ Finally, we have the color bands, which are little stripes around the
 body of an axial resistor. These are standardized in IEC 60062. The
 following chart shows how the various colors relate:
 
-![Resistor color chart](../img/part-resistor-color-chart.png)
+![Resistor color chart](img/part-resistor-color-chart.png)
 
 There are, occasionally, 6 band resistors with temperature coefficients
 indicated, but if you're needing one of those, you're not reading this
@@ -327,6 +349,25 @@ can help you guess, as for many inexpensive resistors, red and orange,
 blue and violet, and brown and silver look suspiciously the same. When
 in doubt, just stick a multimeter on it and find out.
 
+## Vendors
+
+There's an absolute ton of vendors for most parts, especially passives,
+but these are the ones I typically stick to if I can, in alphabetic
+order.
+
+* Bourns
+* Eaton
+* Murata
+* Panasonic 
+* Rohm
+* Samsung
+* Stackpole
+* Vishay
+
+Note that Vishay has a _ton_ of sub-companies that make various
+specialized things, including VPG, Vishay Precision Group for stupid
+expensive, insanely precise resistors.
+
 ## Uses
 
 Resistors are _everywhere_ in electronic circuits. They are critical to
@@ -349,9 +390,9 @@ Just as one example, if we don't limit current into an LED, it will burn
 out very quickly. Taking a [sample red
 LED](https://www.digikey.com/en/products/detail/creeled-inc/C503B-RAN-CZ0C0AA2/6561762),
 we can see that it has a desired forward current (I~F~) of 20mA,, and a
-forward voltage drop of 2.1V (typically for almost all red LED). If you
-want to power this with a 5V power supply and limit the current across
-it, you can figure this out with Ohm's law:
+forward voltage drop (V~F~) of 2.1V (typically for almost all red LED).
+If you want to power this with a 5V power supply and limit the current
+across it, you can figure this out with Ohm's law:
 
 $$\begin{aligned}
 R &= {{5 - 2.1}\over{0.02}}\\[5pt]
@@ -359,7 +400,7 @@ R &= {{5 - 2.1}\over{0.02}}\\[5pt]
 \end{aligned}$$
 
 ![Schematic showing a current limiting
-resistor](../img/schematic-resistor-led.png){: width=250 align=right }
+resistor](img/schematic-resistor-led.png){: width=250 align=right }
 
 So we need a resistor of 145&ohm;. Now, that's not a common value, but
 [we can get 150](#e-series-of-preferred-values), and so we can just use
@@ -387,7 +428,7 @@ whole process elsewhere (TBD).
 ### Voltage Divider
 
 ![Schematic showing a voltage
-divider](../img/schematic-voltage-divider.png){: width=250 align=right }
+divider](img/schematic-voltage-divider.png){: width=250 align=right }
 
 Often when working with a circuit, you need to set a specific voltage
 into some component, but you don't have that exact voltage. But, you

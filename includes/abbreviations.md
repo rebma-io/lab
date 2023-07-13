@@ -39,3 +39,6 @@
 *[LCR]: Inductance, Capacitance, Resistance
 *[CSV]: Comma Separated Values
 *[BNC]: Bayonet Neill–Concelman
+*[PLA]: PolyLactic Acid
+*[PETG]: PolyEthylene Terephthalata copolymer with Glycol modifier
+*[BOM]: Bill Of Materials
