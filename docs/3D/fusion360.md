@@ -83,7 +83,20 @@ numbers](../organization/part-numbers.md).
   One thing to be aware of is that, for _some reason_, Fusion 360 will
   show you 3D commands when you're in 2D sketches, and so you need to be
   cognizant of the difference and the different icon.
-
+* [Component color
+  cycling](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-Toggle-Component-Cycling-Color-in-Fusion-360.html)
+  is an amazing way to view your models when you have a bunch of
+  components. Rather than just using the
+  [appearance](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-D59206EC-875D-4890-8088-AD23E5364951),
+  it ensures that every component is distinct from all the ones around
+  it.
+* All of the analysis capabilities are insanely useful, and you should
+  familiarize yourself with them, but I would definitely start with
+  [section
+  analysis](https://help.autodesk.com/view/fusion360/ENU/?guid=SLD-SECTION-ANALYSIS),
+  which allows you to cut through the component and see what is going on
+  inside. This will also show how multiple components interact clearly.
+  
 ## Add-Ons and Extensibility
 
 One thing I really like about Fusion360 is that there's an extensive [ecosystem
