@@ -1,3 +1,12 @@
+---
+tags:
+  - 3d-printing
+  - measurement
+  - organization
+  - pcb
+  - soldering
+  - tools
+---
 # 3D Printed Tools
 
 Unlike many people, I don't think that FFF 3D printing is a
@@ -16,7 +25,7 @@ trays](https://www.printables.com/model/114308-sorting-tray-with-funnel)
 that you can 3D print using a minimum of filament. They come in a _ton_
 of sizes (50, 75, 100, 125, 150, adn 175mm square). They have a very
 useful funnel attached, and most importantly they stack! I print them
-with my [fast profile](../3D/prusa.md#makers-muse-slicer-settings) and
+with my [fast profile](../3d/prusa.md#makers-muse-slicer-settings) and
 they are super solid. They're fine in PLA as well as PETG.
 
 In addition, @Area51 has provided
@@ -155,7 +164,7 @@ from [APuckNut](https://www.printables.com/@APuckNut), you've got yet
 another great function. This lets you take a Hakko FX-888 soldering iron
 handpiece and securely mount it in the Dremel workstation. You can then
 use this to accurately and reliably do [heat set
-inserts](../3D/joining-parts.md#threaded-inserts). 
+inserts](../3d/joining-parts.md#threaded-inserts). 
 
 If you want something _even cooler_, and wildly specialized, but
 amazingly made and designed, I've heard nothing but great things about

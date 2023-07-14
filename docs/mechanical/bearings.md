@@ -1,3 +1,10 @@
+---
+tags:
+  - bearings
+  - force
+  - joint
+  - mechanical
+---
 # Bearings
 
 <!-- 

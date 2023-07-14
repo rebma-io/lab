@@ -1,3 +1,10 @@
+---
+tags:
+  - barcode
+  - labeling
+  - organization
+  - tools
+---
 # Labeling
 
 ## Process

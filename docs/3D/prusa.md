@@ -1,3 +1,11 @@
+---
+tags:
+  - 3d
+  - 3d-printer
+  - equipment
+  - fit
+  - settings
+---
 # Prusa Printer
 
 <!-- TODO:

@@ -1,3 +1,11 @@
+---
+tags:
+  - bolts
+  - joint
+  - methodology
+  - screws
+  - standards
+---
 # Tightening Screws and Bolts
 
 I know what you're thinking... you're thinking "you twist the

@@ -1,3 +1,13 @@
+---
+tags:
+  - adhesive
+  - interesting
+  - materials
+  - metal
+  - metal-alloy
+  - rubber
+  - tape
+---
 # Interesting Materials
 
 I wanted to highlight some interesting materials that people may not know about.

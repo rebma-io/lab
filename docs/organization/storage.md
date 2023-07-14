@@ -1,3 +1,10 @@
+---
+tags:
+  - organization
+  - storage
+  - containers
+  - consumables
+---
 # Storage
 
 <!--

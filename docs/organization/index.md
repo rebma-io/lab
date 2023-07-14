@@ -1,3 +1,9 @@
+---
+tags:
+  - organization
+  - software
+  - tools
+---
 # Organization
 
 In here, I discuss [how I manage inventory](inventory.md) including [part

@@ -1,3 +1,9 @@
+---
+tags:
+  - consumables
+  - ipa
+  - safety
+---
 # Consumables
 
 One of the things that I don't think we talk enough about is all the

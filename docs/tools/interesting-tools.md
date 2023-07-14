@@ -1,3 +1,8 @@
+---
+tags:
+  - pcb
+  - tools
+---
 # Interesting Tools
 
 Here I want to collect a bunch of interesting tools that are out there

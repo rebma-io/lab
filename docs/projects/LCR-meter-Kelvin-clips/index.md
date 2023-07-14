@@ -1,3 +1,10 @@
+---
+tags:
+  - lcr
+  - measurement
+  - project
+  - tools
+---
 # Kelvin Clips for LCR Meter
 
 For a while, I've used a [Der EE
