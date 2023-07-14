@@ -10,6 +10,11 @@
 >
 > This changelog will be kept in reverse chronological order, with the
 > newest things on top. 
+>
+> If you wish to use an [RSS reader](https://newsblur.com/), and _you
+> should_, there is an RSS feed of both [new
+> things](/feed_rss_created.xml) and [updated
+> things](/feed_rss_updated.xml).
 
 
 ### 2023-07-14 16:20
