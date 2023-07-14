@@ -7,6 +7,7 @@ tags:
   - soldering
   - tools
 ---
+=======
 # 3D Printed Tools
 
 Unlike many people, I don't think that FFF 3D printing is a
@@ -26,6 +27,7 @@ that you can 3D print using a minimum of filament. They come in a _ton_
 of sizes (50, 75, 100, 125, 150, adn 175mm square). They have a very
 useful funnel attached, and most importantly they stack! I print them
 with my [fast profile](../3d/prusa.md#makers-muse-slicer-settings) and
+with my [fast profile](../3D/prusa.md#makers-muse-slicer-settings) and
 they are super solid. They're fine in PLA as well as PETG.
 
 In addition, @Area51 has provided
