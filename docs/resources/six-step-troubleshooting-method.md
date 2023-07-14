@@ -155,3 +155,9 @@ analysis](https://en.wikipedia.org/wiki/Root_cause_analysis), I am of
 the opinion that there is rarely _a_ root cause. Instead there are
 multiple contributory causes, and it's important not to focus on _the_
 cause, but what contributed to the failure.
+
+This information should be part of your
+[note-taking](../organization/note-taking.md) process. If your project
+hosted somewhere like Github, it's not a bad idea to open an issue for
+it and document the findings there, even if it's just you involved in
+the issue.
