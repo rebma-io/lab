@@ -83,15 +83,24 @@ proper voltages as the proper places.
 
 ## Step 4: Localize the Faulty Function
 
+One way to localize the faulty function, is to take an approach of
+bisecting the problem area. Take something in the middle of the circuit
+(approximately), or in the middle of your software, and figure out if
+the problem is before or after that point. Before? Great, cut the part
+before that in half and repeat. Keep repeating until you've reached a
+small enough section that it's easy to reason about what could possibly
+go wrong.
+
 We now know the approximate location of the fault, and more importantly,
-we know where it's unlikely to be. Now we need to localize it even more.
-This is where we pull out the multimeter and oscilloscope and see what's
-behaving how. Are capacitors exhibiting the right capacitance and ESR?
-Do discreet transistors and diodes exhibit the right directional flow of
-current? It can often be helpful to pull out something to measure
-temperature (an IR camera is amazing for this) to see if something is
-especially hot; high resistance or a short-induced high current flow,
-can show up as a _lot_ of heat.
+we know where it's unlikely to be. 
+
+To do this localization, we can pull out the multimeter and oscilloscope
+and see what's behaving how. Are capacitors exhibiting the right
+capacitance and ESR? Do discreet transistors and diodes exhibit the
+right directional flow of current? It can often be helpful to pull out
+something to measure temperature (an IR camera is amazing for this) to
+see if something is especially hot; high resistance or a short-induced
+high current flow, can show up as a _lot_ of heat.
 
 When dealing with software, tracing and logging can be super helpful to
 just figure out where things "stop". Where did it end? What was the last
