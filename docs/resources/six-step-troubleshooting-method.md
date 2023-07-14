@@ -1,3 +1,8 @@
+---
+tags:
+  - troubleshooting
+  - methodology
+---
 # Six Step Troubleshooting Method
 
 Years ago, at a start-up, I worked with several people who had come up

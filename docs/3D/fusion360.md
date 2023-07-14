@@ -1,3 +1,11 @@
+---
+tags:
+  - 3d
+  - fusion-360
+  - licensing
+  - parametric-modeling
+  - tips
+---
 # Fusion 360
 
 Currently, I use [Fusion

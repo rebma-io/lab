@@ -1,3 +1,8 @@
+---
+tags:
+  - 3d
+  - modeling
+---
 # Modeling Tools
 
 Before discussing 3D modeling tools, I wanted to put out some of the things that

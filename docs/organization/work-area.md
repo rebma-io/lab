@@ -1,3 +1,9 @@
+---
+tags:
+  - lab
+  - organization
+  - personal
+---
 # Work Area
 
 NOTE: **My Use Case** All of the information presented here is specific

@@ -1,3 +1,9 @@
+---
+tags:
+  - 3d
+  - 3d-modeling
+  - solidworks
+---
 # SOLIDWORKS
 
 ## Useful Properties for Drawings

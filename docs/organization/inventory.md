@@ -1,3 +1,12 @@
+---
+tags:
+  - airtable
+  - filament
+  - inventory
+  - labeling
+  - organization
+  - pbs
+---
 # Inventory
 
 ## Airtable

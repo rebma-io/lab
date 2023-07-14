@@ -1,3 +1,9 @@
+---
+tags:
+  - organization
+  - part-number
+  - pbs
+---
 # Part Numbers
 
 ## Why Part Numbers Matter

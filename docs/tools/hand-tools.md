@@ -1,3 +1,11 @@
+---
+tags:
+  - connectors
+  - hand-tools
+  - soldering
+  - tools
+  - wire
+---
 # Hand Tools
 
 <!-- TODO:

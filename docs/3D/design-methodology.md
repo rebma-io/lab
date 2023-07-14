@@ -1,3 +1,9 @@
+---
+tags:
+  - 3d
+  - design
+  - methodology
+---
 # Design Methodology
 
 There are three major approaches to how you go about building out an

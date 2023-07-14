@@ -1,3 +1,7 @@
+---
+tags:
+  - suppliers
+---
 # Suppliers
 
 ## Parts

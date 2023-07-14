@@ -1,3 +1,11 @@
+---
+tags:
+  - 3d
+  - fff
+  - fdm
+  - filament
+  - storage
+---
 # Filament
 
 ## Filament Brands

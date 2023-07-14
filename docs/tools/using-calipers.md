@@ -1,3 +1,9 @@
+---
+tags:
+  - calipers
+  - measurement
+  - micrometers
+---
 # Using Calipers and Micrometers
 
 > WARNING: **Storage of Calipers and Micrometers** ![Closeup of the anvil on a

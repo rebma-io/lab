@@ -1,3 +1,8 @@
+---
+tags:
+  - project
+  - barcode
+---
 # Projects
 
 This area contains various explorations of projects. Some of it is just a

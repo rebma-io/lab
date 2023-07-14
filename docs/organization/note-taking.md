@@ -1,3 +1,9 @@
+---
+tags:
+  - note-taking
+  - organization
+  - tools
+---
 # Note Taking
 
 ## Goals
