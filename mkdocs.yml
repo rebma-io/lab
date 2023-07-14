@@ -4,6 +4,8 @@ extra:
     property: XBUPTVHH
     provider: fathom
   social:
+    - icon: material/rss-box
+      link: https://lab.rebma.io/feed_rss_updated.xml
     - icon: fontawesome/brands/mastodon
       link: https://hachyderm.io/@petrillic
     - icon: fontawesome/brands/youtube
@@ -60,96 +62,100 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg ""
       emoji_index: !!python/name:materialx.emoji.twemoji ""
 nav:
-  - Start: 
-    - index.md
-    - changelog.md
+  - Start:
+      - index.md
+      - changelog.md
   - Projects:
-    - projects/index.md
-    - Signed GS1 Data Matrix: projects/signed-GS1-data-matrix.ipynb
-    - Adding Kelvin Clips to LCR Meter: projects/LCR-meter-Kelvin-clips/index.md
-  - Electronics: 
-    - electronics/index.md
-    - electronics/fundamentals.md
-    - electronics/units-of-measure.md
-    - electronics/non-intuitive-topics.md
-    - electronics/protecting-circuits.md
-    - electronics/data-sheets.md
-    - Techniques:
-      - electronics/soldering.md
-      - electronics/simulating-circuits.md
-    - Passive Components:
-      - electronics/passives/index.md
-      - electronics/passives/resistors.md
-    - Active Components:
-      - electronics/leds.md
-      - electronics/sensors.md
-    - Circuit Patterns:
-      - electronics/filters.md
-      - electronics/current-mirror.md
-      - electronics/voltage-dividers.md
-      - electronics/voltage-multiplier.md
-    - PCB:
-      - Design: electronics/PCB-design.md
-    - Fusion 360 for Electronics: electronics/fusion360.md
-    - electronics/interesting-parts.md
-    - electronics/random-tips-and-tricks.md
-    - electronics/suppliers.md
+      - projects/index.md
+      - Signed GS1 Data Matrix: projects/signed-GS1-data-matrix.ipynb
+      - Adding Kelvin Clips to LCR Meter: projects/LCR-meter-Kelvin-clips/index.md
+  - Electronics:
+      - electronics/index.md
+      - electronics/fundamentals.md
+      - electronics/units-of-measure.md
+      - electronics/non-intuitive-topics.md
+      - electronics/protecting-circuits.md
+      - electronics/data-sheets.md
+      - Techniques:
+          - electronics/soldering.md
+          - electronics/simulating-circuits.md
+      - Passive Components:
+          - electronics/passives/index.md
+          - electronics/passives/resistors.md
+      - Active Components:
+          - electronics/leds.md
+          - electronics/sensors.md
+      - Circuit Patterns:
+          - electronics/filters.md
+          - electronics/current-mirror.md
+          - electronics/voltage-dividers.md
+          - electronics/voltage-multiplier.md
+      - PCB:
+          - Design: electronics/PCB-design.md
+      - Fusion 360 for Electronics: electronics/fusion360.md
+      - electronics/interesting-parts.md
+      - electronics/random-tips-and-tricks.md
+      - electronics/suppliers.md
   - Mechanical:
-    - mechanical/index.md
-    - mechanical/fit.md
-    - mechanical/tightening-screws-and-bolts.md
-    - mechanical/bearings.md
-    - mechanical/ip-rating.md
-    - mechanical/materials.md
-    - mechanical/suppliers.md
+      - mechanical/index.md
+      - mechanical/fit.md
+      - mechanical/tightening-screws-and-bolts.md
+      - mechanical/bearings.md
+      - mechanical/ip-rating.md
+      - mechanical/materials.md
+      - mechanical/suppliers.md
   - 3D Stuff:
-    - 3d/index.md
-    - 3d/joining-parts.md
-    - 3d/waterproofing.md
-    - Design:
-      - Methodology: 3d/design-methodology.md
-      - Parametric Modeling: 3d/parametric-parameters.md
-      - Fusion 360: 3d/fusion360.md
-      - SOLIDWORKS: 3d/solidworks.md
-      - Choosing Modeling Tools: 3d/modeling-tools.md
-    - Printers:
-      - Prusa MINI+: 3d/prusa.md
-      - Filament: 3d/filament.md
-      - Octoprint: 3d/octoprint.md
-    - 3d/my-designs.md
+      - 3d/index.md
+      - 3d/joining-parts.md
+      - 3d/waterproofing.md
+      - Design:
+          - Methodology: 3d/design-methodology.md
+          - Parametric Modeling: 3d/parametric-parameters.md
+          - Fusion 360: 3d/fusion360.md
+          - SOLIDWORKS: 3d/solidworks.md
+          - Choosing Modeling Tools: 3d/modeling-tools.md
+      - Printers:
+          - Prusa MINI+: 3d/prusa.md
+          - Filament: 3d/filament.md
+          - Octoprint: 3d/octoprint.md
+      - 3d/my-designs.md
   - Organization:
-    - organization/index.md
-    - organization/note-taking.md
-    - organization/storage.md
-    - organization/labeling.md
-    - organization/work-area.md
-    - Structure:
-      - organization/inventory.md
-      - organization/part-numbers.md
-      - organization/product-breakdown-structure.md
+      - organization/index.md
+      - organization/note-taking.md
+      - organization/storage.md
+      - organization/labeling.md
+      - organization/work-area.md
+      - Structure:
+          - organization/inventory.md
+          - organization/part-numbers.md
+          - organization/product-breakdown-structure.md
   - Tools:
-    - tools/index.md
-    - tools/hand-tools.md
-    - tools/consumables.md
-    - tools/3d-printed-tools.md
-    - tools/interesting-tools.md
-    - Test & Measurement:
-      - Tools: tools/test-and-measurement.md
-      - tools/using-calipers.md
+      - tools/index.md
+      - tools/hand-tools.md
+      - tools/consumables.md
+      - tools/3d-printed-tools.md
+      - tools/interesting-tools.md
+      - Test & Measurement:
+          - Tools: tools/test-and-measurement.md
+          - tools/using-calipers.md
   - Resources:
-    - resources/index.md
-    - resources/six-step-troubleshooting-method.md
-    - resources/books.md
-    - resources/blogs-and-websites.md
-    - resources/video.md
-    - resources/structured-education.md
-    - resources/suppliers.md
+      - resources/index.md
+      - resources/six-step-troubleshooting-method.md
+      - resources/books.md
+      - resources/blogs-and-websites.md
+      - resources/video.md
+      - resources/structured-education.md
+      - resources/suppliers.md
   - Tags: tags.md
   - About: about.md
 plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       type: iso_date
+  - rss:
+      date_from_meta:
+        default_timezone: America/Los_Angeles
+      image: https://lab.rebma.io/assets/rebma-io-logo-black.png
   - search:
       lang: en
   - mermaid2:
@@ -169,7 +175,9 @@ plugins:
       module_name: macros
 repo_name: rebma-io/lab
 repo_url: https://github.com/rebma-io/lab
-site_name: rebma.io Notebook
+site_description: A collection fo thoughts and resources for Makers.
+site_url: https://lab.rebma.io
+site_name: lab.rebma.io Notebook
 theme:
   custom_dir: overrides
   favicon: assets/rebma-io-logo-black.png
