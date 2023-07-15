@@ -24,3 +24,6 @@
   led to some weird organization. While it's more work to keep a manual
   nav structure up-to-date, I think it will be more useful as a
   consumer.
+* Added an RSS feed for [changes](/feed_rss_updated.xml) and
+  [creations](/feed_rss_created.xml) using the
+  [mkdocs-rss-plugin]([Title](https://github.com/guts/mkdocs-rss-plugin)).
