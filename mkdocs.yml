@@ -153,6 +153,7 @@ plugins:
       enable_creation_date: true
       type: iso_date
   - rss:
+      abstract_chars_count: -1
       date_from_meta:
         default_timezone: America/Los_Angeles
       image: https://lab.rebma.io/assets/rebma-io-logo-black.png

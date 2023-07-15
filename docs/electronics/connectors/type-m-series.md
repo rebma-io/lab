@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # M Series
 
 Perhaps the most well-recognized type of circular connector is the M-style standard utilized for connecting sensors and actuators in industrial network applications. "M" simply calls out the size of the metric thread on the coupling nuts and mating receptacles, which gives us the common M5 (5 mm diameter fasteners), M8 (8 mm), and M12 (12 mm) connector types. M12 circular connectors and cables are arguably the most common type found as they are a global standard for the automotive industry.

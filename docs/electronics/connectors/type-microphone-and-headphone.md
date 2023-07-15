@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # Microphone and Headphone
 
 ## Microphone

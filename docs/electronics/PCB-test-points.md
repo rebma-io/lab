@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # PCB: Test Points
 
 ## Types of Testing

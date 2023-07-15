@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # Mounting Types
 
 ## Through Hole
