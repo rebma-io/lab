@@ -1,3 +1,9 @@
+---
+tags:
+  - organization
+  - part-number
+  - pbs
+---
 # Product Breakdown Structure
 
 CONSTRUCTION: **Huge Work in Progress** This is just a quick intro to

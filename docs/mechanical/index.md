@@ -1,3 +1,7 @@
+---
+tags:
+  - mechanical
+---
 # Mechanical
 
 This section covers all things real-world mechanical. The entire field is so

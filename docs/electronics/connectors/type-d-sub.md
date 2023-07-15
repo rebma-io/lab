@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # D Subminiature
 
 WARNING: **Avoid** If you can avoid these types of connectors, you will

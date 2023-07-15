@@ -1,3 +1,11 @@
+---
+tags:
+  - 3d
+  - conventions
+  - modeling
+  - parametric-modeling
+  - tips
+---
 # Parameters in Parametric Models
 
 ## Naming Scheme

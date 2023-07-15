@@ -1,3 +1,9 @@
+---
+tags:
+  - 3d
+  - mechanical
+  - joint
+---
 # Joining Parts
 
 When joining parts, there's one question you need to start with: is this

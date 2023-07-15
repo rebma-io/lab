@@ -1,3 +1,11 @@
+---
+tags:
+  - enclosures
+  - nema
+  - ratings
+  - standards
+  - water
+---
 # IP and NEMA Ratings
 
 ## IP Ratings 

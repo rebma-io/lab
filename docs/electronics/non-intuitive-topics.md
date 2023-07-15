@@ -1,9 +1,18 @@
+---
+tags:
+  - ac
+    - current
+    - electronics
+    - fundamentals
+    - theory
+    - voltage
+---
+
 # Non-Intuitive Topics
 
 While a lot of things in electronics aren't particularly confusing, there's a
 few topics which I've found historically just a bit surprising and
 non-intuitive.
-
 
 ## Conventional Current Flow v Reality
 
@@ -36,7 +45,7 @@ easy to understand. If someone doesn't talk about what model they are using,
 model.
 
 If you want to read more, [this
-article](https://workforce.libretexts.org/Bookshelves/Electronics_Technology/Book%3A_Electric_Circuits_III_-_Semiconductors_(Kuphaldt)/02%3A_Solid-state_Device_Theory/2.05%3A_Electrons_and_%E2%80%9Choles%E2%80%99%E2%80%99)
+article](<https://workforce.libretexts.org/Bookshelves/Electronics_Technology/Book%3A_Electric_Circuits_III_-_Semiconductors_(Kuphaldt)/02%3A_Solid-state_Device_Theory/2.05%3A_Electrons_and_%E2%80%9Choles%E2%80%99%E2%80%99>)
 might help.
 
 ## Everything is a Sine wave
@@ -47,16 +56,15 @@ waveform is composed of some number of sine (and cosine) waves superimposed on
 one another (more on this later). First, let's start with the most basic of sine
 waves.
 
-
 $$y(t) = A \sin(2\pi f t + \varphi) = A \sin(\omega t + \varphi)$$
 
 where:
 
-* $t$ is the time
-* $A$ is the amplitude, or peak deviation of the function from zero (not peak-to-peak)
-* $f$ is the frequency in oscillations per second
-* $\omega$ is the angular frequency ($\omega = 2 \pi f$) in radians per second.
-* $\varphi$ is the phase, specified in radians where in its cycle (think where
+- $t$ is the time
+- $A$ is the amplitude, or peak deviation of the function from zero (not peak-to-peak)
+- $f$ is the frequency in oscillations per second
+- $\omega$ is the angular frequency ($\omega = 2 \pi f$) in radians per second.
+- $\varphi$ is the phase, specified in radians where in its cycle (think where
   on its curve) the sine wave is when $t = 0$
 
 So far, so good, if you like trigonometry.
@@ -68,8 +76,10 @@ a square wave, which seems at first glance to be the absolute opposite of a sine
 wave can be constructed using a [Fourier
 series](https://en.wikipedia.org/wiki/Fourier_series) thusly:
 
-$$f(x) = {4\over\pi} \sum_{n=1,3,5,\ldots}^{\infty} {1\over n} \sin ({{n \pi
-x}\over{L}})$$
+$$
+f(x) = {4\over\pi} \sum_{n=1,3,5,\ldots}^{\infty} {1\over n} \sin ({{n \pi
+x}\over{L}})
+$$
 
 Easy peasy, lemon squeezy, right?
 
@@ -91,7 +101,7 @@ So how does this matter to us? Well, let's take a digital circuit running at
 10MHz. Because digital circuits are mostly like a square wave (or at least
 attempt to behave that way), those 10MHz square waves are actually composed of
 an infinite number of sine waves at various harmonics of the fundamental square
-wave frequency. Some of those will have gigahertz frequencies. 
+wave frequency. Some of those will have gigahertz frequencies.
 
 Take, for example, a 1MHz square wave coming out of my signal generator and into
 my oscilloscope:
@@ -107,4 +117,4 @@ it.
 
 ## 3rd Party Resources
 
-* [Square waves, or non-elephant biology](https://lcamtuf.substack.com/p/square-waves-or-non-elephant-biology)
+- [Square waves, or non-elephant biology](https://lcamtuf.substack.com/p/square-waves-or-non-elephant-biology)

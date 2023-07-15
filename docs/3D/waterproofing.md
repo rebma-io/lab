@@ -1,3 +1,9 @@
+---
+tags:
+  - 3d
+  - coating
+  - waterproof
+---
 # Waterproofing 
 
 The prints you get out of a FFF printer are highly unlikely to be

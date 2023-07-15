@@ -1,3 +1,9 @@
+---
+tags:
+  - 3d
+  - software
+  - guide
+---
 # Octoprint
 
 To manage and allow for web access to my [3D printer](prusa.md) I am

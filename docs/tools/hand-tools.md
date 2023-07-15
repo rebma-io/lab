@@ -1,3 +1,11 @@
+---
+tags:
+  - connectors
+  - hand-tools
+  - soldering
+  - tools
+  - wire
+---
 # Hand Tools
 
 <!-- TODO:
@@ -408,7 +416,7 @@ the industry, and Dupont connectors are also widespread. At the bottom of the
 page there's a link to a _very deep dive_ into how to crimp Dupont connectors
 properly.
 
-![iCrimp IWS-3220M crimper](../img/handtool-icrimp-iws-3220m.jpg){: width=400 align=left }
+![iCrimp IWS-3220M crimper](../img/handtool-icrimp-iws-3220m.jpg){: width=400 align=right }
 
 Another specialized crimping tool that I keep around is the [iCrimp
 IWS-3220M](https://www.icrimptools.com/products/iwiss-iws-3220m-micro-connector-pin-crimping-tool-0-03-0-52mm-32-20awg-ratcheting-crimper-for-d-sub-open-barrel-suits-molex-jst-jae),
@@ -421,7 +429,16 @@ which is designed for a few different smaller connectors:
 * [TE Connectivity (was Tyco) D-100](https://www.te.com/usa-en/search.html?q=D-100&n=42722&type=products&samples=N&inStoreWithoutPL=false&instock=N)
 
 I think it can also work with a few others, but those are the ones they talk about.
-Quite honestly, I only use the first 3. 
+Quite honestly, I only use the first 3.
+
+![Wire ferrule crimper](../img/handtool-ferrule-crimper.jpg){: width=400 align=left}
+
+When working with unterminated wires, I like to use a wire ferrule on
+them. To crimp these, you use a crimper like the one shown on the right.
+This has 4 anvils in the jaws that come down and crush the ferrule _just
+so_ so that it grips tightly and securely on the end of the wire. This
+is especially great for stranded wire that just loves to come unstranded
+once you have stripped it.
 
 ![Generic IDC crimper](../img/handtool-idc-crimper.jpg){: width=400 align=right }
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - fit
+  - mechanical
+---
 # Engineering Fit
 
 This discussion is entirely driven by the ANSI/ASME B4.1-1967 and B4.2-1978
@@ -91,4 +96,4 @@ Handbook_](../resources/books.md)'s "Dimensioning, Gaging, and Measuring".
 NOTE: When working with FFF 3D printing, however, you will find that the
 tolerances of the machine are so sloppy that you will need to develop your own
 understanding for your printer and printer settings (see [Prusa
-MINI+](../3D/prusa.md)).
+MINI+](../3d/prusa.md)).

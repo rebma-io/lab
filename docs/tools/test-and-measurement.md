@@ -1,3 +1,10 @@
+---
+tags:
+  - measurement
+  - multimeter
+  - oscilloscope
+  - testing
+---
 # Test & Measurement
 
 ## Multimeter
@@ -160,3 +167,10 @@ much something weights. The best thing I've found is an inexpensive
 jeweler's scale. These are typically accurate below 0.1g and can display 
 weights in grams (correct), ounces (what is this even?), and often a bunch 
 of jeweler specific things, like grains and carets. 
+
+<!-- 
+### Temperature Measurement
+
+TODO: IR camera
+TODO: Thermocouple
+-->
