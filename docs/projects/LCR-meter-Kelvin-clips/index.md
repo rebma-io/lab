@@ -40,7 +40,11 @@ multimeters, LCR meters, and similar use four-wire measurements for
 accuracy.
 
 I will note that the provided absurd alligator clips did in fact have
-4-wire connections. They were just silly.
+4-wire connections. They were just silly. The ones I bought came with
+BNC connections, so we'll have to remove those for this implementation,
+but they look like this:
+
+![New Kelvin clips](img/kelvin-clips.jpg)
 
 ## The Replacement
 
