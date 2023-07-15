@@ -27,3 +27,7 @@
 * Added an RSS feed for [changes](/feed_rss_updated.xml) and
   [creations](/feed_rss_created.xml) using the
   [mkdocs-rss-plugin]([Title](https://github.com/guts/mkdocs-rss-plugin)).
+  Thank you to [Aaron
+  Schwartz]([Title](https://en.wikipedia.org/wiki/Aaron_Swartz)), who
+  was taken too soon (f- you MIT), and others who contributed to this
+  amazing tech.
