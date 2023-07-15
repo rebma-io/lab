@@ -190,6 +190,10 @@ As mentioned above, there's some technique that you can read about
 This isn't a super intuitive way to hold an object, so you'll want to 
 practice it a few times so that you can get smooth movement without 
 needing 7 hands. 
+
+<!--
+TODO: Add step measurements.
+-->
 ### Battery Life
 
 Like all electronic things, a digital capiler requires power to function.
