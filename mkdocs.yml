@@ -67,7 +67,7 @@ nav:
       - changelog.md
   - Projects:
       - projects/index.md
-      - Signed GS1 Data Matrix: projects/signed-GS1-data-matrix.ipynb
+      - Signed GS1 Data Matrix: projects/signed-GS1-data-matrix/
       - Adding Kelvin Clips to LCR Meter: projects/LCR-meter-Kelvin-clips/index.md
   - Electronics:
       - electronics/index.md
