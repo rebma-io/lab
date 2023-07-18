@@ -1,5 +1,7 @@
 # About
 
+![rebma.io logo](assets/rebma-io-logo-black.png){: width=240 align=right }
+
 rebma.io is a label for Maker projects.
 
 WARNING: **Not a Professional Engineer** While I have been an engineer
@@ -20,7 +22,8 @@ otherwise hope others might find some use.
 
 The content in this collection is written by Chris Petrilli. An engineer of 30
 years in the tech business working in software, security, and embedded
-systems. 
+systems. Where the content comes from someone else, I have endeavoured to
+make sure it is linked to the original source.
 
 ## Amazon, Affiliate Links and Such
 

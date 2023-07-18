@@ -181,7 +181,7 @@ site_url: https://lab.rebma.io
 site_name: lab.rebma.io Notebook
 theme:
   custom_dir: overrides
-  favicon: assets/rebma-io-logo-black.png
+  favicon: assets/rebma-io-logo-black-notext.png
   features:
     - navigation.tracking
     - navigation.tabs
@@ -195,7 +195,7 @@ theme:
     text: Open Sans
   icon:
     repo: fontawesome/brands/git
-  logo: assets/rebma-io-logo-white.png
+  logo: assets/rebma-io-logo-white-notext.png
   name: material
   palette:
     accent: blue
