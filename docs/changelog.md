@@ -16,8 +16,12 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-07-20
 
-### 2023-07-14 16:20
+* Some coverage of screws, specifically. This includes a discussion of
+  the various types, materials, thread variations, and uses. 
+
+### 2023-07-14
 
 * Formalized the structure of the site. Previously, I had been just
   letting MkDocs figure it out from directory structure, but this often

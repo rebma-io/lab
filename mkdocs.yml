@@ -99,6 +99,7 @@ nav:
   - Mechanical:
       - mechanical/index.md
       - mechanical/fit.md
+      - mechanical/screws.md
       - mechanical/tightening-screws-and-bolts.md
       - mechanical/bearings.md
       - mechanical/ip-rating.md
@@ -167,6 +168,7 @@ plugins:
   - glightbox
   - tags:
       tags_file: tags.md
+  - table-reader
   - macros:
       include_dir: includes
       j2_block_end_string: "%]]"
