@@ -34,3 +34,8 @@ A few things I've put up:
 * [Interior shelf for a
   fridge](https://www.printables.com/model/512793-interior-shelf-for-crownful-4l-mini-fridge).
   This is designed to store solder paste and flux and hold it in place.
+* [Holder for Wera hex
+  drivers](https://www.printables.com/model/532043-ceiling-mount-for-wera-screwdrivers-15-8mm-hex).
+  Because of how my lab is oriented in the attic, I don't have a huge
+  amount of vertical space, but I do have a 55&deg; ceiling. So, I took
+  that and mounted the screwdrivers to it. 
