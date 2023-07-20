@@ -317,6 +317,14 @@ bolt).
 
 ### Pitch
 
+Pitch is the distance between the peaks (or valleys) of a screw's helix.
+Typically, for any system (metric v imperial), there are coarse and fine
+versions of the screw's threading system. Coarse is almost always the
+pitch that people use, and would be the one expected if not specified
+otherwise. Fine (or even extra fine, EF) pitch screws will mate more
+evenly and tighter, but will also cost substantially more due to the
+tighter tolerances needed during manufacture. 
+
 ### Form Cross-Section and Angle
 
 I'm not going to dig into this gigantic optic, other than to say that
