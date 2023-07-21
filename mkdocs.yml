@@ -48,7 +48,6 @@ markdown_extensions:
       auto_append:
         - includes/comments.md
         - includes/abbreviations.md
-        - includes/glossary.md
   - tables
   - footnotes
   - pymdownx.caret
@@ -141,6 +140,7 @@ nav:
           - tools/using-calipers.md
   - Resources:
       - resources/index.md
+      - resources/bibliography.md
       - resources/six-step-troubleshooting-method.md
       - resources/books.md
       - resources/blogs-and-websites.md
@@ -169,6 +169,10 @@ plugins:
   - tags:
       tags_file: tags.md
   - table-reader
+  - bibtex:
+      bib_file: "includes/references.bib"
+      csl_file: "includes/ieee.csl"
+      cite_inline: true
   - macros:
       include_dir: includes
       j2_block_end_string: "%]]"

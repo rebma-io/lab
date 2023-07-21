@@ -33,7 +33,7 @@ machinery](../resources/books.md):
 > plow bolts.) An externally threaded fastener that has thread form
 > which prohibits assembly with a nut having a straight thread of
 > multiple pitch length is a screw. (Example: wood screws, tapping
-> screws.)
+> screws.) [@obertg_machinerys_2020]
 
 So, screw joints have threads on both sides, bolts do not. At least as
 best as I can figure out. People will argue about this until the end of
