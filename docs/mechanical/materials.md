@@ -101,7 +101,6 @@ A great source for these metals is
 Leandro, CA. I've bought from them repeatedly, and service is excellent,
 they are responsive, and they ship quickly, even for small quantities. 
 
-
 EXAMPLE: **Demonstrate Gravity Casting with PLA** Yes,
 [PLA](https://en.wikipedia.org/wiki/Polylactic_acid) everyone's favorite
 lactic acid polymer that prints lovely in FFF printers. There are some
@@ -114,3 +113,14 @@ which means there are at least two alloys we could use:
 which is bismuth, cadmium, lead, tin, and indium, and
 [Roto136F](https://rotometals.com/roto136f-low-melt-fusible-bismuth-based-ingot-alloy-ingot/),
 which is bismuth, lead, tin, and indium. 
+
+## Indium-Tin-Oxide (ITO) Glass
+
+Indium-tin-oxide coated glass is a type of coated glass that is
+semi-conductive. It actually forms, in most of its forms, a N-type
+semiconductor. It  has very high light transmittance and relatively low
+resistance (10-100&ohm;) per square cm. It can be either single or
+double sided application. This is used in many touch screen designs,
+some types of solar cells, and can also form a RF shield. One place you
+can buy it is
+[Techinstro](https://www.techinstro.com/ito-coated-glass/). 

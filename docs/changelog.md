@@ -18,6 +18,9 @@
 
 ### 2023-07-20
 
+* Added ITO glass to the [interesting
+  materials](mechanical/materials.md) section. Super fun material used
+  in touch screens and other applications.
 * Added diagrams showing a visual example of the [types of
   fit](mechanical/fit.md). 
 * Some coverage of screws, specifically. This includes a discussion of
