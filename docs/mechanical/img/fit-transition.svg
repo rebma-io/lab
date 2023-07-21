@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="87.5 842.5 360 360" width="360" height="360">
+  <defs/>
+  <g id="Fit_Diagrams" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1" stroke-opacity="1">
+    <title>Fit Diagrams</title>
+    <g id="Fit_Diagrams_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_5">
+        <g id="Graphic_7">
+          <rect x="89" y="844" width="357" height="357" fill="#ccc"/>
+          <rect x="89" y="844" width="357" height="357" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_6">
+          <circle cx="267.5" cy="1022.5" r="141.250225703643" fill="white"/>
+          <circle cx="267.5" cy="1022.5" r="141.250225703643" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+      </g>
+      <g id="Graphic_12">
+        <circle cx="267.5" cy="1022.5" r="136.218967664199" fill="#c0ffc0" fill-opacity=".5"/>
+        <circle cx="267.5" cy="1022.5" r="136.218967664199" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

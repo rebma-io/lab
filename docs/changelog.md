@@ -18,6 +18,10 @@
 
 ### 2023-07-20
 
+* Added diagrams showing a visual example of the [types of
+  fit](mechanical/fit.md). 
+### 2023-07-20
+
 * Some coverage of screws, specifically. This includes a discussion of
   the various types, materials, thread variations, and uses. 
 
