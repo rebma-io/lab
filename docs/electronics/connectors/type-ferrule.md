@@ -14,7 +14,7 @@ secure electrical and mechanical connection. They are commonly used when
 a wire may need to be inserted and removed from another connector, which
 would typically cause damage to a stranded wire.
 
-Ferrules are not used on solid core wire.
+Ferrules are _not_ used on solid core wire.
 
 
 ## What They Are
