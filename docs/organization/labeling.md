@@ -77,7 +77,8 @@ two barcodes below store the exact same information (the part number above).
 matrix](../img/sample-data-matrix.png)
 
 NOTE: **Experiment with Data Matrix** Elsewhere, you can find an
-[experiment at adding digital signatures to data matrix barcodes](../projects/signed-GS1-data-matrix.ipynb).
+[experiment at adding digital signatures to data matrix
+barcodes](../projects/Signed-GS1-data-matrix/). 
 
 ## Barcode Scanner
 
