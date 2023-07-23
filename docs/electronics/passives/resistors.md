@@ -150,7 +150,8 @@ There are a bunch of ways to make resistors, but for a majority of them,
 they have one of the following compositions. I've linked to much more
 in-depth reviews of the various types along with trade-offs. I mostly
 keep carbon-film and metal-film resistors around for most uses, with a
-few wirewound for higher power applications.
+few wirewound for higher power applications. These are listed
+(approximately) from cheapest to most expensive.
 
 [Carbon composition](https://eepower.com/resistor-guide/resistor-materials/carbon-composition-resistor/)
 : Carbon composition resistors (CCR) are fixed value resistors. They are
