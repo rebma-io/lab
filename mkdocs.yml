@@ -72,6 +72,7 @@ nav:
   - Electronics:
       - electronics/index.md
       - electronics/fundamentals.md
+      - electronics/reference-designators.md
       - electronics/units-of-measure.md
       - electronics/non-intuitive-topics.md
       - electronics/protecting-circuits.md

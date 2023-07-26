@@ -16,6 +16,11 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-07-25
+
+* Added information on [reference
+  designators](electronics/reference-designators.md) for schematics. 
+  
 ### 2023-07-20
 
 * Added ITO glass to the [interesting
