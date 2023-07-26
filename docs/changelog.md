@@ -16,8 +16,18 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-07-25
+
+* Added information on [reference
+  designators](electronics/reference-designators.md) for schematics. 
+  
 ### 2023-07-20
 
+* Added ITO glass to the [interesting
+  materials](mechanical/materials.md) section. Super fun material used
+  in touch screens and other applications.
+* Added diagrams showing a visual example of the [types of
+  fit](mechanical/fit.md). 
 * Some coverage of screws, specifically. This includes a discussion of
   the various types, materials, thread variations, and uses. 
 

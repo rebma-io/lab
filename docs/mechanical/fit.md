@@ -53,29 +53,41 @@ _Fit_ is the general term used to signify the range of tightness that may result
 from the application of a combination of allowances and tolerances in the
 designed mating of two parts.
 
-Actual Fit
-: The actual fit between two mating parts is the relation existing between them
-with respect ot the amount of clearance or interference that is present when
+### Actual Fit
+
+The actual fit between two mating parts is the relation existing between them
+with respect to the amount of clearance or interference that is present when
 they are assembled.
 
-Clearance Fit 
-: A _clearance fit_ is one having limits of size so that a clearance always
+### Clearance Fit 
+
+![Diagram showing a clearance fit](img/fit-clearance.svg){: width=100 align=right }
+
+A _clearance fit_ is one having limits of size so that a clearance always
 results when mating parts are assembled. With a clearance fit, the shaft is
 always smaller than the hole. This enables easy assembly and leaves room for
 sliding and rotational movement.
 
-Interference Fit
-: An _interference fit_ is one having limits of size so that an interference
+### Interference Fit
+
+![Diagram showing an interference fit](img/fit-interference.svg){: width=100 align=right }
+
+An _interference fit_ is one having limits of size so that an interference
 always results when mating parts are assembled. Interference fits are also known
 as press fits or friction fits. These types of fits always have the same
 principle of having a larger shaft compared to the hole size. 
 
-Transition Fit
-: A _transition fit_ is one having limits of size so that either a clearance or
+### Transition Fit
+
+![Diagram showing a transition fit](img/fit-transition.svg){: width=100 align=right }
+
+A _transition fit_ is one having limits of size so that either a clearance or
 interference may result when mating parts are assembled. A transition fit
 encompasses two possibilities. The shaft may be a little bigger than the hole,
 requiring some force to create the fit. At the other end of the spectrum is a
 clearance fit with a little bit of room for movement.
+
+## Determining Fit Measurements
 
 For both standard and metric measurements, there are a set of _standard fits_,
 which prescribed tolerance limits and clearance for a specific type of fit for
