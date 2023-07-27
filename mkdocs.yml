@@ -193,9 +193,7 @@ theme:
     - navigation.indexes
     - navigation.prune
     - navigation.expand
-  font:
-    code: Fira Mono
-    text: Open Sans
+  font: false
   icon:
     repo: fontawesome/brands/git
   logo: assets/rebma-io-logo-white-notext.png

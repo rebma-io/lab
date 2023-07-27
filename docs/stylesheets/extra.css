@@ -1,3 +1,11 @@
+/* FONT FACES */
+@import url(https://fonts.bunny.net/css?family=fira-mono:400,700|fira-sans:400,400i,500,500i);
+:root {
+  --md-text-font: "Fira Sans";
+  --md-code-font: "Fira Mono";
+}
+
+
 /* ICONS */
 :root {
   --md-admonition-icon--future: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.081.61v7.566h-7.223v6.661H7.566v6.634H0v1.92h9.471v-6.649h7.306v-6.66H24V.61Z"/></svg>');
