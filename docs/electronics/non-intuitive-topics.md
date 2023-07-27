@@ -1,11 +1,11 @@
 ---
 tags:
   - ac
-    - current
-    - electronics
-    - fundamentals
-    - theory
-    - voltage
+  - current
+  - electronics
+  - fundamentals
+  - theory
+  - voltage
 ---
 
 # Non-Intuitive Topics
