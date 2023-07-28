@@ -13,6 +13,13 @@ tags:
 
 ## Large Storage Organization
 
+### Bosch/Sortimo
+
+I recently (July 2023) acquired a few pieces of the
+[Bosch/Sortimo](sortimo.md) products, and am just beginning to organize
+around them. I've created [another page](sortimo.md) that covers this
+more in-depth.
+
 ### IKEA ALEX
 
 I'm a pretty big fan of the IKEA
