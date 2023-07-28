@@ -32,6 +32,9 @@ Sortimo/Bosch system apart as slightly better:
 * It has a great roll-around platform with large ball-bearing wheels
   that it latches and unlatches to quickly.
 
+This is before I discuss the horrifying color choices for some of the
+systems. 
+
 ## Differences with Sortimo
 
 I've never touched a Sortimo system hands-on, but from watching videos
