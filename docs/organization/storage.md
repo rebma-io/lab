@@ -74,6 +74,9 @@ many compartments. These are just handwritten and then places in a small holder
 on the front ([Amazon](https://www.amazon.com/gp/product/B0BJQ7TM4F/)), which
 lets me read it and update it as necessary. You can see an example here:
 
+<!--
+TODO: Update this as I move to Sortimo, and how I'm using the Plano containers.
+-->
 ![Box with 3x5 card label attached on the front](../img/parts-box-front-card.jpg)
 
 ### AideTek
