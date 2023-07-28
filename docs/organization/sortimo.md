@@ -104,7 +104,33 @@ All of the models (STL and Fusion 360 `f3d` file) are [available on
 Printables](https://www.printables.com/model/538356-boschsortimo-i-boxx72-sorting-containers),
 at least for the i-Boxx72 size. The difference between 2x3 and 3x2 is
 the orientation and how the label is placed on it. I've also included
-the Fusion 360 original.
+the Fusion 360 original that has the following useful parameters, with
+the first two probably being the two most useful ones to people.
+
+| Parameter                | Usage                                                                          |
+| ------------------------ | ------------------------------------------------------------------------------ |
+| `ContainerWidthUnits`  | # of units wide to make the container                                          |
+| `ContainerLengthUnits` | # of units high/long to make the container                                     |
+| `BoxWidth`                 | The interior width that is available                                           |
+| `BoxLength`                | The interior length that is available                                          |
+| `BoxHeight`                | The interior height that is available                                          |
+| `GridColumns`              | Width/columns for the grid                                                     |
+| `GridRows`                 | Rows for the grid                                                              |
+| `WallThickness`            | How thick the container walls should be (typ 0.3x3)                            |
+| `ContainerSpacing`         | Extra spacing to allow between containers so they're easy to remove and insert |
+| `ContainerLabelDepth`      | How "tall" a label we want                                                     |
+
+There's also a bunch of calculated parameters that are used to size
+things. Feel free to look at them, change them once you understand what
+they do.
+
+Unfortunately, I've not figured out a good way to have all of the boxes
+be parametric in ever aspect. You have to change the
+`ContainerWidthUnits` if you want to have a different container width.
+This _sucks_. I may redo it with duplicate linked components that are
+just sized with all the different multiples. I really wish Fusion 360
+had a way to attach properties to a _component_ and then use those
+properties in the parameters.
 
 ### Labels
 
