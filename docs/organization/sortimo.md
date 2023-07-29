@@ -85,6 +85,9 @@ have a tape measure that reads in inches.
 
 ## i-Boxx Inserts
 
+![Photo of colorful sorting containers inside Bosch
+container](img/i-boxx-sorting-containers.jpg){: width=300 align=right }
+
 A big open space isn't the most useful thing for organizing parts. While
 Bosch does [offer some
 compartments](https://www.boschtools.com/us/en/boschtools-ocs/tool-and-accessory-storage-org53-12-46580-p/),
