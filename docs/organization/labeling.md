@@ -15,6 +15,9 @@ Step 2: Use it consistently.
 
 ## Label Makers
 
+![A well-used Brother PT-1290 label
+maker](../img/brother-pt-1290.jpg){: width=240 align=right }
+
 Personally, I prefer Brother's P-Touch label makers. There are better (companies like
 Brady, etc.), but they're affordable, and in my experience the actual laminated
 label is _very durable_, which is what I'm looking for. If you buy knock-off TZe
@@ -23,11 +26,12 @@ to be close enough in quality. Sadly, the OEM labels are very pricey.
 Fortunately, unlikely certain other companies (see: HP and Epson), they don't
 try and DRM their way to profit.
 
-I've had 2 Brother P-Touch label makers. For many years, I used a [PT-1290](https://www.brother-usa.com/products/pt1290) which
-was a little handheld model (shown below). I'm pretty sure I had it for 10+
+I've had 2 Brother P-Touch label makers. For many years, I used a
+[PT-1290](https://www.brother-usa.com/products/pt1290) which was a
+little handheld model (shown below). I'm pretty sure I had it for 10+
 years without a single problem.
 
-![A well-used Brother PT-1290 label maker](../img/brother-pt-1290.jpg){width=500px}
+![Brother PT-750W label printer](img/brother-pt-750w.jpg){: width=240 align=left }
 
 Recently, I replaced it with a
 [PT-750W](https://www.brother-usa.com/products/PTP750W) for a couple reasons:
