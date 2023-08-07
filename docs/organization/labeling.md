@@ -57,6 +57,12 @@ which you can see at the link.
 
 ## Label Layout
 
+NOTE: **Github Repo** I am beginning to collect the templates that I
+use, as I clean them up, in [this Github
+repository](https://github.com/rebma-io/brother-label-templates). They
+are specifically templates for the Brother P-Touch Editor (macOS or
+Windows). 
+
 This is the layout I use for inventory labels:
 
 ![Inventory label for ESP32-WROOM-32U](../img/sample-inventory-label.png)
@@ -82,7 +88,7 @@ matrix](../img/sample-data-matrix.png)
 
 NOTE: **Experiment with Data Matrix** Elsewhere, you can find an
 [experiment at adding digital signatures to data matrix
-barcodes](../projects/Signed-GS1-data-matrix/). 
+barcodes/projects/Signed-GS1-data-matrix/). 
 
 ## Barcode Scanner
 

@@ -16,6 +16,12 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-07-28
+
+* Added information on the [Bosch-Sortimo
+  system](organization/sortimo.md), including labeling and other
+  details.
+
 ### 2023-07-25
 
 * Added information on [reference

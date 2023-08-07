@@ -13,6 +13,13 @@ tags:
 
 ## Large Storage Organization
 
+### Bosch/Sortimo
+
+I recently (July 2023) acquired a few pieces of the
+[Bosch/Sortimo](sortimo.md) products, and am just beginning to organize
+around them. I've created [another page](sortimo.md) that covers this
+more in-depth.
+
 ### IKEA ALEX
 
 I'm a pretty big fan of the IKEA
@@ -68,6 +75,10 @@ on the front ([Amazon](https://www.amazon.com/gp/product/B0BJQ7TM4F/)), which
 lets me read it and update it as necessary. You can see an example here:
 
 ![Box with 3x5 card label attached on the front](../img/parts-box-front-card.jpg)
+
+<!--
+TODO: Update this as I move to Sortimo, and how I'm using the Plano containers.
+-->
 
 ### AideTek
 

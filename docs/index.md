@@ -20,8 +20,8 @@ left to right:
 * Tools
 
 I also think it's worth talking about what it means to be a maker,
-though. I think Adam Savage summed it up best in the video below (it's
-the first 10 minutes, and the rest is open Q&A), but it comes down to
+though. I [think Adam Savage summed it up
+best](https://www.youtube.com/watch?v=ER7rhQ7N69k), but it comes down to
 his 10 commandments of the maker:
 
 1. Make something.
@@ -34,5 +34,3 @@ his 10 commandments of the maker:
 8. Measure carefully.
 9. Make things for other people.
 10. Use more cooling fluid.
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ER7rhQ7N69k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
