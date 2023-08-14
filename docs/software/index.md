@@ -1,5 +1,4 @@
 ---
-draft: true
 tags:
   - software
   - programming
