@@ -343,3 +343,8 @@ in various specialized applications. A few that I've run into are:
   standardized format is available
 * [GS1 Standards](https://gs1.org/). Global organization that helps
   coordinate all markings in trade.
+* [Using Barcodes in Documents - Best
+  Practices](https://web.archive.org/web/20120524085651/http://accusoft.com/whitepapers/barcodes/BarcodesinDocuments-BestPractices.pdf).
+  A (somewhat dated) document that goes over a lot of the best practices
+  about printing barcodes, such as minimum size, contrast ratios, etc.
+  especially as it relates to the scanner's resolution.
