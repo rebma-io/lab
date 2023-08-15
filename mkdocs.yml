@@ -121,6 +121,10 @@ nav:
           - Filament: 3d/filament.md
           - Octoprint: 3d/octoprint.md
       - 3d/my-designs.md
+  - Software:
+      - software/index.md
+      - Python:
+        - software/python-libraries.md
   - Organization:
       - organization/index.md
       - organization/note-taking.md

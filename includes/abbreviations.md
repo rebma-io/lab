@@ -42,3 +42,5 @@
 *[PLA]: PolyLactic Acid
 *[PETG]: PolyEthylene Terephthalata copolymer with Glycol modifier
 *[BOM]: Bill Of Materials
+*[EDI]: Electronic Data Interchange
+*[B2B]: Business to Business
