@@ -123,6 +123,7 @@ nav:
       - 3d/my-designs.md
   - Software:
       - software/index.md
+      - software/barcode-formats.md
       - Python:
         - software/python-libraries.md
   - Organization:
