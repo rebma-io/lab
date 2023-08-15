@@ -125,7 +125,8 @@ nav:
       - software/index.md
       - software/barcode-formats.md
       - Python:
-        - software/python-libraries.md
+        - software/python/index.md
+        - software/python/libraries.md
   - Organization:
       - organization/index.md
       - organization/note-taking.md

@@ -14,6 +14,15 @@ of libraries that I _personally_ use regularly and find to be good.
 Hopefully that might be a lead for people looking for something to
 scratch an itch.
 
+## HTTP
+
+[HTTPX](https://www.python-httpx.org/)
+: An alternative to the ever-popular
+[requests](https://docs.python-requests.org/en/latest/index.html). I
+switched a while back because it had better type annotations, but I feel
+like there was another reason I switched, but I can't for the life of me
+remember what it is.
+
 ## Barcodes and Labels
 
 [Blabel](https://github.com/Edinburgh-Genome-Foundry/blabel/tree/master)
