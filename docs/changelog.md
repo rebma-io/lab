@@ -16,6 +16,11 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-08-14
+
+* Added an [introduction to barcodes](software/barcode-formats.md), both
+  1D and 2D. 
+  
 ### 2023-07-28
 
 * Added information on the [Bosch-Sortimo
