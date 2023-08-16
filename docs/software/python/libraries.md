@@ -25,6 +25,22 @@ remember what it is.
 
 ## Barcodes and Labels
 
+[pylibdmtx](https://github.com/NaturalHistoryMuseum/pylibdmtx/)
+: From the Natural History Museum in the UK, this library lets you both
+create a parse [Data Matrix](../barcode-formats.md#data-matrix)
+barcodes. You can see a use in [this
+project](/projects/Signed-GS1-data-matrix/). There's another library,
+[pystritch](https://pypi.org/project/pyStrich/), which is used by
+`blabel` below, but it seems to be somewhat abandoned. It works, but... 
+
+[python-barcode](https://github.com/WhyNotHugo/python-barcode)
+: Great library that does nearly all the 1D barcode formats:  Code 39,
+Code 128, EAN-13, EAN-8, JAN, ISBN-13, ISBN-10, ISSN, UPC-A, EAN14, and 
+GS1-128.
+
+[qrcode](https://github.com/lincolnloop/python-qrcode)
+: Library for creating [QR codes](../barcode-formats.md#qr-code).
+
 [Blabel](https://github.com/Edinburgh-Genome-Foundry/blabel/tree/master)
 : This library from the Edinburgh Genome Foundry provides a simple
 interface to use HTML+CSS+Python to define labels, including lots of
