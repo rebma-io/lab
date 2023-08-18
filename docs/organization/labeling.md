@@ -88,7 +88,7 @@ matrix](../img/sample-data-matrix.png)
 
 NOTE: **Experiment with Data Matrix** Elsewhere, you can find an
 [experiment at adding digital signatures to data matrix
-barcodes/projects/Signed-GS1-data-matrix/). 
+barcodes](/projects/Signed-GS1-data-matrix/). 
 
 ## Barcode Scanner
 
