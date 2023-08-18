@@ -92,7 +92,9 @@ nav:
           - electronics/voltage-dividers.md
           - electronics/voltage-multiplier.md
       - PCB:
-          - Design: electronics/PCB-design.md
+          - electronics/pcb/index.md
+          - Layers: electronics/pcb/layers.md
+          - Resources: electronics/pcb/resources.md
       - Fusion 360 for Electronics: electronics/fusion360.md
       - electronics/interesting-parts.md
       - electronics/random-tips-and-tricks.md
