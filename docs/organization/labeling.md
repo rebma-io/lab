@@ -92,7 +92,8 @@ barcodes](/projects/Signed-GS1-data-matrix/).
 
 ## Barcode Scanner
 
-<!-- TODO: Add picture of scanner. -->
+![Tera HW-0006 Pro 2D barcode scanner](img/tera-hw0006-pro.jpg){: align=right width=200 }
+
 I am in the process of developing a better workflow for dealing with bar codes.
 Obviously, if you just print them, they serve no purpose. I'm working to try and
 integrate them into my [inventory](inventory.md) system so that things are more
