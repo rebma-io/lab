@@ -43,6 +43,7 @@ dealer: McMaster-Carr. This meant:
   (P/N [26475A74](https://www.mcmaster.com/26475A74/)). While I had a tap
   for this, it was an excuse to upgrade to a much higher quality one
   that will last a long time.
+* M6x1.0-12mm hex cap head screws (just from my stock)
 
 ![Custom powder-coated steel plate with 6 holes in 2
 sizes](img/steel-plate.jpg){: width=200 align=right }
@@ -75,8 +76,9 @@ Ta'da! No leveling needed. Everything was "flat enough" for my purposes.
 Machinist friends would certainly scoff, but it works for what I need it
 for, where it's not really a reference plane to anything else.
 
-Finally, I screwed in the support for the microscope head, and Bob's
-your uncle. I threw one of the neat [IMSA Guy HP-reproduction analog
+Finally, I screwed in the support for the microscope head (with the
+M6x1.0-12 screws), and Bob's your uncle. I threw one of the neat [IMSA
+Guy HP-reproduction analog
 protoboards](https://www.youtube.com/watch?v=-DdpwAWd7eg) to see how it
 worked:
 
