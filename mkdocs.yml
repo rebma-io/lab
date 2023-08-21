@@ -69,6 +69,7 @@ nav:
       - projects/index.md
       - Signed GS1 Data Matrix: projects/signed-GS1-data-matrix/
       - Adding Kelvin Clips to LCR Meter: projects/LCR-meter-Kelvin-clips/index.md
+      - Replacement Base for Video Microscope: projects/replacement-microscope-base/index.md
   - Electronics:
       - electronics/index.md
       - electronics/fundamentals.md
