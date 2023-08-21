@@ -43,7 +43,8 @@ dealer: McMaster-Carr. This meant:
   (P/N [26475A74](https://www.mcmaster.com/26475A74/)). While I had a tap
   for this, it was an excuse to upgrade to a much higher quality one
   that will last a long time.
-* M6x1.0-12mm hex cap head screws (just from my stock)
+
+In addition from my stock, I pulled M6x1.0-12mm hex cap head screws.
 
 ![Custom powder-coated steel plate with 6 holes in 2
 sizes](img/steel-plate.jpg){: width=200 align=right }
