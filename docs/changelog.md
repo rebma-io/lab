@@ -16,6 +16,12 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-08-20
+
+* [Wrote up the project](projects/replacement-microscope-base/index.md)
+  to replace the base of my Joyalens JL-249 10.1" video microscope. This
+  added a heavy magnetic steel base as a replacement. 
+
 ### 2023-08-15
 
 * Added a few new barcode-related [Python

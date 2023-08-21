@@ -1,7 +1,11 @@
 ---
 tags:
-  - project
   - barcode
+  - metal
+  - microscope
+  - project
+  - lcr-meter
+  - kelvin-measurement
 ---
 # Projects
 
@@ -13,6 +17,9 @@ those ideas.
   notebook exploring how you might integrate Ed25519 elliptic-curve cryptography
   into a data matrix formatted for the GS1 standard to ensure some kind of
   traceability. 
-* [Adding Kelvin clips to a DE-5000 LCR meter](LCR-meter-Kelvin-clips/index.md)
+* [Adding Kelvin clips to a DE-5000 LCR meter](LCR-meter-Kelvin-clips/index.md).
   Step-by-step walk through of adding more appropriate Kelvin clips to
   my DE-5000 LCR meter.
+* [Replacement microscope base](replacement-microscope-base/index.md).
+  Replacing a light-weight non-magnetic aluminum base for my video
+  microscope with a heavy powder-coated steel plate.

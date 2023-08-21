@@ -1,3 +1,9 @@
+---
+tags:
+  - metal
+  - microscope
+  - project
+---
 # Replacement Microscope Base
 
 This isn't meant to be a review of the video microscope that I use (a
@@ -87,5 +93,5 @@ resolution substantially to make it a bit more manageable.
 
 ![Closeup of protoboard from microscope](img/protoboard-closeup.jpg)
 
-100% worth every dime (about [[ usd(75.0, as_of="20 August 2023")]] for
+100% worth every dime (about [[ usd(75.0, as_of="20 August 2023") ]] for
 the plate and parts). 
