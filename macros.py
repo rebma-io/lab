@@ -170,5 +170,6 @@ def define_env(env):
         usd = Decimal(dollars)
 
         as_of_str = f""":material-update:{{ title="as of {as_of}" }}""" if as_of else ""
-        return f"""{moneyfmt(value=usd, places=places, curr='$')}
-                {as_of_str} [{icon}]({url} "Convert to other currency")"""
+        return (f"{moneyfmt(value=usd, places=places, curr='$')} "
+                f"{as_of_str}[{icon}]({url} "
+                """ "Convert to other currency")""")

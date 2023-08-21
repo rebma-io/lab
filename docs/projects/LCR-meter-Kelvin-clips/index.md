@@ -7,6 +7,13 @@ tags:
 ---
 # Kelvin Clips for LCR Meter
 
+| Key     | Value                                     |
+| ------- | ----------------------------------------- |
+| Problem | Absurdly short leads on LCR meter         |
+| Skills  | Basic tools, soldering                    |
+| Tools   | Side cutters, basic tools, soldering iron |
+| Cost    | [[ usd(40.0, as_of="25 June 2023") ]]     |
+
 For a while, I've used a [Der EE
 DE-5000](https://www.deree.com.tw/de-5000-lcr-meter.html) LCR meter.
 While this is a relatively inexpensive product (typically $150 or so),

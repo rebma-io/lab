@@ -6,6 +6,14 @@ tags:
 ---
 # Replacement Microscope Base
 
+| Key     | Value                                                             |
+| ------- | ----------------------------------------------------------------- |
+| Problem | Lack of stability and magnetic property of video microscope stand |
+| Skills  | Drawing, basic tools                                              |
+| Tools   | Basic tools, metric hole taps                                     |
+| Cost    | [[ usd(75.0, as_of="20 August 2023") ]]                           |
+
+
 This isn't meant to be a review of the video microscope that I use (a
 Joyalens JL249MS, also called Adonstar AD249M). Instead, this is about
 an improvement that I made to it recently. One of my frustrations with
