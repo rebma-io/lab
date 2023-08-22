@@ -148,6 +148,9 @@ nav:
       - Test & Measurement:
           - Tools: tools/test-and-measurement.md
           - tools/using-calipers.md
+      - Gadget Guides:
+          - index.md
+          - Precision I/V Source: tools/guides/precision-voltage-and-current-signal-generator.md
   - Resources:
       - resources/index.md
       - resources/six-step-troubleshooting-method.md
