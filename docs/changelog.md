@@ -22,6 +22,12 @@
   information](tools/guides/precision-voltage-and-current-signal-generator.md)
   about a rather inexpensive, but precision current and voltage source,
   so long as you can work within its limits.
+* Updated the
+  [mkdocs-material](https://squidfunk.github.io/mkdocs-material/changelog/#9.2.1)
+  to 9.2.1, which includes all of 9.2.0 from the 9.1 release. This also
+  brought in mkdocs v1.5.2. I also needed to update
+  [mknotebooks](https://github.com/greenape/mknotebooks/releases/tag/0.8.0)
+  to v0.8.0 to fix an import issue.
 
 ### 2023-08-20
 
