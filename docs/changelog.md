@@ -16,6 +16,13 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-08-21
+
+* [Added some
+  information](tools/guides/precision-voltage-and-current-signal-generator.md)
+  about a rather inexpensive, but precision current and voltage source,
+  so long as you can work within its limits.
+
 ### 2023-08-20
 
 * [Wrote up the project](projects/replacement-microscope-base/index.md)
