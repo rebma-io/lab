@@ -28,6 +28,9 @@
   brought in mkdocs v1.5.2. I also needed to update
   [mknotebooks](https://github.com/greenape/mknotebooks/releases/tag/0.8.0)
   to v0.8.0 to fix an import issue.
+* Added a quick update to the
+  [labeling](organization/labeling.md#labeling) section about how to
+  keep all the labels together to simplify batch printing.
 
 ### 2023-08-20
 

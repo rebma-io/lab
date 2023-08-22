@@ -48,12 +48,19 @@ If I have any complaint, it's that opening the side door to change the print
 cartridge, while easy, does require picking it up as it lifts the bottom. Still,
 overall, I'm very happy with it.
 
-TIP: **Collecting Labels as They Print** One thing I've run into is that
-if you print labels, you either have to catch them by hand or bodge some
-arrangement to catch them in a container. I solved this by [designing a
-catch
-tower](https://www.printables.com/model/512678-label-catcher-for-brother-pt-750w),
-which you can see at the link.
+> TIP: **Collecting Labels as They Print** One thing I've run into is that
+> if you print labels, you either have to catch them by hand or bodge some
+> arrangement to catch them in a container. I solved this by [designing a
+> catch
+> tower](https://www.printables.com/model/512678-label-catcher-for-brother-pt-750w),
+> which you can see at the link.
+>
+> **2023-08-21**: Something I discovered recently is that if you disable
+> "auto cut" in the print options and just keep "half cut", it will do a
+> little half cut and keep all the labels together so they're a bit
+> easier to deal with, and you don't need the collection tower above. If
+> you prefer to have them all separate, though, then you'll need the
+> catch tower.
 
 ## Label Layout
 
