@@ -329,13 +329,14 @@ industry shapes, so you can search for those if you want something similar.
 
 ## Wire Strippers
 
-You're going to use a lot of wire (which I talk about in [another
-area](../electronics/wire)). But (most of) that wire comes with a nice insulator
-around it, and you want to keep most of it. That's where wire strippers come in.
+You're going to use a lot of wire. But (most of) that wire comes with a
+nice insulator around it, and you want to keep most of it. That's where
+wire strippers come in.
 
 ### General Wire Strippers
 
 ![Klein 11057 wire stripper](../img/handtool-klein-stripper-11057.jpg){: width=400 align=left }
+
 The most useful and versatile form of wire stripper is just a general purpose
 model. I like the kind with curved handles (a few companies make them) because
 it's more comfortable.  I generally would look for something that handles AWG

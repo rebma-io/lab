@@ -1,12 +1,12 @@
 # Changelog or What's New
 
 > NOTE: **What is a Changelog?** A
-> [changelog]([Title](https://keepachangelog.com/en/1.0.0/)) is a
-> curated list of notable changes, typically ordered by date or version.
-> For the purposes of this site, I'm going to try and add an entry
-> anytime I add or substantially update something. I thought about just
-> stuffing the Git logs into this, but that has a lot more noise in it
-> than most people want to read.
+> [changelog](https://keepachangelog.com/en/1.0.0/) is a curated list of
+> notable changes, typically ordered by date or version. For the
+> purposes of this site, I'm going to try and add an entry anytime I add
+> or substantially update something. I thought about just stuffing the
+> Git logs into this, but that has a lot more noise in it than most
+> people want to read.
 >
 > This changelog will be kept in reverse chronological order, with the
 > newest things on top. 
@@ -15,6 +15,13 @@
 > should_, there is an RSS feed of both [new
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
+
+### 2023-08-23
+
+* Added a small
+  [tip](electronics/random-tips-and-tricks.md#parts-management) about
+  sorting SMD parts and reducing static cling.
+* Minor link cleanup. There were a few broken links.
 
 ### 2023-08-21
 
@@ -81,6 +88,6 @@
   [creations](/feed_rss_created.xml) using the
   [mkdocs-rss-plugin]([Title](https://github.com/guts/mkdocs-rss-plugin)).
   Thank you to [Aaron
-  Schwartz]([Title](https://en.wikipedia.org/wiki/Aaron_Swartz)), who
-  was taken too soon (f- you MIT), and others who contributed to this
+  Schwartz](https://en.wikipedia.org/wiki/Aaron_Swartz), who was taken
+  too soon (f- you MIT and feds), and others who contributed to this
   amazing tech.
