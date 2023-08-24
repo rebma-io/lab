@@ -7,6 +7,10 @@ Maker-oriented YouTube channels that I follow (and why):
 
 * [Adafruit](https://www.youtube.com/@adafruit)
 * [bigclivedotcom](https://www.youtube.com/@bigclivedotcom)
+* [Blondihacks](https://www.youtube.com/blondihacks). Great teacher of
+  machining and steam engines.
+* [Clough42](https://www.youtube.com/channel/UCeKpbMimEGgLM_0tnghfoVw).
+  Skilled amateur machinist. 
 * [CNC Kitchen](https://www.youtube.com/@CNCKitchen)
 * [EEVblog](https://www.youtube.com/@EEVblog)
 * [ElectroBOOM](https://www.youtube.com/@ElectroBOOM)
@@ -32,7 +36,11 @@ Maker-oriented YouTube channels that I follow (and why):
 * [Teaching Tech](https://www.youtube.com/@TeachingTech)
 * [Technology Connections](https://www.youtube.com/@TechnologyConnections)
 * [Texas Instruments](https://www.youtube.com/@TexasInstruments)
+* [This Old Tony](https://www.youtube.com/c/thisoldtony/videos). A hilarious and
+  exceptionally talented machinist.
 * [w2aew](https://www.youtube.com/@w2aew)
+* [Xyla Foxlin](https://www.youtube.com/@xylafoxlin). Super
+  multi-talented maker, rocketeer, pilot, etc. 
 
 There's also a few that are largely stagnant but still contain some good
 content:

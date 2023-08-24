@@ -18,6 +18,7 @@
 
 ### 2023-08-21
 
+* [A few new Youtube channels](resources/video.md).
 * [Added some
   information](tools/guides/precision-voltage-and-current-signal-generator.md)
   about a rather inexpensive, but precision current and voltage source,
