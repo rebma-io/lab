@@ -23,4 +23,17 @@ approach right now.
   your own libraries will pay off in the long run. [Adafruit]
 * Ferrites are a great way to filter out high frequency noise (above
   10MHz), which can also reduce EMI enormously. You should use more of
-  them. 
+  them.
+
+## Parts Management
+
+* If, like me, you keep a lot of your SMD components in
+  [AideTek](https://aidetek.com/) cases, that also means removing
+  passives from tape (annoying in and of itself). I use [these
+  3D-printed sorting
+  containers](https://www.printables.com/model/114308-sorting-tray-with-funnel)
+  and I learned that if you spray them with an [anti-static spray
+  cleaner](../tools/consumables.md#anti-static-cleaning-spray) it keeps
+  the small (< 1206) components from statically attaching themselves to
+  the sorting container. Spray it, then wait a few minutes before wiping
+  it all off with a paper towel or other wipe.

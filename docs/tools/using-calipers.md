@@ -175,7 +175,7 @@ Here we can see that the inside diameter is 24.67mm, which is a little off
 since the wall thickness was _supposed_ to be 5mm, and therfore it should 
 have been 25mm. Still, it's kinda close? There's a lot to talk about with 
 getting accurate prints, and I hope to address that sometime soon over in 
-the section on [3D techniques](/3D/).
+the section on [3D techniques](/3d/).
 
 #### Depth Measurement
 
