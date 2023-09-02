@@ -138,6 +138,7 @@ nav:
       - organization/labeling.md
       - organization/work-area.md
       - Structure:
+          - organization/structure.md
           - organization/inventory.md
           - organization/part-numbers.md
           - organization/product-breakdown-structure.md

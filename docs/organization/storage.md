@@ -76,6 +76,9 @@ lets me read it and update it as necessary. You can see an example here:
 
 ![Box with 3x5 card label attached on the front](../img/parts-box-front-card.jpg)
 
+NOTE: **Updated Strategy** I've [written
+about](inventory.md#storage-boxes) my new approach here, and I think
+it's a major improvement. Give it a read.
 <!--
 TODO: Update this as I move to Sortimo, and how I'm using the Plano containers.
 -->

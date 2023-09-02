@@ -22,6 +22,10 @@
   suppliers](electronics/pcb/supplier-comparison.md). I sent the same
   small PCB to 3 different suppliers and saw how they dealt with it, and
   what they produced.
+* [Documented a new approach to sorting box
+  inventory](organization/inventory.md#storage-boxes) that seems to be
+  really working well for me. It does require a little specialized
+  equipment, but it's not prohibitively expensive.
   
 ### 2023-08-23
 
