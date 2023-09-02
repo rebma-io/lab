@@ -16,6 +16,13 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-09-01
+
+* [Wrote up my experiment with multiple PCB
+  suppliers](electronics/pcb/supplier-comparison.md). I sent the same
+  small PCB to 3 different suppliers and saw how they dealt with it, and
+  what they produced.
+  
 ### 2023-08-23
 
 * Added a small
