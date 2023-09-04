@@ -9,6 +9,7 @@ set for those outside.
 * [JLC PCB](https://jlcpcb.com)
 * [4PCB](https://www.4pcb.com)
 * [SF Circuits](https://www.sfcircuits.com)
+* [NextPCB](https://nextpcb.com)
 
 ## Parts
 

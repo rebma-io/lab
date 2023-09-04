@@ -82,7 +82,7 @@ a 24 gauge 7-strand wire can only handle 1.4A. Typically, wire smaller
 than 24 gauge (i.e., with a larger gauge number) is treated as "signal
 wire", and only designed to carry tiny amounts of signal voltage
 (&micro;A). This is also why on a PCB, we often need to use a [trace
-width calculator](PCB-design.md#trace-width-and-current-capacity).
+width calculator](pcb/PCB-design.md#trace-width-and-current-capacity).
 
 ![BK 2709B multimeter with AC and DC current measurement
 highlighted](../img/tool-multimeter-current-measurement.jpg){: width=400 align=right }

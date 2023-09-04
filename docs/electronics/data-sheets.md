@@ -415,7 +415,7 @@ They then provide an example "layout" for best performance:
 ![LM317 PCB layout recommendations](../img/datasheet-lm317-pcb-layout.png)
 
 The large grey blocks are intended to be "wide traces" (see
-[how to calculate](PCB-design.md#trace-width-and-current-capacity)), and
+[how to calculate](pcb/PCB-design.md#trace-width-and-current-capacity)), and
 they show in this specific package (SOT-223) you should connect the two
 output pins together with a substantial trace. They also show using a
 pair of input capacitors (one for high input, and another to block high
