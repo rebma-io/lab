@@ -16,6 +16,12 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-09-03
+
+* Wrote up [cleaning up some cheap telescoping hole
+  gauges](projects/decrunching-telescoping-gauges/index.md) I picked up
+  cheap at a garage sale.
+  
 ### 2023-09-01
 
 * [Wrote up my experiment with multiple PCB
