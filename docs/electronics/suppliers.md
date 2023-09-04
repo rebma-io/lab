@@ -10,6 +10,7 @@ set for those outside.
 * [4PCB](https://www.4pcb.com)
 * [SF Circuits](https://www.sfcircuits.com)
 * [NextPCB](https://nextpcb.com)
+* [Aisler](https://aisler.net)
 
 ## Parts
 

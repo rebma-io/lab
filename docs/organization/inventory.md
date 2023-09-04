@@ -118,4 +118,44 @@ TZe cartridges.
 | Cost (each) | Money      | How much did a single cartridge cost?                                                                                 |
 | $/cm        | Calculated | Calculated cost of a single cm of tape                                                                                |
 | Status      | Select     | Ordered, Shipped, In Stock, Out of Stock                                                                              |
-| Notes       | String     | Open ended comments |
+| Notes       | String     | Open ended comments                                                                                                   |
+
+## Storage Boxes
+
+![Storage box with a bunch of multi-colored metal mushroom
+pushbuttons](img/box-switches.jpg){: width=300 align=right }
+
+One of the things I've struggled with in my
+[ProLatch](storage.md#plano-prolatch) sorting boxes is how to keep track
+of all the different things that are stored in them. I had been using
+3x5 cards just stuck inside. Then I found some little stick-on notecard
+pockets ([available at random
+booksellers](https://www.amazon.com/gp/product/B0BJQ7TM4F/)), and that
+helped. But then, I bought a receipt printer (think grocery stores) for
+another project, and ... it ocurred to me that I could use it to
+generate very quick little inventory lists that are more readable than
+my scratches (and re-scratches) on a 3x5 index card. Take a look for the
+box shown above.
+
+![Receipt printed with inventory of the
+box](img/box-receipt-inventory.jpg){: width=300 align=left }
+
+The receipt printer is very quick, and it costs well under 1 penny for
+the paper. It's a huge win.
+
+I simply have a little text file template that I use. You'll catch the
+marking "A->F / 1->6" on it, which is just a reminder that the boxes are
+labeled in a grid A-F going left to right, and 1-6 top to bottom. This
+lets me just use the starting point as the index into the box. 
+
+Sometimes I include part numbers, but a lot of times, I just have useful
+information on the thing. For example, here we can see that C1 has a
+blue metal pushbutton with a 16mm center screw body for panel mount and
+a 23.5mm metal mushroom on top. At the bottom, I also added a little
+note about the emergency-stop buttons in E1/E3, which have LED lights in
+them. This just says that the #1 terminal is negative and the #2
+terminal is the positive. 
+
+To make it easy to update (it's already cheap), I keep a directory with
+all the text files in them so I can update them as I add or move things
+around. The actual piece of paper takes _maybe_ 1 second to print.

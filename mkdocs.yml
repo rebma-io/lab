@@ -94,7 +94,7 @@ nav:
           - electronics/voltage-dividers.md
           - electronics/voltage-multiplier.md
       - PCB:
-          - Design: electronics/pcb/PCB-design.md
+          - Design: electronics/pcb/design.md
           - Supplier Comparison: electronics/pcb/supplier-comparison.md
       - Fusion 360 for Electronics: electronics/fusion360.md
       - electronics/interesting-parts.md
@@ -139,6 +139,7 @@ nav:
       - organization/labeling.md
       - organization/work-area.md
       - Structure:
+          - organization/structure.md
           - organization/inventory.md
           - organization/part-numbers.md
           - organization/product-breakdown-structure.md
