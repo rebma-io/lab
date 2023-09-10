@@ -149,6 +149,7 @@ nav:
       - tools/consumables.md
       - tools/3d-printed-tools.md
       - tools/interesting-tools.md
+      - tools/workstation.md
       - Test & Measurement:
           - Tools: tools/test-and-measurement.md
           - tools/using-calipers.md
