@@ -143,6 +143,7 @@ nav:
           - organization/inventory.md
           - organization/part-numbers.md
           - organization/product-breakdown-structure.md
+      - Random Tips & Tricks: organization/random-tips-and-tricks.md
   - Tools:
       - tools/index.md
       - tools/hand-tools.md
