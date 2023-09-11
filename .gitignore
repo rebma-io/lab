@@ -1,4 +1,7 @@
+# Virtual Environments for Python
 .venv
+venv
+
 # General
 .DS_Store
 .AppleDouble
