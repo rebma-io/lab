@@ -97,6 +97,7 @@ nav:
           - Design: electronics/pcb/design.md
           - Supplier Comparison: electronics/pcb/supplier-comparison.md
       - Fusion 360 for Electronics: electronics/fusion360.md
+      - Schematic Best Practices: electronics/schematic-best-practices.md
       - electronics/interesting-parts.md
       - electronics/random-tips-and-tricks.md
       - electronics/manufacturers.md
