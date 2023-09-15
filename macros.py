@@ -1,9 +1,26 @@
+import os
+import urllib.error
+import urllib.request
 import urllib.parse as url
 from datetime import datetime
-from pathlib import Path
 from decimal import Decimal
-import os
+from pathlib import Path
+
 import humanfriendly
+
+
+def last_modified_to_datetime(last_modified: str) -> datetime | None:
+    """Take the "Last-Modified" header and turn it into a Python
+    datetime object.
+
+    If it can't be parsed, it returns a None."""
+
+    try:
+        parsed = datetime.strptime(last_modified, "%a, %d %b %Y %H:%M:%S %Z")
+    except ValueError:
+        return None
+
+    return parsed
 
 
 # Taken from https://docs.python.org/3/library/decimal.html#recipes
@@ -74,7 +91,14 @@ def define_env(env):
     - filter: a function with one of more arguments,
         used to perform a transformation
     """
-    site_url = env.conf.site_url or "https://lab.rebma.io/"
+    site_url = (
+        env.conf["site_url"] if "site_url" in env.conf else "https://lab.rebma.io/"
+    )
+    archive_url = (
+        env.conf["archive_url"]
+        if "archive_url" in env.conf
+        else "https://rebma-archive.s3.us-west-000.backblazeb2.com/"
+    )
 
     @env.macro
     def embed_schematic(schematic_filename: str, height: int = 480) -> str:
@@ -116,35 +140,52 @@ def define_env(env):
     @env.macro
     def link_for_download(
         filename: str,
-        license: str,
+        license: str = "Unknown",
         icon: str = ":material-download-circle-outline:",
+        archive: bool = False,
     ) -> str:
         """Take the provided information and render a consistent view of
         a file download. The goal is to provide a display of the file
         name, license, size, and last touched.
 
-        This only works for files in the $ROOT/docs/files directory.
+        If `archive` is False, this works for files in the
+        $ROOT/docs/files directory. If it is True, then it renders the
+        URL as one to the B2 Backblaze archive.
         """
         # fmt: off
         ANNOTATION_TEMPLATE = r"""Size: {size}; Updated: {ts}; License: {license}"""
         # fmt: on
 
-        # Set up a bunch of paths the ugliest way possible
-        path = f"files/{filename}"
-        file_path = f"docs/{path}"
-        file_url = f"{site_url}{path}"
+        if archive:
+            file_url = f"{archive_url}/{filename}"
+            try:
+                request = urllib.request.Request(file_url, method="HEAD")
+                response = urllib.request.urlopen(request)
+            except urllib.error.URLError:
+                return "**FILE_NOT_FOUND**"
 
-        # First, let's make sure the file exists
-        try:
-            stat = os.stat(file_path)
-        except FileNotFoundError:
-            return "FILE_NOT_FOUND"
+            file_size = int(response.headers["Content-Length"])
+            file_mtime = last_modified_to_datetime(response.headers["Last-Modified"])
+        else:
+            # Set up a bunch of paths the ugliest way possible
+            path = f"files/{filename}"
+            file_path = f"docs/{path}"
+            file_url = f"{site_url}{path}"
+
+            # First, let's make sure the file exists
+            try:
+                stat = os.stat(file_path)
+                file_size = stat.st_size
+                file_mtime = datetime.fromtimestamp(stat.st_mtime)
+            except FileNotFoundError:
+                return "**FILE_NOT_FOUND**"
+
+        # Strip off anything before the last slash
+        filename = filename.split("/")[-1]
 
         annotation = ANNOTATION_TEMPLATE.format(
-            size=humanfriendly.format_size(stat.st_size),
-            ts=datetime.fromtimestamp(stat.st_mtime).isoformat(
-                sep=" ", timespec="minutes"
-            ),
+            size=humanfriendly.format_size(file_size),
+            ts=file_mtime.isoformat(sep=" ", timespec="minutes"),  # Trim to minutes
             license=license,
         )
         markdown = f'[{filename} {icon}]({file_url} "{annotation}")'
@@ -170,6 +211,8 @@ def define_env(env):
         usd = Decimal(dollars)
 
         as_of_str = f""":material-update:{{ title="as of {as_of}" }}""" if as_of else ""
-        return (f"{moneyfmt(value=usd, places=places, curr='$')} "
-                f"{as_of_str}[{icon}]({url} "
-                """ "Convert to other currency")""")
+        return (
+            f"{moneyfmt(value=usd, places=places, curr='$')} "
+            f"{as_of_str}[{icon}]({url} "
+            """ "Convert to other currency")"""
+        )

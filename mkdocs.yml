@@ -198,6 +198,7 @@ repo_name: rebma-io/lab
 repo_url: https://github.com/rebma-io/lab
 site_description: A collection fo thoughts and resources for Makers.
 site_url: https://lab.rebma.io
+archive_url: https://rebma-archive.s3.us-west-000.backblazeb2.com
 site_name: lab.rebma.io Notebook
 theme:
   custom_dir: overrides
