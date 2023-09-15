@@ -146,6 +146,7 @@ nav:
       - Random Tips & Tricks: organization/random-tips-and-tricks.md
   - Tools:
       - tools/index.md
+      - tools/metrology.md
       - tools/hand-tools.md
       - tools/consumables.md
       - tools/3d-printed-tools.md
