@@ -1,6 +1,7 @@
 ---
 tags:
   - comparison
+  - pcb
   - jlcpcb
   - oshpark
   - pcb
@@ -15,12 +16,10 @@ tags:
 > PCBs for a hobbyist 2-layer board. The OSHPark board was marginally
 > better in quality (largely due to the ENIG coating), but lost points for
 > some finish on the board routing. The two Chinese vendors (PCBWay and
-> JLCPCB) were largely indistinguishable from one another.
+> JLCPCB) were indistinguishable from one another.
 >
 > I will probably stay with OSHPark for most things just because it was
-> faster, as long as I can live with the purple solder mask. But
-> realistically, they'll all produce boards of high enough quality for
-> most hobbyist uses.
+> faster, as long as I can live with the purple solder mask.
 
 ## Test Board
 
@@ -154,6 +153,7 @@ SUCCESS: **Tie: PCBWay and JLCPCB** The Chinese suppliers are
 just far ahead of OSHPark as you can see. I don't think I can really
 pick between the two.
 
+
 ## Shipping and Packaging
 
 Both JLCPCB and PCBWay ship in nearly identical boxes with the PCBs
@@ -194,6 +194,7 @@ they use v-grooves, but they produce much smoother edges on their PCB.
 
 ## Production Options
 
+
 This is a bit of a squishy topic, but there are definitely some
 differences between the vendors. I'm going to take a few things that
 typically you might change between boards and see how they each stack
@@ -216,6 +217,7 @@ offer more advanced things like Rodgers material (for RF) and aluminum
 or copper cores. They also offer a wide array of other things around via
 tenting, edge connectors, castellated holes, etc.
 
+
 > SUCCESS: **PCBWay** It's just impossible to beat the absolutely
 > staggering options that they have. While I'm sure high-end
 > manufacturers, like [Sierra Circuits](https://www.protoexpress.com/)
@@ -224,10 +226,12 @@ tenting, edge connectors, castellated holes, etc.
 
 ## Conclusion
 
+
 Overall, I'm impressed with the quality and speed of all the companies.
 They all produced things that met (or exceeded) my expectations, and I
 find it amazing that you can get them this cheaply and this quickly. It
 really is an amazing time.
+
 
 ## Other Suppliers
 
@@ -238,3 +242,4 @@ round. I should probably give them a shot at some point.
 * [4PCB](https://www.4pcb.com)
 * [SF Circuits](https://www.sfcircuits.com)
 * [Aisler](https://aisler.net)
+

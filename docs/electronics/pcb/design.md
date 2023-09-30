@@ -17,7 +17,7 @@ operating temperature), we can enter it and then click calculate next to the
 conductor width, which is what you're solving for 99% of the time:
 
 ![Sierra Circuit's trace width
-calculator](../img/sierra-circuits-trace-width-calculator.png)
+calculator](img/sierra-circuits-trace-width-calculator.png)
 
 This results in needing to use 7.6729 mils (thousands of an inch) for trace
 width. We should use a safety margin of 50% or more (100% is preferrable), which
@@ -31,7 +31,7 @@ for any things, but I find consistency to be a helpful thing.
 ### Things Printed on the Design
 
 - [ ] Name of the thing
-- [ ] [Part number](../organization/part-numbers.md) w/version
+- [ ] [Part number](../../organization/part-numbers.md) w/version
 - [ ] Serial/QC markings
 - [ ] Reference designators (see [why you might not want to]())
 - [ ] Values for all passives

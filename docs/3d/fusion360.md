@@ -123,7 +123,12 @@ I use a few plugins regularly:
   want to use the FFF slicing capabilities inside Fusion360 itself. The only
   "problem" is that it can only send a single body at a time, which, if you want
   to print a bunch of bodies, can be painful. There is a pro version, but I
-  haven't needed the features (although I may buy just to support the author).
+  haven't needed the features (although I may buy just to support the
+  author).
+* [AnyShortcut](https://apps.autodesk.com/FUSION/en/Detail/Index?id=156700835167123223).
+  This allows you to create a keyboard shortcut for things in Fusion 360
+  which don't have one. This is especially useful in integrating with an
+  El Gato Stream Deck.
 * [Additive
   Assistant](https://apps.autodesk.com/FUSION/en/Detail/Index?id=9068625559069345798).
   Provides a bunch of additional analysis tools for FFF manufacturing around

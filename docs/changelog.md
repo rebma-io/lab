@@ -16,6 +16,27 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-09-11
+
+* Started collection [tips and
+  tricks](organization/random-tips-and-tricks.md) around organization
+  that I've seen.
+  
+### 2023-09-09
+
+* Added a [writeup](tools/workstation.md) of my workstation setup.
+  Nothing too fancy, but I figured it'd be an interesting discussion
+  give it's been recently updated.
+* Added a [few new
+  extensions](3D/fusion360.md#add-ons-and-extensibility) to my Fusion
+  360 information.
+
+### 2023-09-03
+
+* Wrote up [cleaning up some cheap telescoping hole
+  gauges](projects/decrunching-telescoping-gauges/index.md) I picked up
+  cheap at a garage sale.
+  
 ### 2023-09-01
 
 * [Wrote up my experiment with multiple PCB

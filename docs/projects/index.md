@@ -23,3 +23,7 @@ those ideas.
 * [Replacement microscope base](replacement-microscope-base/index.md).
   Replacing a light-weight non-magnetic aluminum base for my video
   microscope with a heavy powder-coated steel plate.
+* [Cleaning up a set of telescoping
+  gauges](decrunching-telescoping-gauges/index.md). I found some super
+  cheap telescoping hole gauges at a yard sale. Can I make them
+  passable? Find out!
