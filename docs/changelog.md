@@ -15,6 +15,11 @@
 > should_, there is an RSS feed of both [new
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
+### 2023-10-20
+
+* Added a quick tip from
+  [Blondihacks](https://www.youtube.com/blondihacks) for storing
+  sandpaper and emery cloth.
 
 ### 2023-09-11
 

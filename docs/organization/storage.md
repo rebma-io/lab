@@ -126,3 +126,30 @@ If you use one of these, I've [designed a replacement
 shelf](https://www.printables.com/model/512793-interior-shelf-for-crownful-4l-mini-fridge)
 that you can 3D print. It will hold a few syringes of flux/paste and
 some tubs of paste as well. 
+
+## Sand Paper & Emery Cloth
+
+![Outside of a bamboo box labeled "Emery/Sanding
+Paper"](img/sandpaper-box-external.jpg){: width=400 align=right }
+
+I was watching a video from
+[Blondihacks](https://www.youtube.com/blondihacks) (Quinn), who was
+talking about [Emery
+paper](https://www.youtube.com/watch?v=npeQMODKdb8), and had a quick tip
+to organize all the different grits that you need to keep around: a
+recipe box. A quick search on a [random
+bookseller](https://www.amazon.com/dp/B0BNC6Y68Q) turned up one that
+seems to be basically identical to the one she was using. The 4x6" size
+is absolutely perfect for my use case where I'm typically working on
+small things and don't need larger sheets very often.
+
+Using my [label maker](labeling.md), I just made a quick set of labels.
+
+![Inside of the box with different dividers labeled for different
+grits](img/sandpaper-box-internal.jpg)
+
+Turns out I didn't have enough divider cards for all the different grits
+I have, but I was able to make it work. For now, I just folded up the
+typical 3x9" sheets that we get in the US, and can tear them as I need
+them. There's no accuracy needed. The emery cloth, however, I did cut
+with a box knife.  
