@@ -1,3 +1,9 @@
+---
+tags:
+  - component
+  - passive
+  - resistor
+---
 # Resistors
 
 INFO: **Why We Call Them Passives** All components in electronics are
@@ -67,7 +73,6 @@ Like everything these days, resistors come in a diverse set of surface
 mount formats, which are typically called "chip resistors".  They start
 out huge at 2512 format (0.25" x 0.12") but quickly shrink until you get
 to the 0201 (0.024" x 0.012").
-
 
 In addition to the normal through-hole and SMD resistors, there's a few
 that are variable. The first are adjustable:
@@ -318,7 +323,7 @@ me--format developed by EIA termed the EIA-96 format. It is based on the
 [EIA-96 series of standard resistor
 values](https://www.hobby-hour.com/electronics/eia96-smd-resistors.php)
 and is typically used on 1% tolerance parts. It uses three characters
-(two numbers and a digit) in which the numbers represent the value (34 =
+(two numbers and a letter) in which the numbers represent the value (34 =
 34th value of the possible range) and the letter represents the
 multiplier. So, 36D is 232k&ohm;, but 71A is 536&ohm;. Clear, no?
 There's a special place in hell for this crap.
