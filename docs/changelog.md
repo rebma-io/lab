@@ -15,6 +15,7 @@
 > should_, there is an RSS feed of both [new
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
+
 ### 2023-10-20
 
 * Added a quick tip from
