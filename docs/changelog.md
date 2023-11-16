@@ -16,6 +16,12 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-11-11
+
+* Started a little [today I learned](til.md) page to collect some little
+  things. I really need to figure out how to make it a bit more
+  discoverable, but for now, I just want to make it super simple.
+  
 ### 2023-10-20
 
 * Added a quick tip from
