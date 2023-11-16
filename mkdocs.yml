@@ -62,9 +62,10 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg ""
       emoji_index: !!python/name:materialx.emoji.twemoji ""
 nav:
-  - Start:
+  - Home:
       - index.md
       - changelog.md
+      - til.md
   - Projects:
       - projects/index.md
       - Signed GS1 Data Matrix: projects/signed-GS1-data-matrix/
