@@ -16,6 +16,12 @@
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
 
+### 2023-12-01
+
+* Updated the [Fusion360 CSV to import for metric
+  fasteners](3d/fusion360.md#default-user-parameters). This now includes
+  M2-M12 clearance holes in normal, close, and loose.
+
 ### 2023-11-11
 
 * Started a little [today I learned](til.md) page to collect some little

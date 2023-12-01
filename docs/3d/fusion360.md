@@ -236,6 +236,8 @@ The naming is based on this pattern:
   short inserts.
 * `<size>TapeHoleID` for the ID of the hole you'll need if you plan on
   [tapping the holes](joining-parts.md#tapping-holes).
+* `<size><fit>ClearanceHoleID` for the clearance holes as specified in
+  Machinery's Handbook in their normal, close, and loose fits.
 
 I've provided references to where the data came from originally (for
 example, the [McMaster-Carr](https://www.mcmaster.com/) screw part
