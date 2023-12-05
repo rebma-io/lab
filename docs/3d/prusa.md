@@ -14,8 +14,7 @@ tags:
 * Removing prints from the bed (let it cool, flex the spring steel)
 -->
 Currently, I have a [Prusa
-MINI+](https://www.prusa3d.com/category/original-prusa-mini/). I also have a two
-head Prusa XL on pre-order.
+MINI+](https://www.prusa3d.com/category/original-prusa-mini/). 
 
 ## Maker's Muse Slicer Settings
 

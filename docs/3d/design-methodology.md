@@ -53,5 +53,5 @@ The answer, as always, is often somewhere in the middle. Typically, you
 begin with some existing components and design other parts as required
 around them. For example, after looking at the design in your head, or
 on paper, you might insert or create the grounded (base/immovable)
-component . As you develop the assembly, place existing components or
+component. As you develop the assembly, place existing components or
 create new ones in place, as required.

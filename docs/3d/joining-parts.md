@@ -7,8 +7,8 @@ tags:
 # Joining Parts
 
 When joining parts, there's one question you need to start with: is this
-reversible? That will guide you down the path of what technique to use. There
-are a couple ways to join parts together, each with their own trade-offs:
+reversible? That will guide you down the path of what technique to use.
+There are a couple of ways to join parts together, each with trade-offs:
 
 * Press fit. Typically non-reversible.
 * Snap fit. Reversible.
@@ -22,14 +22,15 @@ may be able to use an interference fit and stick things together without any
 other mechanism. Unfortunately, you also run the risk of breaking the parts
 doing this, so I strongly advise against it.
 
-## Snap Fit
+## Snap-Fit
 
-Snap fit is a common way of making injection-molded parts fit together, but it
-can also be used in 3D printing. A snap fit set of pars usually consists of a
-protrusion and a mating depression, generating an interlocking connection that
-often relies on parts that bend. There are many guides on creating them, but I
-like [this
-one](https://all3dp.com/2/3d-printing-snap-fit-design-simply-explained/) as a start.
+Snap-fit is a common way of making injection-molded parts fit together,
+but it can also be used in 3D printing. A snap-fit set of pars usually
+consists of a protrusion and a mating depression, generating an
+interlocking connection that often relies on parts that bend. There are
+many guides on creating them, but I like [this
+one](https://all3dp.com/2/3d-printing-snap-fit-design-simply-explained/)
+as a start.
 
 ## Glue
 
@@ -38,9 +39,10 @@ commonly used:
 
 * [Cyanoacrylate](https://en.wikipedia.org/wiki/Cyanoacrylate) ("super glue")
 * UV-set epoxy. I like [Bondic](https://bondic-store.com).
-* [Hot glue](https://en.wikipedia.org/wiki/Hot-melt_adhesive), which is actually
-  a [thermopastic](https://en.wikipedia.org/wiki/Thermoplastic) and not a
-  traditional adhesive.
+* [Hot glue](https://en.wikipedia.org/wiki/Hot-melt_adhesive), which is
+  a
+  [thermopastic](https://en.wikipedia.org/wiki/Thermoplastic)](https://en.wikipedia.org/wiki/Thermoplastic)
+  and not a traditional adhesive.
 
 Each of these has trade-offs, but the first two are the most durable and
 strongest. The hot glue is useful for more temporary things, or things where
@@ -57,24 +59,26 @@ of various techniques from a strength perspective.
 
 ### Just Screw It In
 
-Honestly, you can just screw a lot of screws in, and certainly a [self-tapping
+Honestly, you can just screw it in, and certainly, a
+[self-tapping](https://en.wikipedia.org/wiki/Self-tapping_screw)
 screws](https://en.wikipedia.org/wiki/Self-tapping_screw) should work.
-Unfortunately, this is not a super repeatable process, and should really
-only be used if you plan to remove it once or twice at most.
+Unfortunately, this is not a super repeatable process, and should only
+be used if you plan to remove it once or twice at most.
 
 ### Tapping Holes
 
-The next option is to use a [tap and die
-set](https://en.wikipedia.org/wiki/Tap_and_die) to pre-cut the theads into the
-printed part. This will reduce the tension in the part, and ensure a much
-cleaner join as the taps are _very sharp_. For the best results, you'll want to
-tap the hole twice. The first time using either a plug or taper tap, and the
-second time using a bottoming tap. The first will make sure 90% of the threads
-are cut, and the bottoming tap will ensure the last few at the bottom are cut
-properly. If you try to use a bottoming tap by itself, you'll find that it will
-struggle to get the initial bite into the material and to stay straight.
-I'll be honest, though, that I typically just use one tap and call it
-"good enough" since the last few threads can be cut by the screw itself.
+The next option is to use a [tap-and-die
+set](https://en.wikipedia.org/wiki/Tap_and_die) pre-cut the threads into
+the printed part. This will reduce the tension in the part, and ensure a
+much cleaner join as the taps are _very sharp_. For the best results,
+you'll want to tap the hole twice. The first time using either a plug or
+taper tap, and the second time using a bottoming tap. The first will
+make sure 90% of the threads are cut, and the bottoming tap will ensure
+the last few at the bottom are cut properly. If you try to use a
+bottoming tap by itself, you'll find that it will struggle to get the
+initial bite into the material and stay straight. I'll be honest,
+though, that I typically just use one tap and call it "good enough"
+since the last few threads can be cut by the screw itself.
 
 To help explain it, I made a small video:
 

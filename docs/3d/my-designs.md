@@ -11,7 +11,7 @@ You can find my designs on either
 [Printables](https://www.printables.com/@petrilli_757262/models), which
 is my preferred platform for sharing, or sometimes I keep things on
 [Thingiverse](https://www.thingiverse.com/petrilli/designs) up to date.
-I really need to be better about that!
+I need to be better about that!
 
 A few things I've put up:
 

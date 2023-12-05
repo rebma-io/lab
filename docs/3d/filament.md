@@ -42,10 +42,10 @@ without reservation:
 
 ## Filament Drying and Storage
 
-A lot of filaments are hygroscopic, meaning they'll absorb water over time. This
-can lead to a lot of [problems]() with printing, and you can sometimes hear the
-crackle of the water boiling away in the heater. Because of this, I take a two
-pronged strategy:
+A lot of filaments are hygroscopic, meaning they'll absorb water over
+time. This can lead to a lot of problems with printing, and you can
+sometimes hear the crackle of the water boiling away in the heater.
+Because of this, I take a two-pronged strategy:
 
 * Storage of filament in a dry box.
 * Usage of a heater when printing.
@@ -54,8 +54,8 @@ pronged strategy:
 
 For storage, I use some [60qt storage
 box](https://www.irisusainc.com/collections/weathertight/products/60-quart-weathertight-multi-purpose-storage-box-clear-with-blue-buckles-3-pack).
-They are a nice size, easy to maneuver, and have foam gasket to help reduce air
-infiltration. Inside of that I've 3d printed a pair of [75mm container for
+They are a nice size, easy to maneuver, and have foam gaskets to help reduce air
+infiltration. Inside of that I've 3d printed a pair of [75mm containers for
 desiccant](https://www.printables.com/model/1367-malolos-silica-gel-desiccant-containers)
 (print the funnel and plug trust me), and filled it with [color-changing silica
 desiccant](https://www.amazon.com/dp/B013L31PQ0). So far, this has managed to
