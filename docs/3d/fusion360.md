@@ -27,15 +27,15 @@ Let's take the two separately.
 
 Components are a container for sketches, geometry, joint origins, bodies, etc.
 This helps organize things. This makes it much easier to think about and
-abstract your project. Think of a component as a part. There's a few other
+abstract your project. Think of a component as a part. There are a few other
 advantages to using components extensively:
 
 * The joints in the Assembly menu only work with components.
-* Drawings can only be created from components
-* On activation the timeline is filtered. This means it will only show
-  items in the timeline that pertain to that component. The timeline on
-  a big project can become unwieldy, and this will make the quickly
-  growing timeline much easier to work with.
+* Drawings can only be created from components. On activation, the
+  timeline is filtered. This means it will only show items in the
+  timeline that pertain to that component. The timeline on a big project
+  can become unwieldy, and this will make the quickly growing timeline
+  much easier to work with.
 * When you export a component with "save as" Fusion 360 will also export
   the complete parametric design history.
 * Only components show on the BOM.
@@ -62,7 +62,7 @@ failure](https://www.autodesk.com/products/fusion-360/blog/quick-tip-rule-1-over
 
 ### Rule #2: Names
 
-Name your things. Most everyting can be named in Fusion 360, but you
+Name your things. Most everything can be named in Fusion 360, but you
 _definitely_ want to name these things:
 
 * Sketches
@@ -127,7 +127,7 @@ I use a few plugins regularly:
   author).
 * [AnyShortcut](https://apps.autodesk.com/FUSION/en/Detail/Index?id=156700835167123223).
   This allows you to create a keyboard shortcut for things in Fusion 360
-  which don't have one. This is especially useful in integrating with an
+  that don't have one. This is especially useful in integrating with an
   El Gato Stream Deck.
 * [Additive
   Assistant](https://apps.autodesk.com/FUSION/en/Detail/Index?id=9068625559069345798).
@@ -194,7 +194,7 @@ of global parameters that you can set for everything. This would be
 awesome to have in this case, but not yet. [There are ways to fake
 it](https://productdesignonline.com/how-to-create-and-use-global-parameters-in-fusion-360/),
 but I find them overly complicated, and the CSV file with Parameters I/O
-to be a much simpler solution. 
+is a much simpler solution.  
 
 One of the most powerful things with a parametric modeling tool is being
 able to create standard parameters that drive the model. Often, a lot of
@@ -203,12 +203,12 @@ like a screw. To simplify _my life_, I have put together a CSV that
 contains:
 
 * [Fits for my printer](../mechanical/fit.md): interference,
-  transitional, clearance.
+  transitional, and clearance. 
 * Standard metric screws for M2 - M12 in all the default standard
-  threads. This is for _socket head screws_, which are my go to. The
+  threads. This is for _socket head screws_, which are my go-to. The
   insert and tap information will work for _any_ metric screw of that
   size and thread pitch (yay metric!). These are all just "standard"
-  thread pitch.
+  thread pitches. 
 * Sizes for [threaded inserts](joining-parts.md#threaded-inserts).
 
 You can download the CSV from here: 
@@ -245,7 +245,7 @@ numbers). There's a few things you might need to do:
 
 1. You should update the fits for _your printer_. This is just for my
    Prusa MINI+, and won't necessarily match yours. It's a good start if
-   you don't want to fuss about, although many cheap 3D printers have
+   you don't want to fuss about it, although many cheap 3D printers have
    much bigger tolerances.
 2. When you want to use `M3HeadOD` (for example), you'll want to allow
    for tolerance. I typically use `TransitionFit030`, which will get a

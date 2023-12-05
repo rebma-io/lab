@@ -88,12 +88,13 @@ you're missing both the PCB functionality and the rendering.
 
 ### SpaceMouse
 
-If you do any amount of 3D modeling, and can spare a few extra dollars, I cannot
-recommend the [3DConnexion SpaceMouse
-Compact](https://3dconnexion.com/uk/product/spacemouse-compact/). It brings you
-6 degrees-of-freedom in movement and allows you to interact with a model as
-though you are holding it. While it takes a day or two to get comfortable with,
-it's now second nature and a wildly more productive way to manipulate things.
+If you do any amount of 3D modeling, and can spare a few extra dollars,
+I cannot recommend the [3DConnexion SpaceMouse
+Compact](https://3dconnexion.com/uk/product/spacemouse-compact/) nearly
+enough. It brings you 6 degrees-of-freedom in movement and allows you to
+interact with a model as though you are holding it. While it takes a day
+or two to get comfortable with, it's now second nature and a wildly more
+productive way to manipulate things.
 
 ![SpaceMouse Compact](../img/spacemouse-compact.jpg)
 
