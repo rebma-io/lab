@@ -77,6 +77,9 @@ major issue.
     reduce the number of places I share my credit card with.
 [^2]: See discussion under [quality control](#quality-control).
 
+You can find a comparison of the Chinese manufacturers for more
+variables [on another page](pcb-size-price-comparison.md).
+
 ## Final Result
 
 Here's the final result with the boards left-to-right from OSHPark,

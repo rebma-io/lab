@@ -20,6 +20,7 @@
 *[FEM]: Finite Element Analysis
 *[FFF]: Fused Filament Fabrication (see FDM)
 *[FFT]: Fast Fourier Transform
+*[HASL]: Hot Air Solder Leveling
 *[HDPE]: High Density PolyEthylene
 *[HTML]: HyperText Markup Language
 *[IC]: Integrated Circuit

@@ -97,6 +97,7 @@ nav:
       - PCB:
           - Design: electronics/pcb/design.md
           - Supplier Comparison: electronics/pcb/supplier-comparison.md
+          - Pricing Comparison: electronics/pcb/pcb-size-price-comparison.md
       - Fusion 360 for Electronics: electronics/fusion360.md
       - electronics/interesting-parts.md
       - electronics/random-tips-and-tricks.md
