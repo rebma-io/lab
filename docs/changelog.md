@@ -15,6 +15,10 @@
 > should_, there is an RSS feed of both [new
 > things](/feed_rss_created.xml) and [updated
 > things](/feed_rss_updated.xml).
+### 2023-12-13
+
+* Added [a new design](3d/my-designs.md) for the Rigol DHO800/900 series
+  scopes.
 
 ### 2023-12-01
 
@@ -75,7 +79,7 @@
 
 ### 2023-08-21
 
-* [A few new Youtube channels](resources/video.md).
+* [A few new YouTube channels](resources/video.md).
 * [Added some
   information](tools/guides/precision-voltage-and-current-signal-generator.md)
   about a rather inexpensive, but precision current and voltage source,

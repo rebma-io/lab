@@ -5,6 +5,7 @@ tags:
   - organization
   - soldering
 ---
+
 # My Designs
 
 You can find my designs on either
@@ -38,8 +39,13 @@ A few things I've put up:
   drivers](https://www.printables.com/model/532043-ceiling-mount-for-wera-screwdrivers-15-8mm-hex).
   Because of how my lab is oriented in the attic, I don't have a huge
   amount of vertical space, but I do have a 55&deg; ceiling. So, I took
-  that and mounted the screwdrivers to it. 
+  that and mounted the screwdrivers to it.
 * [Small feet for the Lenovo Thinkstation P320
   Ultra](https://www.printables.com/model/599108-lenovo-thinkstation-p320-tiny-feet).
   This might fit other similar things, but the P320 is what I made these
   for. I suspect it'd fit any of the small/tiny form factors.
+* [VESA mount with cable strap for Rigol DHO800/900 oscilloscopes](https://www.printables.com/model/679633-rigol-dho800900-vesa-mount-with-cable-hold).
+  The new Rigol scopes have a great feature: they can be mounted on a VESA
+  arm. One problem is that this now puts all the cables up in a place where
+  they can be under strain. I designed a simply mount that adds strain relief
+  and protection for the ground connection.
