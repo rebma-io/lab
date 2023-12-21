@@ -14,6 +14,22 @@ is my preferred platform for sharing, or sometimes I keep things on
 [Thingiverse](https://www.thingiverse.com/petrilli/designs) up to date.
 I need to be better about that!
 
+You can group things into two categories. The first is things I've drawn 
+up as a simple educational exercise, to show how to do things. The others 
+are more practical or useful designs. 
+
+## Educational Designs
+
+These are links to Fusion 360 designs in the cloud. You can access them 
+in a browser, but you can also download them in a bunch of formats.
+
+* [Snap-fit box](https://a360.co/3RsChIE). This is a basic rectangular box
+  with a lid and a hole in it to remove the lid. In addition to having a
+  snap-fit lid, it also has a small [shadow line](https://hackaday.com/2023/08/07/enhance-your-enclosures-with-a-shadow-line/)
+  to help improve the way it looks.
+
+
+## Practical Designs
 A few things I've put up:
 
 * [A caddy for watchmaker's
