@@ -13,6 +13,7 @@
 *[EDI]: Electronic Data Interchange
 *[EMF]: ElectroMotive Force
 *[EMI]: ElectroMagnetic Interference
+*[ENEPIG]: 
 *[ENIG]: Electroless Nickel Immersion Gold
 *[ESD]: ElectroStatic Discharge
 *[ESR]: Equivalent Series Resistance
@@ -35,6 +36,7 @@
 *[MCAD]: Mechanical Computer Aided Design
 *[MSDS]: Material Safety Data Sheet
 *[NIST]: National Institute of Standards and Technology
+*[OSP]: Organic Solderability Preservatives
 *[PBS]: Product Breakdown Structure
 *[PCB]: Printed Circuit Board
 *[PETG]: PolyEthylene Terephthalata copolymer with Glycol modifier
