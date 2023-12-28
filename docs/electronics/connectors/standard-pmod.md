@@ -375,7 +375,8 @@ These points are defined as:
 
 As you can see, there's some difference between the input and output
 voltages, and this is specifically there to provide a margin for line
-noise and voltage drops.
+noise and voltage drops. For more information, see the writeup of [logic
+levels](../logic-levels.md).
 
 While there's no specification on the specific current that's available
 to either source or sink, you can generally plan on approximately 10mA

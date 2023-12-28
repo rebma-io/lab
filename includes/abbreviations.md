@@ -34,6 +34,7 @@
 *[IDC]: Insulation-Displacement Contact
 *[IEC]: International Electrotechnical Commission
 *[IPA]: Isopropyl Alcohol
+*[JEDEC]: Joint Electron Device Engineering Council
 *[LCR]: Inductance, Capacitance, Resistance
 *[LDO]: Low Drop Out
 *[LDPE]: Low Density PolyEthylene 

@@ -78,6 +78,7 @@ nav:
       - electronics/reference-designators.md
       - electronics/units-of-measure.md
       - electronics/non-intuitive-topics.md
+      - electronics/logic-levels.md
       - electronics/protecting-circuits.md
       - electronics/data-sheets.md
       - Techniques:
