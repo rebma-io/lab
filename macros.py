@@ -216,3 +216,10 @@ def define_env(env):
             f"{as_of_str}[{icon}]({url} "
             """ "Convert to other currency")"""
         )
+    
+    @env.macro
+    def active_low(signal: str) -> str:
+        """Return an HTML formatted string that shows that the linked
+        signal is active when low. This is done by styling it inline
+        with an overline, as is standard."""
+        return f'<span class="active-low">{signal}</span>'

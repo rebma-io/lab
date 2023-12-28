@@ -60,3 +60,7 @@
   -webkit-mask-image: var(--md-admonition-icon--comment);
   mask-image: var(--md-admonition-icon--comment);
 }
+
+.active-low {
+  text-decoration-line: overline;
+}
