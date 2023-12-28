@@ -23,6 +23,7 @@
 *[FEM]: Finite Element Analysis
 *[FFF]: Fused Filament Fabrication (see FDM)
 *[FFT]: Fast Fourier Transform
+*[FPGA]: Field Programmable Gate Aray
 *[GPIO]: General Purpose Input/Output
 *[HASL]: Hot Air Solder Leveling
 *[HDPE]: High Density PolyEthylene
