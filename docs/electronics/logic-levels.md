@@ -38,6 +38,10 @@ should all make sense, taken from lowest voltage to highest:
 * **V~CC~**. The main positive voltage for the design. This can also be
   called V~DD~.
 
+The reason there are different points for input and output thresholds is
+to provide a clear noise margin to account for noise in the circuit, as
+well as potential voltage drop over the wire/trace.
+
 ## Families of Logic
 
 All of the logic out there typically falls into one of a couple of
