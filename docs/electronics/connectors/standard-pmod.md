@@ -361,7 +361,22 @@ The specification is super vague here, but it seems like the general
 state is that 3V3 is used for logic, with some conformance to either
 LVCMOS or LVTTL conventions. The first time I had to go look that up,
 but the chart shows the various transition points in the
-LVCMOS/LVTTL standard and how they differ from their 5V counterparts.  
+LVCMOS/LVTTL standard and how they differ from their 5V counterparts.
+These points are defined as:
+
+| Point | Definition                            |
+| ------ | ------------------------------------- |
+| V~CC~  | Normal supply voltage (e.g., 3V3)     |
+| V~OH~  | Voltage when outputting a high signal |
+| V~IH~  | Voltage when receiving a high signal  |
+| V~t~   | Threshold voltage                     |
+| V~IL~  | Voltage when receiving a low signal   |
+| V~OL~  | Voltage when outputting a low signal  |
+
+As you can see, there's some difference between the input and output
+voltages, and this is specifically there to provide a margin for line
+noise and voltage drops.
+
 While there's no specification on the specific current that's available
 to either source or sink, you can generally plan on approximately 10mA
 on the average microcontroller. 
