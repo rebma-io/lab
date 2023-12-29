@@ -21,7 +21,10 @@
 * Wrote up the [Pmod
   "standard"](electronics/connectors/standard-pmod.md) since I've found
   it a bit confusing at times, and it's quite common in the FPGA world. 
-  
+* Covered [logic levels](electronics/logic-levels.md) with a bit on the
+  74-series families that implement them since they're the most common
+  basic blocks.
+
 ### 2023-12-13
 
 * Added [a new design](3d/my-designs.md) for the Rigol DHO800/900 series
