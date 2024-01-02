@@ -222,5 +222,5 @@ theme:
   logo: assets/rebma-io-logo-white-notext.png
   name: material
   palette:
-    accent: blue
+    accent: indigo
     primary: black

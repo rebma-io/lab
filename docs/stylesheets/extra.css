@@ -5,6 +5,12 @@
   --md-code-font: "Fira Mono";
 }
 
+/* LINKS */
+p a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-skip: edges;
+}
 
 /* ICONS */
 :root {
