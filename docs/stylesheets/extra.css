@@ -5,6 +5,12 @@
   --md-code-font: "Fira Mono";
 }
 
+/* LINKS */
+p a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-skip: edges;
+}
 
 /* ICONS */
 :root {
@@ -59,4 +65,8 @@
   background-color: rgb(74, 121, 217);
   -webkit-mask-image: var(--md-admonition-icon--comment);
   mask-image: var(--md-admonition-icon--comment);
+}
+
+.active-low {
+  text-decoration-line: overline;
 }

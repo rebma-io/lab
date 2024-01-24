@@ -78,6 +78,7 @@ nav:
       - electronics/reference-designators.md
       - electronics/units-of-measure.md
       - electronics/non-intuitive-topics.md
+      - electronics/logic-levels.md
       - electronics/protecting-circuits.md
       - electronics/data-sheets.md
       - Techniques:
@@ -98,6 +99,8 @@ nav:
           - Design: electronics/pcb/design.md
           - Supplier Comparison: electronics/pcb/supplier-comparison.md
           - Pricing Comparison: electronics/pcb/pcb-size-price-comparison.md
+      - Connectors:
+          - electronics/connectors/standard-pmod.md
       - Fusion 360 for Electronics: electronics/fusion360.md
       - electronics/interesting-parts.md
       - electronics/random-tips-and-tricks.md
@@ -219,5 +222,5 @@ theme:
   logo: assets/rebma-io-logo-white-notext.png
   name: material
   palette:
-    accent: blue
+    accent: indigo
     primary: black
