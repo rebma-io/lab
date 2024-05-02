@@ -1,0 +1,1412 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="A collection fo thoughts and resources for Makers." name="description"/>
+<link href="https://lab.rebma.io/electronics/passives/resistors/" rel="canonical"/>
+<link href="../" rel="prev"/>
+<link href="../../leds/" rel="next"/>
+<link href="../../../feed_rss_created.xml" rel="alternate" title="RSS feed" type="application/rss+xml"/>
+<link href="../../../feed_rss_updated.xml" rel="alternate" title="RSS feed of updated content" type="application/rss+xml"/>
+<link href="../../../assets/rebma-io-logo-black-notext.png" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.20" name="generator"/>
+<title>Resistors - lab.rebma.io Notebook</title>
+<link href="../../../assets/stylesheets/main.66ac8b77.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../../css/ansi-colours.css" rel="stylesheet"/>
+<link href="../../../css/jupyter-cells.css" rel="stylesheet"/>
+<link href="../../../css/pandas-dataframe.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<!-- Fathom - beautiful, simple website analytics -->
+<script data-site="XBUPTVHH" defer="" src="https://cdn.usefathom.com/script.js"></script>
+<!-- / Fathom -->
+<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+<link href="/feed_rss_updated.xml" rel="alternate" title="Subscribe to Changes" type="application/rss+xml">
+</link> <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#resistors">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="lab.rebma.io Notebook" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="lab.rebma.io Notebook">
+<img alt="logo" src="../../../assets/rebma-io-logo-white-notext.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            lab.rebma.io Notebook
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Resistors
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/rebma-io/lab" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"></path></svg>
+</div>
+<div class="md-source__repository">
+    rebma-io/lab
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+          
+  
+    
+  
+  Home
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../projects/">
+          
+  
+    
+  
+  Projects
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../../">
+          
+  
+    
+  
+  Electronics
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../mechanical/">
+          
+  
+    
+  
+  Mechanical
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../3d/">
+          
+  
+    
+  
+  3D Stuff
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../software/">
+          
+  
+    
+  
+  Software
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../organization/">
+          
+  
+    
+  
+  Organization
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../tools/">
+          
+  
+    
+  
+  Tools
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../resources/">
+          
+  
+    
+  
+  Resources
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../tags/">
+        
+  
+    
+  
+  Tags
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../about/">
+        
+  
+    
+  
+  About
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="lab.rebma.io Notebook" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="lab.rebma.io Notebook">
+<img alt="logo" src="../../../assets/rebma-io-logo-white-notext.png"/>
+</a>
+    lab.rebma.io Notebook
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/rebma-io/lab" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"></path></svg>
+</div>
+<div class="md-source__repository">
+    rebma-io/lab
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Home
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../projects/">
+<span class="md-ellipsis">
+    Projects
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../">
+<span class="md-ellipsis">
+    Electronics
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Electronics
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fundamentals/">
+<span class="md-ellipsis">
+    Fundamentals
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../reference-designators/">
+<span class="md-ellipsis">
+    Reference Designators
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../units-of-measure/">
+<span class="md-ellipsis">
+    Units of Measure
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../non-intuitive-topics/">
+<span class="md-ellipsis">
+    Non-Intuitive Topics
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../logic-levels/">
+<span class="md-ellipsis">
+    Logic Levels and Families
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../protecting-circuits/">
+<span class="md-ellipsis">
+    Protecting Circuits
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../data-sheets/">
+<span class="md-ellipsis">
+    Data Sheets
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../soldering/">
+<span class="md-ellipsis">
+    Techniques
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_10" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    Passive Components
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_3_10_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_10">
+<span class="md-nav__icon md-icon"></span>
+            Passive Components
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Resistors
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Resistors
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schematic-symbols">
+<span class="md-ellipsis">
+      Schematic Symbols
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#equivalent-circuit">
+<span class="md-ellipsis">
+      Equivalent Circuit
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#types">
+<span class="md-ellipsis">
+      Types
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#composition">
+<span class="md-ellipsis">
+      Composition
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#power-rating-w">
+<span class="md-ellipsis">
+      Power Rating (W)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tolerance">
+<span class="md-ellipsis">
+      Tolerance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#e-series-of-preferred-values">
+<span class="md-ellipsis">
+      E-Series of Preferred Values
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representing-values">
+<span class="md-ellipsis">
+      Representing Values
+    </span>
+</a>
+<nav aria-label="Representing Values" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#american">
+<span class="md-ellipsis">
+      American
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#european">
+<span class="md-ellipsis">
+      European
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#smd">
+<span class="md-ellipsis">
+      SMD
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#color-bands">
+<span class="md-ellipsis">
+      Color Bands
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vendors">
+<span class="md-ellipsis">
+      Vendors
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recommendations">
+<span class="md-ellipsis">
+      Recommendations
+    </span>
+</a>
+<nav aria-label="Recommendations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#weird-values">
+<span class="md-ellipsis">
+      Weird Values
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#uses">
+<span class="md-ellipsis">
+      Uses
+    </span>
+</a>
+<nav aria-label="Uses" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#current-limiting">
+<span class="md-ellipsis">
+      Current Limiting
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#voltage-divider">
+<span class="md-ellipsis">
+      Voltage Divider
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../leds/">
+<span class="md-ellipsis">
+    Active Components
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../filters/">
+<span class="md-ellipsis">
+    Circuit Patterns
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../pcb/design/">
+<span class="md-ellipsis">
+    PCB
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../connectors/standard-pmod/">
+<span class="md-ellipsis">
+    Connectors
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fusion360/">
+<span class="md-ellipsis">
+    Fusion 360 for Electronics
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../interesting-parts/">
+<span class="md-ellipsis">
+    Interesting Parts
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../random-tips-and-tricks/">
+<span class="md-ellipsis">
+    Random Tips &amp; Tricks
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../manufacturers/">
+<span class="md-ellipsis">
+    Manufacturers
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../suppliers/">
+<span class="md-ellipsis">
+    Suppliers
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../mechanical/">
+<span class="md-ellipsis">
+    Mechanical
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../3d/">
+<span class="md-ellipsis">
+    3D Stuff
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../software/">
+<span class="md-ellipsis">
+    Software
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../organization/">
+<span class="md-ellipsis">
+    Organization
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../tools/">
+<span class="md-ellipsis">
+    Tools
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../resources/">
+<span class="md-ellipsis">
+    Resources
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../tags/">
+<span class="md-ellipsis">
+    Tags
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../about/">
+<span class="md-ellipsis">
+    About
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schematic-symbols">
+<span class="md-ellipsis">
+      Schematic Symbols
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#equivalent-circuit">
+<span class="md-ellipsis">
+      Equivalent Circuit
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#types">
+<span class="md-ellipsis">
+      Types
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#composition">
+<span class="md-ellipsis">
+      Composition
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#power-rating-w">
+<span class="md-ellipsis">
+      Power Rating (W)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tolerance">
+<span class="md-ellipsis">
+      Tolerance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#e-series-of-preferred-values">
+<span class="md-ellipsis">
+      E-Series of Preferred Values
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representing-values">
+<span class="md-ellipsis">
+      Representing Values
+    </span>
+</a>
+<nav aria-label="Representing Values" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#american">
+<span class="md-ellipsis">
+      American
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#european">
+<span class="md-ellipsis">
+      European
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#smd">
+<span class="md-ellipsis">
+      SMD
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#color-bands">
+<span class="md-ellipsis">
+      Color Bands
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vendors">
+<span class="md-ellipsis">
+      Vendors
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recommendations">
+<span class="md-ellipsis">
+      Recommendations
+    </span>
+</a>
+<nav aria-label="Recommendations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#weird-values">
+<span class="md-ellipsis">
+      Weird Values
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#uses">
+<span class="md-ellipsis">
+      Uses
+    </span>
+</a>
+<nav aria-label="Uses" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#current-limiting">
+<span class="md-ellipsis">
+      Current Limiting
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#voltage-divider">
+<span class="md-ellipsis">
+      Voltage Divider
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<nav class="md-tags">
+<a class="md-tag" href="../../../tags/#component">component</a>
+<a class="md-tag" href="../../../tags/#passive">passive</a>
+<a class="md-tag" href="../../../tags/#resistor">resistor</a>
+</nav>
+<h1 id="resistors">Resistors</h1>
+<div class="admonition info">
+<p class="admonition-title">Why We Call Them Passives</p>
+<p> All components in electronics are
+grouped into 2 categories (basically): active and passive. Passive
+components don’t need an external power source to function. These
+components use some other property to control the electrical signal. As
+a result, they only require the current traveling through the connected
+circuit. Resistors impede the flow of electrons without introducing more
+electricity into the system.</p>
+</div>
+<p>Resistors are, perhaps, the most fundamental component in all
+electronics. If you have a wire, which in its ideal form carries the
+same current through it, a resistor allows you to limit the flow of that
+current. They create <em>resistance</em> to the flow. Resistance is measured in
+ohms (Ω). One ohm is the resistance represented by a current of
+one amp (A) passing across a resistor with a 1V drop across its
+terminals. There's that sneaky <a href="../../fundamentals/#ohms-law">Ohm's law</a>
+again!</p>
+<p>Starting with resistors is good because they are, by a wide margin, the
+simplest and least "weird" component you'll run into. Everything else
+has a ton of edge cases to think about. </p>
+<h2 id="schematic-symbols">Schematic Symbols</h2>
+<p><img align="right" alt="Resistor schematic
+symbols" src="../img/schematic-resistor.png" width="250,"/></p>
+<p>There's two main symbols you'll see in use, shown to the right. R1 is
+drawn in the standard <abbr title="American National Standards Institute">ANSI</abbr> symbology of a set of leads with a zig-zag
+between them. This hints at the internal structure of many resistors.
+Conversely, R2 shows the <abbr title="International Electrotechnical Commission">IEC</abbr> (international) version of the symbol,
+which looks more like the component outline. </p>
+<p>Personally, I find drawing the <abbr title="American National Standards Institute">ANSI</abbr> version to be an exercise in
+futility, and anyone who can hand draw them is prima facie a witch.</p>
+<h2 id="equivalent-circuit">Equivalent Circuit</h2>
+<p><a href="https://en.wikipedia.org/wiki/Equivalent_circuit">Equivalent circuits</a>
+are a way to break down a component (or circuit) into easy to reason
+about pieces. This is typically defined using <a href="https://en.wikipedia.org/wiki/Th%C3%A9venin%27s_theorem">Thévenin
+equivalence</a>.
+For resistors outside RF/microwave frequencies, a resistor is just a
+resistor. For RF and microwave, <a href="https://resources.system-analysis.cadence.com/blog/msa2021-understanding-resistor-behavior-at-high-frequencies">this are more
+complicated</a>.</p>
+<p>For everything else, you will not be so lucky!</p>
+<h2 id="types">Types</h2>
+<p>In addition to just a regular resistor, there are a few other types that
+you'll find pretty commonly (and more you won't). Note that each of
+these has a specific schematic symbol you can find <a href="https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-symbols/">on this
+page</a>.
+I've taken part photographs from <a href="https://digikey.com">Digikey</a>; part
+number in the alt text.</p>
+<dl>
+<dt>Through-hole axial lead</dt>
+<dd><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../img/part-resistor.jpg"><img align="right" alt="Panasonic ERO-S2PHF5112" src="../img/part-resistor.jpg" width="100"/></a>
+This is the "classic" resistor. There are standard package sizes and
+shapes, and they are effectively interchangeable from manufacturer to
+manufacturer. </dd>
+<dt>Surface mount device (chip)</dt>
+<dd><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../img/part-resistor-smd.jpg"><img align="right" alt="KOA Speer RK73B1JTTD914J" src="../img/part-resistor-smd.jpg" width="100"/></a>
+Like everything these days, resistors come in a diverse set of surface
+mount formats, which are typically called "chip resistors".  They start
+out huge at 2512 format (0.25" x 0.12") but quickly shrink until you get
+to the 0201 (0.024" x 0.012").</dd>
+</dl>
+<p>In addition to the normal through-hole and <abbr title="Surface Mount Device">SMD</abbr> resistors, there's a few
+that are variable. The first are adjustable:</p>
+<dl>
+<dt>Potentiometer</dt>
+<dd><img align="right" alt="Bourns 3852A-286-104AL
+potentiometer" src="../img/part-potentiometer.webp" width="100"/>
+A potentiometer is an adjustable resistor with 3 terminals. One
+terminal is connected to an adjustable wiper, and the other two are
+connected to opposite ends of a resistive component. The position of the
+wiper turned with a knob. It effectively is a self-contained voltage
+divider. Note there is a <a href="https://en.wikipedia.org/wiki/Digital_potentiometer">digital
+potentiometer</a>
+which kinda does the same thing, but accomplishes the entire process
+with a large number of resistors switched in and out of the circuit.</dd>
+<dt>Trimming potentiometer (trimpot)</dt>
+<dd><img align="left" alt="Bourns 3296W-1-103RLF trimmer
+potentiometer" src="../img/part-trimpot.webp" width="100"/> 
+A trimpot is <em>very close</em> to a potentiometer, but I wanted to call it
+out specifically. Trimpots are basically potentiometers that are mounted
+<em>on a <abbr title="Printed Circuit Board">PCB</abbr></em> and are intended exclusively for trimming (tuning or
+calibrating) a circuit. They come in single turn and in multi-turn
+models, and they are designed to be very precise and stable. They run
+the gamut from $0.25 (<abbr title="US Dollar Currency">USD</abbr>) to $50+ (<abbr title="US Dollar Currency">USD</abbr>) depending on accuracy and
+temperature coefficient, which is basically how much they change over a
+temperature range.</dd>
+</dl>
+<p>Then, there is a set of resistors that are <em>reactive to the
+environment</em>. </p>
+<dl>
+<dt>Photoresistor</dt>
+<dd><img align="right" alt="Advanced Photonix PDV-P8104
+photoresistor" src="../img/part-photoresistor.webp" width="100"/>
+Also called light-dependent resistors, photoresistors are, as you might
+imagine from the name on the tin, reactive to photons (light). They
+typically drop resistance the more light that falls on them. This range
+is called their "dark resistance" (R<sub>D</sub>) and their "illuminated
+resistance" (R<sub>IL</sub>). All the ones I've seen get less resistive as more
+light falls on them. They can be very useful for detecting the presence
+of things, although typically photodiodes are more useful in this area.</dd>
+<dt>NTC/PTC thermistor</dt>
+<dd><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../img/part-thermistor.webp"><img align="left" alt="Murata NXRT15XH103FA1B030" src="../img/part-thermistor.webp" width="100"/></a>
+A thermistor is a resistor whose resistance changes <em>significantly</em> with
+temperature. I say significantly, because all resistors change with
+temperature to some degree or another. They come in two different kinds:
+negative temperature coefficient (NTC) and... you guessed it, positive
+temperature coefficient (PTC). As for applications, they're actually
+quite different (largely due to how they're constructed). NTC
+thermistors are typically used as temperature sensors. <img align="right" alt="Littlefuse
+RXEF110-2 PTC resettable fuse" src="../img/part-thermistor-ptc.webp" width="100"/> 
+PTC thermistors, however, are used in over-current protection, or some form of
+self-regulator circuit. NTC respond quickly, where as PTC respond much
+slower. In fact, you'll often hear "PTC resettable fuse" used to refer
+to the PTC kind when they're used in <a href="../../protecting-circuits/">protection
+circuits</a>.</dd>
+<dt>Varistor</dt>
+<dd>A varistor, also called a voltage-dependent resistor (VDR) is actually
+a semiconductor that drops in resistance as voltage increases. Their
+main application is in protection circuits where they are tied to
+ground. When they are set up in this arrangement, they're called
+"voltage clamping". The most common kind in use is a metal-oxide
+varistor (MOV). </dd>
+<dt>Strain Gauge</dt>
+<dd><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../img/part-strain-gauge.webp"><img align="right" alt="Vishay MMF402226" src="../img/part-strain-gauge.webp" width="100"/></a> 
+One  of the last environmentally-reactive resistors is a strain gauge. A
+strain gauge measures, shockingly, strain on an object. Strain is the
+deformation of an object. Through that, they can be used to measure
+weight (typically through a <a href="https://en.wikipedia.org/wiki/Wheatstone_bridge">Wheatstone
+bridge</a>). Strain gauges
+are capable of tolerances down below 0.2%, and are heavily used to
+monitor equipment and aircraft.</dd>
+</dl>
+<h2 id="composition">Composition</h2>
+<p>There are a bunch of ways to make resistors, but for a majority of them,
+they have one of the following compositions. I've linked to much more
+in-depth reviews of the various types along with trade-offs. I mostly
+keep carbon-film and metal-film resistors around for most uses, with a
+few wirewound for higher power applications. These are listed
+(approximately) from cheapest to most expensive.</p>
+<dl>
+<dt><a href="https://eepower.com/resistor-guide/resistor-materials/carbon-composition-resistor/">Carbon composition</a></dt>
+<dd>Carbon composition resistors (CCR) are fixed value resistors. They are
+made out of fine carbon particles mixed with a binder (for example
+clay). After baking, it has a solid form. </dd>
+<dt><a href="https://eepower.com/resistor-guide/resistor-materials/carbon-film-resistor/">Carbon film</a></dt>
+<dd>Carbon film resistors are a type of fixed value resistor. They are
+constructed out of a ceramic carrier with a thin pure carbon film around
+it. This carbon film functions as the resistive material. </dd>
+<dt><a href="https://eepower.com/resistor-guide/resistor-materials/metal-film-resistor/">Metal film</a></dt>
+<dd>Metal film resistors have a thin metal layer as resistive element on a
+non-conducting body. They are among the most common types of axial
+resistors.  </dd>
+<dt><a href="https://eepower.com/resistor-guide/resistor-materials/metal-oxide-film-resistor/">Metal oxide film</a></dt>
+<dd>Metal oxide film resistors are made of ceramic rod that is coated with
+a thin film of metal oxides, such as tin oxide. Metal oxide film
+resistors must not be confused with metal oxide varistors, made of zinc
+oxide or silicon carbide.</dd>
+<dt><a href="https://eepower.com/resistor-guide/resistor-materials/wirewound-resistor/">Wirewound</a></dt>
+<dd>In a wirewound resistor, the resistive element is an insulated
+metallic wire that is wound around a core of non-conductive material.
+The wire material has a high resistivity, and is usually made of an
+alloy such as nickel-chromium (Nichrome)</dd>
+<dt><a href="https://eepower.com/resistor-guide/resistor-materials/foil-resistor/">Foil</a></dt>
+<dd>A foil resistor is a high precision component to limit electric
+current. The opposition to current flow is provided by a very thin piece
+of metal. </dd>
+</dl>
+<h2 id="power-rating-w">Power Rating (W)</h2>
+<p>All resistors are rated for a specific power handling in watts (W). This
+can run anywhere from 0.01W on the smallest <abbr title="Surface Mount Device">SMD</abbr> resistors up to 250W or
+more for large chassis-mount power resistors. You want to ensure you
+choose one with enough safety margin for whatever you're going to throw
+at it. I mostly stock 1/4, 1/2, and 1W regular <abbr title="Through Hole Technology">THT</abbr> resistors, and 1/4W
+in <abbr title="Surface Mount Device">SMD</abbr> 1206 and 805.</p>
+<p>Once you get about 5W rating on a axial lead <abbr title="Through Hole Technology">THT</abbr> resistor, for example,
+you're going to move into <a href="https://www.digikey.com/en/products/filter/chassis-mount-resistors/54">chassis
+mount</a>
+designs. These are <em>much larger</em> because they have integrated metal
+heat-sinks. They come in sizes up to about 5KW (yes, 5,000W). These are
+designed to be bolted to something like a chassis to expand their heat
+dissipation potential. The differences between a high power resistor and
+a space heater are few.</p>
+<h2 id="tolerance">Tolerance</h2>
+<p>The other major specification you'll run into is tolerance. Simplified,
+this is the percentage that the resistor can deviate from it's specified
+value and still be considered in-spec. Let's look at a 1kΩ resistor
+in some common tolerances.</p>
+<table>
+<thead>
+<tr>
+<th>Tolerance</th>
+<th align="right">Lower (Ω)</th>
+<th align="right">Upper (Ω)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.1%</td>
+<td align="right">999</td>
+<td align="right">1001</td>
+</tr>
+<tr>
+<td>0.5%</td>
+<td align="right">995</td>
+<td align="right">1005</td>
+</tr>
+<tr>
+<td>1%</td>
+<td align="right">990</td>
+<td align="right">1010</td>
+</tr>
+<tr>
+<td>5%</td>
+<td align="right">950</td>
+<td align="right">1050</td>
+</tr>
+<tr>
+<td>10%</td>
+<td align="right">900</td>
+<td align="right">1100</td>
+</tr>
+</tbody>
+</table>
+<p>For most people, 1-5% is the normal tolerance that they are working
+with, although <abbr title="Surface Mount Device">SMD</abbr> devices <em>tend</em> to have tighter (smaller) tolerances,
+where 0.5% isn't uncommon. </p>
+<p>For <em>very high precision</em> resistors, where tolerances can be as small as
+0.001%, you might see this specified in parts per million (ppm). You can
+even, if you have enough money, order resistors with even more precise
+tolerances. But they will most definitely cost you. For example, a
+1KΩ 0.001% resistor with a power rating of 1/5W will cost you $100
+(<abbr title="US Dollar Currency">USD</abbr>) or more <em>each</em>. And they're all made by one company: <a href="https://vpgfoilresistors.com/">Vishay
+Precision Group</a>. Open up any super
+high-precision device, and it'll be chocked full of Vishay resistors.</p>
+<p>Note that lower tolerance are typically <a href="https://en.wikipedia.org/wiki/Laser_trimming">laser
+trimmed</a> to achieve very
+high precision. There are even
+<a href="https://www.ppisystems.com/systems/rapitrim-laser-resistor-trimming/">machines</a>
+just to do this.</p>
+<h2 id="e-series-of-preferred-values">E-Series of Preferred Values</h2>
+<p>If you've ever looked a resistors, and wondered why they seem to be in a
+weird set of values, this is why. While not strictly a measurement
+itself, it's a system of standardized measurements. It was originally
+standardized in 1952 by the International Electrotechnical Commission
+(<abbr title="International Electrotechnical Commission">IEC</abbr>), and is effectively followed by every single resistor manufacturer
+in the world. By standardizing resistors, it also accelerated the mass
+production, and turned them into <a href="https://en.wiktionary.org/wiki/jellybean_part">jellybean
+part</a>. It also limits the
+number of values that have to be manufactured and stocked. There are 6
+commonly used E-series:</p>
+<ul>
+<li>E6 for 20% tolerance resistors.</li>
+<li>E12 for 10%</li>
+<li>E24 for 5% and 1%</li>
+<li>E48 for 2%</li>
+<li>E96 for 1%</li>
+<li>E192 for 0.5%, 0.25%, and 0.1%</li>
+</ul>
+<p>Resistors with higher tolerance ranges need fewer distinct parts to
+cover the range because they automatically overlap. Each of these is a
+series of steps on a logarithmic scale. So, for an E12, the step is
+equal to:</p>
+<div class="arithmatex">\[10^{1\over{12}} = 1.21\]</div>
+<p>Similarly, for E192, we get:</p>
+<div class="arithmatex">\[10^{1\over{192}} = 1.01\]</div>
+<p>That leads us to a series of [1, 1.2, 1.5, 1.8, 2.2, 2.7, 3.3, 3.9, 4.7,
+5.6, 6.8, 8.2]. This range is called a <em>decade</em>. You can then multiple
+that single to get multiple decades in powers of 10, for example [1.8,
+18, 180, 1800, 18000, ...]. </p>
+<div class="admonition note">
+<p class="admonition-title">Choose Value's Wisely</p>
+<p> When choosing a value, it's best to
+select from the "lowest" E-series that works for you. If you can make a
+circuit work with something from E6, then don't use an E96. This will
+reduce the cost of finding parts, and ensure you don't run into any
+issues. Precision and accuracy both cost money in parts.</p>
+</div>
+<h2 id="representing-values">Representing Values</h2>
+<p>There are a few different ways you'll see resistor value's represented.
+I have sorta just made up names in this case, but I think they'll help.</p>
+<ul>
+<li>American</li>
+<li>European</li>
+<li><abbr title="Surface Mount Device">SMD</abbr></li>
+<li>Color bands</li>
+</ul>
+<p>Personally, I like the European representation of values, but the
+American schematic symbol. Call me weird.</p>
+<h3 id="american">American</h3>
+<p>When Americans write resistor values, for example, in a schematic,
+you'll see it written with the value and a standard <a href="https://en.wikipedia.org/wiki/Metric_prefix">metric
+prefix</a>, such as 120, 1.2k,
+12k, 1.2M, etc. So you might have both a multiplier and a decimal point.</p>
+<h3 id="european">European</h3>
+<p>The European (and I believe <abbr title="International Electrotechnical Commission">IEC</abbr>) representation that you will see
+replaces the decimal with the metric prefix if there is one. So, for tme
+same series you'd see 120, 1k2, 12k, 1M2. Saves a character, at least?</p>
+<h3 id="smd"><abbr title="Surface Mount Device">SMD</abbr></h3>
+<p>The typical <abbr title="Surface Mount Device">SMD</abbr> resistors use a either a 3 or 4-digit code to mark the
+resistance value on the part. The first numbers will indicate the
+significant digits, and the third will be the multiplier. 'R' is used to
+indicate the position of a decimal point. For example, a resistor marked
+27R0 is 27Ω, but one marked 272 or 2702 would be 2.7kΩ.  </p>
+<div class="admonition warning">
+<p class="admonition-title">Crazy EIA-96 Format</p>
+<p> There is another--antisocial if you ask
+me--format developed by EIA termed the EIA-96 format. It is based on the
+<a href="https://www.hobby-hour.com/electronics/eia96-smd-resistors.php">EIA-96 series of standard resistor
+values</a>
+and is typically used on 1% tolerance parts. It uses three characters
+(two numbers and a letter) in which the numbers represent the value (34 =
+34th value of the possible range) and the letter represents the
+multiplier. So, 36D is 232kΩ, but 71A is 536Ω. Clear, no?
+There's a special place in hell for this crap.</p>
+</div>
+<p>As with others, there are <a href="https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-smd-resistor-code">online
+calculators</a>
+to help do the conversion.</p>
+<h3 id="color-bands">Color Bands</h3>
+<p>Finally, we have the color bands, which are little stripes around the
+body of an axial resistor. These are standardized in <abbr title="International Electrotechnical Commission">IEC</abbr> 60062. The
+following chart shows how the various colors relate:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../img/part-resistor-color-chart.png"><img alt="Resistor color chart" src="../img/part-resistor-color-chart.png"/></a></p>
+<p>There are, occasionally, 6 band resistors with temperature coefficients
+indicated, but if you're needing one of those, you're not reading this
+page and already know what to do.</p>
+<p>As shown, 0.1-1% resistors use the 5-band code, and everything above
+that uses 4. There is a 3 band version for 20% tolerance resistors, but
+the only resistors that I've seen at 20% are wire-wound power resistors
+in chassis-mount packages, and those just have the value printed on
+them.</p>
+<p>There are <a href="https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code">online
+calculators</a>
+that will do the work of converting for you. </p>
+<div class="admonition tip">
+<p class="admonition-title">Practice</p>
+<p> Reading resistors by eye takes a <em>lot</em> of practice.
+Especially with 5-band resistors, it can be difficult to tell which side
+to read from. One way to think of that is if you have some idea of the
+tolerance of the resistor, you can eliminate which side is which.
+Orange, white, and yellow will never show up on the tolerance band. This
+can help you guess, as for many inexpensive resistors, red and orange,
+blue and violet, and brown and silver look suspiciously the same. When
+in doubt, just stick a multimeter on it and find out.</p>
+</div>
+<h2 id="vendors">Vendors</h2>
+<p>There's an absolute ton of vendors for most parts, especially passives,
+but these are the ones I typically stick to if I can, in alphabetic
+order.</p>
+<ul>
+<li>Bourns</li>
+<li>Eaton</li>
+<li>Murata</li>
+<li>Panasonic </li>
+<li>Rohm</li>
+<li>Samsung</li>
+<li>Stackpole</li>
+<li>Vishay</li>
+</ul>
+<p>Note that Vishay has a <em>ton</em> of sub-companies that make various
+specialized things, including VPG, Vishay Precision Group for stupid
+expensive, insanely precise resistors.</p>
+<h2 id="recommendations">Recommendations</h2>
+<h3 id="weird-values">Weird Values</h3>
+<p>First, you probably don't need that super weird value. But if you have a
+situation where you have a <em>very specific</em> resistor value requirement,
+such as 23.4k, you're just not going to find it. You could try and
+assemble a set of resistors in parallel and series to achieve this
+exact, or you can combine a precision 1% resistor with a potentiometer.
+For example, to get the 23.4k, you might combine a 22k 1% resistor with
+a trimming potentiometer in series. Even in small quantities, from one
+of the manufacturers above, that resistor will cost you 10 cents, and
+you can get a 0.5% for 25 cents. The trimmer, even from Bourns (who,
+coincidentally invented the trimmer), will cost you <a href="https://www.digikey.com/en/products/detail/bourns-inc/3362M-1-202RLF/2536584">perhaps a
+dollar</a>. </p>
+<h2 id="uses">Uses</h2>
+<p>Resistors are <em>everywhere</em> in electronic circuits. They are critical to
+so many circuit designs, including:</p>
+<ul>
+<li>Voltage dividers</li>
+<li>Limiting current flow</li>
+<li>Matching circuits</li>
+<li>Loading circuits</li>
+<li>Gain control of an amplifier</li>
+<li>Setting time constant in an RC circuit</li>
+</ul>
+<p>We are going to take a quick look at the first two, as they stand alone,
+where-as the others depend heavily on exactly what kind of circuit
+you're using.</p>
+<h3 id="current-limiting">Current Limiting</h3>
+<p>Just as one example, if we don't limit current into an <abbr title="Light Emitting Diode">LED</abbr>, it will burn
+out very quickly. Taking a <a href="https://www.digikey.com/en/products/detail/creeled-inc/C503B-RAN-CZ0C0AA2/6561762">sample red
+<abbr title="Light Emitting Diode">LED</abbr></a>,
+we can see that it has a desired forward current (I<sub>F</sub>) of 20mA,, and a
+forward voltage drop (V<sub>F</sub>) of 2.1V (typically for almost all red <abbr title="Light Emitting Diode">LED</abbr>).
+If you want to power this with a 5V power supply and limit the current
+across it, you can figure this out with Ohm's law:</p>
+<div class="arithmatex">\[\begin{aligned}
+R &amp;= {{5 - 2.1}\over{0.02}}\\[5pt]
+&amp;= 145
+\end{aligned}\]</div>
+<p><img align="right" alt="Schematic showing a current limiting
+resistor" src="../img/schematic-resistor-led.png" width="250"/></p>
+<p>So we need a resistor of 145Ω. Now, that's not a common value, but
+<a href="#e-series-of-preferred-values">we can get 150</a>, and so we can just use
+that. We could also slightly overdrive it with a 130Ω. Close enough!
+Or is it?  Let's put it back in and see what happens by flipping Ohm's
+law around:</p>
+<div class="arithmatex">\[\begin{aligned}
+I &amp;= {V\over R}\\[5pt]
+&amp;= {{5 - 2.1}\over{150}}\\[5pt]
+&amp;= 0.19\overline{3}
+\end{aligned}\]</div>
+<p>That looks good to me! Below, there's an interactive circuit with a 5V
+voltage source, a resistor, and an <abbr title="Light Emitting Diode">LED</abbr>. You can adjust the resistor and
+see what happens with the <abbr title="Light Emitting Diode">LED</abbr>.</p>
+<iframe height="480" src="https://www.falstad.com/circuit/circuitjs.html?startCircuitLink=https://lab.rebma.io/circuits/current-limiter-led&amp;hideMenu=true" width="100%">OH NOES!</iframe>
+<!-- TODO: Write about LEDs in depth -->
+<div class="admonition future">
+<p class="admonition-title">More to Come</p>
+<p> There's a lot more to driving LEDs than this,
+and truthfully you also need to do a few more things. I'll cover the
+whole process elsewhere (TBD).</p>
+</div>
+<h3 id="voltage-divider">Voltage Divider</h3>
+<p><img align="right" alt="Schematic showing a voltage
+divider" src="../img/schematic-voltage-divider.png" width="250"/></p>
+<p>Often when working with a circuit, you need to set a specific voltage
+into some component, but you don't have that exact voltage. But, you
+often have a higher voltage that you can work with. This is where
+voltage dividers come in. They do exactly what you think they would from
+the label on the tin. We can calculate our output voltage from a divider
+using the <a href="https://www.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-resistor-circuits/a/ee-voltage-divider">voltage divider
+equation</a>,
+using V<sub>S</sub> as our source voltage.</p>
+<div class="arithmatex">\[V_{out} = V_S{R_2\over{R_1 + R_2}}\]</div>
+<p>If we apply that to our imagined voltage divider circuit shown:</p>
+<div class="arithmatex">\[\begin{aligned}
+V_{out} &amp;= V_S{R_2\over{R_1 + R_2}}\\[5pt]
+&amp;= 5{1200\over{1000+1200}}\\[5pt]
+&amp;= 5\cdot{0.\overline{54}}\\[5 pt]
+&amp;\approx 2.727 
+\end{aligned}\]</div>
+<p>Now, let's play with it. Using the sliders on the right of the circuit
+below, play with the resistance and see how the output changes.</p>
+<iframe height="480" src="https://www.falstad.com/circuit/circuitjs.html?startCircuitLink=https://lab.rebma.io/circuits/basic-voltage-divider&amp;hideMenu=true" width="100%">OH NOES!</iframe>
+<!-- TODO: Write about voltage dividers -->
+<div class="admonition future">
+<p class="admonition-title">Fun with Voltage Dividers</p>
+<p> There's a lot you can do with a
+voltage divider arrangement. In fact, you can use more than 2 resistors.
+You can use 3 or 4 or 5 or ... by selecting them you can get all sorts
+of voltages out of the circuit that can help you solve lots of problems.
+Voltage dividers deserve their own discussion.</p>
+</div>
+<!-- TODO: Move elsewhere>
+## Capacitors
+
+### Types
+
+### Composition
+
+## Inductors
+
+An inductor can also be known as a coil, choke, or reactor.  It is a
+two-terminal component that stores energy in a magnetic field when
+current is flowing through it. A standard inductor normally consists of
+an insulated (often varnished) wire that has been wrapped into a coil
+situated around a core. When the voltage ratio (to current) changes the
+inductor will oppose any changes in current through it.  When the power
+is removed, the magnetic field will collapse, inducing a current in the
+winding wire. A transformer is a form of compound inductor.
+
+## Diodes (kinda)
+
+## 3rd Party References
+
+* [PG&E Application of Underground Distribution
+  Transformers](https://www.pge.com/pge_global/common/pdfs/services/building-and-renovation/greenbook-manual-online/062111.pdf). 
+
+-->
+<div class="admonition comment">
+<p class="admonition-title">Comments or Questions?</p>
+<p> If you have any comments, questions, or
+topics you'd like to see covered, please feel free to either reach out
+to me on Mastodon (link below) or open an <a href="https://github.com/rebma-io/lab/issues/new/choose">issue on
+Github</a>. </p>
+</div>
+<aside class="md-source-file">
+<span class="md-source-file__fact">
+<span class="md-icon" title="Last update">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-02</span>
+</span>
+<span class="md-source-file__fact">
+<span class="md-icon" title="Created">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-02</span>
+</span>
+</aside>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Passive Components" class="md-footer__link md-footer__link--prev" href="../">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                Passive Components
+              </div>
+</div>
+</a>
+<a aria-label="Next: LEDs and Lasers" class="md-footer__link md-footer__link--next" href="../../leds/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                LEDs and Lasers
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright 2024 Christopher Petrilli (CC BY-SA 4.0)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://lab.rebma.io/feed_rss_updated.xml" rel="noopener" target="_blank" title="lab.rebma.io">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2.5 12A1.5 1.5 0 0 0 6 16.5 1.5 1.5 0 0 0 7.5 18 1.5 1.5 0 0 0 9 16.5 1.5 1.5 0 0 0 7.5 15M6 10v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8m0-4v2a10 10 0 0 1 10 10h2A12 12 0 0 0 6 6Z"></path></svg>
+</a>
+<a class="md-social__link" href="https://hachyderm.io/@petrillic" rel="noopener me" target="_blank" title="hachyderm.io">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.youtube.com/channel/UCBNhr5JIXOikgY7ix8xdmSg/" rel="noopener" target="_blank" title="www.youtube.com">
+<svg viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+</a>
+<a class="md-social__link" href="https://twitter.com/petrillic" rel="noopener" target="_blank" title="twitter.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+</a>
+<a class="md-social__link" href="https://github.com/petrilli/" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://github.com/rebma-io/" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.linkedin.com/in/christopher-petrilli-ba391a7/" rel="noopener" target="_blank" title="www.linkedin.com">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "navigation.prune", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+<script src="../../../js/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

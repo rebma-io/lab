@@ -1,0 +1,77 @@
+ClearanceFit015,mm,0.175mm,From Prusa MINI+ w/Jessie PLA
+ClearanceFit030,mm,0.175 mm,From Prusa MINI+ w/Jessie PLA
+InterferenceFit015,mm,0.133 mm,From Prusa MINI+ w/Jessie PLA
+InterferenceFit030,mm,0.135 mm,From Prusa MINI+ w/Jessie PLA
+TransitionFit015,mm,0.135 mm,From Prusa MINI+ w/Jessie PLA
+TransitionFit030,mm,0.155 mm,From Prusa MINI+ w/Jessie PLA
+M2_5CloseClearanceHoleID,mm,2.7 mm,From Machinery's Handbook (31st Edition)
+M2_5HeadDepth,mm,2.5 mm,From McMaster-Carr P/N 91290A103
+M2_5HeadOD,mm,4.5 mm,From McMaster-Carr P/N 91290A103
+M2_5InsertDepth,mm,4.0 mm + 1.0 mm,For CNC Kitchen inserts
+M2_5InsertHoleID,mm,4.0 mm,For CNC Kitchen inserts
+M2_5LooseClearanceHoleID,mm,3.1 mm,From Machinery's Handbook (31st Edition)
+M2_5NormalClearanceHoleID,mm,2.9 mm,From Machinery's Handbook (31st Edition)
+M2_5TapHoleID,mm,2.05 mm,From Armstrong Metalcrafts for ABP (M2.5 x 0.45)
+M2CloseClearanceHoleID,mm,2.2 mm,From Machinery's Handbook (31st Edition)
+M2HeadDepth,mm,2.0 mm,From McMaster-Carr P/N 91290A015
+M2HeadOD,mm,3.8 mm,From McMaster-Carr P/N 91290A015
+M2InsertDepth,mm,3.0 mm + 1.0 mm,For CNC Kitchen inserts
+M2InsertHoleID,mm,3.2 mm,For CNC Kitchen inserts
+M2LooseClearanceHoleID,mm,2.6 mm,From Machinery's Handbook (31st Edition)
+M2NormalClearanceHoleID,mm,2.4 mm,From Machinery's Handbook (31st Edition)
+M2TapHoleID,mm,1.55 mm,From Armstrong Metalcrafts for ABP (M2 x 0.4)
+M3CloseClearanceHoleID,mm,3.2 mm,From Machinery's Handbook (31st Edition)
+M3HeadDepth,mm,3.0 mm,From McMaster-Carr P/N 91290A113
+M3HeadOD,mm,5.5 mm,From McMaster-Carr P/N 91290A113
+M3InsertDepth,mm,5.7 mm + 1 mm,For CNC Kitchen inserts
+M3InsertHoleID,mm,4.0 mm,For CNC Kitchen inserts
+M3InsertShortDepth,mm,3.0 mm + 1.0 mm,For CNC Kitchen inserts
+M3LooseClearanceHoleID,mm,3.6 mm,From Machinery's Handbook (31st Edition)
+M3NormalClearanceHoleID,mm,3.4 mm,From Machinery's Handbook (31st Edition)
+M3TapHoleID,mm,2.5 mm,From Armstrong Metalcrafts for ABP (M3 x 0.5)
+M4CloseClearanceHoleID,mm,4.3 mm,From Machinery's Handbook (31st Edition)
+M4HeadDepth,mm,4.0 mm,From McMaster-Carr P/N 91290A140
+M4HeadOD,mm,7.0 mm,From McMaster-Carr P/N 91290A140
+M4InsertDepth,mm,8.1 mm + 1.0 mm,For CNC Kitchen inserts
+M4InsertHoleID,mm,5.6 mm,For CNC Kitchen inserts
+M4InsertShortDepth,mm,4.0 mm + 1.0 mm,For CNC Kitchen inserts
+M4LooseClearanceHoleID,mm,4.8 mm,From Machinery's Handbook (31st Edition)
+M4NormalClearanceHoleID,mm,4.5 mm,From Machinery's Handbook (31st Edition)
+M4TapHoleID,mm,3.25 mm,From Armstrong Metalcrafts for ABP (M4 x 0.7)
+M5CloseClearanceHoleID,mm,5.3 mm,From Machinery's Handbook (31st Edition)
+M5HeadDepth,mm,5.0 mm,From McMaster-Carr P/N 91290A222
+M5HeadOD,mm,8.5 mm,From McMaster-Carr P/N 91290A222
+M5InsertDepth,mm,9.5 mm + 1.0 mm,For CNC Kitchen inserts
+M5InsertHoleID,mm,6.4 mm,For CNC Kitchen inserts
+M5InsertShortDepth,mm,5.8 mm + 1.0 mm,For CNC Kitchen inserts
+M5LooseClearanceHoleID,mm,5.8 mm,From Machinery's Handbook (31st Edition)
+M5NormalClearanceHoleID,mm,5.5 mm,From Machinery's Handbook (31st Edition)
+M5TapHoleID,mm,4.2 mm,From Armstrong Metalcrafts for ABP (M5 x 0.8)
+M6CloseClearanceHoleID,mm,6.4 mm,From Machinery's Handbook (31st Edition)
+M6HeadDepth,mm,6.0 mm,From McMaster-Carr P/N 91290A312
+M6HeadOD,mm,10.0 mm,From McMaster-Carr P/N 91290A312
+M6InsertDepth,mm,12.7 mm + 1.0 mm,For CNC Kitchen inserts
+M6InsertHoleID,mm,8.0 mm,For CNC Kitchen inserts
+M6LooseClearanceHoleID,mm,7 mm,From Machinery's Handbook (31st Edition)
+M6NormalClearanceHoleID,mm,6.6 mm,From Machinery's Handbook (31st Edition)
+M6TapHoleID,mm,5.0 mm,From Armstrong Metalcrafts for ABP (M6 x 1.0)
+M8CloseClearanceHoleID,mm,8.4 mm,From Machinery's Handbook (31st Edition)
+M8HeadDepth,mm,8.0 mm,From Armstrong Metalcrafts for ABP
+M8HeadOD,mm,13.0 mm,From McMaster-Carr P/N 91290A414
+M8InsertDepth,mm,12.7 mm + 1.0 mm,For CNC Kitchen inserts
+M8InsertHoleID,mm,9.7 mm,For CNC Kitchen inserts
+M8LooseClearanceHoleID,mm,10 mm,From Machinery's Handbook (31st Edition)
+M8NormalClearanceHoleID,mm,9 mm,From Machinery's Handbook (31st Edition)
+M8TapHoleID,mm,6.8 mm,From Armstrong Metalcrafts for ABP (M8 x 1.25)
+M10CloseClearanceHoleID,mm,10.5 mm,From Machinery's Handbook (31st Edition)
+M10HeadDepth,mm,10.0 mm,From McMaster-Carr P/N 91290A510
+M10HeadOD,mm,16.0 mm,From McMaster-Carr P/N 91290A510
+M10LooseClearanceHoleID,mm,12 mm,From Machinery's Handbook (31st Edition)
+M10NormalClearanceHoleID,mm,11 mm,From Machinery's Handbook (31st Edition)
+M10TapHoleID,mm,8.5 mm,From Armstrong Metalcrafts for ABP (M10 x 1.5)
+M12CloseClearanceHoleID,mm,13 mm,From Machinery's Handbook (31st Edition)
+M12HeadDepth,mm,12.0 mm,From McMaster-Carr P/N 91290A610
+M12HeadOD,mm,18.0 mm,From McMaster-Carr P/N 91290A610
+M12NormalClearanceHoleID,mm,13.5 mm,From Machinery's Handbook (31st Edition)
+M12TapHoleID,mm,10.20 mm,From Armstrong Metalcrafts for ABP (M12 x 1.75)
+M13LooseClearanceHoleID,mm,14.5 mm,From Machinery's Handbook (31st Edition)

@@ -1,0 +1,872 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="A collection fo thoughts and resources for Makers." name="description"/>
+<link href="https://lab.rebma.io/projects/LCR-meter-Kelvin-clips/" rel="canonical"/>
+<link href="../" rel="prev"/>
+<link href="../replacement-microscope-base/" rel="next"/>
+<link href="../../feed_rss_created.xml" rel="alternate" title="RSS feed" type="application/rss+xml"/>
+<link href="../../feed_rss_updated.xml" rel="alternate" title="RSS feed of updated content" type="application/rss+xml"/>
+<link href="../../assets/rebma-io-logo-black-notext.png" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.20" name="generator"/>
+<title>Adding Kelvin Clips to LCR Meter - lab.rebma.io Notebook</title>
+<link href="../../assets/stylesheets/main.66ac8b77.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../css/ansi-colours.css" rel="stylesheet"/>
+<link href="../../css/jupyter-cells.css" rel="stylesheet"/>
+<link href="../../css/pandas-dataframe.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<!-- Fathom - beautiful, simple website analytics -->
+<script data-site="XBUPTVHH" defer="" src="https://cdn.usefathom.com/script.js"></script>
+<!-- / Fathom -->
+<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+<link href="/feed_rss_updated.xml" rel="alternate" title="Subscribe to Changes" type="application/rss+xml">
+</link> <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#kelvin-clips-for-lcr-meter">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="lab.rebma.io Notebook" class="md-header__button md-logo" data-md-component="logo" href="../.." title="lab.rebma.io Notebook">
+<img alt="logo" src="../../assets/rebma-io-logo-white-notext.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            lab.rebma.io Notebook
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Adding Kelvin Clips to LCR Meter
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/rebma-io/lab" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"></path></svg>
+</div>
+<div class="md-source__repository">
+    rebma-io/lab
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+          
+  
+    
+  
+  Home
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../">
+          
+  
+    
+  
+  Projects
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../electronics/">
+          
+  
+    
+  
+  Electronics
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../mechanical/">
+          
+  
+    
+  
+  Mechanical
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../3d/">
+          
+  
+    
+  
+  3D Stuff
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../software/">
+          
+  
+    
+  
+  Software
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../organization/">
+          
+  
+    
+  
+  Organization
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tools/">
+          
+  
+    
+  
+  Tools
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../resources/">
+          
+  
+    
+  
+  Resources
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tags/">
+        
+  
+    
+  
+  Tags
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../about/">
+        
+  
+    
+  
+  About
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="lab.rebma.io Notebook" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="lab.rebma.io Notebook">
+<img alt="logo" src="../../assets/rebma-io-logo-white-notext.png"/>
+</a>
+    lab.rebma.io Notebook
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/rebma-io/lab" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"></path></svg>
+</div>
+<div class="md-source__repository">
+    rebma-io/lab
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Home
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    Projects
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../signed-GS1-data-matrix/">
+<span class="md-ellipsis">
+    Signed GS1 Data Matrix
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Adding Kelvin Clips to LCR Meter
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Adding Kelvin Clips to LCR Meter
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-kelvin-clips">
+<span class="md-ellipsis">
+      What Are Kelvin Clips?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-replacement">
+<span class="md-ellipsis">
+      The Replacement
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lcr-meter-use">
+<span class="md-ellipsis">
+      LCR Meter Use
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#smd-leads">
+<span class="md-ellipsis">
+      SMD Leads
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../replacement-microscope-base/">
+<span class="md-ellipsis">
+    Replacement Base for Video Microscope
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../decrunching-telescoping-gauges/">
+<span class="md-ellipsis">
+    Decrunching Cheap Telescoping Gauges
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../electronics/">
+<span class="md-ellipsis">
+    Electronics
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../mechanical/">
+<span class="md-ellipsis">
+    Mechanical
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../3d/">
+<span class="md-ellipsis">
+    3D Stuff
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../software/">
+<span class="md-ellipsis">
+    Software
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../organization/">
+<span class="md-ellipsis">
+    Organization
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../tools/">
+<span class="md-ellipsis">
+    Tools
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../resources/">
+<span class="md-ellipsis">
+    Resources
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tags/">
+<span class="md-ellipsis">
+    Tags
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../about/">
+<span class="md-ellipsis">
+    About
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-kelvin-clips">
+<span class="md-ellipsis">
+      What Are Kelvin Clips?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-replacement">
+<span class="md-ellipsis">
+      The Replacement
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lcr-meter-use">
+<span class="md-ellipsis">
+      LCR Meter Use
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#smd-leads">
+<span class="md-ellipsis">
+      SMD Leads
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<nav class="md-tags">
+<a class="md-tag" href="../../tags/#lcr">lcr</a>
+<a class="md-tag" href="../../tags/#measurement">measurement</a>
+<a class="md-tag" href="../../tags/#project">project</a>
+<a class="md-tag" href="../../tags/#tools">tools</a>
+</nav>
+<h1 id="kelvin-clips-for-lcr-meter">Kelvin Clips for <abbr title="Inductance, Capacitance, Resistance">LCR</abbr> Meter</h1>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Problem</td>
+<td>Absurdly short leads on <abbr title="Inductance, Capacitance, Resistance">LCR</abbr> meter</td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>Basic tools, soldering</td>
+</tr>
+<tr>
+<td>Tools</td>
+<td>Side cutters, basic tools, soldering iron</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>$40.00 <span class="twemoji" title="as of 25 June 2023"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1a6.887 6.887 0 0 0 0 9.8c2.73 2.7 7.15 2.7 9.88 0 1.36-1.35 2.04-2.92 2.04-4.9h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58a8.987 8.987 0 0 1 12.65 0L21 3v7.12M12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5Z"></path></svg></span><a href="https://www.xe.com/currencyconverter/convert/?Amount=40.0&amp;From=USD&amp;To=EUR" title="Convert to other currency"><span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M535 41c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l64 64c4.5 4.5 7 10.6 7 17s-2.5 12.5-7 17l-64 64c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l23-23-174-.2c-13.3 0-24-10.7-24-24s10.7-24 24-24h174.1L535 41zM105 377l-23 23h174c13.3 0 24 10.7 24 24s-10.7 24-24 24H81.9l23 23c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L7 441c-4.5-4.5-7-10.6-7-17s2.5-12.5 7-17l64-64c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM96 64h241.9c-3.7 7.2-5.9 15.3-5.9 24 0 28.7 23.3 52 52 52h117.4c-4 17 .6 35.5 13.8 48.8 20.3 20.3 53.2 20.3 73.5 0l19.3-19.3V384c0 35.3-28.7 64-64 64H302.1c3.7-7.2 5.9-15.3 5.9-24 0-28.7-23.3-52-52-52H138.6c4-17-.6-35.5-13.8-48.8-20.3-20.3-53.2-20.3-73.5 0L32 342.5V128c0-35.3 28.7-64 64-64zm64 64H96v64c35.3 0 64-28.7 64-64zm384 192c-35.3 0-64 28.7-64 64h64v-64zm-224 32a96 96 0 1 0 0-192 96 96 0 1 0 0 192z"></path></svg></span></a></td>
+</tr>
+</tbody>
+</table>
+<p>For a while, I've used a <a href="https://www.deree.com.tw/de-5000-lcr-meter.html">Der EE
+DE-5000</a> <abbr title="Inductance, Capacitance, Resistance">LCR</abbr> meter.
+While this is a relatively inexpensive product (typically $150 or so),
+it's well regarded and punches <em>well above its weight</em>. Comparable
+meters from other companies might cost 4-5x as much. It even has an
+optically isolated USB connection available. Anyway, it's a great meter
+(and I should write it up eventually), but it does come with the most
+laughably short measurement clips I've ever seen. It also comes with a
+pair of <abbr title="Surface Mount Device">SMD</abbr>-focused tweezers. </p>
+<p>Anyway, I decided to replace the the absurd alligator clips with some
+proper Kelvin clips. I bought some, with BNCs, online for a reasonable
+price, and then proceeded to attach them to an existing TL-21 alligator
+clip lead case. I bought a spare for this project, just in case. </p>
+<h2 id="what-are-kelvin-clips">What Are Kelvin Clips?</h2>
+<p><img align="right" alt="Wikipedia: Diagram showing force and sense
+connections" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Four-point.png" width="150"/></p>
+<p>Named after <a href="https://en.wikipedia.org/wiki/William_Thomson,_1st_Baron_Kelvin">Lord
+Kelvin</a>,
+Kelvin clips are a way to perform a four-wire measurement. In a
+four-wire measurement you have a pair of force wires (wires 1 and 4) and
+a pair of sense wires (wires 2 and 3). The force wires push some current
+across the <abbr title="Device Under Test">DUT</abbr>, while the pair of sense wires actually sense the voltage
+changes. Sometimes also called <em>remote sensing</em>, it's a way to perform a
+very accurate measurement while taking many variables of the leads
+themselves out of the calculation.  Many higher-end bench-top
+multimeters, <abbr title="Inductance, Capacitance, Resistance">LCR</abbr> meters, and similar use four-wire measurements for
+accuracy.</p>
+<p>I will note that the provided absurd alligator clips did in fact have
+4-wire connections. They were just silly. The ones I bought came with
+<abbr title="Bayonet Neill–Concelman">BNC</abbr> connections, so we'll have to remove those for this implementation,
+but they look like this:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/kelvin-clips.jpg"><img alt="New Kelvin clips" src="img/kelvin-clips.jpg"/></a></p>
+<h2 id="the-replacement">The Replacement</h2>
+<div class="admonition warning">
+<p class="admonition-title">Not Everything Was Photographed</p>
+<p> In spite of my best
+attempts, I got distracted at various points and didn't actually
+photograph everything. I'll try to walk through the steps anyway.</p>
+</div>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-1.jpg"><img align="right" alt="TL-21 box with its bottom screws being removed" src="img/project-kelvin-1.jpg" width="150"/></a></p>
+<p><strong>Step 1</strong>. Open the box. There are some self-tapping Phillips head screws
+on the back which need to be removed. You can see the absurd alligator
+clips here. At the top, there are three tabs which insert into the
+meter's slots and provide the four wire measurement as well as a "guard"
+connection. We won't be touching the gard connection in this project.</p>
+<div class="admonition note">
+<p class="admonition-title">Guard What?</p>
+<p> It always puzzled me, until I talked to a friend
+who used to work for HP Test &amp; Measurement (note, this is the real HP,
+and not whatever monstrosity now uses the name). The guard connection
+is used to help minimize noise and reduce the parasitic effects coming
+from the component being measured. This can get you much higher
+precision. I never use it.</p>
+</div>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-2.jpg"><img align="left" alt="Inside of the TL-21 showing the wires connected to the PCB" src="img/project-kelvin-2.jpg" width="150"/></a></p>
+<p><strong>Step 2</strong>. One you have the box open, you can see the internal parts.
+There's a small <abbr title="Printed Circuit Board">PCB</abbr> with with the connections from the alligator clips.
+There are 6 connections: connections 1, 2, and ground for each positive
+(+) and negative (-). The grounds are not labeled, but the others are
+labeled "-1", etc. As far as I am aware of, there's really no difference
+in most clip designs between 1 and 2, as they join together at the tip
+and are designed to be as close to identical in length as possible. This
+reduces any differences in the measurement due to length difference in
+the clips themselves. Keep note of this idea, as it's important.</p>
+<p><img align="right" alt="Screwdriver removing internal PCB screws from
+TL-21" src="img/project-kelvin-3.jpg" width="150"/></p>
+<p><strong>Step 3</strong>. Now we need to remove all the screws holding the <abbr title="Printed Circuit Board">PCB</abbr> into
+the plastic case. Like the exterior screws, these are all self-tapping
+ones. There are <em>4</em> of them, since I missed 1 the first time. For some
+reason, these are non-ferrous, and so magnetic screwdrivers won't help.
+Make sure you keep them safe because they are tiny. I use these neat
+little <a href="https://www.printables.com/model/114308-sorting-tray-with-funnel">3d printed
+trays</a>
+from @Area51. Print lots of them! </p>
+<p><img align="left" alt="PCB removed and being held. There are 6 wires
+showing." src="img/project-kelvin-4.jpg" width="150"/></p>
+<p><strong>Step 4</strong>. Once you have the <abbr title="Printed Circuit Board">PCB</abbr> out of its case, set the case to the
+side. You should take a close look at the <abbr title="Printed Circuit Board">PCB</abbr>, just to make sure you
+understand exactly how it's wired up together. I recommend taking a
+picture with your phone so you can see all the connections. We will be
+replicating these later.</p>
+<p><img align="right" alt="Flush cutters cutting a zip tie on the
+PCB" src="img/project-kelvin-5.jpg" width="150"/></p>
+<p><strong>Step 5</strong>. Now, we need to remove the little zip tie that's been
+attached through 2 small holes in the <abbr title="Printed Circuit Board">PCB</abbr>. You can use some form of
+snips, as I did in this case with a pair of flush cutters (my personal
+go-to for most any job). This little zip tie forms a <a href="https://www.essentracomponents.com/en-us/news/solutions/wire-cable/guide-to-cable-strain-relief-and-protection">strain
+relief</a>
+to reduce strain on the solder joints. We will be replicating this later.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-6.jpg"><img align="left" alt="PCB in an Omnifixo clamp" src="img/project-kelvin-6.jpg" width="150"/></a></p>
+<p><strong>Step 6</strong>. Next, we put the <abbr title="Printed Circuit Board">PCB</abbr> in some kind of holder. Here, I'm using
+my favorite, an <a href="http://omnifixo.com">Omnifixo</a>. This will hold the <abbr title="Printed Circuit Board">PCB</abbr>
+securely while we're working. While you can try and use your hands, I
+try to keep my fingers as far away from the hot tip of a soldering iron
+as I can. You should too. As you can see from the photo, the solder is
+actually on the bottom of the <abbr title="Printed Circuit Board">PCB</abbr>, so we'll need to flip it over.</p>
+<p><img align="right" alt="PCB flipped over with solder sucker in
+use" src="img/project-kelvin-7.jpg" width="150"/> </p>
+<p><strong>Step 7</strong>.  Once you flip the <abbr title="Printed Circuit Board">PCB</abbr> over, you can go to removing the
+solder. Here, I'm using a <a href="/tools/hand-tools.md#desoldering-tool-and-solder-wick">solder
+sucker</a> to
+remove the solder itself. You may need to clean up a little bit with
+solder wick when you're done. I find that pulling <em>gently</em> on the wires
+as you're heating them helps pull them out more easily. I'm not sure
+what solder was used on this <abbr title="Printed Circuit Board">PCB</abbr> originally, but it required <em>quite
+alot</em> of heat, and I had to crank my soldering iron to 400C to get
+things to come out.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-8.jpg"><img align="left" alt="PCB showing no wires remaining" src="img/project-kelvin-8.jpg" width="150"/></a> </p>
+<p><strong>Step 8</strong>. Now we have the wires and ground pulled off, we should
+inspect the <abbr title="Printed Circuit Board">PCB</abbr> to make sure there's nothing wrong. What I'm typically
+looking for is damage to the pads or traces. I was especially worried
+about it this time because of the amount of heat that was required to
+get the solder to melt and come off. Fortunately, there didn't appear to
+be any major damage to anything.</p>
+<p><img align="right" alt="Wiping the PCB with a small cotton swab containing isopropyl
+alcohol" src="img/project-kelvin-9.jpg" width="150"/></p>
+<p><strong>Step 9</strong>. After examining things, we want to clean the <abbr title="Printed Circuit Board">PCB</abbr>. I use
+<a href="/tools/consumables.md#isopropyl-alcohol-ipa"><abbr title="Isopropyl Alcohol">IPA</abbr></a> for this job, and
+give it a good scrub with a cotton swab. I want to make sure I get any
+residue off the board so that we can get a good solder joint when we put
+the new leads on. However much <abbr title="Isopropyl Alcohol">IPA</abbr> you used, use more. It's inexpensive,
+and it cleans really well, and you can <em>never</em> have too clean a surface
+on a <abbr title="Printed Circuit Board">PCB</abbr>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Missing Pictures</p>
+<p> This is where I messed up and didn't take a
+lot of pictures, so I'm going to try and just walk you through the
+steps.</p>
+</div>
+<p><strong>Step 10</strong>. Now it's time to bring in the new clips! The first step is
+to [not shown] clip the cables off. You want to do this as accurately
+and evenly as possible. I pulled them tight, and then held them while I
+cut all 4 (a pair per clip) at the same time. We want to make sure we
+pay attention to consistency with the clips. It's not as important how
+long they are, but that they're all <em>the same length</em>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-11.jpg"><img align="left" alt="Cables being held and marked against the PCB" src="img/project-kelvin-11.jpg" width="150"/></a></p>
+<p><strong>Step 11</strong>. Now that you have your cables cut-to-length, we need to
+figure out how much needs to be stripped. We want to strip the outer
+insulation back to a just ahead of the strain relief zip tie mentioned
+earlier. I found that holding them against the <abbr title="Printed Circuit Board">PCB</abbr> and marking them with
+a pen (in this case a white pen) was the most useful.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-cable.png"><img alt="Breakdown of interior of cable" src="img/project-kelvin-cable.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-12.jpg"><img align="right" alt="Cable shielding shown twisted together" src="img/project-kelvin-12.jpg" width="150"/></a></p>
+<p><strong>Step 12</strong>. Now you need to strip the cables. I use my somewhat fancy
+<a href="/tools/hand-tools.md#general-wire-strippers">Irwin automatic cable
+stripper</a>, which
+magically just do the <em>right thing</em>. You'll want to strip the outer
+insulation back to the marking. Then, take the <em>very fine</em> wire that
+makes up the outer shielding and pull it all to one side and twist it
+together as shown to the right. Be careful doing this that you get <em>all
+of the wires</em>. They tend to be very fine, and if you accidentally miss
+one you could end up shorting the shield to the conductor, which would
+result in very poor measurements, or worse. </p>
+<p><strong>Step 13</strong>. Now you need to strip the inner insulation back to expose
+the conductor. Here you only want to strip off 3-5mm of insulation. We
+want to ensure the wire is insulated as close to the final solder joint
+as possible. This will reduce the risk of any shorts and protect the
+wire over time.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-13.jpg"><img align="left" alt="Soldering iron tinning the wires" src="img/project-kelvin-13.jpg" width="150"/></a></p>
+<p><strong>Step 14</strong>. Now comes <a href="https://www.instructables.com/Strip-and-Tin-Wires-Like-a-Pro/">tinning of the
+wires</a>.
+We tin the wires to hold all the strands together and prepare them for
+soldering to the contact pad later. By doing this, we make the later
+soldering much more reliable and easier. Skipping this step just makes
+more work later.</p>
+<p>Just heat the wire up and run the solder along it. The first time will
+feel weird, but after that you'll be able to do it quite quickly.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-14.jpg"><img align="right" alt="Soldering the wires" src="img/project-kelvin-14.jpg" width="150"/></a></p>
+<p><strong>Step 15</strong>. <a href="https://www.youtube.com/watch?v=QHZR9SA5pOg">Now is the time on Sprockets were we
+solder</a>. I start on the
+inside wires (-2 and +2), and work my way out. Put a little bit of
+solder on the pad itself first, then press the wire against the pad,
+heat it, and the combination of the solder on the pad and the tinned
+wire should quickly solder together. If they don't, you might need a
+little bit more solder on the pad to start. </p>
+<p>This is where the Omnifixo (or any other "helping hands") comes into its
+own. It helps you hold the wire in the right place as you're soldering
+to ensure that you get a good contact, without risking putting your
+tender flesh close to the solder tip.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-15.jpg"><img align="left" alt="Final set of soldered wires on the PCB" src="img/project-kelvin-15.jpg" width="150"/></a></p>
+<p><strong>Step 16</strong>. Final examination. Look at all the solder joints. They
+should look reasonably shiny. If they are really rough looking, you
+should add some flux (a flux pen is great from this) and reheat them to
+let them set correctly. We don't want a <a href="https://www.wevolver.com/article/cold-solder-joint-understanding-and-prevention">cold solder
+joint</a>.
+Now is also the time where you can pull out the <abbr title="Isopropyl Alcohol">IPA</abbr> again and give the
+board a good wipe down and cleaning. We <em>especially</em> don't want any
+residual flux on something where we are hoping to make precise
+measurements. Flux has some conductance (and resistance) and will
+interfere potentially. Note, this picture was before cleaning the flux
+off the <abbr title="Printed Circuit Board">PCB</abbr>.</p>
+<p><strong>Step 17</strong>. Finally, we re-assemble it. I haven't shown these because,
+quite honestly, it's just a reverse of opening it. First, though, insert
+a plastic zip tie through the two small holes where the original one
+was. Don't tighten it just yet, just make sure it's sticking out around
+the cables. Then, insert the <abbr title="Printed Circuit Board">PCB</abbr> back into the plastic box, making sure
+to get the  Add the 4 tiny <abbr title="Printed Circuit Board">PCB</abbr> screws. Once those are tightened,
+complete the zip tie, tightening it snugly and trimming the excess.
+Finally, reattach the top to the case.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-16.jpg"><img align="right" alt='A label reading "Kelvin Clips, 8 July 2023' src="img/project-kelvin-16.jpg" width="150"/></a></p>
+<p><strong>Step 18</strong>.  Stick a label on that sucker.</p>
+<p>Seriously though, I tend to label anything like this so that I know what
+and when this was done. Especially since the box itself has a part
+number that wouldn't map correctly. </p>
+<p>That brings us to a point where we need to figure out if this thing even
+works. To do that, we're going to stick it in the meter and give it a
+try. </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-18.jpg"><img align="left" alt='Meter showing "Srt PASS"' src="img/project-kelvin-18.jpg" width="150"/></a></p>
+<p><strong>Step 19</strong>. Calibrate the clips. For my meter, this means pressing the
+CAL button for 2 seconds, then going through a calibration with the
+clips open (not connected) and then with the clips shorted (connected).
+Doing this calibrates out the wire itself so that the meter can measure
+just the <abbr title="Device Under Test">DUT</abbr>. Each of those steps takes 30 seconds, then you can use the
+meter. </p>
+<p>While you don't have to do this <em>every single time</em> you use the meter,
+it's not a bad habit to get into to do it frequently. Environmental
+influences, like temperature, can impact the readings.</p>
+<h2 id="lcr-meter-use"><abbr title="Inductance, Capacitance, Resistance">LCR</abbr> Meter Use</h2>
+<div class="admonition future">
+<p class="admonition-title">Speed Run</p>
+<p> This is just the most absolutely simplified use of
+an <abbr title="Inductance, Capacitance, Resistance">LCR</abbr> meter, and I'll be writing up a more detailed dive on what and
+how to use <abbr title="Inductance, Capacitance, Resistance">LCR</abbr> meters in the future. This is just a taste, and fits with
+some of the <a href="/electronics/fundamentals.md">fundamentals</a>.</p>
+</div>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-20.jpg"><img align="right" alt="Readings from 1kHz" src="img/project-kelvin-20.jpg" width="200"/></a></p>
+<p>So, skipping over a lot of things, one of the things an <abbr title="Inductance, Capacitance, Resistance">LCR</abbr> meter can
+tell you that a regular multimeter cannot are the characteristics of a
+capacitor beyond its basic capacitance for a DC load. An <abbr title="Inductance, Capacitance, Resistance">LCR</abbr> meter looks
+at it as a sine wave (typically), which means the measurement has a
+frequency. </p>
+<p>First, let's take a look at this little aluminum electrolytic capacitor
+at 1kHz. Here we see the capacitor shows a capacitance of 365µF.
+Above that, however, you can see a second display showing Θ
+showing that the current leads the voltage by 80.3°. This is part of
+the behavior of <a href="/electronics/fundamentals.md#impedance">impedance</a>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="img/project-kelvin-21.jpg"><img align="left" alt="Reading from 100Hz" src="img/project-kelvin-21.jpg" width="200"/></a></p>
+<p>If we now take a look at the capacitor with a 100Hz signal instead, we
+find that it has totally different values. Here, we have 385.9µF
+(about 5% more) and the current leads by 87.4° (about 9% more). </p>
+<p>This is, unfortunately, one of the areas where electronics gets
+complicated. Fortunately, for a lot of hobbyist type work, you can get
+away without the extra complexity, but I find it useful to at least
+understand what's there, and then you can <em>choose</em> to ignore it.</p>
+<h2 id="smd-leads"><abbr title="Surface Mount Device">SMD</abbr> Leads</h2>
+<p><img align="right" alt="Insides of the SMD leads showing dual traces on the
+PCB" src="img/project-kelvin-22.jpg" width="200"/></p>
+<p>Just as an aside, I thought I'd show you what the <abbr title="Surface Mount Device">SMD</abbr> leads/tweezers
+look like, and how the Kelvin arrangement is achieved. Looking at the
+inside of the probe, you can see dual wires, leading to dual traces that
+go all the way down to the metal tip where they meet. Since the metal
+tip has well-known characteristics, it can be compensated out of the
+calculations.</p>
+<p>These tweezers are designed to grab tiny little surface-mount
+inductors (L), capacitors (C), and resistors (R). That's where the name
+of the meter comes from.</p>
+<p>Neat, huh?</p>
+<div class="admonition comment">
+<p class="admonition-title">Comments or Questions?</p>
+<p> If you have any comments, questions, or
+topics you'd like to see covered, please feel free to either reach out
+to me on Mastodon (link below) or open an <a href="https://github.com/rebma-io/lab/issues/new/choose">issue on
+Github</a>. </p>
+</div>
+<aside class="md-source-file">
+<span class="md-source-file__fact">
+<span class="md-icon" title="Last update">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-02</span>
+</span>
+<span class="md-source-file__fact">
+<span class="md-icon" title="Created">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-02</span>
+</span>
+</aside>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Projects" class="md-footer__link md-footer__link--prev" href="../">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                Projects
+              </div>
+</div>
+</a>
+<a aria-label="Next: Replacement Base for Video Microscope" class="md-footer__link md-footer__link--next" href="../replacement-microscope-base/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Replacement Base for Video Microscope
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright 2024 Christopher Petrilli (CC BY-SA 4.0)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://lab.rebma.io/feed_rss_updated.xml" rel="noopener" target="_blank" title="lab.rebma.io">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2.5 12A1.5 1.5 0 0 0 6 16.5 1.5 1.5 0 0 0 7.5 18 1.5 1.5 0 0 0 9 16.5 1.5 1.5 0 0 0 7.5 15M6 10v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8m0-4v2a10 10 0 0 1 10 10h2A12 12 0 0 0 6 6Z"></path></svg>
+</a>
+<a class="md-social__link" href="https://hachyderm.io/@petrillic" rel="noopener me" target="_blank" title="hachyderm.io">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.youtube.com/channel/UCBNhr5JIXOikgY7ix8xdmSg/" rel="noopener" target="_blank" title="www.youtube.com">
+<svg viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+</a>
+<a class="md-social__link" href="https://twitter.com/petrillic" rel="noopener" target="_blank" title="twitter.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+</a>
+<a class="md-social__link" href="https://github.com/petrilli/" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://github.com/rebma-io/" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.linkedin.com/in/christopher-petrilli-ba391a7/" rel="noopener" target="_blank" title="www.linkedin.com">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "navigation.prune", "navigation.expand"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+<script src="../../js/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

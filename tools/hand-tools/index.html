@@ -1,0 +1,1515 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="A collection fo thoughts and resources for Makers." name="description"/>
+<link href="https://lab.rebma.io/tools/hand-tools/" rel="canonical"/>
+<link href="../" rel="prev"/>
+<link href="../consumables/" rel="next"/>
+<link href="../../feed_rss_created.xml" rel="alternate" title="RSS feed" type="application/rss+xml"/>
+<link href="../../feed_rss_updated.xml" rel="alternate" title="RSS feed of updated content" type="application/rss+xml"/>
+<link href="../../assets/rebma-io-logo-black-notext.png" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.20" name="generator"/>
+<title>Hand Tools - lab.rebma.io Notebook</title>
+<link href="../../assets/stylesheets/main.66ac8b77.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../css/ansi-colours.css" rel="stylesheet"/>
+<link href="../../css/jupyter-cells.css" rel="stylesheet"/>
+<link href="../../css/pandas-dataframe.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<!-- Fathom - beautiful, simple website analytics -->
+<script data-site="XBUPTVHH" defer="" src="https://cdn.usefathom.com/script.js"></script>
+<!-- / Fathom -->
+<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+<link href="/feed_rss_updated.xml" rel="alternate" title="Subscribe to Changes" type="application/rss+xml">
+</link> <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#hand-tools">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="lab.rebma.io Notebook" class="md-header__button md-logo" data-md-component="logo" href="../.." title="lab.rebma.io Notebook">
+<img alt="logo" src="../../assets/rebma-io-logo-white-notext.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            lab.rebma.io Notebook
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Hand Tools
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/rebma-io/lab" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"></path></svg>
+</div>
+<div class="md-source__repository">
+    rebma-io/lab
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+          
+  
+    
+  
+  Home
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../projects/">
+          
+  
+    
+  
+  Projects
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../electronics/">
+          
+  
+    
+  
+  Electronics
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../mechanical/">
+          
+  
+    
+  
+  Mechanical
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../3d/">
+          
+  
+    
+  
+  3D Stuff
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../software/">
+          
+  
+    
+  
+  Software
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../organization/">
+          
+  
+    
+  
+  Organization
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../">
+          
+  
+    
+  
+  Tools
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../resources/">
+          
+  
+    
+  
+  Resources
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tags/">
+        
+  
+    
+  
+  Tags
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../about/">
+        
+  
+    
+  
+  About
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="lab.rebma.io Notebook" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="lab.rebma.io Notebook">
+<img alt="logo" src="../../assets/rebma-io-logo-white-notext.png"/>
+</a>
+    lab.rebma.io Notebook
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/rebma-io/lab" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"></path></svg>
+</div>
+<div class="md-source__repository">
+    rebma-io/lab
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Home
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../projects/">
+<span class="md-ellipsis">
+    Projects
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../electronics/">
+<span class="md-ellipsis">
+    Electronics
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../mechanical/">
+<span class="md-ellipsis">
+    Mechanical
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../3d/">
+<span class="md-ellipsis">
+    3D Stuff
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../software/">
+<span class="md-ellipsis">
+    Software
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../organization/">
+<span class="md-ellipsis">
+    Organization
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    Tools
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Hand Tools
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Hand Tools
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general-guidance">
+<span class="md-ellipsis">
+      General Guidance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#soldering">
+<span class="md-ellipsis">
+      Soldering
+    </span>
+</a>
+<nav aria-label="Soldering" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#soldering-ironstation">
+<span class="md-ellipsis">
+      Soldering Iron/Station
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#desoldering-tool-and-solder-wick">
+<span class="md-ellipsis">
+      Desoldering Tool and Solder Wick
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#screwdrivers">
+<span class="md-ellipsis">
+      Screwdrivers
+    </span>
+</a>
+<nav aria-label="Screwdrivers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#normal">
+<span class="md-ellipsis">
+      Normal
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#micro">
+<span class="md-ellipsis">
+      Micro
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insulated">
+<span class="md-ellipsis">
+      Insulated
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pliers">
+<span class="md-ellipsis">
+      Pliers
+    </span>
+</a>
+<nav aria-label="Pliers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#needle-nose">
+<span class="md-ellipsis">
+      Needle Nose
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#long-nose">
+<span class="md-ellipsis">
+      Long Nose
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#combination">
+<span class="md-ellipsis">
+      Combination
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#split-ring-pliers">
+<span class="md-ellipsis">
+      Split Ring Pliers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lead-forming-tool">
+<span class="md-ellipsis">
+      Lead Forming Tool
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cutters">
+<span class="md-ellipsis">
+      Cutters
+    </span>
+</a>
+<nav aria-label="Cutters" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#side-flush-cutters-shears">
+<span class="md-ellipsis">
+      Side Flush Cutters (Shears)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagonal-cutters">
+<span class="md-ellipsis">
+      Diagonal Cutters
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tweezers">
+<span class="md-ellipsis">
+      Tweezers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#wire-strippers">
+<span class="md-ellipsis">
+      Wire Strippers
+    </span>
+</a>
+<nav aria-label="Wire Strippers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general-wire-strippers">
+<span class="md-ellipsis">
+      General Wire Strippers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#coaxial-wire-strippers">
+<span class="md-ellipsis">
+      Coaxial Wire Strippers
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#crimpers">
+<span class="md-ellipsis">
+      Crimpers
+    </span>
+</a>
+<nav aria-label="Crimpers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general">
+<span class="md-ellipsis">
+      General
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#specialized">
+<span class="md-ellipsis">
+      Specialized
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#other-tools">
+<span class="md-ellipsis">
+      Other Tools
+    </span>
+</a>
+<nav aria-label="Other Tools" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#utility-knife-box-cutter">
+<span class="md-ellipsis">
+      Utility Knife (Box Cutter)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lead-bender">
+<span class="md-ellipsis">
+      Lead Bender
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#burr-remover">
+<span class="md-ellipsis">
+      Burr Remover
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#scalpels">
+<span class="md-ellipsis">
+      Scalpels
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#brass-brush">
+<span class="md-ellipsis">
+      Brass Brush
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metal-roller">
+<span class="md-ellipsis">
+      Metal Roller
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3rd-party-resources">
+<span class="md-ellipsis">
+      3rd Party Resources
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../consumables/">
+<span class="md-ellipsis">
+    Consumables
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../3d-printed-tools/">
+<span class="md-ellipsis">
+    3D Printed Tools
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../interesting-tools/">
+<span class="md-ellipsis">
+    Interesting Tools
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../workstation/">
+<span class="md-ellipsis">
+    Workstation
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../test-and-measurement/">
+<span class="md-ellipsis">
+    Test &amp; Measurement
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../guides/">
+<span class="md-ellipsis">
+    Gadget Guides
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../resources/">
+<span class="md-ellipsis">
+    Resources
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tags/">
+<span class="md-ellipsis">
+    Tags
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../about/">
+<span class="md-ellipsis">
+    About
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general-guidance">
+<span class="md-ellipsis">
+      General Guidance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#soldering">
+<span class="md-ellipsis">
+      Soldering
+    </span>
+</a>
+<nav aria-label="Soldering" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#soldering-ironstation">
+<span class="md-ellipsis">
+      Soldering Iron/Station
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#desoldering-tool-and-solder-wick">
+<span class="md-ellipsis">
+      Desoldering Tool and Solder Wick
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#screwdrivers">
+<span class="md-ellipsis">
+      Screwdrivers
+    </span>
+</a>
+<nav aria-label="Screwdrivers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#normal">
+<span class="md-ellipsis">
+      Normal
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#micro">
+<span class="md-ellipsis">
+      Micro
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insulated">
+<span class="md-ellipsis">
+      Insulated
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pliers">
+<span class="md-ellipsis">
+      Pliers
+    </span>
+</a>
+<nav aria-label="Pliers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#needle-nose">
+<span class="md-ellipsis">
+      Needle Nose
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#long-nose">
+<span class="md-ellipsis">
+      Long Nose
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#combination">
+<span class="md-ellipsis">
+      Combination
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#split-ring-pliers">
+<span class="md-ellipsis">
+      Split Ring Pliers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lead-forming-tool">
+<span class="md-ellipsis">
+      Lead Forming Tool
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cutters">
+<span class="md-ellipsis">
+      Cutters
+    </span>
+</a>
+<nav aria-label="Cutters" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#side-flush-cutters-shears">
+<span class="md-ellipsis">
+      Side Flush Cutters (Shears)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagonal-cutters">
+<span class="md-ellipsis">
+      Diagonal Cutters
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tweezers">
+<span class="md-ellipsis">
+      Tweezers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#wire-strippers">
+<span class="md-ellipsis">
+      Wire Strippers
+    </span>
+</a>
+<nav aria-label="Wire Strippers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general-wire-strippers">
+<span class="md-ellipsis">
+      General Wire Strippers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#coaxial-wire-strippers">
+<span class="md-ellipsis">
+      Coaxial Wire Strippers
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#crimpers">
+<span class="md-ellipsis">
+      Crimpers
+    </span>
+</a>
+<nav aria-label="Crimpers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general">
+<span class="md-ellipsis">
+      General
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#specialized">
+<span class="md-ellipsis">
+      Specialized
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#other-tools">
+<span class="md-ellipsis">
+      Other Tools
+    </span>
+</a>
+<nav aria-label="Other Tools" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#utility-knife-box-cutter">
+<span class="md-ellipsis">
+      Utility Knife (Box Cutter)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lead-bender">
+<span class="md-ellipsis">
+      Lead Bender
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#burr-remover">
+<span class="md-ellipsis">
+      Burr Remover
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#scalpels">
+<span class="md-ellipsis">
+      Scalpels
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#brass-brush">
+<span class="md-ellipsis">
+      Brass Brush
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metal-roller">
+<span class="md-ellipsis">
+      Metal Roller
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3rd-party-resources">
+<span class="md-ellipsis">
+      3rd Party Resources
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<nav class="md-tags">
+<a class="md-tag" href="../../tags/#connectors">connectors</a>
+<a class="md-tag" href="../../tags/#hand-tools">hand-tools</a>
+<a class="md-tag" href="../../tags/#soldering">soldering</a>
+<a class="md-tag" href="../../tags/#tools">tools</a>
+<a class="md-tag" href="../../tags/#wire">wire</a>
+</nav>
+<h1 id="hand-tools">Hand Tools</h1>
+<!-- TODO:
+* Write up larger tools: power drill/driver, glue gun, air, dremel, tap and die sets. 
+* Xuron 475
+ -->
+<h2 id="general-guidance">General Guidance</h2>
+<p>My general guidance is that you should buy an inexpensive/cheap tool to start,
+and upgrade once you've figured out 1) whether you would use it enough; 2) what
+you value in the tool. Yes, there is often huge differences between cheap and
+expensive tools, but it may not matter for your purposes. I call this the Harbor
+Freight Rule. You don't buy a $700 Snap On bearing puller to do it once.</p>
+<p>What I've included in here are the tools that I <em>personally</em> like. Some are
+super cheap, and some aren't.</p>
+<h2 id="soldering">Soldering</h2>
+<h3 id="soldering-ironstation">Soldering Iron/Station</h3>
+<p>My soldering iron of choice is a (10 year old?) Hakko FX-888 (analog). A while
+back they converted to the <a href="https://hakkousa.com/fx-888d">FX-888D digital
+version</a>, and I'm sure it's equally good. Hakko is
+one of the big makers of soldering equipment, and their equipment is very well
+regarded. I like the FX-888 because it's small, and heats up quickly.</p>
+<p>I have a few recommendations, though, if you're considering buying a soldering
+iron/station:</p>
+<ol>
+<li>You absolutely, positively must have accurate temperature control. Super
+   cheap irons just don't have that control which can lead to poor soldering,
+   terrible user experience, and potentially damaged components.</li>
+<li>Stick to one of the well known manufacturers. There's a lot of
+   random-string-of-letters named companies on Amazon peddling knock offs, and
+   some are probably fine, and a lot are not. When I say "well known", I'd list
+   Hakko, Weller, JBC, Metcal, or Edsyn. Not only are they better made, but they
+   (and the entire ecosystem) will be supported for decades. I can easily buy
+   T18 tips for my Hakko from dozens of places.</li>
+<li>Soldering stations (meant to be in a single location) tend to be better bang
+   for buck than a soldering pen (like the well regarded
+   <a href="https://www.adafruit.com/product/4244">TS-80P</a>). All that additional
+   complexity cost money. Unless you need to be able to throw it in your
+   backpack, it's not really the best trade off.</li>
+<li>Don't overspend. Yes, get a decent brand, but you don't need a $3,000 JBC
+   workstation.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You might not need a soldering iron. There are a lot of ecosystems, like
+<a href="https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt">STEMMA
+QT</a>,
+which don't require soldering to connect things together.</p>
+</div>
+<h3 id="desoldering-tool-and-solder-wick">Desoldering Tool and Solder Wick</h3>
+<p>It doesn't matter how good you get, you'll always make mistakes. It just
+happens. Being able to clean up and correct them is critical, and there's two
+things you can use to remove solder:</p>
+<ul>
+<li>"Solder suckers". These are spring-loaded little tubes that will suck the
+  solder off the <abbr title="Printed Circuit Board">PCB</abbr> or wire. They have big brothers that use vacuum pumps to do
+  the same thing, but those are <em>very</em> expensive.</li>
+<li>Solder wick. This is basically super-fine copper braided together and then
+  with a coating of flux and other materials to help remove solder.</li>
+</ul>
+<p>Which one should you get? I would get one of each. Solder wick is cheap, but
+it's single use and a consumable. For a solder sucker, I absolutely swear by the
+original Edsyn <a href="https://www.edsyn.com/product/DHT/DS017.html">Soldapullt</a> (I
+actually have the <a href="https://www.edsyn.com/product/AS196.html">Silverstat</a> model I
+got on clearance from <a href="https://www.tequipment.net/">TEquipment</a>). </p>
+<p>For solder wick, like solder and flux, I would recommend sticking with one of
+the big names: Multicore, MG Chemicals, or Chip Quik. My luck with cheap little
+ones I've gotten off AliExpress and elsewhere is... disappointing. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Be careful when using solder wick. You are holding copper braid, and
+copper loves nothing so much as to transfer heat ... quickly. </p>
+</div>
+<h2 id="screwdrivers">Screwdrivers</h2>
+<p>You're going to need screwdrivers, either to put things together, or pull them
+apart. They're also insanely useful for a bunch of things where it might not be
+their design intent. They come in a few categories that I'll cover: normal,
+micro, and insulated. This advice is for makers, and not mechanics. I wouldn't
+necessarily always make the same choices of tools to work on a car or furnace as
+I would for smaller things.</p>
+<div class="admonition note">
+<p class="admonition-title">So Many Choice</p>
+<p> There are, quite literally, hundreds of types of screw
+heads out in the world. You can see a list of some of the most popular
+<a href="https://resources.tannerbolt.com/articles/what-type-of-screw-is-this">here</a>.</p>
+</div>
+<h3 id="normal">Normal</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-wera-screwdriver-kraftform.jpg"><img align="right" alt="Wera Kraftform screwdrivers" src="../../img/handtool-wera-screwdriver-kraftform.jpg" width="400"/></a>
+This is your run-of-the-mill everyday screwdriver. It's not unreasonable to just
+buy a random set that has a selection of both Phillips and the accursed slotted
+screwdrivers. These are a pair from the nicest ones I own.</p>
+<p>They're <a href="https://www-us.wera.de/en/great-tools/kraftform/">Wera Kraftform</a>, and
+they're my favorite because they're insanely comfortable, strong, and still
+quite light. I bought them as part of a
+<a href="https://products.wera.de/en/screwdrivers_kraftform_plus__series_300_334_sk_6.html">kit</a>
+that came with a nice little rack to hold them. There's tons of good brands you
+can buy besides Wera. A few are: Craftsman (yes, the old Sears brand), Cobolt,
+Klein, Wiha, Gearwrench, Knipex, Bosch, Swiss, and Tekton. You can find a couple
+of <a href="https://www.youtube.com/watch?v=xtZ2jh_J7XE">interesting reviews</a> <a href="https://www.youtube.com/watch?v=845HUaWYSQA">on
+Youtube</a>.</p>
+<p>Personally, I don't like the multi-tip screwdrivers for my main screwdrivers.
+That's different for the micro side of the screwdriver world. Find 2-3 of each
+type (Phillips and slotted), and that'll be fine for a long time.</p>
+<h3 id="micro">Micro</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-wiha-micro-screwdriver-set.jpg"><img align="right" alt="Wiha multi-bit precision set" src="../../img/handtool-wiha-micro-screwdriver-set.jpg" width="400"/></a></p>
+<p>Electronics are full of tiny little screws and bolts. To deal with them, you
+have a couple options. You can pick up a set of dozens and dozens of tiny
+screwdrivers (<a href="https://products.wera.de/en/screwdrivers_series_kraftform_micro_kraftform_micro_big_pack_1.html">Wera makes a lovely one, but
+pricey</a>).</p>
+<p>The other option is to pick up one of many "kits" that have a ton of bits and a
+holder or two. It might have other things with it as well. I'd say <a href="https://www.ifixit.com/Store/Tools/Pro-Tech-Toolkit/IF145-307">iFixit has
+the best value</a>
+for that. This is the one I've had for 15 years from Wiha.</p>
+<p>For most people, the multi-bit set is the way to go.</p>
+<h3 id="insulated">Insulated</h3>
+<p><img align="left" alt="Electrically insulated
+screwdrivers" src="../../img/handtool-syeeth-screwdriver-set.jpg" width="400"/>
+Insulated screwdrivers come in two forms: ones for high-voltage, and ones for
+fine adjustment of electronic components. The first, for high-voltage, are
+typically rated to 1,000V, and are heavily insulated for both the handle and the
+shaft to protect against shock from accidental contact with live circuits. They
+come in single items, but also in interchangeable sets. Sets seem to always use
+square mechanisms to join. I picked up a relatively <a href="https://www.aliexpress.us/item/3256805090334720.html">cheap set on
+AliExpress</a> a while back.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-ceramic-screwdriver.jpg"><img align="right" alt="Ceramic screwdriver" src="../../img/handtool-ceramic-screwdriver.jpg" width="400"/></a>
+Ceramic-tipped screwdrivers for adjusting sensitive electronic components such
+as capacitors and resistors. They are completely non-conductive and non-magnetic
+so there's zero risk of short-circuiting, creating magnetic interference, or
+<a href="https://en.wikipedia.org/wiki/Capacitive_coupling">capacitively coupling</a> with
+something. They also won't mar or scratch components, but they're quite brittle
+so don't use them for tightening screws. This is a super cheap one I picked up
+from Amazon (just search ceramic screwdriver):</p>
+<h2 id="pliers">Pliers</h2>
+<p>Pliers grab things. The pliers you need depends on the work you're doing, but I
+would recommend <em>at least</em> one needle nose and one long nose.</p>
+<h3 id="needle-nose">Needle Nose</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-xcelite-378m.jpg"><img align="right" alt="Xcelite 378M" src="../../img/handtool-xcelite-378m.jpg" width="400"/></a>
+I use needle nose pliers <em>constantly</em>. They're by far the workhorse of this
+category. Their small tip makes it possible to get into a lot of spaces where
+might not be able to, or even just to stick in a 3d print and pull out some
+stubborn support material. I actually have two different needle nose pliers for
+work. First is a <a href="https://www.weller-tools.com/us/en/precision-tools/products/pliers/378mn">Xcelite (now Weller)
+378M</a>
+shown here.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-xuron-450.jpg"><img align="left" alt="Xuron 450" src="../../img/handtool-xuron-450.jpg" width="400"/></a>
+And the other is a <a href="https://xuron.com/index.php/main/consumer_products/5">Xuron
+450AS</a>, which are amusingly
+called "TweezerNose", and has a <em>very fine</em> point. If this doesn't fit into the
+space, you probably shouldn't be going there. One thing that's different about
+these is that they are <abbr title="ElectroStatic Discharge">ESD</abbr>-safe (meaning they have surface resistivity on the
+handle grips). You can tell that both from the black handles (most <abbr title="ElectroStatic Discharge">ESD</abbr>-safe
+things are black) and the small logo on the handle grip.</p>
+<p>You don't need to worry about buying the <abbr title="ElectroStatic Discharge">ESD</abbr>-safe tools right now. Yes, they are
+"safer" for handling semiconductor components (passives, like resistors, are
+much more tolerant), but they are substantially more expensive, and more of a
+concern in production environments. If I recall, I got these because they were
+on sale.</p>
+<h3 id="long-nose">Long Nose</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-wiha-long-nose-32618.jpg"><img align="right" alt="Wiha 32618 long nose pliers" src="../../img/handtool-wiha-long-nose-32618.jpg" width="400"/></a></p>
+<p>Long nose pliers are the bigger cousin of the needle nose (or vice versa).
+They're designed to grip, bend, and twist wire and other small workpieces. They
+have long, tapered jaws and a wire cutter.  The ones shown here are ones that
+came in the
+<a href="https://www.wihatools.com/products/soft-grip-pliers-cutters-3-piece-set">set</a>.
+I discuss.</p>
+<h3 id="combination">Combination</h3>
+<p><img align="left" alt="Wiha 32606 combination
+pliers" src="../../img/handtool-wiha-combination-pliers-32606.jpg" width="400"/></p>
+<p>Like their name suggests, these are for a combination of uses. They're great for
+general gripping of things, and typically have a curved area for round material.
+They also have a passable cutter. Just an all-around tools.
+<a href="https://www.wihatools.com/products/soft-grip-combination-pliers-7">Mine</a> came as
+part of a
+<a href="https://www.wihatools.com/products/soft-grip-pliers-cutters-3-piece-set">set</a>.</p>
+<p>When you really need to grab hold and pull on something, these are the best
+tools (ignoring things like <a href="https://channellock.com/pliers/tongue-groove/#">channel
+locks</a>).</p>
+<h3 id="split-ring-pliers">Split Ring Pliers</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/split-ring.jpg"><img align="right" alt="Split ring" src="../../img/split-ring.jpg" width="200"/></a></p>
+<p>Sometimes you find yourself needing to open, repeatedly, one of those
+split-rings, and while you could, like I used to, use your fingernail,
+or a butter knife, or whatever else random thing you have laying around,
+like another key on your key ring, to open them, there's actually a tool
+designed specifically for this. I didn't even know this for 40 years of
+my life! My poor fingernails. </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-xuron-496.jpg"><img align="left" alt="Xuron 496 split ring pliers" src="../../img/handtool-xuron-496.jpg" width="400"/></a></p>
+<p>Behold, the savior of your fingernails! The <a href="https://xuron.com/index.php/main/consumer_products/5/48">Xuron 496 split ring
+pliers</a>. These
+little pliers with a beak fit perfectly into the split ring and open it
+so that you can easily get things on or off of it. It seems so silly to
+have a dedicated pair of pliers for this, but ... your fingernails, or
+butter knife, will thank you.  If you're curious how to use them, you
+can watch this <a href="https://www.youtube.com/watch?v=GSd79jl4fxg">little two minute video</a>.</p>
+<p>This is just one of those things that I love finding a relatively
+inexpensive tool that makes my life so much easier. Obviously, if you
+never deal with split rings, then there's no reason to buy one. I mean,
+other than you would then own a set of pliers that looked like a birds
+beak.</p>
+<h3 id="lead-forming-tool">Lead Forming Tool</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-xuron-573l.jpg"><img align="right" alt="Xuron 563L lead forming tool" src="../../img/handtool-xuron-573l.jpg" width="300"/></a></p>
+<p>These fall into a category that, quite honestly, you don't need until you do
+need them, so you can generally just skip them. I cover them here because 1)
+they're neat; 2) it's good to know they exist. Lead forming pliers is designed
+to create spacing/stand-off crimps in a wire or component lead. The ones I have
+are the <a href="https://xuron.com/index.php/main/consumer_products/7/57">Xuron 573L</a>,
+which look like the one's on the right. </p>
+<p>What makes them special is the head on them. </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-xuron-573l-closeup.jpg"><img alt="Xuron 563L close-up" src="../../img/handtool-xuron-573l-closeup.jpg"/></a></p>
+<p>As you'll see, there's actually a bunch of moving pieces. When you put a wire in
+them, and close them, you get something like this:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-xuron-573l-result.jpg"><img alt="Xuron 563L result" src="../../img/handtool-xuron-573l-result.jpg"/></a></p>
+<p>So what good is this, you might ask? It's good for creating stand-offs between a
+component and a board, for example. Or ensuring a wire can't go through a hole
+easily. As I said, you don't need them until you need them. When you do this,
+for example, to a axial electrolytic capacitor, you can get something like this:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-xuron-573l-board.jpg"><img alt="An axial electrolytic capacitor with bent leads standing off from the PCB" src="../../img/handtool-xuron-573l-board.jpg"/></a></p>
+<h2 id="cutters">Cutters</h2>
+<p>Sometimes you need to make one thing become two things, and that's where cutters
+come in. If you can have only one pair, get side flush cutters (shears).</p>
+<h3 id="side-flush-cutters-shears">Side Flush Cutters (Shears)</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-xuron-170-2.jpg"><img align="right" alt="Xuron 170-II" src="../../img/handtool-xuron-170-2.jpg" width="400"/></a>
+You <em>absolutely must own these</em>. No exceptions. They will become your favorite
+cutters, and they will be with you forever.  What's a side flush cutter? It's a
+small cutter which is designed to cut <em>flush</em> against a surface. Think trimming
+leads after soldering. But you can use it for just about any cutting needs, even
+<a href="https://www.merriam-webster.com/dictionary/hog%20out">hogging out</a> material
+from a 3D print. It's not a bad idea to have a couple sets. This the main ones I
+use, <a href="https://xuron.com/index.php/main/industrial_products/11/10">Xuron 170-II</a>
+are super sharp.</p>
+<p>You can see how flat and sharp the blade is, even after several years of use:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-xuron-170-2-closeup.jpg"><img alt="Xuron 170-II close-up" src="../../img/handtool-xuron-170-2-closeup.jpg"/></a></p>
+<p>I would pick up at least 2 of them. The big thing you can't do with them is cut
+any really thick or hardened wire. For that, you'll need diagonal cutters.</p>
+<h3 id="diagonal-cutters">Diagonal Cutters</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-wiha-diagonal-cutters-32642.jpg"><img align="left" alt="Wiha 32642 diagonal cutters" src="../../img/handtool-wiha-diagonal-cutters-32642.jpg" width="400"/></a>
+These are a super all-around cutter for just about any material. They tend to be
+hardened by the manufacturer, and can cut a lot of different materials. They
+also have a longer handle, which gives you more leverage when cutting things. I
+picked up
+<a href="https://www.wihatools.com/products/soft-grip-diagonal-cutters-6-3">mine</a>, along
+with some pliers) as part of a <a href="https://www.wihatools.com/products/soft-grip-pliers-cutters-3-piece-set">set from
+Wiha</a>.</p>
+<p>You can get something cheaper, and my recommendation would be to drop by your
+local hardware store for these and just see what feels good in your hand and to
+your wallet.</p>
+<h2 id="tweezers">Tweezers</h2>
+<p>When working with electronics, we work with a lot of small things. Small things
+need tweezers, and these are mine:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-tweezers.jpg"><img align="right" alt="Tweezers, straight, bent, and ceramic" src="../../img/handtool-tweezers.jpg" width="400"/></a></p>
+<p>From the top, you have some with bent tips for placing things like <abbr title="Surface Mount Device">SMD</abbr> parts.
+The needle sharp middle pair are great from pulling things out of connectors,
+etc. And finally, the bottom set have a ceramic tip, which means they are 100%
+non magnetic, and non-reactive. Try picking up a small magnet with normal ones.</p>
+<p>I don't recall where I got them, quite honestly, but to start, you can just pick
+up a small set of <abbr title="ElectroStatic Discharge">ESD</abbr>-safe (probably!) tweezers from your favorite retailer.
+Note the type on the handle (<abbr title="ElectroStatic Discharge">ESD</abbr>-15 and <abbr title="ElectroStatic Discharge">ESD</abbr>-16). These are somewhat standardized
+industry shapes, so you can search for those if you want something similar.</p>
+<h2 id="wire-strippers">Wire Strippers</h2>
+<p>You're going to use a lot of wire. But (most of) that wire comes with a
+nice insulator around it, and you want to keep most of it. That's where
+wire strippers come in.</p>
+<h3 id="general-wire-strippers">General Wire Strippers</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-klein-stripper-11057.jpg"><img align="left" alt="Klein 11057 wire stripper" src="../../img/handtool-klein-stripper-11057.jpg" width="400"/></a></p>
+<p>The most useful and versatile form of wire stripper is just a general purpose
+model. I like the kind with curved handles (a few companies make them) because
+it's more comfortable.  I generally would look for something that handles <abbr title="American Wire Gauge">AWG</abbr>
+20-32 wire, as that's what you'll use the most. Much bigger wire is actually
+pretty easy to strip with just a pair of cutters. </p>
+<p>Sometimes these general purpose cutters come with crimper capabilities, and
+they're probably fine for <a href="https://en.wikipedia.org/wiki/Crimp_(electrical)">standard electrical connectors (like a spade
+lug)</a>, but they'll struggle
+with anything finer or "weirder". </p>
+<p><img align="right" alt="Irwin Vise Grip self-adjusting wire
+stripper" src="../../img/handtool-visegrip-stripper.jpg" width="400"/>
+If you find yourself stripping a <em>lot</em> of wire, or need to make sure that it's
+all stripped to a pretty exact length, you can step up to one of the
+self-adjusting models, which has a little pin and plate that you can adjust to
+adjust the length of the strip. It's the yellow L shaped thing on the photo.
+These work super fast, and with one squeeze it will cut the insulation and pull
+it off.</p>
+<h3 id="coaxial-wire-strippers">Coaxial Wire Strippers</h3>
+<p><img align="left" alt="HKS coaxial stripper and crimping
+tool" src="../../img/handtool-hks-coax-ratchet-crimper.jpg" width="400"/>
+Sometimes the wire you're working with is more complicated than some copper in a
+bit of insulation. <a href="https://en.wikipedia.org/wiki/Coaxial_cable">Coaxial cable</a>
+has both a center conductor and a (typically woven) outer shield layer inside
+the jacket and separated by an insulating layer. All of that can be a bit
+complicated to deal with stripping, and I've found it nearly impossible to do it
+without a dedicated tool, at least for anything smaller than big cable TV coax.</p>
+<p>The cutter (on the right in the photo) goes over the cable, and then it rotates
+around with two sharp blades to cut the insulation to expose the shield <em>and</em>
+through the insulator to expose the core, separating the with a little bit of
+distance.</p>
+<p>The tool on the left is a coaxial crimper.</p>
+<h2 id="crimpers">Crimpers</h2>
+<p>Crimping is when you mechanically crush a piece of metal to cause it to hold
+onto a wire's conductor. While you can do it with a pair of pliers, or the ones
+on your stripper, it's not really very helpful for anything other than thick
+electrical cable. Instead, you can use a specialized tool to do this, and they
+come in a <em>lot</em> of designs. I'm just going to touch on the ones that I've found
+useful for my projects. I do seem to accumulate these more than I would like,
+however.</p>
+<h3 id="general">General</h3>
+<p>For all I have lots of other tools, I weirdly don't have a pair of just general
+purpose crimpers. I typically use either the Vise-Grip stripper's built in
+crimper functionality, or, if it's a large electrical connector, I'll use
+pliers.</p>
+<h3 id="specialized">Specialized</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-icrimp-sn-28b.jpg"><img align="right" alt="iCrimp SN-28B crimper" src="../../img/handtool-icrimp-sn-28b.jpg" width="400"/></a></p>
+<p>In addition to the coaxial one I've <a href="http://127.0.0.1:8000/tools/hand-tools/#coaxial-wire-strippers">mentioned
+earlier</a> along
+side the strippers, there are a few other specialized crimpers that I keep
+around for specific uses.</p>
+<p>The first is the <a href="https://www.icrimptools.com/products/iwiss-sn-28b-dupont-crimping-tool-for-3-96mm-2-54mm-2-5mm-pitch-dupont-jst-xh-vh-connectors-awg-18-to-28">iCrimp
+SN-28B</a>,
+which specially designed to crimp a few different types of connectors with <abbr title="American Wire Gauge">AWG</abbr>
+18-28 wire:</p>
+<ul>
+<li><a href="https://www.mattmillman.com/why-do-we-call-these-dupont-connectors/">Dupont</a></li>
+<li><a href="https://www.jst.com/products/crimp-style-connectors-wire-to-board-type/xh-connector/">JST XH</a></li>
+<li><a href="https://www.jst.com/products/crimp-style-connectors-wire-to-board-type/vh-connector/">JST VH</a></li>
+<li><a href="https://www.jst.com/products/crimp-style-connectors-wire-to-board-type/nh-connector/">JST NH</a></li>
+</ul>
+<p>JST connectors, or at least their absolute rip-offs, are all over the place in
+the industry, and Dupont connectors are also widespread. At the bottom of the
+page there's a link to a <em>very deep dive</em> into how to crimp Dupont connectors
+properly.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-icrimp-iws-3220m.jpg"><img align="right" alt="iCrimp IWS-3220M crimper" src="../../img/handtool-icrimp-iws-3220m.jpg" width="400"/></a></p>
+<p>Another specialized crimping tool that I keep around is the <a href="https://www.icrimptools.com/products/iwiss-iws-3220m-micro-connector-pin-crimping-tool-0-03-0-52mm-32-20awg-ratcheting-crimper-for-d-sub-open-barrel-suits-molex-jst-jae">iCrimp
+IWS-3220M</a>,
+which is designed for a few different smaller connectors:</p>
+<ul>
+<li><a href="https://www.molex.com/en-us/products/connectors/wire-to-board-connectors/clik-mate-connectors">Molex CLIK-Mate</a></li>
+<li><a href="https://www.molex.com/en-us/products/connectors/wire-to-board-connectors/picoblade-connectors">Molex PicoBlade</a></li>
+<li><a href="https://www.jst.com/products/crimp-style-connectors-wire-to-board-type/shd-connector/">JST SHD</a></li>
+<li><a href="https://www.jam-net.co.jp/eng/product/connector/boardtowireconnector/">JAM</a></li>
+<li><a href="https://www.te.com/usa-en/search.html?q=D-100&amp;n=42722&amp;type=products&amp;samples=N&amp;inStoreWithoutPL=false&amp;instock=N">TE Connectivity (was Tyco) D-100</a></li>
+</ul>
+<p>I think it can also work with a few others, but those are the ones they talk about.
+Quite honestly, I only use the first 3.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-ferrule-crimper.jpg"><img align="left" alt="Wire ferrule crimper" src="../../img/handtool-ferrule-crimper.jpg" width="400"/></a></p>
+<p>When working with unterminated wires, I like to use a wire ferrule on
+them. To crimp these, you use a crimper like the one shown on the right.
+This has 4 anvils in the jaws that come down and crush the ferrule <em>just
+so</em> so that it grips tightly and securely on the end of the wire. This
+is especially great for stranded wire that just loves to come unstranded
+once you have stripped it.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-idc-crimper.jpg"><img align="right" alt="Generic IDC crimper" src="../../img/handtool-idc-crimper.jpg" width="400"/></a></p>
+<p>Finally, I also have a <em>super generic</em> pair of <abbr title="Insulation-Displacement Contact">IDC</abbr> crimpers. <abbr title="Insulation-Displacement Contact">IDC</abbr>
+connectors are those ribbon cable connectors typically, like what you'd
+use to connect a floppy drive... and I've just dated myself. Anyway, you
+don't <em>really</em> need one, as they're super easy to use connectors, but
+this one came in a kit with a bunch of connectors for some suspiciously
+low cost. The connectors have been fine, and other than being absolutely
+coated in machining oil, the crimper works just fine. It really is just
+about keeping the two pieces parallel while you force them together.</p>
+<p>It's not a huge endorcement, but I've had good luck with the
+<a href="https://www.icrimptools.com/collections/cable-tools">iCrimp</a> product
+line, and they're quite reasonably priced compared. For example, <a href="https://www.digikey.com/en/products/detail/molex/0638192800/3044658">the
+official Molex
+crimper</a>
+is over $400. I'll take the cheap version, thanks.  I am also absolutely
+sure that if I were a business doing production work, I would pay for
+the "real deal" just to control quality better.</p>
+<h2 id="other-tools">Other Tools</h2>
+<p>There's a limitless array of tools out in the world, and many of them
+are valuable <em>if you have a use for them</em>. Outside of the major ones
+above, I wanted to explore a few that I've found very useful, and which
+aren't expensive.</p>
+<h3 id="utility-knife-box-cutter">Utility Knife (Box Cutter)</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-cobolt-box-cutter.jpg"><img align="right" alt="Kobalt utility knife" src="../../img/handtool-cobolt-box-cutter.jpg" width="400"/></a></p>
+<p>Sure, it has a lot of uses, but nothing can beat a box cutter for ...
+opening boxes. It's also great for cutting tape, and a myriad of other
+uses. You could get a super cheap one, but I feel like a tiny splurge
+(and I do mean tiny, as this one was about <a href="https://www.lowes.com/pd/Kobalt-Retractable-Utility-Knife/5001727609">$6
+<abbr title="US Dollar Currency">USD</abbr></a>)
+is worthwhile to get a meatier grip and storage of extra blades inside
+the handle. </p>
+<h3 id="lead-bender">Lead Bender</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-lead-bending-jig.jpg"><img align="right" alt="Lead bending jig by Timot" src="../../img/handtool-lead-bending-jig.jpg" width="150"/></a></p>
+<p>When dealing with <abbr title="Through Hole Technology">THT</abbr> components, and especially resistors and diodes, you
+typically need to bend the leads of the component 90 degrees to insert
+into a <abbr title="Printed Circuit Board">PCB</abbr>. One fo way to do it is to use a pair of needle nose pliers
+to bend them. A better way to do it is to use a little jig that can
+build them properly. I really like <a href="https://www.printables.com/model/275510-resistor-lead-forming-tool-component-bender-plieur">this 3d printed
+version</a>,
+as it's flexible, stiff, and cheap to print.</p>
+<p>Just put your resistor, or whatever, on it, and push the leads down. It
+will ensure you keep some clearance between the body of the component
+and the bend.</p>
+<h3 id="burr-remover">Burr Remover</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/metal-hole-burr-closeup.jpg"><img align="right" alt="Closeup of a metal burr on a hole" src="../../img/metal-hole-burr-closeup.jpg" width="250"/></a></p>
+<p>Whenever you're 3D printing or even just cutting something, you often
+get some rough edges that need to be cleaned up. One option you could
+use is to just use a utility knife and remove them. The better choice is
+to take a page from the machinist's world, and use a dedicated burr
+removal tool. I got <a href="https://afatooling.com/collections/deburring-tools/products/afa-tooling-deburring-tool-with-a-blade-10-high-speed-steel-rotary-burr-removal-blades">this one from
+AFA</a>,
+which came with 10 extra blades (I did buy it from Amazon though). </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-burr-remover.jpg"><img align="left" alt="Burr remover" src="../../img/handtool-burr-remover.jpg" width="300"/></a></p>
+<p>From my experience, the blades themselves are a widely standardized
+design, and come in a <em>lot</em> of shapes. If you want to splurge, you can
+buy one from <a href="https://www.noga.com/">Noga</a>, but you'll find a good
+description of various designs and their uses.  </p>
+<p>They also come in a wide range of materials depending on what you're
+deburring. Regardless, it's a worthwhile investment.</p>
+<div class="admonition warning">
+<p class="admonition-title">Sharp Blades are Sharp</p>
+<p> It should go without saying that the
+blades on things like the utility knife, burr remover, and scalpels are
+<em>very sharp</em>. That's their purpose. Be careful when you're using them,
+and if you're having to cut close to your fingers, I would strongly
+recommend a <a href="https://www.safeopedia.com/cut-resistant-gloves-a-guide-to-cut-resistance-levels/2/6950">cut-resistant
+glove</a>
+to keep the flesh where it belongs.</p>
+</div>
+<h3 id="scalpels">Scalpels</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-scalpel.jpg"><img align="left" alt="Scalpel" src="../../img/handtool-scalpel.jpg" width="400"/></a></p>
+<p>While people think of scalpels in the context of medical use, they're
+actually just precision cutting instruments that are widely useful
+everywhere. When a utility knife is too large, you want something
+precise and small. I picked these up from
+<a href="https://www.digikey.com/en/products/filter/knives-cutting-tools/242?s=N4IgjCBcpgnAHLKoDGUBmBDANgZwKYA0IA9lANogAMIAugL7EC0E0IakWeRpFIATFTAAWOoxBMkbDgBcATgFceZSJQgN69IA">Digikey</a>
+for around $1 <abbr title="US Dollar Currency">USD</abbr> each. They're very sharp, and come in a ton of
+different blade designs. I've picked up a few, but haven't settled on
+which ones I like for which purpose. At the price, it's not a big
+investment to try them out.</p>
+<h3 id="brass-brush">Brass Brush</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-brass-brush.jpg"><img align="right" alt="Brass brush" src="../../img/handtool-brass-brush.jpg" width="400"/></a></p>
+<p>Brass brushes are quite soft compared to any other metal brush, and
+because of that they're really good for removing little bits of rust or
+contamination. They'll even remove small burrs in many cases. The brass
+is soft enough not to typically leave any marks behind when you use it.</p>
+<h3 id="metal-roller">Metal Roller</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/handtool-roller.jpg"><img align="left" alt="Metal roller" src="../../img/handtool-roller.jpg" width="400"/></a></p>
+<p>Let's say you're using one of those <a href="../../mechanical/materials/">super fun
+materials</a>, like <abbr title="Ultra-High Molecular Weight polyethylene">UHMW</abbr> tape. One of the
+things you need to do is ensure that it's applied strongly and smoothly
+to a surface. The best way I've found to do this is to clean the
+surface, using something like <abbr title="Isopropyl Alcohol">IPA</abbr>, and then after carefully applying the
+tape, use a metal roller to apply uniform and consistent pressure across
+the surface.  I know this seems overly persnickety, but I've had things
+start to peel up when they've not been initially applied correctly.  By
+rolling over the tape a few times, you can ensure a good adhesion. </p>
+<p>They are also very useful when you have anything with a tight seam that
+you want to ensure have a very smooth seam. In fact, they are often sold
+under of a "wallpaper seam roller", which is one of their main uses. </p>
+<p>The ones pictured I acquired from <a href="https://www.amazon.com/dp/B08696ZRKF">some random
+bookseller</a> for about $12 <abbr title="US Dollar Currency">USD</abbr> but
+you can find them in a lot of places.</p>
+<h2 id="3rd-party-resources">3rd Party Resources</h2>
+<ul>
+<li><a href="https://www.mattmillman.com/info/crimpconnectors/dupont-and-dupont-connectors/">DuPont and "DuPont" connectors, and how to crimp them
+  properly</a></li>
+<li><a href="https://www.machinemfg.com/deburring-remove-metal-burrs/?expand_article=1">What is metal
+  burrs?</a> </li>
+</ul>
+<div class="admonition comment">
+<p class="admonition-title">Comments or Questions?</p>
+<p> If you have any comments, questions, or
+topics you'd like to see covered, please feel free to either reach out
+to me on Mastodon (link below) or open an <a href="https://github.com/rebma-io/lab/issues/new/choose">issue on
+Github</a>. </p>
+</div>
+<aside class="md-source-file">
+<span class="md-source-file__fact">
+<span class="md-icon" title="Last update">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-02</span>
+</span>
+<span class="md-source-file__fact">
+<span class="md-icon" title="Created">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-02</span>
+</span>
+</aside>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Tooling" class="md-footer__link md-footer__link--prev" href="../">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                Tooling
+              </div>
+</div>
+</a>
+<a aria-label="Next: Consumables" class="md-footer__link md-footer__link--next" href="../consumables/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Consumables
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright 2024 Christopher Petrilli (CC BY-SA 4.0)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://lab.rebma.io/feed_rss_updated.xml" rel="noopener" target="_blank" title="lab.rebma.io">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2.5 12A1.5 1.5 0 0 0 6 16.5 1.5 1.5 0 0 0 7.5 18 1.5 1.5 0 0 0 9 16.5 1.5 1.5 0 0 0 7.5 15M6 10v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8m0-4v2a10 10 0 0 1 10 10h2A12 12 0 0 0 6 6Z"></path></svg>
+</a>
+<a class="md-social__link" href="https://hachyderm.io/@petrillic" rel="noopener me" target="_blank" title="hachyderm.io">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.youtube.com/channel/UCBNhr5JIXOikgY7ix8xdmSg/" rel="noopener" target="_blank" title="www.youtube.com">
+<svg viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+</a>
+<a class="md-social__link" href="https://twitter.com/petrillic" rel="noopener" target="_blank" title="twitter.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+</a>
+<a class="md-social__link" href="https://github.com/petrilli/" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://github.com/rebma-io/" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.linkedin.com/in/christopher-petrilli-ba391a7/" rel="noopener" target="_blank" title="www.linkedin.com">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "navigation.prune", "navigation.expand"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+<script src="../../js/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

@@ -1,0 +1,1377 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="A collection fo thoughts and resources for Makers." name="description"/>
+<link href="https://lab.rebma.io/electronics/data-sheets/" rel="canonical"/>
+<link href="../protecting-circuits/" rel="prev"/>
+<link href="../soldering/" rel="next"/>
+<link href="../../feed_rss_created.xml" rel="alternate" title="RSS feed" type="application/rss+xml"/>
+<link href="../../feed_rss_updated.xml" rel="alternate" title="RSS feed of updated content" type="application/rss+xml"/>
+<link href="../../assets/rebma-io-logo-black-notext.png" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.20" name="generator"/>
+<title>Data Sheets - lab.rebma.io Notebook</title>
+<link href="../../assets/stylesheets/main.66ac8b77.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../css/ansi-colours.css" rel="stylesheet"/>
+<link href="../../css/jupyter-cells.css" rel="stylesheet"/>
+<link href="../../css/pandas-dataframe.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<!-- Fathom - beautiful, simple website analytics -->
+<script data-site="XBUPTVHH" defer="" src="https://cdn.usefathom.com/script.js"></script>
+<!-- / Fathom -->
+<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+<link href="/feed_rss_updated.xml" rel="alternate" title="Subscribe to Changes" type="application/rss+xml">
+</link> <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#data-sheets">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="lab.rebma.io Notebook" class="md-header__button md-logo" data-md-component="logo" href="../.." title="lab.rebma.io Notebook">
+<img alt="logo" src="../../assets/rebma-io-logo-white-notext.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            lab.rebma.io Notebook
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Data Sheets
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/rebma-io/lab" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"></path></svg>
+</div>
+<div class="md-source__repository">
+    rebma-io/lab
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+          
+  
+    
+  
+  Home
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../projects/">
+          
+  
+    
+  
+  Projects
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../">
+          
+  
+    
+  
+  Electronics
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../mechanical/">
+          
+  
+    
+  
+  Mechanical
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../3d/">
+          
+  
+    
+  
+  3D Stuff
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../software/">
+          
+  
+    
+  
+  Software
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../organization/">
+          
+  
+    
+  
+  Organization
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tools/">
+          
+  
+    
+  
+  Tools
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../resources/">
+          
+  
+    
+  
+  Resources
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tags/">
+        
+  
+    
+  
+  Tags
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../about/">
+        
+  
+    
+  
+  About
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="lab.rebma.io Notebook" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="lab.rebma.io Notebook">
+<img alt="logo" src="../../assets/rebma-io-logo-white-notext.png"/>
+</a>
+    lab.rebma.io Notebook
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/rebma-io/lab" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"></path></svg>
+</div>
+<div class="md-source__repository">
+    rebma-io/lab
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Home
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../projects/">
+<span class="md-ellipsis">
+    Projects
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    Electronics
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Electronics
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fundamentals/">
+<span class="md-ellipsis">
+    Fundamentals
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../reference-designators/">
+<span class="md-ellipsis">
+    Reference Designators
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../units-of-measure/">
+<span class="md-ellipsis">
+    Units of Measure
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../non-intuitive-topics/">
+<span class="md-ellipsis">
+    Non-Intuitive Topics
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../logic-levels/">
+<span class="md-ellipsis">
+    Logic Levels and Families
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../protecting-circuits/">
+<span class="md-ellipsis">
+    Protecting Circuits
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Data Sheets
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Data Sheets
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-a-data-sheet">
+<span class="md-ellipsis">
+      What is a Data Sheet
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#where-to-find-them">
+<span class="md-ellipsis">
+      Where to Find Them
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-to-read-them">
+<span class="md-ellipsis">
+      How to Read Them
+    </span>
+</a>
+<nav aria-label="How to Read Them" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#header">
+<span class="md-ellipsis">
+      Header
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#applications">
+<span class="md-ellipsis">
+      Applications
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#description">
+<span class="md-ellipsis">
+      Description
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#part-number-device-information">
+<span class="md-ellipsis">
+      Part Number &amp; Device Information
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#revision-history">
+<span class="md-ellipsis">
+      Revision History
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#device-comparison-table">
+<span class="md-ellipsis">
+      Device (Comparison) Table
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pin-configurations-and-functions">
+<span class="md-ellipsis">
+      Pin Configurations and Functions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#specifications">
+<span class="md-ellipsis">
+      Specifications
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#detailed-description">
+<span class="md-ellipsis">
+      Detailed Description
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#applications-and-implementation">
+<span class="md-ellipsis">
+      Applications and Implementation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recommendations">
+<span class="md-ellipsis">
+      Recommendations
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#layout">
+<span class="md-ellipsis">
+      Layout
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#device-and-documentation-support">
+<span class="md-ellipsis">
+      Device and Documentation Support
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mechanical-packaging-and-orderable-information">
+<span class="md-ellipsis">
+      Mechanical, Packaging, and Orderable Information
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#other-sections">
+<span class="md-ellipsis">
+      Other Sections
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#in-summary">
+<span class="md-ellipsis">
+      In Summary
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-to-do-if-you-cant-find-one">
+<span class="md-ellipsis">
+      What to do if You Can't Find One
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../soldering/">
+<span class="md-ellipsis">
+    Techniques
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../passives/">
+<span class="md-ellipsis">
+    Passive Components
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../leds/">
+<span class="md-ellipsis">
+    Active Components
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../filters/">
+<span class="md-ellipsis">
+    Circuit Patterns
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../pcb/design/">
+<span class="md-ellipsis">
+    PCB
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../connectors/standard-pmod/">
+<span class="md-ellipsis">
+    Connectors
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fusion360/">
+<span class="md-ellipsis">
+    Fusion 360 for Electronics
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../interesting-parts/">
+<span class="md-ellipsis">
+    Interesting Parts
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../random-tips-and-tricks/">
+<span class="md-ellipsis">
+    Random Tips &amp; Tricks
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../manufacturers/">
+<span class="md-ellipsis">
+    Manufacturers
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../suppliers/">
+<span class="md-ellipsis">
+    Suppliers
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../mechanical/">
+<span class="md-ellipsis">
+    Mechanical
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../3d/">
+<span class="md-ellipsis">
+    3D Stuff
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../software/">
+<span class="md-ellipsis">
+    Software
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../organization/">
+<span class="md-ellipsis">
+    Organization
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../tools/">
+<span class="md-ellipsis">
+    Tools
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../resources/">
+<span class="md-ellipsis">
+    Resources
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tags/">
+<span class="md-ellipsis">
+    Tags
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../about/">
+<span class="md-ellipsis">
+    About
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-a-data-sheet">
+<span class="md-ellipsis">
+      What is a Data Sheet
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#where-to-find-them">
+<span class="md-ellipsis">
+      Where to Find Them
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-to-read-them">
+<span class="md-ellipsis">
+      How to Read Them
+    </span>
+</a>
+<nav aria-label="How to Read Them" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#header">
+<span class="md-ellipsis">
+      Header
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#applications">
+<span class="md-ellipsis">
+      Applications
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#description">
+<span class="md-ellipsis">
+      Description
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#part-number-device-information">
+<span class="md-ellipsis">
+      Part Number &amp; Device Information
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#revision-history">
+<span class="md-ellipsis">
+      Revision History
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#device-comparison-table">
+<span class="md-ellipsis">
+      Device (Comparison) Table
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pin-configurations-and-functions">
+<span class="md-ellipsis">
+      Pin Configurations and Functions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#specifications">
+<span class="md-ellipsis">
+      Specifications
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#detailed-description">
+<span class="md-ellipsis">
+      Detailed Description
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#applications-and-implementation">
+<span class="md-ellipsis">
+      Applications and Implementation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recommendations">
+<span class="md-ellipsis">
+      Recommendations
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#layout">
+<span class="md-ellipsis">
+      Layout
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#device-and-documentation-support">
+<span class="md-ellipsis">
+      Device and Documentation Support
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mechanical-packaging-and-orderable-information">
+<span class="md-ellipsis">
+      Mechanical, Packaging, and Orderable Information
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#other-sections">
+<span class="md-ellipsis">
+      Other Sections
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#in-summary">
+<span class="md-ellipsis">
+      In Summary
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-to-do-if-you-cant-find-one">
+<span class="md-ellipsis">
+      What to do if You Can't Find One
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="data-sheets">Data Sheets</h1>
+<div class="admonition note">
+<p class="admonition-title">Math Ahead</p>
+<p> There's some math ahead. It's not math for data
+sheets, but specifically math for regulators. You should be able to
+follow along as I've tried to be as explicit as possible along the way.</p>
+</div>
+<h2 id="what-is-a-data-sheet">What is a Data Sheet</h2>
+<p>A data sheet is a document that the manufacturer of an electronic
+component, whether it be a simple passive (e.g., resistor, capacitor,
+inductor), or something active like a semiconductor, puts all the
+details of the behavior of the component and how to use it properly.
+Obviously the data sheet for a complicated micro-controller will be much
+larger than the one for a capacitor, but they are, typically, organized
+in similar ways.</p>
+<div class="admonition note">
+<p class="admonition-title">Parts and Jellybeans</p>
+<p> For the purpose of this, we're going to
+go through a semi-complicated device, specifically a <a href="https://www.ti.com/product/LM317">LM317 linear
+voltage regulator</a> from Texas
+Instruments. </p>
+<p>One thing to note about a part like this is that it is often called a
+"jellybean part". A jellybean part is a part that is common,
+standardized, and effectively universally interchangeable from
+manufacturer to manufacturer. In fact, if we <a href="https://www.digikey.com/en/products/filter/voltage-regulators-linear/699?s=N4IgjCBcpgnAHLKoDGUBmBDANgZwKYA0IA9lANogAMIAugL7EC0S0IakALgE4CuRpCuDqMQTAEzJ2UHv2JlIlAKwjRkxSGwBbAMxgA7CKA">check
+Digikey</a>,
+they have 66 different LM317 products from 4 different manufacturers.
+For most applications, any one of these would be just fine. I have
+chosen the TI product because, to me, they're one of the "reference
+manufacturers". This means they are consistent, well know, and
+typically the originator of many parts.</p>
+</div>
+<h2 id="where-to-find-them">Where to Find Them</h2>
+<p>The two best places to find a data sheet are either from the
+manufacturer themselves (every manufacturer has a decent web presence at
+this point), or from the distributor. The link above is from TI's
+website directly. In addition, every major
+<a href="../suppliers/#ics-passives-etc">supplier</a> will typically have links to
+the data sheet for the parts they carry. For example, if you go to the
+<a href="https://www.digikey.com/en/products/detail/texas-instruments/LM317LCLPR/668552">Digikey page for the
+LM317LCLPR</a>
+(more on those weird letters later), they have a link to the data sheet
+for that exact part.</p>
+<p>Lastly, you can always just search "LM317 data sheet" on your favorite
+search engine, and you'll typically get the right thing. This can be
+especially helpful when you're buying random parts from eBay,
+AliExpress, or other less official distributors.
+<a href="https://octopart.com">Octopart</a> also is a good way to find them, as
+they'll typically have a link.</p>
+<h2 id="how-to-read-them">How to Read Them</h2>
+<p>If you download the <a href="https://www.ti.com/lit/ds/symlink/lm317.pdf">LM317</a>
+(PDF) data sheet, you can follow along. We will start with the top-level
+sections and go into them each in turn. Along the way, we'll discuss
+some aspects of linear regulators to be aware of in this context.</p>
+<h3 id="header">Header</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/datasheet-lm317-header.png"><img align="right" alt="TI LM317 header, upper right" src="../../img/datasheet-lm317-header.png" width="300"/></a></p>
+<p>In the header, the manufacturer provides information like the official
+part number and name, as well as (typically) the first release date
+and the latest revision date of the data sheet. In this one, we can see
+it was first released in September of 1997 and updated in April of 2020.
+It's actually not that unusual to find data sheets where the part was
+released 30+ years ago.</p>
+<h3 id="features">Features</h3>
+<p>The features provide a <em>device-specific</em> overview of the
+things most people will care about when selecting the device. Does it
+have any unique characteristics? </p>
+<blockquote>
+<ul>
+<li>Output voltage range adjustable from 1.25 V to 37 V</li>
+<li>Output current greater than 1.5 A</li>
+<li>Internal short-circuit current limiting</li>
+<li>Thermal overload protection</li>
+<li>Output safe-area compensation</li>
+</ul>
+</blockquote>
+<p>From this data sheet, we can see that it has an adjustable output range
+from 1.25 to 37V, and can deliver <em>at least</em> 1.5A, and it has multiple
+internal safety mechanisms. </p>
+<h3 id="applications">Applications</h3>
+<p>Recommendation applications, but not necessarily all of the
+applications. In many ways, this is just marketing; but, if it talks
+about "military" or "aerospace", you at least know you've got your hands
+on a very expensive part, and you might want to look elsewhere. This
+<em>can</em> read like a laundry list with some vendors, but it can also be a
+neat set of ideas that you might not have thought of.</p>
+<h3 id="description">Description</h3>
+<p>A prosaic overview of what the device is. For this device, we get:</p>
+<blockquote>
+<p>The LM317 device is an adjustable three-terminal positive-voltage
+regulator capable of supplying more than 1.5 A over an output-voltage
+range of 1.25 V to 37 V. It requires only two external resistors to
+set the output voltage. The device features a typical line regulation
+of 0.01% and typical load regulation of 0.1%. It includes current
+limiting, thermal overload protection, and safe operating area
+protection. Overload protection remains functional even if the ADJUST
+terminal is disconnected.</p>
+</blockquote>
+<p>There's a few things here that aren't in the <em>Features</em> section. For
+example, we now know we'll need two resistors to set the output voltage,
+and that it has line and load regulation tolerance of 0.1%. <em>Line
+regulation</em> is the ability of the device to maintain a constant output
+voltage even with a varying input voltage. For example, the device
+should deliver 3.3V whether it's being driven with 4V or 12V. <em>Load
+regulation</em> is closely related, but it is the ability to maintain a
+constant voltage when the <em>load</em> (think amps) is varying. </p>
+<p>There's also a little detail about how the protection works. The three
+types of protection this device includes are:</p>
+<ul>
+<li><em>Current limiting</em>. This means the device will limit the amount of
+  current that it delivers to ensure safety under all circumstances. For
+  example, if you were to short the device, it will ensure it behaves
+  properly. </li>
+<li><em>Thermal overload protection</em>. The device will have protections to
+  ensure that if it gets too hot, it will shut itself off to keep from
+  having permanent damage. This is typically anything far outside the
+  <em>recommended operating temperature</em>.</li>
+<li><em>Safe operating area</em>. Safe operating area (SOA) is something unique
+  to power devices (think transistors of many types). It is the
+  current and voltage conditions where it can be expected to operate
+  without damage. </li>
+</ul>
+<p>A quick read of this section is going to tell you whether this part is
+likely to work for your application or not.</p>
+<h3 id="part-number-device-information">Part Number &amp; Device Information</h3>
+<p><img align="left" alt="LM317 device and part
+information" src="../../img/datasheet-lm317-device-information.png" width="400"/></p>
+<p>A listing of all the variations of the part that the company produces.
+These may differ in specification, packaging, or both. It may not be
+exhaustive, but is typically the "main" versions. Some data sheets will
+have this on the front page or two, and others will have it near the
+end. Earlier, I said we'd come to the weird string of letters at the end
+of the "LM317". This is where you might find the details.</p>
+<p>From this, we can see that the part comes in 3 different packages:
+TO-220 (3 pins), TO-263 (3 pins), SOT-223 (4 pins). In this case, the TO
+stands for "Transistor Outline", and the TO-220 package is a
+through-hole (<abbr title="Through Hole Technology">THT</abbr>) package, while the TO-263 is surface mount (<abbr title="Surface Mount Device">SMD</abbr>). The
+SOT-223 is just a "Small Outline Transistor" package, which is another
+(even smaller) <abbr title="Surface Mount Device">SMD</abbr> package.</p>
+<p>You can see the various sizes in this chart as well.</p>
+<h3 id="revision-history">Revision History</h3>
+<p>A list of all the changes to the data sheet. Typically, these are just
+clarifications, although occasionally some vendors will sneak in an
+important change to the characteristics or behavior of the component in
+a revision to the data sheet. <em>This is evil</em>.</p>
+<h3 id="device-comparison-table">Device (Comparison) Table</h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/datasheet-lm317-comparison-table.png"><img alt="LM317 device comparison table" src="../../img/datasheet-lm317-comparison-table.png"/></a></p>
+<p>Here we can find information on all the variations on the part from a
+specification perspective, along with the critical characteristics for
+those variations. A few notes about this one.</p>
+<p>First, you can see it's grouped into 3 groups along the I<sub>out</sub>
+dimensions. This is the maximum current that the device can produce
+safely. For example, the LM317M is only designed for 0.5A. </p>
+<div class="admonition note">
+<p class="admonition-title">Tolerance</p>
+<p> I'm going to talk about tolerance here, and, in the
+future, will discuss it in more detail because it's something that often
+trips up engineers. One thing, especially, to be aware of is <a href="https://www.fastradius.com/resources/tolerance-stacking-101/">tolerance
+stacking</a>.
+Although this discusses it in a different context, the idea is similar.</p>
+</div>
+<p>If we take the 1.5A primary parts, we can see a few things that differ.
+First, regulation accuracy differs. Earlier, I mentioned line and load
+regulation tolerance of 0.1%, so why does this say 1-1.5%? Well, the
+tolerance is about how the regulated output behaves under different
+input voltages and output loads. The regulation accuracy is how close to
+whatever you've set it to (let's say 3.3V) it actually hits. For 1.5%,
+this means 3.3V ±0.0495, or a value between 3.2505 and 3.3495. Good
+enough for nearly every use case.</p>
+<p>We can also see that some devices have a wider operating temperature
+range than others, and you can just assume those will cost you
+(sometimes substantially) more. Another dimension discussed here is <abbr title="Power Supply Rejection Ratio">PSRR</abbr>
+(at 120Hz). This is the power supply rejection ratio, and is nearly
+always specified in <a href="../units-of-measure/">decibels</a>. Simplified, this is
+the ability of the device to reduce input supply noise in its output.
+Noise can be thought of as just the variations in the input supply. For
+example, in poorly isolated circuits, you can get <a href="https://en.wikipedia.org/wiki/Utility_frequency">mains
+frequency</a> showing up
+in the DC side of the circuit.</p>
+<p>Finally, there are several lines (per package) that mention <span class="arithmatex">\(T_{JA}\)</span>,
+which is often written as <span class="arithmatex">\(\theta_{JA}\)</span>. Either way, this is the
+<em>thermal resistance</em> between the junction of the transistor and ambient
+temperature. Where does this come in? Mostly if you want to calculate
+the allowed power dissipation (<span class="arithmatex">\(P_{D(max)}\)</span>), where you use this
+equation: </p>
+<div class="arithmatex">\[P_{D(max)} = {{T_{J(max)} -T_A}\over{\theta_{JA}}}\]</div>
+<p>Where <span class="arithmatex">\(T_{J(max)}\)</span> is the maximum junction temperature, $T_A% is the
+ambient temperature the device is operating in, and we take
+<span class="arithmatex">\(\theta_{JA}\)</span> from before. </p>
+<p>But honestly, you don't need to worry about this most of the time. Just
+stay within the operating temperature of the device, and you'll be fine
+(enough). </p>
+<h3 id="pin-configurations-and-functions">Pin Configurations and Functions</h3>
+<p><img align="right" alt="LM317 pin
+configuration" src="../../img/datasheet-lm317-packaging-and-pins.png" width="400"/></p>
+<p>For every packaging option, there <em>should</em> be a diagram showing the
+package, and the pin assignment. These often change package to package,
+so pay attention. Below this, we can find a table showing 1) whether
+this is an input or output pin, and 2) a description of it. So we can
+see the supply (input) is on pin 3, the output is on pin 2, and pin 1
+has the resistor divider network to set the output voltage.</p>
+<h3 id="specifications">Specifications</h3>
+<p><img align="left" alt="LM317 load regulation graph at -40, 25, and
+125C" src="../../img/datasheet-lm317-load-regulation.png" width="400"/></p>
+<p>In this section we can find, typically, very detailed technical
+information about the component. For example, the <span class="arithmatex">\(T_{J(max)}\)</span> mentioned
+earlier, various <abbr title="ElectroStatic Discharge">ESD</abbr> ratings, and lots of thermal information.  The one
+thing to take from this section for the LM317 is the <span class="arithmatex">\(V_I - V_O\)</span> delta,
+which must be between 3 and 40V. This means, to get a 3.3V output, you
+need to feed it <em>at least</em> 6.3V in.</p>
+<p>Finally, you'll also find in-depth electrical characteristics about the
+component. More about the line and load regulation discussed earlier, as
+well as various power quality specifications. When dealing with the
+better manufacturers, these will typically include graphs of important
+characteristics, such as the load regulation shown here. This shows the
+output voltage (10V nominal) at certain output current loads at -40, 25,
+and 125C.</p>
+<h3 id="detailed-description">Detailed Description</h3>
+<p>Here we find a lot of useful information. We also find out a few details:</p>
+<ul>
+<li>Connecting a fixed (single) resistor between the output and adjust
+  terminals, we can convert the regulator into a <em>current regulator</em>.</li>
+<li>An output capacitor (between output and ground) is recommended to
+  improve transient response. Basically, the (bypass) capacitor acts as
+  a tiny battery for sudden surges in output. </li>
+<li>The adjust terminal can be bypassed (capacitor) to achieve very high
+  ripple-rejection ratios. Ripple rejection is the ability of an
+  amplifier to maintain accurate output voltage despite AC fluctuations
+  in the power supply.</li>
+</ul>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/datasheet-lm317-block-diagram.png"><img align="right" alt="LM317 functional block diagram" src="../../img/datasheet-lm317-block-diagram.png" width="400"/></a></p>
+<p>We also get a functional block diagram. This isn't how the device is
+actually built, but is often the idealized version of it. What it will
+show you, though is what the main pieces inside the component are. Here
+we can see that it consists of a current source, an operational
+amplifier (opamp), a
+<a href="https://en.wikipedia.org/wiki/Darlington_transistor">Darlington</a> (NPN)
+transistor, a resistor, and a <a href="https://en.wikipedia.org/wiki/Zener_diode">Zener
+diode</a>. Examining this will
+give us a good understanding of how to use the component properly, but
+also how all the pieces fit together.</p>
+<p>We also discover a few different operating modes of the device,
+specifically how it behaves in normal, low voltage, and low (current)
+load. </p>
+<h3 id="applications-and-implementation">Applications and Implementation</h3>
+<p>Here's where we find the real meat of how to work with the component.
+The first is the <em>typical application</em>. You should think of this as the
+manufacturers strongly worded recommendation on how to use the
+component. <em>Ingenium cave.</em></p>
+<p><img alt="LM317 typical application
+schematic" src="../../img/datasheet-lm317-typical-application.png"/></p>
+<p>In this situation, we have both a schematic and a series of
+recommendations: </p>
+<blockquote>
+<ul>
+<li>R1 and R2 are required to set the output voltage.</li>
+<li><span class="arithmatex">\(C_{ADJ}\)</span> is recommended to improve ripple rejection. It prevents
+  amplification of the ripple as the output voltage is adjusted
+  higher.</li>
+<li><span class="arithmatex">\(C_i\)</span> is recommended, particularly if the regulator is not in close
+  proximity to the power-supply filter capacitors. A 0.1-μF or 1-μF
+  ceramic or tantalum capacitor provides sufficient bypassing for most
+  applications, especially when adjustment and output capacitors are
+  used.</li>
+<li><span class="arithmatex">\(C_O\)</span> improves transient response, but is not needed for stability.</li>
+<li>Protection diode D2 is recommended if <span class="arithmatex">\(C_{ADJ}\)</span> is used. The diode
+  provides a low-impedance discharge path to prevent the capacitor
+  from discharging into the output of the regulator.</li>
+<li>Protection diode D1 is recommended if <span class="arithmatex">\(C_O\)</span> is used. The diode
+  provides a low-impedance discharge path to prevent the capacitor
+  from discharging into the output of the regulator.</li>
+</ul>
+</blockquote>
+<p>From this, we can surmise that to implement a LM317-based regulator
+circuit the way TI recommends, we will need 2 resistors (to set the
+voltage output), a couple of capacitors, and a couple of 1N4002 diodes
+for protection.  </p>
+<div class="admonition note">
+<p class="admonition-title">Manufacturer versus Hobbyist; Prototype v Production</p>
+<p> It's
+important to remember that the manufacturer is trying to show the best
+possible way to use their component. This doesn't mean it's the only way
+to use it, but you would be well served to follow the advice if you
+don't understand why you might not. For example, if we were just
+puttering on a prototype board, we might leave the capacitors out, which
+would allow us to also leave out the diodes. But we shouldn't do that if
+we end up turning it into a <abbr title="Printed Circuit Board">PCB</abbr>. </p>
+</div>
+<p>We are then given the equation to set the output voltage using the two
+resistors:</p>
+<div class="arithmatex">\[V_O = V_{\mathit{ref}} ({1 + {R_2\over R_1}) + (I_{adj} \times R_2)}\]</div>
+<p>There's also a little note that <span class="arithmatex">\(I_{adj}\)</span> is typically only 50uA, and
+therefore almost irrelevant since (assuming R2 is 220 ohm): <span class="arithmatex">\(0.00005
+\times 220 = 0.011\)</span>, and the <span class="arithmatex">\(V_{ref} = 1.25V\)</span>,  so we can simplify the
+equation to:</p>
+<div class="arithmatex">\[V_O = 1.25 ({1 + {R_2\over R_1}})\]</div>
+<p>Let's re-arrange so we can solve for just one of the resistors:</p>
+<div class="arithmatex">\[R_1 = R_1({{V_O \over 1.25} - 1})\]</div>
+<p>Now, let's assume we want 5V as an output:</p>
+<div class="arithmatex">\[\begin{aligned}
+R_2 &amp;= R_1({{5\over 1.25} - 1})\\[5pt]
+&amp;= R_1(4 - 1)\\[5pt]
+&amp;= R_1 \times 3
+\end{aligned}
+\]</div>
+<p>Now, if we just stick in 100 ohms for <span class="arithmatex">\(R_1\)</span>, we get <span class="arithmatex">\(R_2 = 300\)</span>. So we
+need R2 to be 300 ohms when R1 is 100 ohms. If we go back to the
+original equation, and we assume <span class="arithmatex">\(I_{adj} = 50\mu A\)</span>, then we get:</p>
+<div class="arithmatex">\[\begin{aligned}
+V_O &amp;= V_{\mathit{ref}} {({1 + {R_2\over R_1}}) + (I_{adj} \times R_2)}\\[5pt]
+&amp;= 1.25 ({1 + {300\over 100}}) + (0.00005 \times 100)\\[5pt]
+&amp;= 1.25 ({1 + 3}) + 0.005\\[5pt]
+&amp;= 1.25\times 4 + 0.005\\[5pt]
+&amp;= 5.005
+\end{aligned}
+\]</div>
+<p>So, we are over by <span class="arithmatex">\(5.005/5.000 = 0.1%\)</span>. It should also be noted that
+you typically want the lowest value resistors that can work here, even
+though you could use 1k and 3k to achieve the same thing.</p>
+<div class="admonition note">
+<p class="admonition-title">Showing Your Work</p>
+<p> I just want to acknowledge Ms. Clayton, my
+highschool calculus teacher who repeatedly reprimanded me for not
+"showing my work" when I did assignments. Here's my work; you were
+right.</p>
+</div>
+<p>The rest of this section has a bunch of example circuits for various
+applications.  You often will find something that is either exactly, or
+very close, to what you're looking for.  Use it if you can.</p>
+<h3 id="recommendations">Recommendations</h3>
+<blockquote>
+<p>The LM317 is designed to operate from an input voltage supply range
+between 1.25 V to 37 V greater than the output voltage. If the device
+is more than six inches from the input filter capacitors, an input
+bypass capacitor, 0.1 μF or greater, of any type is needed for
+stability.</p>
+</blockquote>
+<p>A couple takeaways:</p>
+<ul>
+<li>We need 1.25-37V <em>more</em> input voltage than output voltage. There are
+  other devices (called <abbr title="Low Drop Out">LDO</abbr>, or low drop-out regulators) which need much
+  less.</li>
+<li>If we're more than 6" from the input filter capacitor, we should use a
+  0.1uF bypass on the input. </li>
+</ul>
+<p>Simple enough.</p>
+<h3 id="layout">Layout</h3>
+<p>First, TI provides some specific recommendations:</p>
+<blockquote>
+<ul>
+<li>TI recommends that the input terminal be bypassed to ground with a
+  bypass capacitor.</li>
+<li>The optimum placement is closest to the input terminal of the device
+  and the system GND. Take care to minimize the loop area formed by
+  the bypass-capacitor connection, the input terminal, and the system
+  GND.</li>
+<li>For operation at full rated load, TI recommends to use wide trace
+  lengths to eliminate I × R drop and heat dissipation.</li>
+</ul>
+</blockquote>
+<p>They then provide an example "layout" for best performance:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/datasheet-lm317-pcb-layout.png"><img alt="LM317 PCB layout recommendations" src="../../img/datasheet-lm317-pcb-layout.png"/></a></p>
+<p>The large grey blocks are intended to be "wide traces" (see
+<a href="pcb/PCB-design.md#trace-width-and-current-capacity">how to calculate</a>), and
+they show in this specific package (SOT-223) you should connect the two
+output pins together with a substantial trace. They also show using a
+pair of input capacitors (one for high input, and another to block high
+frequency noise). Dave (of EEVblog) did <a href="https://www.youtube.com/watch?v=1xicZF9glH0">a great
+video</a> showing the effects
+of various combinations.</p>
+<h3 id="device-and-documentation-support">Device and Documentation Support</h3>
+<p>This section will contain information on how to stay up-to-date from the
+manufacturer and various other miscellaneous information.</p>
+<h3 id="mechanical-packaging-and-orderable-information">Mechanical, Packaging, and Orderable Information</h3>
+<p>Finally, we get a list of all the various orderable products:</p>
+<p><img alt="List of LM317 orderable
+products" src="../../img/datasheet-lm317-package-information.png"/>'</p>
+<p>There's a few things here to pay attention to. The first, and maybe even
+the most important is "Status". This is the part's status to the
+manufacturer, and for TI they use the following terms:</p>
+<ul>
+<li>ACTIVE. Product device recommended for new designs.</li>
+<li>LIFEBUY. TI has announced that the device will be discontinued, and a
+  lifetime-buy period is in effect.</li>
+<li>NRND. Not recommended for new designs. Device is in production to
+  support existing customers, but TI does not recommend using this part
+  in a new design.</li>
+<li>PREVIEW. Device has been announced but is not in production. Samples
+  may or may not be available. </li>
+<li>OBSOLETE. TI has discontinued the production of the device.</li>
+</ul>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/digikey-product-status.png"><img align="left" alt="Digikey product status selector" src="../../img/digikey-product-status.png" width="200"/></a></p>
+<p>You should, if at all possible, avoid any device which is not shown as
+ACTIVE. You're setting yourself up for a lot of future pain and
+suffering if you don't. In addition, when searching on a distributor's
+website, you should make sure you select "Active" for all searches,
+unless you have some <em>very specific and intentional</em> reason not to. The
+image to the left shows what it looks like in Digikey's parametric
+search</p>
+<h3 id="other-sections">Other Sections</h3>
+<div class="admonition note">
+<p class="admonition-title">Future Enhancement</p>
+<p> I will be diving into some sections in
+other types of components at a later time, but I've included a couple
+that are common in more advanced integrated circuits (<abbr title="Integrated Circuit">IC</abbr>).</p>
+</div>
+<p>What I've walked through is just what you'll find on something like a
+linear regulator.  Depending on the type of component you're dealing
+with, you are likely to find some other sections:</p>
+<ul>
+<li><em>Timing diagrams</em>. These are super common in digital ICs. They show
+  how data should be sent to and received from the part, and at what
+  speed. These are typically laid out inputs and outputs as horizontal
+  lines. These show the logic transitions that happen over time. If the
+  trace dips down, that's a (L)ow input or output. If the line rises
+  higher, that's a (H)igh input our output. Timing specifications are
+  laid out as arrows between transitions (names are referenced back to
+  timing numbers in the electrical specs), and vertical bars or arrows
+  will link related transitions. You can find a deeper dive
+  <a href="https://maker.pro/custom/tutorial/how-to-read-timing-diagrams-a-makers-guide">here</a>. </li>
+<li><em>Trust tables</em>. Truth tables show how the inputs to a part will affect
+  its output. Each line shows the part's inputs set to specific states,
+  and the resulting output of the part. "H" means that input is a logic
+  high (usually V<sub>CC</sub>), "L" means logic low (usually GND), "X" means the
+  chip doesn't care what the input is, and an arrow means that that you
+  should change the state of that pin from L to H or H to L depending on
+  the arrow direction. When you do this transition, it's called
+  <em>clocking</em> an input.</li>
+</ul>
+<h3 id="in-summary">In Summary</h3>
+<p>Whew, that's a <em>lot</em> of information. Part of learning electronics,
+though, is learning how to quickly skim a data sheet so that you can
+find what you need to know. Most of it isn't applicable at any one point
+in time, or is simply additional color to the use case. Still, you
+should read a few from front-to-back just to familiarize yourself.</p>
+<p>If you find a data sheet that feels super light, and it's for one of
+those common parts, definitely go looking for another manufacturer's
+sheet. While there are important differences, it's likely to be "close
+enough" for most use cases.</p>
+<h2 id="what-to-do-if-you-cant-find-one">What to do if You Can't Find One</h2>
+<div class="admonition todo">
+<p class="admonition-title">Todo</p>
+<p>Need to write up more details on what to do in this situation.
+Unfortunately, this is somewhat common with a lot of "inexpensive"
+parts. </p>
+</div>
+<div class="admonition comment">
+<p class="admonition-title">Comments or Questions?</p>
+<p> If you have any comments, questions, or
+topics you'd like to see covered, please feel free to either reach out
+to me on Mastodon (link below) or open an <a href="https://github.com/rebma-io/lab/issues/new/choose">issue on
+Github</a>. </p>
+</div>
+<aside class="md-source-file">
+<span class="md-source-file__fact">
+<span class="md-icon" title="Last update">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-02</span>
+</span>
+<span class="md-source-file__fact">
+<span class="md-icon" title="Created">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-02</span>
+</span>
+</aside>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Protecting Circuits" class="md-footer__link md-footer__link--prev" href="../protecting-circuits/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                Protecting Circuits
+              </div>
+</div>
+</a>
+<a aria-label="Next: Soldering" class="md-footer__link md-footer__link--next" href="../soldering/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Soldering
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright 2024 Christopher Petrilli (CC BY-SA 4.0)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://lab.rebma.io/feed_rss_updated.xml" rel="noopener" target="_blank" title="lab.rebma.io">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2.5 12A1.5 1.5 0 0 0 6 16.5 1.5 1.5 0 0 0 7.5 18 1.5 1.5 0 0 0 9 16.5 1.5 1.5 0 0 0 7.5 15M6 10v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8m0-4v2a10 10 0 0 1 10 10h2A12 12 0 0 0 6 6Z"></path></svg>
+</a>
+<a class="md-social__link" href="https://hachyderm.io/@petrillic" rel="noopener me" target="_blank" title="hachyderm.io">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.youtube.com/channel/UCBNhr5JIXOikgY7ix8xdmSg/" rel="noopener" target="_blank" title="www.youtube.com">
+<svg viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+</a>
+<a class="md-social__link" href="https://twitter.com/petrillic" rel="noopener" target="_blank" title="twitter.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+</a>
+<a class="md-social__link" href="https://github.com/petrilli/" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://github.com/rebma-io/" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.linkedin.com/in/christopher-petrilli-ba391a7/" rel="noopener" target="_blank" title="www.linkedin.com">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "navigation.prune", "navigation.expand"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+<script src="../../js/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

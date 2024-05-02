@@ -1,0 +1,1432 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="A collection fo thoughts and resources for Makers." name="description"/>
+<link href="https://lab.rebma.io/electronics/fundamentals/" rel="canonical"/>
+<link href="../" rel="prev"/>
+<link href="../reference-designators/" rel="next"/>
+<link href="../../feed_rss_created.xml" rel="alternate" title="RSS feed" type="application/rss+xml"/>
+<link href="../../feed_rss_updated.xml" rel="alternate" title="RSS feed of updated content" type="application/rss+xml"/>
+<link href="../../assets/rebma-io-logo-black-notext.png" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.20" name="generator"/>
+<title>Fundamentals - lab.rebma.io Notebook</title>
+<link href="../../assets/stylesheets/main.66ac8b77.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../css/ansi-colours.css" rel="stylesheet"/>
+<link href="../../css/jupyter-cells.css" rel="stylesheet"/>
+<link href="../../css/pandas-dataframe.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<!-- Fathom - beautiful, simple website analytics -->
+<script data-site="XBUPTVHH" defer="" src="https://cdn.usefathom.com/script.js"></script>
+<!-- / Fathom -->
+<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+<link href="/feed_rss_updated.xml" rel="alternate" title="Subscribe to Changes" type="application/rss+xml">
+</link> <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#fundamentals">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="lab.rebma.io Notebook" class="md-header__button md-logo" data-md-component="logo" href="../.." title="lab.rebma.io Notebook">
+<img alt="logo" src="../../assets/rebma-io-logo-white-notext.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            lab.rebma.io Notebook
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Fundamentals
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/rebma-io/lab" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"></path></svg>
+</div>
+<div class="md-source__repository">
+    rebma-io/lab
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+          
+  
+    
+  
+  Home
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../projects/">
+          
+  
+    
+  
+  Projects
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../">
+          
+  
+    
+  
+  Electronics
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../mechanical/">
+          
+  
+    
+  
+  Mechanical
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../3d/">
+          
+  
+    
+  
+  3D Stuff
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../software/">
+          
+  
+    
+  
+  Software
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../organization/">
+          
+  
+    
+  
+  Organization
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tools/">
+          
+  
+    
+  
+  Tools
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../resources/">
+          
+  
+    
+  
+  Resources
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tags/">
+        
+  
+    
+  
+  Tags
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../about/">
+        
+  
+    
+  
+  About
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="lab.rebma.io Notebook" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="lab.rebma.io Notebook">
+<img alt="logo" src="../../assets/rebma-io-logo-white-notext.png"/>
+</a>
+    lab.rebma.io Notebook
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/rebma-io/lab" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M216.29 158.39H137C97 147.9 6.51 150.63 6.51 233.18c0 30.09 15 51.23 35 61-25.1 23-37 33.85-37 49.21 0 11 4.47 21.14 17.89 26.81C8.13 383.61 0 393.35 0 411.65c0 32.11 28.05 50.82 101.63 50.82 70.75 0 111.79-26.42 111.79-73.18 0-58.66-45.16-56.5-151.63-63l13.43-21.55c27.27 7.58 118.7 10 118.7-67.89 0-18.7-7.73-31.71-15-41.07l37.41-2.84zm-63.42 241.9c0 32.06-104.89 32.1-104.89 2.43 0-8.14 5.27-15 10.57-21.54 77.71 5.3 94.32 3.37 94.32 19.11zm-50.81-134.58c-52.8 0-50.46-71.16 1.2-71.16 49.54 0 50.82 71.16-1.2 71.16zm133.3 100.51v-32.1c26.75-3.66 27.24-2 27.24-11V203.61c0-8.5-2.05-7.38-27.24-16.26l4.47-32.92H324v168.71c0 6.51.4 7.32 6.51 8.14l20.73 2.84v32.1zm52.45-244.31c-23.17 0-36.59-13.43-36.59-36.61s13.42-35.77 36.59-35.77c23.58 0 37 12.62 37 35.77s-13.42 36.61-37 36.61zM512 350.46c-17.49 8.53-43.1 16.26-66.28 16.26-48.38 0-66.67-19.5-66.67-65.46V194.75c0-5.42 1.05-4.06-31.71-4.06V154.5c35.78-4.07 50-22 54.47-66.27h38.63c0 65.83-1.34 61.81 3.26 61.81H501v40.65h-60.56v97.15c0 6.92-4.92 51.41 60.57 26.84z"></path></svg>
+</div>
+<div class="md-source__repository">
+    rebma-io/lab
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Home
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../projects/">
+<span class="md-ellipsis">
+    Projects
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    Electronics
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Electronics
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Fundamentals
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Fundamentals
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#current-volume">
+<span class="md-ellipsis">
+      Current (volume)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#voltage-pressure">
+<span class="md-ellipsis">
+      Voltage (pressure)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#power">
+<span class="md-ellipsis">
+      Power
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#resistance">
+<span class="md-ellipsis">
+      Resistance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#capacitance">
+<span class="md-ellipsis">
+      Capacitance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inductance">
+<span class="md-ellipsis">
+      Inductance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#impedance">
+<span class="md-ellipsis">
+      Impedance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ohms-law">
+<span class="md-ellipsis">
+      Ohm's Law
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#series-and-parallel-circuits">
+<span class="md-ellipsis">
+      Series and Parallel Circuits
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#kirchoffs-laws">
+<span class="md-ellipsis">
+      Kirchoff's Laws
+    </span>
+</a>
+<nav aria-label="Kirchoff's Laws" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#kirchhoffs-current-law">
+<span class="md-ellipsis">
+      Kirchhoff's Current Law
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#kirchhoffs-voltage-law">
+<span class="md-ellipsis">
+      Kirchhoff's Voltage Law
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#voltage-divider-rule">
+<span class="md-ellipsis">
+      Voltage Divider Rule
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3rd-party-material">
+<span class="md-ellipsis">
+      3rd Party Material
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../reference-designators/">
+<span class="md-ellipsis">
+    Reference Designators
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../units-of-measure/">
+<span class="md-ellipsis">
+    Units of Measure
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../non-intuitive-topics/">
+<span class="md-ellipsis">
+    Non-Intuitive Topics
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../logic-levels/">
+<span class="md-ellipsis">
+    Logic Levels and Families
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../protecting-circuits/">
+<span class="md-ellipsis">
+    Protecting Circuits
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../data-sheets/">
+<span class="md-ellipsis">
+    Data Sheets
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../soldering/">
+<span class="md-ellipsis">
+    Techniques
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../passives/">
+<span class="md-ellipsis">
+    Passive Components
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../leds/">
+<span class="md-ellipsis">
+    Active Components
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../filters/">
+<span class="md-ellipsis">
+    Circuit Patterns
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../pcb/design/">
+<span class="md-ellipsis">
+    PCB
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../connectors/standard-pmod/">
+<span class="md-ellipsis">
+    Connectors
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fusion360/">
+<span class="md-ellipsis">
+    Fusion 360 for Electronics
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../interesting-parts/">
+<span class="md-ellipsis">
+    Interesting Parts
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../random-tips-and-tricks/">
+<span class="md-ellipsis">
+    Random Tips &amp; Tricks
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../manufacturers/">
+<span class="md-ellipsis">
+    Manufacturers
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../suppliers/">
+<span class="md-ellipsis">
+    Suppliers
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../mechanical/">
+<span class="md-ellipsis">
+    Mechanical
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../3d/">
+<span class="md-ellipsis">
+    3D Stuff
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../software/">
+<span class="md-ellipsis">
+    Software
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../organization/">
+<span class="md-ellipsis">
+    Organization
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../tools/">
+<span class="md-ellipsis">
+    Tools
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../resources/">
+<span class="md-ellipsis">
+    Resources
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tags/">
+<span class="md-ellipsis">
+    Tags
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../about/">
+<span class="md-ellipsis">
+    About
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#current-volume">
+<span class="md-ellipsis">
+      Current (volume)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#voltage-pressure">
+<span class="md-ellipsis">
+      Voltage (pressure)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#power">
+<span class="md-ellipsis">
+      Power
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#resistance">
+<span class="md-ellipsis">
+      Resistance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#capacitance">
+<span class="md-ellipsis">
+      Capacitance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inductance">
+<span class="md-ellipsis">
+      Inductance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#impedance">
+<span class="md-ellipsis">
+      Impedance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ohms-law">
+<span class="md-ellipsis">
+      Ohm's Law
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#series-and-parallel-circuits">
+<span class="md-ellipsis">
+      Series and Parallel Circuits
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#kirchoffs-laws">
+<span class="md-ellipsis">
+      Kirchoff's Laws
+    </span>
+</a>
+<nav aria-label="Kirchoff's Laws" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#kirchhoffs-current-law">
+<span class="md-ellipsis">
+      Kirchhoff's Current Law
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#kirchhoffs-voltage-law">
+<span class="md-ellipsis">
+      Kirchhoff's Voltage Law
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#voltage-divider-rule">
+<span class="md-ellipsis">
+      Voltage Divider Rule
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3rd-party-material">
+<span class="md-ellipsis">
+      3rd Party Material
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="fundamentals">Fundamentals</h1>
+<p>None of this is unique, original, or otherwise only found here, but I thought it
+might be useful to collect things that people should probably know about.</p>
+<p>Before we jump into anything else, we should get some basics out of the
+way. For a long time, I found the difference between voltage and current
+to be confusing, not least because people seemed obsessed with voltage,
+when current is <em>the thing</em> under it all. So let's start with current.</p>
+<div class="admonition note">
+<p class="admonition-title">Non-intuitive Stuff to Think About</p>
+<p> Elsewhere, I talk about the
+<a href="../non-intuitive-topics/">non-intuitive idea of electron flow</a>, but for
+the purposes of this and most use cases, it doesn't matter. Only if you
+want to be <a href="https://www.youtube.com/watch?v=hou0lU8WMgo">technically
+correct</a>. </p>
+</div>
+<h2 id="current-volume">Current (volume)</h2>
+<p><em>Current</em> is, fundamentally, flow. It is the rate at which electrons
+flow past a specific point in a complete electrical circuit. A circuit
+is considered complete if there is a path for all electrons to flow in a
+"loop". Any component that converts electrical energy into some other
+form of energy (rotation, heat, light, even "processing") uses current.</p>
+<p>We measure current in ampere, or more often shortened to just amp. It
+expresses the quantity of electrons (aka electrical charge) flowing past
+a point in a circuit over a give time. A current of 1 amp can be
+translated as 1 coulomb of electrons, or 6.24 x 10<sup>18</sup> electrons moving
+past a single point in <em>one second</em>. It is traditional to compare
+electricity to water, and in this case, you'd talk about how many
+liters pass a single point in a hose in 1 minute (liter per minute). We
+use a few measurements regularly:</p>
+<ul>
+<li><em>A</em>. Amperes (amps) for <em>large</em> amounts of current. You will typically
+  only see a small number of these in most applications, but in things
+  like electric cars, you might see hundreds of amps. High currents can
+  be <em>very dangerous</em>.</li>
+<li><em>mA</em>. Milliampere (milliamp) is a typical unit in electronic circuits
+  that you'll work with. This is 0.001 ampere.</li>
+<li><em>µA</em>. Microampere (microamps), or a millionth of an amp
+  (0.000001).</li>
+</ul>
+<p>There are smaller units, like picoamps, but outside of a very few
+specialized applications, you'll never see them, and you likely can't
+afford a device that can reliably even measure them. You can, if needed,
+construct a circuit to sneak up on the value, though.</p>
+<p>You will also see current referred to as I in things like Ohm's law
+(below). For the longest time, I had no idea why "I" was used, but it
+refers to the "intensity". For current to flow, two things must be true:</p>
+<ol>
+<li>A circuit that forms a closed conducting loop. This provides a loop
+   through which electrons can flow, and therefore providing energy
+   (electrons) to components along the loop. You can think of a loop
+   (circuit) as closed when you flip a light switch to the on position.</li>
+<li>The circuit must include a source of energy, such as a battery, that
+   produces voltage. Without voltage, electrons move randomly and evenly
+   within a wire, and therefore no current is flowing (think of still
+   pond water). When voltage creates pressure that will drive the
+   electrons in a single direction, like a stream.</li>
+</ol>
+<p>Current comes in two forms: direct current (DC) and alternating current
+(AC). DC is what most electronics work with, and AC is what your house
+runs on. DC flows in a single direction, and therefore we can often talk
+about positive and negative connections. AC, as the name implies,
+alternates back and forth (a sine wave, technically) on a regular
+interval (60Hz in the United States, for example), and so we don't talk
+about positive and negative, but typically (at least in the US) "hot",
+"neutral", and "ground". Yes, it is not particularly obvious at first.
+<a href="https://en.wikipedia.org/wiki/Electrical_wiring_in_North_America">This article might
+help</a>,
+but typically, you won't be dealing with a lot of AC outside pre-built
+power supplies.</p>
+<div class="admonition warning">
+<p class="admonition-title">Wire Gauge and Current</p>
+<p> Many things are sized based on the
+current with a much broader voltage range. For example, if we use the
+<a href="https://www.engineeringtoolbox.com/wire-gauges-d_419.html"><abbr title="American Wire Gauge">AWG</abbr> wire
+standard</a>, we
+can see that while 16 gauge solid core wire can carry a maximum of 15A,
+a 24 gauge 7-strand wire can only handle 1.4A. Typically, wire smaller
+than 24 gauge (i.e., with a larger gauge number) is treated as "signal
+wire", and only designed to carry tiny amounts of signal voltage
+(µA). This is also why on a <abbr title="Printed Circuit Board">PCB</abbr>, we often need to use a <a href="pcb/PCB-design.md#trace-width-and-current-capacity">trace
+width calculator</a>.</p>
+</div>
+<p><img align="right" alt="BK 2709B multimeter with AC and DC current measurement
+highlighted" src="../../img/tool-multimeter-current-measurement.jpg" width="400"/></p>
+<p>We measure current with a
+<a href="../../tools/test-and-measurement/#multimeter">multimeter</a> most of the
+time. If we look at my trusty BK 2709B, we can see two different things.
+First, there are two different sections for measuring current, one for
+AC and another for DC. Second, while this multimeter is technically
+auto-ranging, you do have to tell it what magnitude of current to
+expect. This is for internal safety protections, and at least on my BK,
+while µA and mA use the same connector, the 10A measurement uses a
+different connector completely (and has different protection mechanisms
+inside). </p>
+<h2 id="voltage-pressure">Voltage (pressure)</h2>
+<p>If current is the volume of electrons passing a point in a circuit,
+voltage is the pressure. To continue the water analogy, if current is
+the liters per minute, voltage is the pressure behind it where we
+measure water in (typically) either pounds per square inch (psi) or
+Pascals (Pa). We measure the voltage pressure in volts (V), which is
+named after <a href="https://en.wikipedia.org/wiki/Alessandro_Volta">Alessandro
+Volta</a>, who invented the
+early precursor of the battery. You might occasionally hear voltage
+termed as electromotive force (<abbr title="ElectroMotive Force">EMF</abbr>), which is why you'll sometimes see
+voltage expressed as the variable E. Mostly, the term comes up in
+discussions of <a href="../protecting-circuits/#snubber-diode">back <abbr title="ElectroMotive Force">EMF</abbr></a>.</p>
+<p>We often use the term voltage and <em>potential difference</em>
+interchangeably. Volts is the unit we use to express the potential
+energy difference between two points in a circuit. Potential energy is
+the potential to move electrons from one point to another, and because
+of that <em>voltage exists only relatively</em>. You cannot measure voltage at
+a point. You can only measure voltage <em>between two points</em>. This took me
+a long time to grasp because it's not super intuitive. The greater the
+voltage, the greater the ability to "push" more electrons and do more
+work.</p>
+<p>Like current, voltage comes in both direct and alternating forms. While
+this actually refers to the nature of the current that the voltage is
+moving, when measuring voltage, we need to deal with DC voltage (VDC)
+and AC voltage (VAC) differently, and if you look at the multimeter dial
+above, you can see there are similar settings for AC and DC voltage
+measurement. </p>
+<h2 id="power">Power</h2>
+<p>In addition to the two fundamental measurements, voltage and current, we
+often talk about <em>power</em> (P). Power is the rate of energy transfer and is
+measured in joules/second. We also call them Watts (W). As you can see
+in Ohm's Law below, <span class="arithmatex">\(P=V\cdot I\)</span>, which means it's just voltage times
+current.</p>
+<h2 id="resistance">Resistance</h2>
+<p>While it may sound negative, resistance is a fundamental property of
+electronics nd is critical to any functioning circuit. Resistance is a
+measure of the opposition to current flow in an electrical circuit. It
+is measured in ohms, which is represented by the Greek letter omega
+(Ω). It is often represented in equations as the letter R.</p>
+<p>All materials resist current flow to some degree. They fall into one of two broad categories:</p>
+<dl>
+<dt>Conductors</dt>
+<dd>Materials that offer very little resistance where electrons can move
+easily. Examples: silver, copper, gold and aluminum.</dd>
+<dt>Insulators</dt>
+<dd>Materials that present high resistance and restrict the
+flow of electrons. Examples: Rubber, paper, glass, wood and plastic.</dd>
+</dl>
+<p>The higher the resistance, the lower the current flow; resistance is the
+primary reason all conductors give off some degree of heat, so
+overheating is an issue often associated with resistance. The lower the
+resistance, the higher the current flow.</p>
+<p>Many components, such as <a href="../passives/resistors/">resistors</a>, have a
+fixed-resistance value. Resistance is a property of the materials being
+used, as well as their physical dimensions. You can calculate the
+resistance as:</p>
+<div class="arithmatex">\[R = \rho{L\over A}\]</div>
+<p>where <span class="arithmatex">\(A\)</span> is the cross-sectional area (in meters), and <span class="arithmatex">\(L\)</span> is the length (also
+in meters). <span class="arithmatex">\(\rho\)</span> is the intrinsic  resistive property of the material,
+although it does change with temperature. </p>
+<p>For example, here's a <a href="https://www.thoughtco.com/table-of-electrical-resistivity-conductivity-608499">few different
+materials</a>
+and their <span class="arithmatex">\(\rho\)</span> values:</p>
+<table>
+<thead>
+<tr>
+<th>Material</th>
+<th><span class="arithmatex">\(\rho\)</span> at 20C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copper</td>
+<td><span class="arithmatex">\(1.68\times 10^{-8}\)</span></td>
+</tr>
+<tr>
+<td>Aluminum</td>
+<td><span class="arithmatex">\(2.82\times 10^{-8}\)</span></td>
+</tr>
+<tr>
+<td>Iron</td>
+<td><span class="arithmatex">\(1.0\times 10^{-7}\)</span></td>
+</tr>
+<tr>
+<td>Sea water</td>
+<td><span class="arithmatex">\(2.0\times 10^{-1}\)</span></td>
+</tr>
+<tr>
+<td>Air</td>
+<td><span class="arithmatex">\(2.3\times 10^{16}\)</span> (approximately)</td>
+</tr>
+</tbody>
+</table>
+<p>So, for a 10cm length of 26ga solid core copper wire (don't you love
+mixing weird measurement units), you could calculate this using the
+equation earlier:</p>
+<div class="arithmatex">\[\begin{aligned}
+R &amp;= 1.68\times 10^{-8} {0.1\over{1.4\times 10^{-7}}}\\[5pt]
+&amp;= 0.0000000168 {0.1\over{0.00000014}}\\[5pt]
+&amp;= 0.012
+\end{aligned}\]</div>
+<p>This means that our 10cm length of wire has a resistance of 0.012Ω.
+Note that stranded wire would have a slightly different value which is
+the aggregate of the cross-section of each strand multiplied by the
+number of strands. </p>
+<div class="admonition note">
+<p class="admonition-title">Equivalent Source Resistance (<abbr title="Equivalent Series Resistance">ESR</abbr>)</p>
+<p> Often, you will hear people
+talk bout the the <abbr title="Equivalent Series Resistance">ESR</abbr> of a component. For example, when you have a
+voltage divider (see <a href="../passives/resistors/#voltage-divider">here</a>), and
+you attach a load which has some resistance, the voltage will actually
+drop due to a <em>finite</em> source resistance. <abbr title="Equivalent Series Resistance">ESR</abbr> refers to the
+hypothetical Thevenin equivalent resistance of the circuit . Nearly
+everything has an <abbr title="Equivalent Series Resistance">ESR</abbr>, and there are tools, such as <abbr title="Inductance, Capacitance, Resistance">LCR</abbr> meters, that
+can help you determine it if it's not provided on a datasheet. </p>
+<p>The undesirable reduction of voltage mentioned above is a result of
+what is called <em>circuit loading</em>, and what designers mean when they
+refer to the load of a circuit. As a general rule, you want to keep
+<span class="arithmatex">\(R_{\mathrm{load}} \gg R_{\mathrm{internal}}\)</span> as a high-resistance
+load has little effect on the source. This is one reason you will see
+things like multimeters with resistance measured in the megohms. </p>
+</div>
+<h2 id="capacitance">Capacitance</h2>
+<p>Capacitance is the ability of a component or circuit to collect and
+store energy in the form of an electrical charge. We measure this charge
+as the ratio of the electric charge on each conductor to the potential
+difference (i.e., voltage) between them. The value is measured in farads
+(F), units named for English physicist <a href="https://en.wikipedia.org/wiki/Michael_Faraday">Michael
+Faraday</a>. A farad is a
+large quantity of capacitance. Most electrical devices include
+capacitors that produce only a fraction of a farad, often a thousandth
+of a farad (or microfarad, µF) or as small as a picofarad (a
+trillionth, pF).</p>
+<div class="admonition warning">
+<p class="admonition-title">Safety with Capacitance</p>
+<p> Because capacitors, by
+definition, store electrical charge, and that charge can be
+substantial, it is <em>critically important</em> to ensure you discharge any
+capacitor before you might come into contact with it. While this is
+<em>probably</em> not important for capacitors in the pico or nano Farad
+range, by the time you hit a micro (µ) farad, you're looking for
+trouble. </p>
+<p>The best way to discharge a capacitor, if you don't want to <a href="https://www.digikey.com/en/blog/how-to-safely-discharge-a-capacitor">do the
+math</a>
+is using a little homemade discharge tool (example to come, sorry).</p>
+</div>
+<h2 id="inductance">Inductance</h2>
+<div class="admonition note">
+<p class="admonition-title">Hand Waving Ahead</p>
+<p> I find inductance to be one of the most
+complicated subjects in electronics, and I will attest to not being 100%
+comfortable that I understand it completely. So, I'm going to try and
+explain it how I understand it, and how I think about it. This is likely
+not 100% correct, but it is hopefully 84% useful.</p>
+</div>
+<p>While many of the preceding characteristics are true of both
+fixed/constant currents and alternating currents, inductance is,
+effectively, purely about alternating currents. Inductance is the
+characteristic of an electrical component which <em>opposes changes in
+current</em>. We measure inductance in Henries (H), and typically use the
+symbol L to represent them. One Henry is a <em>lot</em> of inductance. </p>
+<p>I like to think of inductance as the inertia of a component in the
+circuit. Inertia is the characteristic of mass which opposes a change in
+velocity. Inductance does the same thing in an electrical circuit. This
+means that it requires <em>more</em> energy to start or stop the flow of
+current than it does to maintain it.</p>
+<p>Every conductor has some inductance. This is because current in a
+conductor will <em>always</em> produce a magnetic field surrounding the
+conductor (see <a href="https://www.khanacademy.org/science/physics/magnetic-forces-and-magnetic-fields/magnetic-flux-faradays-law/a/what-is-faradays-law">Faraday's
+Law</a>).
+When the current changes, the magnetic field changes, which will induce
+an electromotive force (<abbr title="ElectroMotive Force">EMF</abbr>). For reasons I don't 100% understand, this
+is always counter to the applied voltage, creating the inductance or
+opposition to change. This is defined by <a href="https://en.wikipedia.org/wiki/Lenz%27s_law">Lenz'
+Law</a>, which states:</p>
+<blockquote>
+<p>The current induced in a circuit due to a change in a magnetic field
+is directed to oppose the change in [magnetic] flux and to exert a
+mechanical force which opposes the motion.</p>
+</blockquote>
+<p>Inductance comes in two forms: self-inductance and mutual-inductance.
+Put simply, self-inductance is when one conductor induces inductance in
+itself. Mutual-inductance is when one conductor <em>also</em> induces
+inductance in another conductor. Examples of mutual inductance include
+motors, transformers, and solenoids. </p>
+<p>There's <em>a lot</em> of math, but I think that if you understand that it is
+about the <em>opposition to changes in current</em> you'll get reasonably far.</p>
+<h2 id="impedance">Impedance</h2>
+<div class="admonition warning">
+<p class="admonition-title">Complex Numbers Ahead</p>
+<p> I'm going to try and avoid the
+complex numbers as much as possible, but it's not totally avoidable when
+talking about impedance. At some point, I'll likely dive more deeply
+into this topic, but that'll be a topic for another page.</p>
+</div>
+<p>When a circuit has capacitors and inductors in it, it is more
+complicated than a purely resistive circuit. Unlike resistors,
+capacitors and inductors change behavior depending on frequency. This is
+why we consider these to be <em>reactive</em>. This results in a much more
+complex model for analyzing them.</p>
+<p>Impedance (Z) is "generalized resistance". For something like a
+resistor, we find the voltage and current in phase.</p>
+<p><img alt="Two sine waves in phase with each
+other" src="../../img/impedance-sine-wave.png"/></p>
+<p>However, for reactive components (inductors and capacitors), the voltage
+and current are out-of-phase (90° typically) from each other.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/impedance-sine-wave-90-degrees.png"><img alt="Two sine waves 90° apart" src="../../img/impedance-sine-wave-90-degrees.png"/></a></p>
+<p>We call the out-of-phase behavior reactance (X), and the in-phase
+behavior resistance (R).</p>
+<p>Since most circuits combine both types of components, the phase
+relationship of voltage and current will be different in different parts
+of the circuit. This is also where the complex numbers start to rear
+their ugly heads. We can have in-between phase alignments (not 0°
+and not 90°). To represent that combination of resistance and
+reactance, we use the term impedance, which is represented as:</p>
+<div class="arithmatex">\[Z = R + jX\]</div>
+<p>See, there's the imaginary part (<em>j</em>). This is also where you'll start
+seeing ω pop up all over the place. The omega (ω) is the
+angular velocity (change in angle over time). So, if we look at the
+impedance of the fundamental components (resistors, capacitors,
+inductors), we get the following equations based on their behavior:</p>
+<div class="arithmatex">\[\begin{aligned}
+Z_R &amp;= R\\[5pt]
+Z_C &amp;= {1\over{j\omega C}}\\[5pt]
+Z_L &amp;= j\omega L
+\end{aligned}\]</div>
+<p>This reactance is why filters work the way they do. It's why blocking
+capacitors work. It's why decoupling works. For now, I'll send you to
+read §1.7 in <em>Art of Electronics: Third Edition</em>. Horowitz and Hill
+do a much better job of explaining the math than I ever will.</p>
+<p>One place you can see this bite you is in
+<a href="https://en.wikipedia.org/wiki/Signal_reflection">reflections</a> where
+some of the power going through the conductor is reflected back at the
+source. This is (almost always) a <em>bad thing</em>. Matching impedance is a
+critical part of any high-performance or high-frequency circuit.  The
+general equation is, for conductor 1 and conductor 2:</p>
+<div class="arithmatex">\[\Gamma = {{Z_1 - Z_2}\over{Z_1 + Z_2}}\]</div>
+<p>Here, gamma (Γ) represents the reflection coefficient. You just
+have to do that in complex numbers if it isn't purely resistive. </p>
+<p>While this is all very complicated if you want to be correct, you can be
+quite loose in many cases without facing a lot of repercussions. Where
+it starts to really matter is higher frequency circuits (above what
+you'll typically find with an Arduino).</p>
+<div class="admonition note">
+<p class="admonition-title">Terminology</p>
+<p> You will often see the term impedance used even
+when it is <em>purely</em> resistance. For example, we might talk about a
+50Ω impedance of an input. Yes, this complicates things and so
+context matters more than it should.</p>
+</div>
+<h2 id="ohms-law">Ohm's Law</h2>
+<div class="admonition tip">
+<p class="admonition-title">Everything</p>
+<p> When I say that <em>everything</em> in electronics comes
+back to Ohm's Law, I mean it. While many things, don't actually follow
+Ohm's Law, it is ever-present in the basic flow of electricity in a
+circuit. Over all the years, it has been the single most important
+equation/law that I've ever learned. Over and over, it gets used in one
+form or another, so please read this a few times to make sure you
+understand the elegant simplicity.</p>
+</div>
+<p>This is where it always begins, right? Ohm's law states that the current (<span class="arithmatex">\(I\)</span>)
+through a conductor between two points is directly proportional to the voltage
+(<span class="arithmatex">\(V\)</span>) across the two points. This is represented in the following equation:</p>
+<div class="arithmatex">\[I = {V\over R}\]</div>
+<p>The voltage (<span class="arithmatex">\(V\)</span>) is always measured <em>across</em> a conductor; it simply doesn't
+exist without that context. <span class="arithmatex">\(R\)</span> is the resistance of the conductor. Ohm's law
+states that <span class="arithmatex">\(R\)</span> is a constant, independent of the current. </p>
+<div class="admonition note">
+<p class="admonition-title">Knowing Things</p>
+<p> We talk about knowing things a lot, but what exactly
+do we mean by "know". Knowledge can come from two potential sources:</p>
+<ul>
+<li>Extrinsically controlled (or fixed). If we have a voltage source which
+  always outputs 7.3 Volts, then the voltage is known because it is being
+  controlled and set to a specific value.</li>
+<li>Measured. We can measure a voltage of 7.3 Volts across the output of a
+  regulator. This is known because it is measured, rather than fixed by some process.</li>
+</ul>
+</div>
+<p>The great thing about this is you can, through the magic of mathematics, flip it
+all over and around depending on what you know. You can get the voltage with
+<span class="arithmatex">\(V=IR\)</span>, or the resistance (<span class="arithmatex">\(R\)</span>) through <span class="arithmatex">\(R={V\over I}\)</span>. Or you can organize it
+into a pretty wheel to solve for all sorts of things depending on what you have
+(note <span class="arithmatex">\(P\)</span> is power in watts):</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/ohms-law-wheel.png"><img alt="The wheel of Ohm's Law" src="../../img/ohms-law-wheel.png"/></a></p>
+<p>For example, if you need to understand the current (<span class="arithmatex">\(I\)</span>), and you only have
+power (<span class="arithmatex">\(P\)</span>) and resistance (<span class="arithmatex">\(R\)</span>), you can use <span class="arithmatex">\(\sqrt{P/R}\)</span>.</p>
+<p>This one simple thing will carry you <em>very far</em> in electronics.</p>
+<div class="admonition note">
+<p class="admonition-title">Ohmic Material</p>
+<p> Materials which obey Ohm's Law are called
+<em>ohmic material</em>. This includes wires, resistors, and other things. Not
+everything follows Ohm's Law, and in this case the current is not
+proportional to the voltage. These are called non-linear or non-ohmic
+materials/components. Diodes, semiconductors, and even the lowly
+fluorescent lamp, are non-ohmic components.</p>
+</div>
+<p>While Ohm’s Law states that resistance is a linear function, this rule is not
+universal and is in fact empirical. It is actually a linearized model of
+trillions or more of atomic (and quantum) scale interactions within a material,
+and it turns out that on average, the aggregated behavior looks roughly linear.
+This is a recurring theme, but you can also completely ignore this nearly all
+the time.</p>
+<h2 id="series-and-parallel-circuits">Series and Parallel Circuits</h2>
+<p>The two fundamental arrangements of components in circuits is <em>series</em>
+and <em>parallel</em>. These are composed to form more complex circuits, but
+fundamentally, these are the two to understand. To start, we're going to
+just talk about resistance circuits, but after, I'll discuss how
+resistance, capacitance and inductance are calculated for similar
+patterns.</p>
+<p>Let's start with a <em>series circuit</em>. This is just a bunch of components
+in a line:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/schematic-series-circuit.png"><img alt="4 resistors in series" src="../../img/schematic-series-circuit.png"/></a></p>
+<p>A series circuit’s defining characteristic is that all components in a
+series circuit have the same current flowing through them, which is why
+it is sometimes called a "current-coupled" circuit.  Current can only
+flow in a single direction.</p>
+<p>A <em>parallel circuit</em> is different:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/schematic-parallel-circuit.png"><img alt="4 resistors in parallel" src="../../img/schematic-parallel-circuit.png"/></a></p>
+<p>This can also be called a "voltage-coupled" circuit because there are
+multiple paths for current to flow, but the voltage will be the same
+across all paths.</p>
+<p>So, how do you calculate the effective resistance, or capacitance, or
+... well, it's pretty simple:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Series</th>
+<th>Parallel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resistors</td>
+<td><span class="arithmatex">\(R_1 + R_2 + \cdots+ R_n\)</span></td>
+<td><span class="arithmatex">\(1\over{{1\over{R_1}}+{1\over{R_2}}+\cdots+{1\over{R_n}}}\)</span></td>
+</tr>
+<tr>
+<td>Capacitors</td>
+<td><span class="arithmatex">\(1\over{{1\over{C_1}}+{1\over{C_2}}+\cdots+{1\over{C_n}}}\)</span></td>
+<td><span class="arithmatex">\(C_1 + C_2 +\cdots+ C_n\)</span></td>
+</tr>
+<tr>
+<td>Inductors</td>
+<td><span class="arithmatex">\(L_1 + L_2 +\cdots+ L_n\)</span></td>
+<td><span class="arithmatex">\(1\over{{1\over{L_1}}+{1\over{L_2}}+\cdots+{1\over{L_n}}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Note that one of the most common situations is to use 2 resistors, and
+so the equation can be simplified to:</p>
+<div class="arithmatex">\[R = {{R_1 R_2}\over{R_1+R_2}}\]</div>
+<p>This, of course, works for 2 capacitors as well when they're in series.
+Also, if two inductors are located within one another's magnetic fields,
+mutual inductance changes this calculation. See <a href="https://en.wikipedia.org/wiki/Series_and_parallel_circuits#Inductors_2">this
+article</a>
+for more information.</p>
+<div class="admonition note">
+<p class="admonition-title">Curious Similarities</p>
+<p> It's worth thinking about 1) why
+resistors and capacitors's behaviors are reversed; 2) why resistors and
+inductors aren't.</p>
+</div>
+<h2 id="kirchoffs-laws">Kirchoff's Laws</h2>
+<p>Kirchoff, smirshoff, am I right? </p>
+<p>Seriously, though, there are two laws from <a href="https://en.wikipedia.org/wiki/Gustav_Kirchhoff">Gustav
+Kirchhoff</a> (around
+1845), which, on the surface, seem 100% totally boring and predictable,
+but it's worth thinking a bit more deeply about them. Kirchhoff used
+Georg Ohm ‘s work as a foundation to create Kirchhoff’s current law
+(KCL) and Kirchhoff’s voltage law (KVL) in 1845. These can be derived
+from Maxwell’s Equations, which came 16-17 years later. Before we do
+that, though, we should briefly discuss, in a radically simplified form,
+the <a href="https://en.wikipedia.org/wiki/Lumped-element_model">lumped-element
+model</a>. </p>
+<p>The model allows us to simplify a circuit into a series of nodes and
+connections (think graph theory) which we can simplify and down to a series of
+nodes that exhibit idealized attributes (resistance, capacitance, inductance,
+etc.). These nodes are joined by perfectly conductive wires.  That's all, at its
+core, the model is. There's a lot of math, and proofs, and such, but you don't
+need to care almost ever.</p>
+<div class="admonition note">
+<p class="admonition-title">When You Might Care</p>
+<p> There are a few times where things might not be
+as simple as explained above. A good example is that a <a href="https://eepower.com/resistor-guide/resistor-materials/wirewound-resistor/">wire-wound
+resistor</a>
+exhibits not just idealized resistance, but also inductance. In the lumped
+element model, we can represent that as a resistor and inductor in series.</p>
+<p>Another example is when you're dealing AC circuits, though typically only
+high-frequency ones. In addition, it can fall apart when you have an
+electrical field between two distinct parts/nodes. For example, if you have
+two wires closely placed, they can become capacitively coupled.</p>
+</div>
+<h3 id="kirchhoffs-current-law">Kirchhoff's Current Law</h3>
+<blockquote>
+<p>The algebraic sum of all currents entering and exiting a node must be equal.</p>
+</blockquote>
+<p>Kirschhoff wrote this as:</p>
+<div class="arithmatex">\[I_{\mathit{entering}} + (-1(I_{\mathit{exiting}})) = 0\]</div>
+<p>or more simply:</p>
+<div class="arithmatex">\[I_\mathit{entering} = I_\mathit{exiting}\]</div>
+<p>Or <span class="arithmatex">\(\sum_{n}{I_n}\)</span> if you want to be ffancy.</p>
+<p>This was the first law that he proposed and describes how a charge enters and
+leaves a junction point or node. Take, for example, this circuit:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/schematic-kirchhoff-current.png"><img alt="Kirshhoff's current law diagram" src="../../img/schematic-kirchhoff-current.png"/></a></p>
+<p>Here I'm showing that the total current (I<sub>total</sub>) is is present both 
+between 1-2 and 7-8, but I<sub>R1</sub> passes through R1, leaving only I<sub>R2</sub> + 
+I<sub>R3</sub> passing between 2-3 and 7-6, etc. On the surface, this seems super 
+obvious, and that's true, but it can help you analyze a circuit to
+understand current flows. For example, if we want to look at what's
+happening at node 6 in the diagram above.</p>
+<p>First, we know that it is composed of I<sub>R2</sub> + I<sub>R3</sub>, so we can solve:</p>
+<div class="arithmatex">\[I_{R2} + I_{R3} + I = 0\]</div>
+<p>Now, we can use Ohm's Law to figure out what I<sub>R2</sub> and I<sub>R3</sub> are:</p>
+<p>$$\begin{aligned}
+I_{R2} &amp;= {V\over R}\[5pt]
+&amp;= {12\over 2000}\[5pt]
+&amp;= 0.006 = 6\mathrm{mA}\[10pt]</p>
+<p>I_{R3} &amp;= {12\over 3000}\[5pt]
+&amp;= 0.004 = 4\mathrm{mA}
+\end{aligned}$$</p>
+<p>Finally, we can solve for I:</p>
+<div class="arithmatex">\[\begin{aligned}
+I_{R2} + I_{R3} + I &amp;= 0\\[5pt]
+0.006 + 0.004 + I &amp;= 0\\[5pt]
+\textrm{Solving for I\ldots}\\[5pt]
+I &amp;= -0.006 - 0.004\\[5pt]
+I &amp;= -0.010
+\end{aligned}
+\]</div>
+<p>The negative sign on the -0.010 tells us that the current is exiting
+that node, rather than entering.</p>
+<h3 id="kirchhoffs-voltage-law">Kirchhoff's Voltage Law</h3>
+<blockquote>
+<p>The algebraic sum of all voltages in a loop must equal zero.</p>
+</blockquote>
+<p>You can get <em>fancy</em> and write this as <span class="arithmatex">\(\sum_{n}{V_n}\)</span>, but you get the
+idea.</p>
+<p>Like Kirchhoff's current law, this seems very simple on the surface, but
+it's also very powerful to use in analyzing a circuit. We are going to
+take a look at a simplified series circuit and see how this works.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/schematic-kirchhoff-voltage-series.png"><img alt="Example series circuit" src="../../img/schematic-kirchhoff-voltage-series.png"/></a></p>
+<p>If we were to use a multimeter to check the voltage between points 4 and
+1, putting the positive lead on 1 and the negative on 4, we would read
+12V. We can use that as <span class="arithmatex">\(E_{1-4}=+12\)</span>. This is a good time to remind you
+that voltage is always relative. It is measured <em>across</em> something. So
+in the case of <span class="arithmatex">\(E_{1-4}\)</span> we are talking about the voltage at 1 in
+<em>relation</em> to 4. If we continue around the circuit doing similar
+measurements we find:</p>
+<table>
+<thead>
+<tr>
+<th>Measurement Location</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-2</td>
+<td><span class="arithmatex">\(-2.\overline{666}\)</span></td>
+</tr>
+<tr>
+<td>2-3</td>
+<td><span class="arithmatex">\(-4.0\)</span></td>
+</tr>
+<tr>
+<td>3-4</td>
+<td><span class="arithmatex">\(-5.\overline{333}\)</span></td>
+</tr>
+<tr>
+<td>4-1</td>
+<td><span class="arithmatex">\(+12.0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>If we sum these together:</p>
+<div class="arithmatex">\[(-2.\overline{666}) + (-4.0) + (-5.\overline{333}) + (+12.0) = 0\]</div>
+<p>Ta'da! </p>
+<h3 id="voltage-divider-rule">Voltage Divider Rule</h3>
+<p>An outgrowth of Kirchhoff's voltage law is the voltage divider rule.
+This means that in a series connection, the current is the same through
+each component. Thus, the voltage drops in a series connection must be
+proportional to the size of the resistances. The larger the resistor,
+the larger its voltage, and the larger its share of the total voltage.
+Thus, the voltage across any resistor must equal the net supplied
+voltage times the ratio of the resistor of interest (<span class="arithmatex">\(R_x\)</span>) to the total
+resistance:</p>
+<div class="arithmatex">\[V_{Rx} = V{{R_x}\over{R_{total}}}\]</div>
+<p>This is just a combination of two Ohm's law calculations into a single
+simplified formula. The resistor of interest (<span class="arithmatex">\(R_x\)</span>) doesn't have to be
+a single resistor. It can easily be the sum of multiple resistors in
+series. The VDR is not required for any particular analysis. However, it
+it saves some time because it skips over dealing with current, and
+second, it demonstrates the ideal of a proportionality of voltage in a
+series connection. For example, if there are two resistors in series and
+one of them is twice the size of the other, then the larger resistor
+sees twice the voltage of the smaller resistor.</p>
+<h2 id="3rd-party-material">3rd Party Material</h2>
+<ul>
+<li><a href="https://phys.libretexts.org/Bookshelves/University_Physics/Book%3A_University_Physics_(OpenStax)/Book%3A_University_Physics_II_-_Thermodynamics_Electricity_and_Magnetism_(OpenStax)/10%3A_Direct-Current_Circuits/10.04%3A_Kirchhoff's_Rules">LibreText University Physics II: Kirchhoff's Rules</a></li>
+<li><a href="https://www.khanacademy.org/science/physics/circuits-topic/circuits-resistance/a/ee-voltage-and-current">Khan Academy basic electrical quantities</a></li>
+</ul>
+<div class="admonition comment">
+<p class="admonition-title">Comments or Questions?</p>
+<p> If you have any comments, questions, or
+topics you'd like to see covered, please feel free to either reach out
+to me on Mastodon (link below) or open an <a href="https://github.com/rebma-io/lab/issues/new/choose">issue on
+Github</a>. </p>
+</div>
+<aside class="md-source-file">
+<span class="md-source-file__fact">
+<span class="md-icon" title="Last update">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-02</span>
+</span>
+<span class="md-source-file__fact">
+<span class="md-icon" title="Created">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-02</span>
+</span>
+</aside>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Electronics" class="md-footer__link md-footer__link--prev" href="../">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                Electronics
+              </div>
+</div>
+</a>
+<a aria-label="Next: Reference Designators" class="md-footer__link md-footer__link--next" href="../reference-designators/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Reference Designators
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright 2024 Christopher Petrilli (CC BY-SA 4.0)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://lab.rebma.io/feed_rss_updated.xml" rel="noopener" target="_blank" title="lab.rebma.io">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2.5 12A1.5 1.5 0 0 0 6 16.5 1.5 1.5 0 0 0 7.5 18 1.5 1.5 0 0 0 9 16.5 1.5 1.5 0 0 0 7.5 15M6 10v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8m0-4v2a10 10 0 0 1 10 10h2A12 12 0 0 0 6 6Z"></path></svg>
+</a>
+<a class="md-social__link" href="https://hachyderm.io/@petrillic" rel="noopener me" target="_blank" title="hachyderm.io">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.youtube.com/channel/UCBNhr5JIXOikgY7ix8xdmSg/" rel="noopener" target="_blank" title="www.youtube.com">
+<svg viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+</a>
+<a class="md-social__link" href="https://twitter.com/petrillic" rel="noopener" target="_blank" title="twitter.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+</a>
+<a class="md-social__link" href="https://github.com/petrilli/" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://github.com/rebma-io/" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.linkedin.com/in/christopher-petrilli-ba391a7/" rel="noopener" target="_blank" title="www.linkedin.com">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "navigation.prune", "navigation.expand"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+<script src="../../js/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
