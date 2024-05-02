@@ -27,3 +27,5 @@ those ideas.
   gauges](decrunching-telescoping-gauges/index.md). I found some super
   cheap telescoping hole gauges at a yard sale. Can I make them
   passable? Find out!
+* [HAUSRACK](https://hausrack.rebma.io). A ludicrously overcomplicated
+  home automation contraption.
