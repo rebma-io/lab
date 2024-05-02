@@ -1,0 +1,15 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: rebma.io Lab Documentation
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Chris
+    family-names: Petrilli
+    email: petrilli@amber.org
+url: 'https://rlab.rebma.io/'
+license: CC-BY-SA-4.0
